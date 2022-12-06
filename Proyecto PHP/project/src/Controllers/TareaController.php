@@ -78,12 +78,11 @@ class TareaController {
 
 
         $error=$tarea->validar();
-        if($error->HayErrores()){
+        if($error->HayErrores()==0){
             TareaRepository::addTarea($tarea->dni,$tarea->nombre,$tarea->apellido,$tarea->telefono,$tarea->correo,$tarea->poblacion,$tarea->direccion,$tarea->codigopostal,$tarea->provincia,$tarea->operario,$tarea->fecharealizacion,$tarea->anotaciones);
             $ultimaTarea=TareaRepository::UltimaTarea();
             return $view->render($response,'tareacompleta.php',['tarea'=>$ultimaTarea]);
         }else{
-
             return $view->render($response,'addTarea.php',['error'=>$error, 'tarea'=>$tarea]);
 
         }
