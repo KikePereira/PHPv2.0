@@ -18,8 +18,8 @@
     .buscador{
         margin-left: 80%;
     }
-    .filtro{
-        margin-left: 5%;
+    .acciones{
+        margin-left: 92.5%;
     }
 </style>
 <!-- BARRA DE NAVEGACION -->
@@ -64,15 +64,8 @@
         </table>
 
 </div> <br>
-<div class="filtro">
-    <a href="tareas/pendientes">Tareas Pendientes</a>
-</div>
 
-<div class="buscador">
-    <form action="/tareas/" method="post">
-        <input type="text" name="find">
-        <input type="submit" value="Buscar">
-    </form>
-</div>
-
+<div class="acciones">
+        <a href="/tareas">Volver</a>
+    </div>
 </html>

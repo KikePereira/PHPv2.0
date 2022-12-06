@@ -26,10 +26,12 @@ return function (App $app) {
 
     $app->group('/tareas',function(Group $group){
         $group->get('', TareaController::class .':index');
-        $group->get('/create', AddTareaController::class);
+        $group->get('/pendientes', TareaController::class .':pendientes');
+        $group->get('/create', TareaController::class . ':create');
         $group->get('/{id}', TareaController::class . ':show');
         $group->get('/{id}/delete', TareaController::class . ':delete');
         $group->delete('/{id}', TareaController::class . ':destroy');
+        $group->post('/create', TareaController::class . ':store');
     });
 
     $app->group('/users', function (Group $group) {

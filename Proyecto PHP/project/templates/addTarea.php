@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 400px;
+        width: 500px;
     }
 
     h1 {
@@ -30,46 +30,51 @@
 {% include 'navbar.php' %}
 
 
-<h1>DAR DE ALTA</h1> <br>
+<h1>AÑADIR TAREA</h1> <br>
 
 <div class="container">
     
-    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" class="row g-1">
-        <label for="">Nombre: </label> 
-        <input type="text" class="form-control" placeholder="Enrique" name="nombre" value=""> 
-        <label for="">Apellido: </label> 
-        <input type="text" class="form-control" placeholder="Pereira" name="apellido" value="">
-        <label for="">CIF/NIF: </label> 
-        <input type="text" placeholder="49106450R" class="form-control" name="dni" value=""> 
-        <label for="">Correo Electronico: </label> 
-        <input type="text" placeholder="kikepereiraramospr@gmail.com" class="form-control" name="correo" value="">
-        <label for="">Telefono: </label> 
-        <input type="text" placeholder="658 512 561" class="form-control" name="telefono" value="">
-        <label for="">Direccion: </label>
-        <input type="text" class="form-control" placeholder="C/ Camarada Montiel Pichardo, 2" name="direccion" value="">
-        <label for="">Poblacion: </label>
-        <input type="text" class="form-control" placeholder="Gibraleon" name="poblacion" value="">
-        <label for="">Provincia: </label>
+    <form action="/tareas/create" method="post" class="row g-1">
+        <label for="">Nombre: {{error.ErrorFormateado('nombre')|raw}}</label> 
+        <input type="text" class="form-control" placeholder="Enrique" name="nombre" value="{{tarea.nombre}}"> 
+        <label for="">Apellido: {{error.ErrorFormateado('apellido')|raw}}</label> 
+        <input type="text" class="form-control" placeholder="Pereira" name="apellido" value="{{tarea.apellido}}">
+        <label for="">CIF/NIF: {{error.ErrorFormateado('dni')|raw}}</label> 
+        <input type="text" placeholder="49106450R" class="form-control" name="dni" value="{{tarea.dni}}"> 
+        <label for="">Correo Electronico: {{error.ErrorFormateado('correo')|raw}}</label> 
+        <input type="text" placeholder="kikepereiraramospr@gmail.com" class="form-control" name="correo" value="{{tarea.correo}}">
+        <label for="">Telefono: {{error.ErrorFormateado('telefono')|raw}}</label> 
+        <input type="text" placeholder="658 512 561" class="form-control" name="telefono" value="{{tarea.telefono}}">
+        <label for="">Direccion: {{error.ErrorFormateado('direccion')|raw}}</label>
+        <input type="text" class="form-control" placeholder="C/ Camarada Montiel Pichardo, 2" name="direccion" value="{{tarea.direccion}}">
+        <label for="">Poblacion: {{error.ErrorFormateado('poblacion')|raw}}</label>
+        <input type="text" class="form-control" placeholder="Gibraleon" name="poblacion" value="{{tarea.poblacion}}">
+        <label for="">Provincia: {{error.ErrorFormateado('provincia')|raw}}</label>
         <select id="inputState" class="form-select" name="provincia">
-            <option disabled="disabled" selected value="">Selecciona provincia</option>
+            {% if tarea.provincia=='' %}
+                <option disabled hidden selected value="">Selecciona provincia</option>
+                {% else %}
+                <option hidden selected value="{{tarea.provincia}}">{{tarea.provincia}}</option>
+            {% endif %}
             <option value="Huelva">Huelva</option>
         </select>
-        <label for="">Codigo Postal: </label>
-        <input type="text" class="form-control" id="inputZip" placeholder="21007" name="codigo"value="<?php echo $_POST['codigo'] ?? '';?>"> <br>
-        <label for="">Operario: </label>
-        <select name="operarios" id="operarios" class="form-select" name="operario">
+        <label for="">Codigo Postal: {{error.ErrorFormateado('codigopostal')|raw}}</label>
+        <input type="text" class="form-control" id="inputZip" placeholder="21007" name="codigopostal"value=""> <br>
+        <label for="">Operario: {{error.ErrorFormateado('operario')|raw}}</label>
+        <select name="operario" id="operarios" class="form-select">
             <option disabled="disabled" selected>Selecciona un operario</option>
             <option>Pepe</option>
         </select>
-        <label for="">Fecha de realizacion: </label>
-        <input type="date" class="form-control" style="margin-left:0;" name="fechaR">
-        <label for="">Anotaciones: </label>
-        <textarea class="form-control" placeholder="Deja aqui tus anotaciones" style="height: 100px" name="anotacion"></textarea>
+        <label for="">Fecha de realizacion: {{error.ErrorFormateado('fecharealizacion')|raw}}</label>
+        <input type="date" class="form-control" style="margin-left:0;" name="fecharealizacion">
+        <label for="">Anotaciones: {{error.ErrorFormateado('anotacion')|raw}}</label>
+        <textarea class="form-control" placeholder="Deja aqui tus anotaciones" style="height: 100px" name="anotaciones"></textarea>
 
-        <input type="submit" class="btn btn-primary" onclick="">
+        <input type="submit" class="btn btn-primary">
+        <a href="/tareas/create"><button type="button" class="btn btn-primary w-100">Restablecer</button></a>
 
-        <input type="reset" class="btn btn-primary">
 
     </form>
+
 </div>
 </html>

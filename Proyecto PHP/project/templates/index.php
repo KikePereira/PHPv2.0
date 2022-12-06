@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
     <style>
-        #contenedor{
+        body{
             display: flex;
             justify-content: center;
-            text-align: center;
+            align-items: center;
+            flex-flow: column;
             margin-top: 20%;
         }
+       a{
+        text-decoration: none;
+        color: black;
+       }
+       a:hover{
+        color: white;
+       }
+       button{
+        margin-top: 10px;
+        width: 10%;
+       }
+
     </style>
     <title>Inicio</title>
 </head>
 <body>
-
-{% include 'navbar.php' %}
-
-<div id="contenedor">
-    <img src="https://emojis.slackmojis.com/emojis/images/1643514751/7585/pepesaber.gif?1643514751" alt="">
-    <img src="https://r74.cooltext.com/rendered/cooltext424557515509047.png" alt="">
-    <img src="https://emojis.slackmojis.com/emojis/images/1643514751/7585/pepesaber.gif?1643514751" alt="">
-</div>
+       <button class="btn btn-primary"><a href="/tareas">Ver Lista</a></button> 
+       <button class="btn btn-secondary"><a href="/tareas/create">Añadir Tarea</a>
+       <button class="btn btn-secondary"><a href="">Modificar Tarea</a></button>
+</button>
 </body>
 </html>
