@@ -32,6 +32,7 @@ return function (App $app) {
         $group->get('/{id}/delete', TareaController::class . ':delete');
         $group->delete('/{id}', TareaController::class . ':destroy');
         $group->post('/create', TareaController::class . ':store');
+        $group->get('/{id}/update', TareaController::class . ':update');
     });
 
     $app->group('/users', function (Group $group) {

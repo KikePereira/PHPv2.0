@@ -16,7 +16,7 @@ class TareaRepository{
 
         $connect=Connection::getInstance();
     
-        $consulta="SELECT * FROM tareas";
+        $consulta="SELECT * FROM tareas ORDER BY(tarea_id) DESC";
 
         $resultado=$connect->prepare($consulta);
         $resultado->execute();
@@ -30,6 +30,42 @@ class TareaRepository{
         
         return $tareas;
     }
+    public static function getProvincias(){
+        $connect=Connection::getInstance();
+    
+        $consulta="SELECT * FROM tbl_provincias";
+
+        $resultado=$connect->prepare($consulta);
+        $resultado->execute();
+
+        $provincias=[];
+
+        while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
+            array_push($provincias,$registro);
+        }
+
+        
+        return $provincias;
+    }
+
+    public static function getOperarios(){
+        $connect=Connection::getInstance();
+    
+        $consulta="SELECT * FROM operarios";
+
+        $resultado=$connect->prepare($consulta);
+        $resultado->execute();
+
+        $operarios=[];
+
+        while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
+            array_push($operarios,$registro);
+        }
+
+        
+        return $operarios;
+    }
+    
 
     public static function getTareasPendientes(){
 
@@ -53,8 +89,8 @@ class TareaRepository{
     public static function addTarea($dni,$nombre,$apellido,$telefono,$correo,$poblacion,$direccion,$codigopostal,$provincia,$operario,$fecharealizacion,$anotacion){
         $connect=Connection::getInstance();
         $now=strval(date('Y-m-d'));
-        $consulta="INSERT INTO `tareas`(`tarea_id`, `DNI`, `nombre`, `apellido`, `telefono`, `correo`, `poblacion`,`direccion`, `codigo_postal`, `provincia`, `estado_tarea`, `fecha_creacion`, `operario_encargado`, `fecha_final`, `anotacion_inicio`, `anotacion_final`) 
-        VALUES(NULL,'$dni','$nombre','$apellido','$telefono','$correo','$poblacion','$direccion','$codigopostal','$provincia','B','$now','$operario','$fecharealizacion','$anotacion',NULL)";
+        $consulta="INSERT INTO `tareas`(`tarea_id`, `dni`, `nombre`, `apellido`, `telefono`, `correo`, `direccion`,`poblacion`, `codigo_postal`, `provincia`, `estado_tarea`, `fecha_creacion`, `operario_encargado`, `fecha_realizacion`, `anotacion_inicio`, `anotacion_final`) 
+        VALUES(NULL,'$dni','$nombre','$apellido','$telefono','$correo','$direccion','$poblacion','$codigopostal','$provincia','B','$now','$operario','$fecharealizacion','$anotacion',NULL)";
 
         $resultado=$connect ->prepare($consulta);
             

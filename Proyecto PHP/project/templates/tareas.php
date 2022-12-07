@@ -56,7 +56,7 @@
                     <td>
                         <a href="/tareas/{{tarea.tarea_id}}"><i class="fa-solid fa-eye"></i></a>
                         <a href="/tareas/{{tarea.tarea_id}}/delete"><i class="fa-solid fa-trash-can"></i></a>
-                        <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href="/tareas/{{tarea.tarea_id}}/update"><i class="fa-solid fa-pen-to-square"></i></a>
                     </td>
                 </tr>
             {% endfor %}

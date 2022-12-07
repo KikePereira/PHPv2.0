@@ -54,16 +54,25 @@
             {% if tarea.provincia=='' %}
                 <option disabled hidden selected value="">Selecciona provincia</option>
                 {% else %}
-                <option hidden selected value="{{tarea.provincia}}">{{tarea.provincia}}</option>
+                    <option hidden selected value="{{tarea.provincia}}">{{tarea.provincia}}</option>
             {% endif %}
-            <option value="Huelva">Huelva</option>
+
+            {% for provincias in provincias %}
+                <option value="{{provincias.nombre}}">{{provincias.nombre}}</option>
+            {% endfor %}
         </select>
         <label for="">Codigo Postal: {{error.ErrorFormateado('codigopostal')|raw}}</label>
         <input type="text" class="form-control" id="inputZip" placeholder="21007" name="codigopostal"value=""> <br>
         <label for="">Operario: {{error.ErrorFormateado('operario')|raw}}</label>
         <select name="operario" id="operarios" class="form-select">
-            <option disabled="disabled" selected>Selecciona un operario</option>
-            <option>Pepe</option>
+                {% if tarea.operario=='' %}
+                    <option disabled hidden selected value="">Selecciona operario</option>
+                {% else %}
+                    <option hidden selected value="{{tarea.operario}}">{{tarea.operario}}</option>
+                {% endif %}
+            {% for operarios in operarios %}
+                <option value="{{operarios.nombre}}">{{operarios.nombre}}</option>
+            {% endfor %}
         </select>
         <label for="">Fecha de realizacion: {{error.ErrorFormateado('fecharealizacion')|raw}}</label>
         <input type="date" class="form-control" style="margin-left:0;" name="fecharealizacion">

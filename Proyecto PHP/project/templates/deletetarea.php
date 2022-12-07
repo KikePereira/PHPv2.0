@@ -89,8 +89,8 @@
         </tr>
         
             <tr>
-                <td>{{tarea.tarea_id}}</td>
-                <td>{{tarea.DNI}}</td>
+            <td>{{tarea.tarea_id}}</td>
+                <td>{{tarea.dni}}</td>
                 <td>{{tarea.nombre}}</td>
                 <td>{{tarea.apellido}}</td>
                 <td>{{tarea.telefono}}</td>
@@ -101,7 +101,7 @@
                 <td>{{tarea.estado_tarea}}</td> 
                 <td>{{tarea.fecha_creacion}}</td>
                 <td>{{tarea.operario_encargado}}</td>
-                <td>{{tarea.fecha_final}}</td>
+                <td>{{tarea.fecha_realizacion}}</td>
                 <td>{{tarea.anotacion_inicio}}</td>
                 <td>{{tarea.anotacion_final}}</td>
             </tr>

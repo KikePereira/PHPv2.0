@@ -68,8 +68,9 @@ class TareaController {
 
     public function create(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
         $view=Twig::fromRequest($request);
-
-        return $view->render($response,'addTarea.php');
+        $provincias=TareaRepository::getProvincias();
+        $operarios=TareaRepository::getOperarios();
+        return $view->render($response,'addTarea.php',['provincias'=>$provincias, 'operarios'=>$operarios]);
     }
     public function store(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
         $view=Twig::fromRequest($request);
@@ -79,15 +80,26 @@ class TareaController {
 
         $error=$tarea->validar();
         if($error->HayErrores()==0){
-            TareaRepository::addTarea($tarea->dni,$tarea->nombre,$tarea->apellido,$tarea->telefono,$tarea->correo,$tarea->poblacion,$tarea->direccion,$tarea->codigopostal,$tarea->provincia,$tarea->operario,$tarea->fecharealizacion,$tarea->anotaciones);
+            TareaRepository::addTarea($tarea->dni,$tarea->nombre,$tarea->apellido,$tarea->telefono,$tarea->correo,$tarea->direccion,$tarea->poblacion,$tarea->codigopostal,$tarea->provincia,$tarea->operario,$tarea->fecharealizacion,$tarea->anotaciones);
             $ultimaTarea=TareaRepository::UltimaTarea();
             return $view->render($response,'tareacompleta.php',['tarea'=>$ultimaTarea]);
         }else{
-            return $view->render($response,'addTarea.php',['error'=>$error, 'tarea'=>$tarea]);
+            $provincias=TareaRepository::getProvincias();
+            $operarios=TareaRepository::getOperarios();
+            return $view->render($response,'addTarea.php',['error'=>$error, 'tarea'=>$tarea,'provincias'=>$provincias, 'operarios'=>$operarios]);
 
         }
 
 
         }
+
+        public function update(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+            $view=Twig::fromRequest($request);
+
+            $tareas=TareaRepository::TareaCompleta($args['id']);
+            return $view->render($response,'updatetarea.php',['tarea'=>$tareas]);
+
+        }
+
 
     }

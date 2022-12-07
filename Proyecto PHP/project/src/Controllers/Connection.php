@@ -23,7 +23,7 @@ class Connection
                 "db_port" => "3306",
                 "db_user" => "root",
                 "db_pass" => "",
-                "db_name" => "construccion",
+                "db_name" => "proyectophp",
                 "db_charset" => "UTF-8"
             );
 

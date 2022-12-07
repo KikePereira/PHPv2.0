@@ -7,7 +7,6 @@
                     
                     <a class="nav-link" href="/tareas">Ver lista</a>
                     <a class="nav-link" href="/tareas/create">Añadir tarea</a>
-                    <a class="nav-link" href="#">Modificar tarea</a>
                     <a class="nav-link" href="#">Cambiar estado</a>
                     <a class="nav-link" href="#">Buscar tarea</a>
                 </div>
