@@ -1,7 +1,8 @@
-<html>
-<script src="https://kit.fontawesome.com/526f5e2cea.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+{% extends 'index.php' %}
 
+{% block title %}Tarea Pendientes{% endblock %}
+
+{% block head %}
 <style>
     .list{
         display: flex;
@@ -22,11 +23,9 @@
         margin-left: 92.5%;
     }
 </style>
-<!-- BARRA DE NAVEGACION -->
-{% include 'navbar.php' %}
-<br>
+{% endblock %}
 
-
+{% block content %}
 <div class="list">
 
 
@@ -65,7 +64,7 @@
 
 </div> <br>
 
-<div class="acciones">
+    <div class="acciones">
         <a href="/tareas">Volver</a>
     </div>
-</html>
+{% endblock %}

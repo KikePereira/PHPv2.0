@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<html lang="en">
+{% extends 'index.php' %}
+
+{% block title %}Modificar Tarea Nº{{tarea.tarea_id}}{% endblock %}
+
+{% block head %}
     <style>
         .container{
             width: 700px;
@@ -15,19 +17,9 @@
             margin:2px
         }
     </style>
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Assets/css/modificarTarea.css">
-    
-    <title>Modificar</title>
-</head>
-
-<body>
-{% include 'navbar.php' %}
-
+{% block content %}
     <div class="container">
         <form action="/tareas/{{tarea.tarea_id}}/update" class="row g-3 medidas" method="post">
             
@@ -87,7 +79,7 @@
 
                 <div class="col-md-4">
                     <label for="">ID: </label> 
-                    <input name="tarea_id" type="text" class="form-control"value="{{tarea.tarea_id}}" disabled>
+                    <input name="tarea_id" type="text" class="form-control"value="{{tarea.tarea_id}}" readonly>
                 </div>
 
                 <div class="col-md-4">
@@ -132,7 +124,4 @@
             <input type="submit" class="btn btn-primary"> <br> <br>
     </form>
 </div>
-
-</body>
-
-</html>
+{% endblock %}

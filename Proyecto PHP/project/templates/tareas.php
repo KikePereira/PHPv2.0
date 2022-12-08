@@ -1,9 +1,15 @@
-<html>
-<script src="https://kit.fontawesome.com/526f5e2cea.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+{% extends 'index.php' %}
 
+{% block title %}Tareas{% endblock %}
+
+{% block head %}
 <style>
+    body{
+        background-color: #F0F0F0;
+    }
+
     .list{
+        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,13 +33,19 @@
         align-items: center;
     }
     .paginacion a{
+        margin-right: 10px;
         margin-left: 10px;
+
 
     }
 </style>
-<!-- BARRA DE NAVEGACION -->
-{% include 'navbar.php' %}
-<br>
+{% endblock %}
+
+
+{% block content %}
+<div class="filtro">
+    <a href="/tareas/pendientes">Tareas Pendientes</a>
+</div>
 
 <div class="list">
 
@@ -76,13 +88,10 @@
     <div class="paginacion">
             <a href="/tareas?page=1">[PRIMERA]</a>
             <a href="/tareas?page={{paginaActual-1}}"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="/tareas?page={{paginaActual}}"><h5>{{paginaActual}} de {{paginas}}</h5></a>
+            <h5>{{paginaActual}} de {{paginas}}</h5>
             <a href="/tareas?page={{paginaActual+1}}"><i class="fa-solid fa-arrow-right"></i></a>
             <a href="/tareas?page={{paginas}}">[ULTIMA]</a>
         </div>
-<div class="filtro">
-    <a href="/tareas/pendientes">Tareas Pendientes</a>
-</div>
 
 <div class="buscador">
     <form action="/tareas/" method="post">
@@ -90,5 +99,4 @@
         <input type="submit" value="Buscar">
     </form>
 </div>
-
-</html>
+{% endblock %}

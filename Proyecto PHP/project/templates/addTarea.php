@@ -1,13 +1,12 @@
-<html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/darAlta.css">
-<style>
-    body {
-    background-image: url('https://img.freepik.com/fotos-premium/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.jpg?w=1480');
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+{% extends 'index.php' %}
 
+{% block title %}Añadir Tarea{% endblock %}
+
+{% block head %}
+<style>
+    body{
+        background-color: #F0F0F0;
+    }
     .container {
         display: flex;
         justify-content: center;
@@ -24,16 +23,17 @@
         border: 2px solid grey;
         background-color: white;
     }
+    form a{
+        margin-bottom: 10px;
+    }
 </style>
-
-<!-- BARRA DE NAVEGACION -->
-{% include 'navbar.php' %}
+{% endblock %}
 
 
+{% block content %}
 <h1>AÑADIR TAREA</h1> <br>
 
 <div class="container">
-    
     <form action="/tareas/create" method="post" class="row g-1">
         <label for="">Nombre: {{error.ErrorFormateado('nombre')|raw}}</label> 
         <input type="text" class="form-control" placeholder="Enrique" name="nombre" value="{{tarea.nombre}}"> 
@@ -80,9 +80,7 @@
         <textarea class="form-control" placeholder="Deja aqui tus anotaciones" style="height: 100px" name="anotaciones"></textarea>
 
         <input type="submit" class="btn btn-primary">
-        <a href="/tareas/create"><button type="button" class="btn btn-primary w-100">Restablecer</button></a>
-
+        <a href="/tareas/create"><button type="button" class="btn btn-primary w-100" class="restablecer">Restablecer</button></a>
     </form>
-
 </div>
-</html>
+{% endblock %}

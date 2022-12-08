@@ -117,8 +117,6 @@ class TareaController {
             $tarea = new Tarea(filter_input(INPUT_POST,'tarea_id'),filter_input(INPUT_POST,'dni'),filter_input(INPUT_POST,'nombre'),filter_input(INPUT_POST,'apellido'),filter_input(INPUT_POST,'telefono'),filter_input(INPUT_POST,'correo'),filter_input(INPUT_POST,'direccion'),filter_input(INPUT_POST,'poblacion'),filter_input(INPUT_POST,'codigo_postal'),filter_input(INPUT_POST,'provincia'),
             filter_input(INPUT_POST,'estado_tarea'),filter_input(INPUT_POST,'fecha_creacion'),filter_input(INPUT_POST,'operario'),filter_input(INPUT_POST,'fecha_realizacion'),filter_input(INPUT_POST,'anotacion_inicio'),filter_input(INPUT_POST,'anotacion_final'));
 
-
-
             TareaRepository::updateTarea($tarea);
 
             return self::index($request, $response, $args);
