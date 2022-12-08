@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Models;
 
 use PDO;
-use App\Controllers\Connection;
+use App\Models\Connection;
 use Exception;
 use PDOException;
 
@@ -166,17 +166,29 @@ class TareaRepository{
         return $resultado->fetch(PDO::FETCH_ASSOC);
     }
 
-    public static function Paginacion(){
-        
+
+    public static function paginas($numTareas){
         $connect=Connection::getInstance();
-    
-        $consulta="SELECT * FROM tareas";
+
+        $consulta="SELECT COUNT(*) AS resultado FROM tareas";
 
         $resultado=$connect->prepare($consulta);
         $resultado->execute();
+         
+        return ceil($resultado->fetch(PDO::FETCH_ASSOC)['resultado']/$numTareas);
+    }
 
-        $num_filas=$resultado->rowCount();
+    public static function getTareasPag($numTareas, $pagina){
+        
+        $connect=Connection::getInstance();
 
+        $offset = ($pagina - 1) * ($numTareas + 1);
+
+        $consulta="SELECT * FROM tareas ORDER BY(tarea_id) DESC LIMIT $numTareas OFFSET $offset ";
+
+        $resultado=$connect->prepare($consulta);
+        $resultado->execute();
+        
         $tareas=[];
 
         while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){

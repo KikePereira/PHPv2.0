@@ -21,6 +21,15 @@
     .filtro{
         margin-left: 5%;
     }
+    .paginacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .paginacion a{
+        margin-left: 10px;
+
+    }
 </style>
 <!-- BARRA DE NAVEGACION -->
 {% include 'navbar.php' %}
@@ -62,7 +71,15 @@
             
         </table>
 
+        
 </div> <br>
+    <div class="paginacion">
+            <a href="/tareas?page=1">[PRIMERA]</a>
+            <a href="/tareas?page={{paginaActual-1}}"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="/tareas?page={{paginaActual}}"><h5>{{paginaActual}} de {{paginas}}</h5></a>
+            <a href="/tareas?page={{paginaActual+1}}"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="/tareas?page={{paginas}}">[ULTIMA]</a>
+        </div>
 <div class="filtro">
     <a href="/tareas/pendientes">Tareas Pendientes</a>
 </div>

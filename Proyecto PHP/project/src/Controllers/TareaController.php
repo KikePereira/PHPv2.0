@@ -2,7 +2,8 @@
 
 namespace App\Controllers;
 
-use App\Controllers\Tarea;
+use App\Models\TareaRepository;
+use App\Models\Tarea;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -21,9 +22,15 @@ class TareaController {
 
         $view=Twig::fromRequest($request);
 
-        $tareas=TareaRepository::getTareas();
+        $pagina=filter_input(INPUT_GET,'page');
 
-        return $view->render($response,'tareas.php',['tareas'=>$tareas]);
+        if(empty($pagina)){
+            $pagina=1;
+        }
+
+        $tareas=TareaRepository::getTareasPag(5,$pagina);
+        $paginas=TareaRepository::paginas(5);
+        return $view->render($response,'tareas.php',['tareas'=>$tareas, 'paginas'=>$paginas, 'paginaActual'=>$pagina]);
         
          
     }
@@ -113,7 +120,7 @@ class TareaController {
 
 
             TareaRepository::updateTarea($tarea);
-            
+
             return self::index($request, $response, $args);
         }
 

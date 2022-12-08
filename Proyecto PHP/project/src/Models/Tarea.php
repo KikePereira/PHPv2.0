@@ -1,8 +1,8 @@
 <?php
-namespace App\Controllers;
+namespace App\Models;
 
-use App\Controllers\GestorErrores;
-use App\Controllers\Validaciones;
+use App\Models\GestorErrores;
+use App\Models\Validaciones;
 
 class Tarea{
 

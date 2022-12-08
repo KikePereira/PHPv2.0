@@ -87,7 +87,7 @@
 
                 <div class="col-md-4">
                     <label for="">ID: </label> 
-                    <input name="tarea_id" type="text" class="form-control"value="{{tarea.tarea_id}}">
+                    <input name="tarea_id" type="text" class="form-control"value="{{tarea.tarea_id}}" disabled>
                 </div>
 
                 <div class="col-md-4">
