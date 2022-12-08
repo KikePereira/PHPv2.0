@@ -30,9 +30,7 @@
     <title>Inicio</title>
 </head>
 <body>
-       <button class="btn btn-primary"><a href="/tareas">Ver Lista</a></button> 
-       <button class="btn btn-secondary"><a href="/tareas/create">Añadir Tarea</a>
-       <button class="btn btn-secondary"><a href="">Modificar Tarea</a></button>
+       <button class="btn btn-primary"><a href="/tareas">LOGIN</a></button> 
 </button>
 </body>
 </html>

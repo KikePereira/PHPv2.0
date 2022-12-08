@@ -27,9 +27,9 @@ class TareaController {
         if(empty($pagina)){
             $pagina=1;
         }
-
-        $tareas=TareaRepository::getTareasPag(5,$pagina);
-        $paginas=TareaRepository::paginas(5);
+        $cantTareas=10;
+        $tareas=TareaRepository::getTareasPag($cantTareas,$pagina);
+        $paginas=TareaRepository::paginas($cantTareas);
         return $view->render($response,'tareas.php',['tareas'=>$tareas, 'paginas'=>$paginas, 'paginaActual'=>$pagina]);
         
          
