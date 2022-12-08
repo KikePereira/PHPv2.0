@@ -45,8 +45,6 @@ class TareaRepository{
         while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
             array_push($provincias,$registro);
         }
-
-        
         return $provincias;
     }
 
