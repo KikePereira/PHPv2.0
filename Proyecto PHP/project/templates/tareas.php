@@ -26,7 +26,6 @@
 {% include 'navbar.php' %}
 <br>
 
-
 <div class="list">
 
 
@@ -65,7 +64,7 @@
 
 </div> <br>
 <div class="filtro">
-    <a href="tareas/pendientes">Tareas Pendientes</a>
+    <a href="/tareas/pendientes">Tareas Pendientes</a>
 </div>
 
 <div class="buscador">
