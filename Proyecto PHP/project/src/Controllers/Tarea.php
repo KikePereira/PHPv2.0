@@ -6,32 +6,40 @@ use App\Controllers\Validaciones;
 
 class Tarea{
 
+    public $tarea_id;
+    public $dni;
     public $nombre;
     public $apellido;
-    public $dni;
-    public $correo;
     public $telefono;
+    public $correo;
     public $direccion;
     public $poblacion;
+    public $codigo_postal;
     public $provincia;
-    public $codigopostal;
-    public $operario;
+    public $estado_tarea;
+    public $fecha_creacion;
+    public $operario_encargado;
     public $fecharealizacion;
-    public $anotaciones;
+    public $anotacion_inicio;
+    public $anotacion_final;
 
-    function __construct($nombre,$apellido,$dni,$correo,$telefono,$direccion,$poblacion,$provincia,$codigopostal,$operario,$fecharealizacion,$anotaciones){
+    function __construct($tarea_id,$dni,$nombre,$apellido,$telefono,$correo,$direccion,$poblacion,$codigo_postal,$provincia,$estado_tarea,$fecha_creacion,$operario_encargado,$fecharealizacion,$anotacion_inicio,$anotacion_final){
+        $this->tarea_id=$tarea_id;
+        $this->dni=$dni;
         $this->nombre=$nombre;
         $this->apellido=$apellido;
-        $this->dni=$dni;
-        $this->correo=$correo;
         $this->telefono=$telefono;
+        $this->correo=$correo;
         $this->direccion=$direccion;
         $this->poblacion=$poblacion;
+        $this->codigo_postal=$codigo_postal;
         $this->provincia=$provincia;
-        $this->codigopostal=$codigopostal;
-        $this->operario=$operario;
+        $this->estado_tarea=$estado_tarea;
+        $this->fecha_creacion=$fecha_creacion;
+        $this->operario_encargado=$operario_encargado;
         $this->fecharealizacion=$fecharealizacion;
-        $this->anotaciones=$anotaciones;
+        $this->anotacion_inicio=$anotacion_inicio;
+        $this->anotacion_final=$anotacion_final;
     }
 
     function validar(){
@@ -84,10 +92,10 @@ class Tarea{
             $error->AnotaError('poblacion','El nombre no es valido');
         }
         //Error codigo postal vacio
-        if(empty($this->codigopostal)){
+        if(empty($this->codigo_postal)){
             $error->AnotaError('codigopostal','El codigo no puede estar vacio');
         }//Error codigo no valido
-        elseif(!$validaciones->validarCodigo($this->codigopostal)){
+        elseif(!$validaciones->validarCodigo($this->codigo_postal)){
             $error->AnotaError('codigopostal','El codigo no es valido');
         }
         //Error fecha realizacon vacio
@@ -100,7 +108,7 @@ class Tarea{
         if(empty($this->provincia)){
             $error->AnotaError('provincia','Selecciona una provincia');
         }//Error operario vacio
-        if(empty($this->operario)){
+        if(empty($this->operario_encargado)){
             $error->AnotaError('operario','Tiene que seleccionar un operario');
         }
 

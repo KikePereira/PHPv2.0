@@ -82,7 +82,6 @@
         <input type="submit" class="btn btn-primary">
         <a href="/tareas/create"><button type="button" class="btn btn-primary w-100">Restablecer</button></a>
 
-
     </form>
 
 </div>

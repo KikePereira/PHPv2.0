@@ -72,15 +72,16 @@ class TareaController {
         $operarios=TareaRepository::getOperarios();
         return $view->render($response,'addTarea.php',['provincias'=>$provincias, 'operarios'=>$operarios]);
     }
+
     public function store(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
         $view=Twig::fromRequest($request);
 
-        $tarea = new Tarea(filter_input(INPUT_POST,'nombre'),filter_input(INPUT_POST,'apellido'),filter_input(INPUT_POST,'dni'),filter_input(INPUT_POST,'correo'),filter_input(INPUT_POST,'telefono'),filter_input(INPUT_POST,'direccion'),filter_input(INPUT_POST,'poblacion'),filter_input(INPUT_POST,'provincia'),filter_input(INPUT_POST,'codigopostal'),filter_input(INPUT_POST,'operario'),filter_input(INPUT_POST,'fecharealizacion'),filter_input(INPUT_POST,'anotaciones'));
-
+        $tarea = new Tarea('',filter_input(INPUT_POST,'dni'),filter_input(INPUT_POST,'nombre'),filter_input(INPUT_POST,'apellido'),filter_input(INPUT_POST,'telefono'),filter_input(INPUT_POST,'correo'),filter_input(INPUT_POST,'direccion'),filter_input(INPUT_POST,'poblacion'),filter_input(INPUT_POST,'codigopostal'),filter_input(INPUT_POST,'provincia'),
+        /*ESTADO TAREA*/'','',filter_input(INPUT_POST,'operario'),filter_input(INPUT_POST,'fecharealizacion'),filter_input(INPUT_POST,'anotaciones'),'');
 
         $error=$tarea->validar();
         if($error->HayErrores()==0){
-            TareaRepository::addTarea($tarea->dni,$tarea->nombre,$tarea->apellido,$tarea->telefono,$tarea->correo,$tarea->direccion,$tarea->poblacion,$tarea->codigopostal,$tarea->provincia,$tarea->operario,$tarea->fecharealizacion,$tarea->anotaciones);
+            TareaRepository::addTarea($tarea->dni,$tarea->nombre,$tarea->apellido,$tarea->telefono,$tarea->correo,$tarea->direccion,$tarea->poblacion,$tarea->codigo_postal,$tarea->provincia,$tarea->operario_encargado,$tarea->fecharealizacion,$tarea->anotacion_inicio);
             $ultimaTarea=TareaRepository::UltimaTarea();
             return $view->render($response,'tareacompleta.php',['tarea'=>$ultimaTarea]);
         }else{
@@ -93,13 +94,27 @@ class TareaController {
 
         }
 
-        public function update(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+        public function edit(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
             $view=Twig::fromRequest($request);
 
-            $tareas=TareaRepository::TareaCompleta($args['id']);
-            return $view->render($response,'updatetarea.php',['tarea'=>$tareas]);
+            $provincias=TareaRepository::getProvincias();
+            $operarios=TareaRepository::getOperarios();
 
+            $tareas=TareaRepository::TareaCompleta($args['id']);
+
+            return $view->render($response,'updatetarea.php',['tarea'=>$tareas, 'provincias'=>$provincias, 'operarios'=>$operarios]);
         }
 
+        public function update(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+
+            $tarea = new Tarea(filter_input(INPUT_POST,'tarea_id'),filter_input(INPUT_POST,'dni'),filter_input(INPUT_POST,'nombre'),filter_input(INPUT_POST,'apellido'),filter_input(INPUT_POST,'telefono'),filter_input(INPUT_POST,'correo'),filter_input(INPUT_POST,'direccion'),filter_input(INPUT_POST,'poblacion'),filter_input(INPUT_POST,'codigo_postal'),filter_input(INPUT_POST,'provincia'),
+            filter_input(INPUT_POST,'estado_tarea'),filter_input(INPUT_POST,'fecha_creacion'),filter_input(INPUT_POST,'operario'),filter_input(INPUT_POST,'fecha_realizacion'),filter_input(INPUT_POST,'anotacion_inicio'),filter_input(INPUT_POST,'anotacion_final'));
+
+
+
+            TareaRepository::updateTarea($tarea);
+            
+            return self::index($request, $response, $args);
+        }
 
     }
