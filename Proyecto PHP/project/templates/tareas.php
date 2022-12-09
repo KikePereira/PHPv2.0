@@ -68,7 +68,9 @@
                     <td>{{tarea.anotacion_inicio}}</td>
                     <td>
                         <a href="/tareas/{{tarea.tarea_id}}" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                        {% if tarea.estado_tarea != 'Realizada' and tarea.estado_tarea != 'Cancelada'  %}
                         <a href="/tareas/{{tarea.tarea_id}}/complete"><i class="fa-solid fa-check"></i></a>
+                        {% endif %}
                         <a href="/tareas/{{tarea.tarea_id}}/delete"><i class="fa-solid fa-trash-can"></i></a>
                         <a href="/tareas/{{tarea.tarea_id}}/update"><i class="fa-solid fa-pen-to-square"></i></a>
                     </td>

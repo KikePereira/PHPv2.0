@@ -28,6 +28,9 @@
     form a{
         margin-bottom: 10px;
     }
+    footer {
+        position: sticky;
+    }
 </style>
 {% endblock %}
 

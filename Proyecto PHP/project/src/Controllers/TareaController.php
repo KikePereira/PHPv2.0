@@ -18,7 +18,7 @@ class TareaController {
         $this->container = $container;
     }
 
-    public function index(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+    public static function index(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
 
         $view=Twig::fromRequest($request);
 
@@ -69,9 +69,8 @@ class TareaController {
         $view=Twig::fromRequest($request);
 
         TareaRepository::EliminarTarea($args['id']);
-        $tareas=TareaRepository::getTareas();
 
-        return $view->render($response,'tareas.php',['tareas'=>$tareas]);
+        return self::index($request, $response, $args);
     }
 
     public function create(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
@@ -114,11 +113,24 @@ class TareaController {
         }
 
         public function update(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+            $view=Twig::fromRequest($request);
 
             $tarea = new Tarea(filter_input(INPUT_POST,'tarea_id'),filter_input(INPUT_POST,'dni'),filter_input(INPUT_POST,'nombre'),filter_input(INPUT_POST,'apellido'),filter_input(INPUT_POST,'telefono'),filter_input(INPUT_POST,'correo'),filter_input(INPUT_POST,'direccion'),filter_input(INPUT_POST,'poblacion'),filter_input(INPUT_POST,'codigo_postal'),filter_input(INPUT_POST,'provincia'),
             filter_input(INPUT_POST,'estado_tarea'),filter_input(INPUT_POST,'fecha_creacion'),filter_input(INPUT_POST,'operario'),filter_input(INPUT_POST,'fecha_realizacion'),filter_input(INPUT_POST,'anotacion_inicio'),filter_input(INPUT_POST,'anotacion_final'));
 
-            TareaRepository::updateTarea($tarea);
+
+            $error=$tarea->validar();
+            if($error->HayErrores()==0){
+                TareaRepository::updateTarea($tarea);
+                $tareaupdateada=TareaRepository::TareaCompleta($tarea->tarea_id);
+                return $view->render($response,'tareacompleta.php',['tarea'=>$tareaupdateada]);
+            }else{
+                $tareaoriginal=TareaRepository::TareaCompleta($tarea->tarea_id);
+                $provincias=TareaRepository::getProvincias();
+                $operarios=TareaRepository::getOperarios();
+                return $view->render($response,'updatetarea.php',['error'=>$error,'tarea'=>$tareaoriginal, 'provincias'=>$provincias, 'operarios'=>$operarios]);
+    
+            }
 
             return self::index($request, $response, $args);
         }

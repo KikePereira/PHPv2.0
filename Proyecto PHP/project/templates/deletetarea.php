@@ -1,7 +1,11 @@
 {% extends 'tareacompleta.php' %}
 
-{% block delete %}    
+{% block delete %}{% endblock %}
 
+{% block confirmacion %}{% endblock %}
+
+
+{% block deleteform %}    
 <style>
 
     .confirmar {

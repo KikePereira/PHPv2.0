@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Controllers\LoginController;
 use App\Controllers\TareaController1;
 use App\Controllers\AddTareaController;
 use App\Controllers\TareaController;
@@ -21,7 +22,7 @@ return function (App $app) {
 
     $app->get('/', function (Request $request, Response $response) {
         $view=Twig::fromRequest($request);
-        return $view->render($response,'index.php');
+        return $view->render($response,'login.php');
     });
 
     $app->group('/tareas',function(Group $group){

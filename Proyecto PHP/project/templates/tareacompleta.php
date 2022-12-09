@@ -35,7 +35,7 @@
     }
 
     .acciones {
-        margin-left: 95%;
+        margin-left: 92%;
     }
 </style>
 {% endblock %}
@@ -81,18 +81,25 @@
                 <td>{{tarea.fecha_realizacion}}</td>
                 <td>{{tarea.anotacion_inicio}}</td>
                 <td>{{tarea.anotacion_final}}</td>
+
+                {% block delete %}
                 <td class="botones">
                     <a href="/tareas/{{tarea.tarea_id}}/delete"><i class="fa-solid fa-trash-can"></i></a>
+                    {% if tarea.estado_tarea != 'Realizada' and tarea.estado_tarea != 'Cancelada'  %}
                     <a href="/tareas/{{tarea.tarea_id}}/complete"><i class="fa-solid fa-check"></i></a>
+                    {% endif %}                    
                     <a href="/tareas/{{tarea.tarea_id}}/update"><i class="fa-solid fa-pen-to-square"></i></a>
                 </td>
+                {% endblock %}
             </tr>
         </table>
     </div>
+    {% block confirmacion %}
     <div class="acciones">
-        <a href="/tareas"><button class="btn btn-primary">Volver</button></a>
+        <a href="/tareas"><button class="btn btn-primary"><i class="fa-sharp fa-solid fa-turn-down-left"></i>⏎ Volver</button></a>
     </div>
+    {% endblock %}
 
-    {% block delete %}    {% endblock %}
+    {% block deleteform %}    {% endblock %}
 
     {% endblock %}

@@ -11,6 +11,16 @@
         margin-top: 50px;
         bottom: 0;
     }
+
+    footer {
+        position: fixed;
+        top: 95%;
+        width: 100%;
+        height: 50px;
+    }
+    .credenciales{
+        margin-left: 65%;
+    }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/526f5e2cea.js" crossorigin="anonymous"></script>
@@ -28,13 +38,16 @@
 
     <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-                Inicio</a>
+            <a href="/tareas"><i class="fa-sharp fa-solid fa-house-user" style="color: black;"></i></a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="/tareas">Ver lista</a>
-                    <a class="nav-link" href="/tareas/pendientes">Tareas Pendientes</a>
-                    <a class="nav-link" href="/tareas/create">Añadir tarea</a>
+                    <a class="nav-link" href="/tareas">Ver lista</a> 
+                    <a class="nav-link" href="/tareas/pendientes">Tareas Pendientes <i class="fa-sharp fa-solid fa-bell"></i></a>
+                    <a class="nav-link" href="/tareas/create">Añadir tarea <i class="fa-sharp fa-solid fa-cart-plus"></i></a>
+                </div>
+                <div class="credenciales">
+                <span>Bienvenido Operario1, Operario</span>
+                <a href="/"> <i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
                 </div>
             </div>
         </div>
@@ -46,9 +59,9 @@
     <br>
     <div id="content">{% block content %}{% endblock %}</div>
 
-    <div class="footer">
+    <div class="footer" >
         {% block footer %}
-        <footer class="text-center text-white static-bottom">
+        <footer class="text-center text-white static-bottom" >
 
             <!-- Grid container -->
 

@@ -31,7 +31,7 @@
     }
 
     .acciones {
-        margin-left: 92.5%;
+        margin-left: 90%;
     }
 </style>
 {% endblock %}
@@ -77,7 +77,7 @@
 </div> <br>
 
 <div class="acciones">
-    <a href="/tareas"><button class="btn btn-primary">Volver</button></a>
+    <a href="/tareas"><button class="btn btn-primary">⏎ Volver</button></a>
 </div>
 
 {% endblock %}

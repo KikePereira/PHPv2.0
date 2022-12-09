@@ -32,6 +32,7 @@ class TareaRepository{
         
         return $tareas;
     }
+
     public static function getProvincias(){
         $connect=Connection::getInstance();
     
@@ -71,7 +72,7 @@ class TareaRepository{
 
         $connect=Connection::getInstance();
     
-        $consulta="SELECT * FROM tareas WHERE estado_tarea='P'";
+        $consulta="SELECT * FROM tareas WHERE estado_tarea='Pendiente'";
 
         $resultado=$connect->prepare($consulta);
         $resultado->execute();
@@ -90,7 +91,7 @@ class TareaRepository{
         $connect=Connection::getInstance();
         $now=strval(date('Y-m-d'));
         $consulta="INSERT INTO `tareas`(`tarea_id`, `dni`, `nombre`, `apellido`, `telefono`, `correo`, `direccion`,`poblacion`, `codigo_postal`, `provincia`, `estado_tarea`, `fecha_creacion`, `operario_encargado`, `fecha_realizacion`, `anotacion_inicio`, `anotacion_final`) 
-        VALUES(NULL,'$dni','$nombre','$apellido','$telefono','$correo','$direccion','$poblacion','$codigopostal','$provincia','B','$now','$operario','$fecharealizacion','$anotacion',NULL)";
+        VALUES(NULL,'$dni','$nombre','$apellido','$telefono','$correo','$direccion','$poblacion','$codigopostal','$provincia','Validacion','$now','$operario','$fecharealizacion','$anotacion',NULL)";
 
         $resultado=$connect ->prepare($consulta);
             
@@ -103,7 +104,6 @@ class TareaRepository{
         $consulta="SELECT * FROM tareas WHERE tarea_id=$id";
         $resultado=$connect->prepare($consulta);
         $resultado->execute();
-
 
         return $resultado->fetch(PDO::FETCH_ASSOC);
        

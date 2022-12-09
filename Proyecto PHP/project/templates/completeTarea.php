@@ -87,9 +87,9 @@
                 <div class="col-md-4">
                     <label for="">Estado: </label>
                     <select name="estado_tarea" id="" class="form-control">
-                        <option hidden value="{{tarea.estado_tarea}}" selected>{{tarea.estado_tarea}}</option>
-                        <option value="R">Realizada</option>
-                        <option value="C">Cancelada</option>
+                        <option hidden value="Realizada" selected>Realizada</option>
+                        <option value="Cancelada">Cancelada</option>
+                        <option value="Pendiente">Pendiente</option>
                     </select>
                 </div>
 
@@ -112,7 +112,7 @@
                 <textarea name="anotacion_inicio" class="form-control" id="" cols="30" rows="10" readonly>{{tarea.anotacion_inicio}}</textarea>
 
                 <label for="">Anotacion Final: </label> 
-                <textarea name="anotacion_final"  class="form-control" id="" cols="30" rows="10">{{tarea.anotacion_final}}</textarea>
+                <textarea name="anotacion_final"  class="form-control" id="" cols="30" rows="10" placeholder="Añade las anotaciones al completar la tarea">{{tarea.anotacion_final}}</textarea>
 
             </div>
             <input type="hidden" name="_METHOD" value="PUT">
