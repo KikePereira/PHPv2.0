@@ -12,6 +12,7 @@
         justify-content: center;
         align-items: center;
         width: 500px;
+        margin-bottom: 100px;
     }
 
     h1 {
@@ -23,6 +24,7 @@
         border: 2px solid grey;
         background-color: white;
     }
+
     form a{
         margin-bottom: 10px;
     }

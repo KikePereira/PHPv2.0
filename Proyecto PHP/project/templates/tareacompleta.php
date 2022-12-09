@@ -83,6 +83,7 @@
                 <td>{{tarea.anotacion_final}}</td>
                 <td class="botones">
                     <a href="/tareas/{{tarea.tarea_id}}/delete"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="/tareas/{{tarea.tarea_id}}/complete"><i class="fa-solid fa-check"></i></a>
                     <a href="/tareas/{{tarea.tarea_id}}/update"><i class="fa-solid fa-pen-to-square"></i></a>
                 </td>
             </tr>
