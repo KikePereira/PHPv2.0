@@ -9,13 +9,15 @@
     }
 
     .list{
-        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid grey;
         margin-left: 5%;
         width: 90%;
+    }
+    .table{
+        border: 2px solid grey;
+        background-color: white;
     }
     .titles{
         background-color: black;
@@ -24,29 +26,20 @@
     .buscador{
         margin-left: 80%;
     }
-    .filtro{
-        margin-left: 5%;
-    }
     .paginacion{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .paginacion a{
+    .paginacion a, .paginacion span{
         margin-right: 10px;
         margin-left: 10px;
-
-
     }
 </style>
 {% endblock %}
 
 
 {% block content %}
-<div class="filtro">
-    <a href="/tareas/pendientes">Tareas Pendientes</a>
-</div>
-
 <div class="list">
 
 
@@ -75,6 +68,7 @@
                     <td>{{tarea.anotacion_inicio}}</td>
                     <td>
                         <a href="/tareas/{{tarea.tarea_id}}"><i class="fa-solid fa-eye"></i></a>
+                        <a href="/tareas/{{tarea.tarea_id}}/complete"><i class="fa-solid fa-check"></i></a>
                         <a href="/tareas/{{tarea.tarea_id}}/delete"><i class="fa-solid fa-trash-can"></i></a>
                         <a href="/tareas/{{tarea.tarea_id}}/update"><i class="fa-solid fa-pen-to-square"></i></a>
                     </td>
@@ -86,17 +80,20 @@
         
 </div> <br>
     <div class="paginacion">
+            {% if paginaActual != 1  %}
             <a href="/tareas?page=1">[PRIMERA]</a>
             <a href="/tareas?page={{paginaActual-1}}"><i class="fa-solid fa-arrow-left"></i></a>
+            {% else %}
+            <span>[PRIMERA]</span>
+            <span><i class="fa-solid fa-arrow-left"></i></span>
+            {% endif %}
             <h5>{{paginaActual}} de {{paginas}}</h5>
+            {% if paginaActual != paginas  %}
             <a href="/tareas?page={{paginaActual+1}}"><i class="fa-solid fa-arrow-right"></i></a>
             <a href="/tareas?page={{paginas}}">[ULTIMA]</a>
+            {% else %}
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+            <span>[ULTIMA]</span>
+            {% endif %}
         </div>
-
-<div class="buscador">
-    <form action="/tareas/" method="post">
-        <input type="text" name="find">
-        <input type="submit" value="Buscar">
-    </form>
-</div>
 {% endblock %}

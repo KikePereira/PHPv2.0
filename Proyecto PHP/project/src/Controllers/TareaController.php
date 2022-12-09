@@ -122,4 +122,11 @@ class TareaController {
             return self::index($request, $response, $args);
         }
 
+        public function complete(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+            $view=Twig::fromRequest($request);
+            $tareas=TareaRepository::TareaCompleta($args['id']);
+            return $view->render($response,'completeTarea.php',['tarea'=>$tareas]);
+        }
+
+
     }

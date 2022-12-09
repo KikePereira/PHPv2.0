@@ -16,13 +16,15 @@
         color: white;
     }
 
-    .list {
+    .table{
+        border: 2px solid grey;
         background-color: white;
+    }
 
+    .list {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid grey;
         margin-left: 3%;
         width: 95%;
     }
@@ -87,7 +89,7 @@
         </table>
     </div>
     <div class="acciones">
-        <a href="/tareas">Volver</a>
+        <a href="/tareas"><button class="btn btn-primary">Volver</button></a>
     </div>
 
     {% block delete %}    {% endblock %}

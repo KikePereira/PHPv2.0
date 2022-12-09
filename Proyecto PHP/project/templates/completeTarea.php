@@ -1,6 +1,6 @@
 {% extends 'index.php' %}
 
-{% block title %}Modificar Tarea Nº{{tarea.tarea_id}}{% endblock %}
+{% block title %}Completar Tarea Nº{{tarea.tarea_id}}{% endblock %}
 
 {% block head %}
     <style>
@@ -34,50 +34,45 @@
                 <h4 for="">DATOS CONTACTO</h4>
                 <div class="col-md-4">
                         <label for="">DNI: </label> 
-                        <input name="dni" type="text" class="form-control"value="{{tarea.dni}}">
+                        <input name="dni" type="text" class="form-control"value="{{tarea.dni}}" readonly>
                 </div>
 
                 <div class="col-md-4">
                     <label for="">Nombre: </label> 
-                    <input name="nombre" type="text" class="form-control"value="{{tarea.nombre}}">
+                    <input name="nombre" type="text" class="form-control"value="{{tarea.nombre}}" readonly>
                 </div>
 
                 <div class="col-md-4">
                     <label for="">Apellido: </label> 
-                    <input name="apellido" type="text" class="form-control"value="{{tarea.apellido}}">
+                    <input name="apellido" type="text" class="form-control"value="{{tarea.apellido}}" readonly>
                 </div>
         
                 <div class="col-md-6">
                     <label for="">Telefono: </label> 
-                    <input name="telefono" type="text" class="form-control"value="{{tarea.telefono}}">
+                    <input name="telefono" type="text" class="form-control"value="{{tarea.telefono}}" readonly>
                 </div>
 
                 <div class="col-md-6">
                     <label for="">Correo: </label> 
-                    <input name="correo" type="text" class="form-control"value="{{tarea.correo}}">
+                    <input name="correo" type="text" class="form-control"value="{{tarea.correo}}" readonly>
                 </div>
                 <div class="col-md-12">
                     <label for="">Direccion: </label> 
-                    <input name="direccion" type="text" class="form-control"value="{{tarea.direccion}}">
+                    <input name="direccion" type="text" class="form-control"value="{{tarea.direccion}}" readonly>
                 </div>
                 <div class="col-md-4">
                     <label for="">Codigo Postal: </label>
-                    <input name="codigo_postal" type="text" class="form-control"value="{{tarea.codigo_postal}}">
+                    <input name="codigo_postal" type="text" class="form-control"value="{{tarea.codigo_postal}}" readonly>
                 </div>
 
                 <div class="col-md-4">
                     <label for="">Poblacion: </label> 
-                    <input name="poblacion" type="text" class="form-control"value="{{tarea.poblacion}}">
+                    <input name="poblacion" type="text" class="form-control"value="{{tarea.poblacion}}" readonly>
                 </div>
 
                 <div class="col-md-4">
                     <label for="">Provincia: </label>
-                    <select id="inputState" class="form-select" name="provincia">
-                        <option hidden selected value="{{tarea.provincia}}">{{tarea.provincia}}</option>
-                        {% for provincias in provincias %}
-                            <option value="{{provincias.nombre}}">{{provincias.nombre}}</option>
-                        {% endfor %}
-                    </select>
+                    <input name="provincia" type="text" class="form-control"value="{{tarea.provincia}}" readonly>
                 </div>
             </div>
             
@@ -93,35 +88,28 @@
                     <label for="">Estado: </label>
                     <select name="estado_tarea" id="" class="form-control">
                         <option hidden value="{{tarea.estado_tarea}}" selected>{{tarea.estado_tarea}}</option>
-                        <option value="B">B</option>
-                        <option value="P">P</option>
-                        <option value="R">R</option>
-                        <option value="C">C</option>
+                        <option value="R">Realizada</option>
+                        <option value="C">Cancelada</option>
                     </select>
                 </div>
 
                 <div class="col-md-4">
                     <label for="">Operario: </label>
-                    <select name="operario" id="operarios" class="form-select">
-                        <option hidden selected value="{{tarea.operario_encargado}}">{{tarea.operario_encargado}}</option>
-                        {% for operarios in operarios %}
-                            <option value="{{operarios.nombre}}">{{operarios.nombre}}</option>
-                        {% endfor %}
-                    </select>
+                    <input type="text" name="operario" class="form-control" value="{{tarea.operario_encargado}}" readonly>
                 </div>
 
                 <div class="col-md-6">
                     <label for="">Fecha Creacion: </label> 
-                    <input name="fecha_creacion" type="date" class="form-control"value="{{tarea.fecha_creacion}}">
+                    <input name="fecha_creacion" type="date" class="form-control"value="{{tarea.fecha_creacion}}" readonly>
                 </div>
 
                 <div class="col-md-6">
                     <label for="">Fecha Realizacion: </label> 
-                    <input name="fecha_realizacion" type="date" class="form-control"value="{{tarea.fecha_realizacion}}">
+                    <input name="fecha_realizacion" type="date" class="form-control"value="{{tarea.fecha_realizacion}}" readonly>
                 </div>
 
                 <label for="">Anotacion: </label> 
-                <textarea name="anotacion_inicio" class="form-control" id="" cols="30" rows="10">{{tarea.anotacion_inicio}}</textarea>
+                <textarea name="anotacion_inicio" class="form-control" id="" cols="30" rows="10" readonly>{{tarea.anotacion_inicio}}</textarea>
 
                 <label for="">Anotacion Final: </label> 
                 <textarea name="anotacion_final"  class="form-control" id="" cols="30" rows="10">{{tarea.anotacion_final}}</textarea>

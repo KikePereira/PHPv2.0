@@ -31,8 +31,8 @@
                     Inicio</a>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        
                         <a class="nav-link" href="/tareas">Ver lista</a>
+                        <a class="nav-link" href="/tareas/pendientes">Tareas Pendientes</a>
                         <a class="nav-link" href="/tareas/create">Añadir tarea</a>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
 
     <div class="footer">
     {% block footer %}
-        &copy; Copyright 2022 by <a href="https://github.com/KikePereira/PHPv2.0/tree/master/Proyecto%20PHP">Enrique Pereira</a>.
+        &copy; Copyright 2022 by <a href="https://github.com/KikePereira/PHPv2.0/tree/master/Proyecto%20PHP"> Enrique Pereira</a>.
     {% endblock %}    
     </div>
     </body>

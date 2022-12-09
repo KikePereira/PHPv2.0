@@ -4,13 +4,20 @@
 
 {% block head %}
 <style>
+    body {
+        background-color: #F0F0F0;
+    }
+    
     .list{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid grey;
         margin-left: 5%;
         width: 90%;
+    }
+    .table{
+        border: 2px solid grey;
+        background-color: white;
     }
     .titles{
         background-color: black;

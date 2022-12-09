@@ -34,6 +34,7 @@ return function (App $app) {
         $group->post('/create', TareaController::class . ':store');
         $group->get('/{id}/update', TareaController::class . ':edit');
         $group->put('/{id}/update', TareaController::class . ':update');
+        $group->get('/{id}/complete', TareaController::class . ':complete');
     });
 
     $app->group('/users', function (Group $group) {
