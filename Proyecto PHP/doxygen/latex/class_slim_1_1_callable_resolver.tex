@@ -1,0 +1,101 @@
+\hypertarget{class_slim_1_1_callable_resolver}{}\doxysection{Callable\+Resolver Class Reference}
+\label{class_slim_1_1_callable_resolver}\index{CallableResolver@{CallableResolver}}
+Inheritance diagram for Callable\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_slim_1_1_callable_resolver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_callable_resolver_ad0727e7656b820b4897b76a719a0fb84}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}} \$container=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_callable_resolver_a18310fc857a29a31918e1a3f429a7417}{resolve}} (\$to\+Resolve)
+\item 
+\mbox{\hyperlink{class_slim_1_1_callable_resolver_ad63f2438b942b28dd25fa91be6c1c1f0}{resolve\+Route}} (\$to\+Resolve)
+\item 
+\mbox{\hyperlink{class_slim_1_1_callable_resolver_adfa8036417afd0ed496269e280638e1f}{resolve\+Middleware}} (\$to\+Resolve)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \mbox{\hyperlink{class_slim_1_1_callable_resolver_a9e9d273904631e4c917060eca34dcf34}{\$callable\+Pattern}} = \textquotesingle{}!$^\wedge$(\mbox{[}$^\wedge$\textbackslash{}\+:\mbox{]}+)\textbackslash{}\+:(\mbox{[}\mbox{\hyperlink{classa}{a}}-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}\mbox{\hyperlink{classa}{a}}-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}$\ast$)\$!\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_callable_resolver_ad0727e7656b820b4897b76a719a0fb84}\label{class_slim_1_1_callable_resolver_ad0727e7656b820b4897b76a719a0fb84}} 
+\index{CallableResolver@{CallableResolver}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CallableResolver@{CallableResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}}}]{\$container = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_callable_resolver_a18310fc857a29a31918e1a3f429a7417}\label{class_slim_1_1_callable_resolver_a18310fc857a29a31918e1a3f429a7417}} 
+\index{CallableResolver@{CallableResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!CallableResolver@{CallableResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily resolve (\begin{DoxyParamCaption}\item[{}]{\$to\+Resolve }\end{DoxyParamCaption})}
+
+\{Resolve \$to\+Resolve into a callable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | callable & {\em \$to\+Resolve} & \\
+\hline
+\end{DoxyParams}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_callable_resolver_interface_a18310fc857a29a31918e1a3f429a7417}{Callable\+Resolver\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_callable_resolver_adfa8036417afd0ed496269e280638e1f}\label{class_slim_1_1_callable_resolver_adfa8036417afd0ed496269e280638e1f}} 
+\index{CallableResolver@{CallableResolver}!resolveMiddleware@{resolveMiddleware}}
+\index{resolveMiddleware@{resolveMiddleware}!CallableResolver@{CallableResolver}}
+\doxysubsubsection{\texorpdfstring{resolveMiddleware()}{resolveMiddleware()}}
+{\footnotesize\ttfamily resolve\+Middleware (\begin{DoxyParamCaption}\item[{}]{\$to\+Resolve }\end{DoxyParamCaption})}
+
+\{Resolve \$to\+Resolve into a callable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | callable & {\em \$to\+Resolve} & \\
+\hline
+\end{DoxyParams}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_advanced_callable_resolver_interface_adfa8036417afd0ed496269e280638e1f}{Advanced\+Callable\+Resolver\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_callable_resolver_ad63f2438b942b28dd25fa91be6c1c1f0}\label{class_slim_1_1_callable_resolver_ad63f2438b942b28dd25fa91be6c1c1f0}} 
+\index{CallableResolver@{CallableResolver}!resolveRoute@{resolveRoute}}
+\index{resolveRoute@{resolveRoute}!CallableResolver@{CallableResolver}}
+\doxysubsubsection{\texorpdfstring{resolveRoute()}{resolveRoute()}}
+{\footnotesize\ttfamily resolve\+Route (\begin{DoxyParamCaption}\item[{}]{\$to\+Resolve }\end{DoxyParamCaption})}
+
+\{Resolve \$to\+Resolve into a callable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | callable & {\em \$to\+Resolve} & \\
+\hline
+\end{DoxyParams}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_advanced_callable_resolver_interface_ad63f2438b942b28dd25fa91be6c1c1f0}{Advanced\+Callable\+Resolver\+Interface}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_slim_1_1_callable_resolver_a9e9d273904631e4c917060eca34dcf34}\label{class_slim_1_1_callable_resolver_a9e9d273904631e4c917060eca34dcf34}} 
+\index{CallableResolver@{CallableResolver}!\$callablePattern@{\$callablePattern}}
+\index{\$callablePattern@{\$callablePattern}!CallableResolver@{CallableResolver}}
+\doxysubsubsection{\texorpdfstring{\$callablePattern}{$callablePattern}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$callable\+Pattern = \textquotesingle{}!$^\wedge$(\mbox{[}$^\wedge$\textbackslash{}\+:\mbox{]}+)\textbackslash{}\+:(\mbox{[}\mbox{\hyperlink{classa}{a}}-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}\mbox{\hyperlink{classa}{a}}-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}$\ast$)\$!\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/slim/\+Slim/\mbox{\hyperlink{slim_2slim_2_slim_2_callable_resolver_8php}{Callable\+Resolver.\+php}}\end{DoxyCompactItemize}

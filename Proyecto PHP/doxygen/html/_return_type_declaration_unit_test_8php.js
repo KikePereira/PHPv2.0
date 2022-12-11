@@ -1,0 +1,4 @@
+var _return_type_declaration_unit_test_8php =
+[
+    [ "ReturnTypeDeclarationUnitTest", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_tests_1_1_functions_1_1_return_type_declaration_unit_test.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_tests_1_1_functions_1_1_return_type_declaration_unit_test" ]
+];

@@ -1,0 +1,66 @@
+\hypertarget{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface}{}\doxysection{Middleware\+Dispatcher\+Interface Interface Reference}
+\label{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface}\index{MiddlewareDispatcherInterface@{MiddlewareDispatcherInterface}}
+Inheritance diagram for Middleware\+Dispatcher\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_a7018e02ea762c520472929132fd2f937}{add}} (\$middleware)
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_ac56a59b06090d3f77f8366f34dcac0ac}{add\+Middleware}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_middleware_interface}{Middleware\+Interface}} \$middleware)
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_a88c14ff3a40567da7a0be49e1f13cd55}{seed\+Middleware\+Stack}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_request_handler_interface}{Request\+Handler\+Interface}} \$kernel)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_a7018e02ea762c520472929132fd2f937}\label{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_a7018e02ea762c520472929132fd2f937}} 
+\index{MiddlewareDispatcherInterface@{MiddlewareDispatcherInterface}!add@{add}}
+\index{add@{add}!MiddlewareDispatcherInterface@{MiddlewareDispatcherInterface}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily add (\begin{DoxyParamCaption}\item[{}]{\$middleware }\end{DoxyParamCaption})}
+
+Add a new middleware to the stack
+
+\mbox{\hyperlink{namespace_slim_1_1_middleware}{Middleware}} are organized as a stack. That means middleware that have been added before will be executed after the newly added one (last in, first out).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Middleware\+Interface | string | callable & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_middleware_dispatcher_a7018e02ea762c520472929132fd2f937}{Middleware\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_ac56a59b06090d3f77f8366f34dcac0ac}\label{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_ac56a59b06090d3f77f8366f34dcac0ac}} 
+\index{MiddlewareDispatcherInterface@{MiddlewareDispatcherInterface}!addMiddleware@{addMiddleware}}
+\index{addMiddleware@{addMiddleware}!MiddlewareDispatcherInterface@{MiddlewareDispatcherInterface}}
+\doxysubsubsection{\texorpdfstring{addMiddleware()}{addMiddleware()}}
+{\footnotesize\ttfamily add\+Middleware (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_middleware_interface}{Middleware\+Interface}}}]{\$middleware }\end{DoxyParamCaption})}
+
+Add a new middleware to the stack
+
+\mbox{\hyperlink{namespace_slim_1_1_middleware}{Middleware}} are organized as a stack. That means middleware that have been added before will be executed after the newly added one (last in, first out). 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_middleware_dispatcher_ac56a59b06090d3f77f8366f34dcac0ac}{Middleware\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_a88c14ff3a40567da7a0be49e1f13cd55}\label{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface_a88c14ff3a40567da7a0be49e1f13cd55}} 
+\index{MiddlewareDispatcherInterface@{MiddlewareDispatcherInterface}!seedMiddlewareStack@{seedMiddlewareStack}}
+\index{seedMiddlewareStack@{seedMiddlewareStack}!MiddlewareDispatcherInterface@{MiddlewareDispatcherInterface}}
+\doxysubsubsection{\texorpdfstring{seedMiddlewareStack()}{seedMiddlewareStack()}}
+{\footnotesize\ttfamily seed\+Middleware\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_request_handler_interface}{Request\+Handler\+Interface}}}]{\$kernel }\end{DoxyParamCaption})}
+
+Seed the middleware stack with the inner request handler 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_middleware_dispatcher_a88c14ff3a40567da7a0be49e1f13cd55}{Middleware\+Dispatcher}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/slim/\+Slim/\+Interfaces/\mbox{\hyperlink{_middleware_dispatcher_interface_8php}{Middleware\+Dispatcher\+Interface.\+php}}\end{DoxyCompactItemize}

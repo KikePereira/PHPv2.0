@@ -1,0 +1,71 @@
+\hypertarget{class_d_i_1_1_invoker_1_1_definition_parameter_resolver}{}\doxysection{Definition\+Parameter\+Resolver Class Reference}
+\label{class_d_i_1_1_invoker_1_1_definition_parameter_resolver}\index{DefinitionParameterResolver@{DefinitionParameterResolver}}
+Inheritance diagram for Definition\+Parameter\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_i_1_1_invoker_1_1_definition_parameter_resolver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_invoker_1_1_definition_parameter_resolver_a8c4601f92c12978f13610c094ffc0b0b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}} \$definition\+Resolver)
+\item 
+\mbox{\hyperlink{class_d_i_1_1_invoker_1_1_definition_parameter_resolver_a867cbc4830a92b4fb0e791081bc1d860}{get\+Parameters}} (Reflection\+Function\+Abstract \$reflection, array \$provided\+Parameters, array \$resolved\+Parameters)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Resolves callable parameters using definitions.
+
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_invoker_1_1_definition_parameter_resolver_a8c4601f92c12978f13610c094ffc0b0b}\label{class_d_i_1_1_invoker_1_1_definition_parameter_resolver_a8c4601f92c12978f13610c094ffc0b0b}} 
+\index{DefinitionParameterResolver@{DefinitionParameterResolver}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DefinitionParameterResolver@{DefinitionParameterResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}}}]{\$definition\+Resolver }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_invoker_1_1_definition_parameter_resolver_a867cbc4830a92b4fb0e791081bc1d860}\label{class_d_i_1_1_invoker_1_1_definition_parameter_resolver_a867cbc4830a92b4fb0e791081bc1d860}} 
+\index{DefinitionParameterResolver@{DefinitionParameterResolver}!getParameters@{getParameters}}
+\index{getParameters@{getParameters}!DefinitionParameterResolver@{DefinitionParameterResolver}}
+\doxysubsubsection{\texorpdfstring{getParameters()}{getParameters()}}
+{\footnotesize\ttfamily get\+Parameters (\begin{DoxyParamCaption}\item[{Reflection\+Function\+Abstract}]{\$reflection,  }\item[{array}]{\$provided\+Parameters,  }\item[{array}]{\$resolved\+Parameters }\end{DoxyParamCaption})}
+
+Resolves the parameters to use to call the callable.
+
+{\ttfamily \$resolved\+Parameters} contains parameters that have already been resolved.
+
+Each Parameter\+Resolver must resolve parameters that are not already in {\ttfamily \$resolved\+Parameters}. That allows to chain multiple Parameter\+Resolver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Function\+Abstract & {\em \$reflection} & Reflection object for the callable. \\
+\hline
+array & {\em \$provided\+Parameters} & Parameters provided by the caller. \\
+\hline
+array & {\em \$resolved\+Parameters} & Parameters resolved (indexed by parameter position). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver_a867cbc4830a92b4fb0e791081bc1d860}{Parameter\+Resolver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Invoker/\mbox{\hyperlink{_definition_parameter_resolver_8php}{Definition\+Parameter\+Resolver.\+php}}\end{DoxyCompactItemize}

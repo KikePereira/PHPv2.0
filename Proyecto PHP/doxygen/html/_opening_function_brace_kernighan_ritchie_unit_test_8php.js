@@ -1,0 +1,4 @@
+var _opening_function_brace_kernighan_ritchie_unit_test_8php =
+[
+    [ "OpeningFunctionBraceKernighanRitchieUnitTest", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_functions_1_1_opening_functio625fa34e81cb31394cc8cb2b919a8da2.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_functions_1_1_opening_functio625fa34e81cb31394cc8cb2b919a8da2" ]
+];

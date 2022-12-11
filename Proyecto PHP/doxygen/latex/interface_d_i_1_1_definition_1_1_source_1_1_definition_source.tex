@@ -1,0 +1,64 @@
+\hypertarget{interface_d_i_1_1_definition_1_1_source_1_1_definition_source}{}\doxysection{Definition\+Source Interface Reference}
+\label{interface_d_i_1_1_definition_1_1_source_1_1_definition_source}\index{DefinitionSource@{DefinitionSource}}
+Inheritance diagram for Definition\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.828571cm]{interface_d_i_1_1_definition_1_1_source_1_1_definition_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_ab3643b07f6fe88fcc883aee5334b59d0}{get\+Definition}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_aa7fdbbb3dfc93e31928ed08ccfed63fd}{get\+Definitions}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_d_i_1_1_definition_1_1_source}{Source}} of definitions for entries of the container.
+
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_ab3643b07f6fe88fcc883aee5334b59d0}\label{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_ab3643b07f6fe88fcc883aee5334b59d0}} 
+\index{DefinitionSource@{DefinitionSource}!getDefinition@{getDefinition}}
+\index{getDefinition@{getDefinition}!DefinitionSource@{DefinitionSource}}
+\doxysubsubsection{\texorpdfstring{getDefinition()}{getDefinition()}}
+{\footnotesize\ttfamily get\+Definition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{namespace_d_i}{DI}} definition for the entry name.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Definition} & An invalid definition was found. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Definition$\vert$null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_annotation_based_autowiring_ab3643b07f6fe88fcc883aee5334b59d0}{Annotation\+Based\+Autowiring}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_array_ab3643b07f6fe88fcc883aee5334b59d0}{Definition\+Array}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_file_ab3643b07f6fe88fcc883aee5334b59d0}{Definition\+File}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_ab3643b07f6fe88fcc883aee5334b59d0}{Reflection\+Based\+Autowiring}}, and \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_source_cache_ab3643b07f6fe88fcc883aee5334b59d0}{Source\+Cache}}.
+
+\mbox{\Hypertarget{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_aa7fdbbb3dfc93e31928ed08ccfed63fd}\label{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_aa7fdbbb3dfc93e31928ed08ccfed63fd}} 
+\index{DefinitionSource@{DefinitionSource}!getDefinitions@{getDefinitions}}
+\index{getDefinitions@{getDefinitions}!DefinitionSource@{DefinitionSource}}
+\doxysubsubsection{\texorpdfstring{getDefinitions()}{getDefinitions()}}
+{\footnotesize\ttfamily get\+Definitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}\mbox{[}\mbox{]} Definitions indexed by their name. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_annotation_based_autowiring_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Annotation\+Based\+Autowiring}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_array_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Definition\+Array}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_file_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Definition\+File}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Reflection\+Based\+Autowiring}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_source_cache_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Source\+Cache}}, and \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_source_chain_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Source\+Chain}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Source/\mbox{\hyperlink{_definition_source_8php}{Definition\+Source.\+php}}\end{DoxyCompactItemize}

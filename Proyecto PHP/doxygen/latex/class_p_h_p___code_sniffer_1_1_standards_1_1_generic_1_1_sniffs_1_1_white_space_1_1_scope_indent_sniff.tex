@@ -1,0 +1,152 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff}{}\doxysection{Scope\+Indent\+Sniff Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff}\index{ScopeIndentSniff@{ScopeIndentSniff}}
+Inheritance diagram for Scope\+Indent\+Sniff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{process}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a14f6bd971ae8b179988e5abd4139e5cf}{\$supported\+Tokenizers}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_af8f6a5696fad56b194d5af8080233e71}{\$indent}} = 4
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a99f2b09008996d63f21b412ed85e3d1b}{\$exact}} = false
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_ac76756f1bfcda5fd4fb14255c984b6db}{\$tab\+Indent}} = false
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a1d2e8224e239330ecdb8e1a949b43736}{\$ignore\+Indentation\+Tokens}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_aed14b9e44e6034f5aff80119ca20772b}{adjust\+Indent}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr, \$length, \$change)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_af4fd557b409050b11b0f3b96ee64cf25}{\$non\+Indenting\+Scopes}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_aed14b9e44e6034f5aff80119ca20772b}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_aed14b9e44e6034f5aff80119ca20772b}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!adjustIndent@{adjustIndent}}
+\index{adjustIndent@{adjustIndent}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{adjustIndent()}{adjustIndent()}}
+{\footnotesize\ttfamily adjust\+Indent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr,  }\item[{}]{\$length,  }\item[{}]{\$change }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Processes this test, when one of its tokens is encountered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & All the tokens found in the document. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens. \\
+\hline
+int & {\em \$length} & The length of the new indent. \\
+\hline
+int & {\em \$change} & The difference in length between the old and new indent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a145c97f53fb2c1ddb1c188ceba18865f}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a145c97f53fb2c1ddb1c188ceba18865f}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!process@{process}}
+\index{process@{process}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})}
+
+Processes this test, when one of its tokens is encountered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & All the tokens found in the document. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_acc294a6cc8e69743746820e3d15e3f78}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_acc294a6cc8e69743746820e3d15e3f78}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!register@{register}}
+\index{register@{register}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of tokens this test wants to listen for.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_acc294a6cc8e69743746820e3d15e3f78}{Sniff}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a99f2b09008996d63f21b412ed85e3d1b}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a99f2b09008996d63f21b412ed85e3d1b}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!\$exact@{\$exact}}
+\index{\$exact@{\$exact}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{\$exact}{$exact}}
+{\footnotesize\ttfamily \$exact = false}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a1d2e8224e239330ecdb8e1a949b43736}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a1d2e8224e239330ecdb8e1a949b43736}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!\$ignoreIndentationTokens@{\$ignoreIndentationTokens}}
+\index{\$ignoreIndentationTokens@{\$ignoreIndentationTokens}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{\$ignoreIndentationTokens}{$ignoreIndentationTokens}}
+{\footnotesize\ttfamily \$ignore\+Indentation\+Tokens = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_af8f6a5696fad56b194d5af8080233e71}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_af8f6a5696fad56b194d5af8080233e71}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!\$indent@{\$indent}}
+\index{\$indent@{\$indent}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{\$indent}{$indent}}
+{\footnotesize\ttfamily \$indent = 4}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_af4fd557b409050b11b0f3b96ee64cf25}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_af4fd557b409050b11b0f3b96ee64cf25}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!\$nonIndentingScopes@{\$nonIndentingScopes}}
+\index{\$nonIndentingScopes@{\$nonIndentingScopes}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{\$nonIndentingScopes}{$nonIndentingScopes}}
+{\footnotesize\ttfamily \$non\+Indenting\+Scopes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a14f6bd971ae8b179988e5abd4139e5cf}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_a14f6bd971ae8b179988e5abd4139e5cf}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!\$supportedTokenizers@{\$supportedTokenizers}}
+\index{\$supportedTokenizers@{\$supportedTokenizers}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{\$supportedTokenizers}{$supportedTokenizers}}
+{\footnotesize\ttfamily \$supported\+Tokenizers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'PHP'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'JS'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_ac76756f1bfcda5fd4fb14255c984b6db}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_white_space_1_1_scope_indent_sniff_ac76756f1bfcda5fd4fb14255c984b6db}} 
+\index{ScopeIndentSniff@{ScopeIndentSniff}!\$tabIndent@{\$tabIndent}}
+\index{\$tabIndent@{\$tabIndent}!ScopeIndentSniff@{ScopeIndentSniff}}
+\doxysubsubsection{\texorpdfstring{\$tabIndent}{$tabIndent}}
+{\footnotesize\ttfamily \$tab\+Indent = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Standards/\+Generic/\+Sniffs/\+White\+Space/\mbox{\hyperlink{_generic_2_sniffs_2_white_space_2_scope_indent_sniff_8php}{Scope\+Indent\+Sniff.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{interface_twig_1_1_token_parser_1_1_token_parser_interface}{}\doxysection{Token\+Parser\+Interface Interface Reference}
+\label{interface_twig_1_1_token_parser_1_1_token_parser_interface}\index{TokenParserInterface@{TokenParserInterface}}
+Inheritance diagram for Token\+Parser\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_twig_1_1_token_parser_1_1_token_parser_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_twig_1_1_token_parser_1_1_token_parser_interface_ad7906b0e440ec9e8c0946d0a9e3459e8}{set\+Parser}} (\mbox{\hyperlink{class_twig_1_1_parser}{Parser}} \$parser)
+\item 
+\mbox{\hyperlink{interface_twig_1_1_token_parser_1_1_token_parser_interface_a9555bfac01648dc509d1b4026b1363ae}{parse}} (\mbox{\hyperlink{class_twig_1_1_token}{Token}} \$token)
+\item 
+\mbox{\hyperlink{interface_twig_1_1_token_parser_1_1_token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}{get\+Tag}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface implemented by token parsers.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_twig_1_1_token_parser_1_1_token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}\label{interface_twig_1_1_token_parser_1_1_token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}} 
+\index{TokenParserInterface@{TokenParserInterface}!getTag@{getTag}}
+\index{getTag@{getTag}!TokenParserInterface@{TokenParserInterface}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the tag name associated with this token parser.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_apply_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Apply\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_auto_escape_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Auto\+Escape\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_block_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Block\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_deprecated_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Deprecated\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_do_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Do\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_embed_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Embed\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_extends_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Extends\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_flush_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Flush\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_for_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{For\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_from_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{From\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_if_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{If\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_import_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Import\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_include_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Include\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_macro_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Macro\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_sandbox_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Sandbox\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_set_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Set\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_use_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{Use\+Token\+Parser}}, and \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_with_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{With\+Token\+Parser}}.
+
+\mbox{\Hypertarget{interface_twig_1_1_token_parser_1_1_token_parser_interface_a9555bfac01648dc509d1b4026b1363ae}\label{interface_twig_1_1_token_parser_1_1_token_parser_interface_a9555bfac01648dc509d1b4026b1363ae}} 
+\index{TokenParserInterface@{TokenParserInterface}!parse@{parse}}
+\index{parse@{parse}!TokenParserInterface@{TokenParserInterface}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_token}{Token}}}]{\$token }\end{DoxyParamCaption})}
+
+Parses a token and returns a node.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_twig_1_1_node}{Node}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_apply_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Apply\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_auto_escape_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Auto\+Escape\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_block_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Block\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_deprecated_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Deprecated\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_do_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Do\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_embed_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Embed\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_extends_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Extends\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_flush_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Flush\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_for_token_parser_a9555bfac01648dc509d1b4026b1363ae}{For\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_from_token_parser_a9555bfac01648dc509d1b4026b1363ae}{From\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_if_token_parser_a9555bfac01648dc509d1b4026b1363ae}{If\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_import_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Import\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_include_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Include\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_macro_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Macro\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_sandbox_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Sandbox\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_set_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Set\+Token\+Parser}}, \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_use_token_parser_a9555bfac01648dc509d1b4026b1363ae}{Use\+Token\+Parser}}, and \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_with_token_parser_a9555bfac01648dc509d1b4026b1363ae}{With\+Token\+Parser}}.
+
+\mbox{\Hypertarget{interface_twig_1_1_token_parser_1_1_token_parser_interface_ad7906b0e440ec9e8c0946d0a9e3459e8}\label{interface_twig_1_1_token_parser_1_1_token_parser_interface_ad7906b0e440ec9e8c0946d0a9e3459e8}} 
+\index{TokenParserInterface@{TokenParserInterface}!setParser@{setParser}}
+\index{setParser@{setParser}!TokenParserInterface@{TokenParserInterface}}
+\doxysubsubsection{\texorpdfstring{setParser()}{setParser()}}
+{\footnotesize\ttfamily set\+Parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_parser}{Parser}}}]{\$parser }\end{DoxyParamCaption})}
+
+Sets the parser associated with this token parser. 
+
+Implemented in \mbox{\hyperlink{class_twig_1_1_token_parser_1_1_abstract_token_parser_ad7906b0e440ec9e8c0946d0a9e3459e8}{Abstract\+Token\+Parser}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Token\+Parser/\mbox{\hyperlink{_token_parser_interface_8php}{Token\+Parser\+Interface.\+php}}\end{DoxyCompactItemize}

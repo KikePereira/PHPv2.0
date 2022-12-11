@@ -1,0 +1,4 @@
+var _comparison_operator_usage_sniff_8php =
+[
+    [ "ComparisonOperatorUsageSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_operators_1_1_comparison_operator_usage_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_operators_1_1_comparison_operator_usage_sniff" ]
+];

@@ -1,0 +1,147 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff}{}\doxysection{Multi\+Line\+Function\+Declaration\+Sniff Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff}\index{MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}}
+Inheritance diagram for Multi\+Line\+Function\+Declaration\+Sniff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_ae58d42fd8213df0f558e4c4bff70d539}{is\+Multi\+Line\+Declaration}} (\$phpcs\+File, \$stack\+Ptr, \$open\+Bracket, \$tokens)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a48c6bd87ba4286fc6935cfc1c80a8c8e}{process\+Single\+Line\+Declaration}} (\$phpcs\+File, \$stack\+Ptr, \$tokens)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a6d202ebf2a20327347c64f48d98837f3}{process\+Multi\+Line\+Declaration}} (\$phpcs\+File, \$stack\+Ptr, \$tokens)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a428f6b9ca4952f6f59fa3ffc47224d94}{process\+Bracket}} (\$phpcs\+File, \$open\+Bracket, \$tokens, \$type=\textquotesingle{}function\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a14f6bd971ae8b179988e5abd4139e5cf}{\$supported\+Tokenizers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_ae58d42fd8213df0f558e4c4bff70d539}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_ae58d42fd8213df0f558e4c4bff70d539}} 
+\index{MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}!isMultiLineDeclaration@{isMultiLineDeclaration}}
+\index{isMultiLineDeclaration@{isMultiLineDeclaration}!MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}}
+\doxysubsubsection{\texorpdfstring{isMultiLineDeclaration()}{isMultiLineDeclaration()}}
+{\footnotesize\ttfamily is\+Multi\+Line\+Declaration (\begin{DoxyParamCaption}\item[{}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr,  }\item[{}]{\$open\+Bracket,  }\item[{}]{\$tokens }\end{DoxyParamCaption})}
+
+Determine if this is a multi-\/line function declaration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens. \\
+\hline
+int & {\em \$open\+Bracket} & The position of the opening bracket in the stack passed in \$tokens. \\
+\hline
+array & {\em \$tokens} & The stack of tokens that make up the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_p_e_a_r_1_1_sniffs_1_1_functions_1_1_function_declaration_sniff_ae58d42fd8213df0f558e4c4bff70d539}{Function\+Declaration\+Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a428f6b9ca4952f6f59fa3ffc47224d94}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a428f6b9ca4952f6f59fa3ffc47224d94}} 
+\index{MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}!processBracket@{processBracket}}
+\index{processBracket@{processBracket}!MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}}
+\doxysubsubsection{\texorpdfstring{processBracket()}{processBracket()}}
+{\footnotesize\ttfamily process\+Bracket (\begin{DoxyParamCaption}\item[{}]{\$phpcs\+File,  }\item[{}]{\$open\+Bracket,  }\item[{}]{\$tokens,  }\item[{}]{\$type = {\ttfamily \textquotesingle{}function\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Processes the contents of a single set of brackets.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$open\+Bracket} & The position of the open bracket in the stack passed in \$tokens. \\
+\hline
+array & {\em \$tokens} & The stack of tokens that make up the file. \\
+\hline
+string & {\em \$type} & The type of the token the brackets belong to (function or use).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a6d202ebf2a20327347c64f48d98837f3}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a6d202ebf2a20327347c64f48d98837f3}} 
+\index{MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}!processMultiLineDeclaration@{processMultiLineDeclaration}}
+\index{processMultiLineDeclaration@{processMultiLineDeclaration}!MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}}
+\doxysubsubsection{\texorpdfstring{processMultiLineDeclaration()}{processMultiLineDeclaration()}}
+{\footnotesize\ttfamily process\+Multi\+Line\+Declaration (\begin{DoxyParamCaption}\item[{}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr,  }\item[{}]{\$tokens }\end{DoxyParamCaption})}
+
+Processes multi-\/line declarations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens. \\
+\hline
+array & {\em \$tokens} & The stack of tokens that make up the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_p_e_a_r_1_1_sniffs_1_1_functions_1_1_function_declaration_sniff_a6d202ebf2a20327347c64f48d98837f3}{Function\+Declaration\+Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a48c6bd87ba4286fc6935cfc1c80a8c8e}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a48c6bd87ba4286fc6935cfc1c80a8c8e}} 
+\index{MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}!processSingleLineDeclaration@{processSingleLineDeclaration}}
+\index{processSingleLineDeclaration@{processSingleLineDeclaration}!MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}}
+\doxysubsubsection{\texorpdfstring{processSingleLineDeclaration()}{processSingleLineDeclaration()}}
+{\footnotesize\ttfamily process\+Single\+Line\+Declaration (\begin{DoxyParamCaption}\item[{}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr,  }\item[{}]{\$tokens }\end{DoxyParamCaption})}
+
+Processes single-\/line declarations.
+
+Just uses the Generic BSD-\/\+Allman brace sniff.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens. \\
+\hline
+array & {\em \$tokens} & The stack of tokens that make up the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_p_e_a_r_1_1_sniffs_1_1_functions_1_1_function_declaration_sniff_a48c6bd87ba4286fc6935cfc1c80a8c8e}{Function\+Declaration\+Sniff}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a14f6bd971ae8b179988e5abd4139e5cf}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff_a14f6bd971ae8b179988e5abd4139e5cf}} 
+\index{MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}!\$supportedTokenizers@{\$supportedTokenizers}}
+\index{\$supportedTokenizers@{\$supportedTokenizers}!MultiLineFunctionDeclarationSniff@{MultiLineFunctionDeclarationSniff}}
+\doxysubsubsection{\texorpdfstring{\$supportedTokenizers}{$supportedTokenizers}}
+{\footnotesize\ttfamily \$supported\+Tokenizers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'PHP'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'JS'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Standards/\+Squiz/\+Sniffs/\+Functions/\mbox{\hyperlink{_multi_line_function_declaration_sniff_8php}{Multi\+Line\+Function\+Declaration\+Sniff.\+php}}\end{DoxyCompactItemize}

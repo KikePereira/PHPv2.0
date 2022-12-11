@@ -1,0 +1,81 @@
+\hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer}{}\doxysection{Definition\+Normalizer Class Reference}
+\label{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer}\index{DefinitionNormalizer@{DefinitionNormalizer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a0fb845be16ce0d07cbafe51659884f4f}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_autowiring}{Autowiring}} \$autowiring)
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a735826b6103c0251fdc0c83ae907afca}{normalize\+Root\+Definition}} (\$definition, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, array \$wildcards\+Replacements=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a631c4ed9d64c4d2bfce1e8a67c6a1bca}{normalize\+Nested\+Definition}} (\$definition)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Turns raw definitions/definition helpers into definitions ready to be resolved or compiled.
+
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a0fb845be16ce0d07cbafe51659884f4f}\label{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a0fb845be16ce0d07cbafe51659884f4f}} 
+\index{DefinitionNormalizer@{DefinitionNormalizer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DefinitionNormalizer@{DefinitionNormalizer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_autowiring}{Autowiring}}}]{\$autowiring }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a631c4ed9d64c4d2bfce1e8a67c6a1bca}\label{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a631c4ed9d64c4d2bfce1e8a67c6a1bca}} 
+\index{DefinitionNormalizer@{DefinitionNormalizer}!normalizeNestedDefinition@{normalizeNestedDefinition}}
+\index{normalizeNestedDefinition@{normalizeNestedDefinition}!DefinitionNormalizer@{DefinitionNormalizer}}
+\doxysubsubsection{\texorpdfstring{normalizeNestedDefinition()}{normalizeNestedDefinition()}}
+{\footnotesize\ttfamily normalize\+Nested\+Definition (\begin{DoxyParamCaption}\item[{}]{\$definition }\end{DoxyParamCaption})}
+
+Normalize a definition that is nested in another one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Definition} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a735826b6103c0251fdc0c83ae907afca}\label{class_d_i_1_1_definition_1_1_source_1_1_definition_normalizer_a735826b6103c0251fdc0c83ae907afca}} 
+\index{DefinitionNormalizer@{DefinitionNormalizer}!normalizeRootDefinition@{normalizeRootDefinition}}
+\index{normalizeRootDefinition@{normalizeRootDefinition}!DefinitionNormalizer@{DefinitionNormalizer}}
+\doxysubsubsection{\texorpdfstring{normalizeRootDefinition()}{normalizeRootDefinition()}}
+{\footnotesize\ttfamily normalize\+Root\+Definition (\begin{DoxyParamCaption}\item[{}]{\$definition,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name,  }\item[{array}]{\$wildcards\+Replacements = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Normalize a definition that is {\itshape not} nested in another one.
+
+This is usually a definition declared at the root of a definition array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$definition} & \\
+\hline
+string & {\em \$name} & The definition name. \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$wildcards\+Replacements} & Replacements for wildcard definitions.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Definition} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Source/\mbox{\hyperlink{_definition_normalizer_8php}{Definition\+Normalizer.\+php}}\end{DoxyCompactItemize}

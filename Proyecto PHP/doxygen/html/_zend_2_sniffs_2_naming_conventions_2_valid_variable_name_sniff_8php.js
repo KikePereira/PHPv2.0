@@ -1,0 +1,4 @@
+var _zend_2_sniffs_2_naming_conventions_2_valid_variable_name_sniff_8php =
+[
+    [ "ValidVariableNameSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_zend_1_1_sniffs_1_1_naming_conventions_1_1_valid_variable_name_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_zend_1_1_sniffs_1_1_naming_conventions_1_1_valid_variable_name_sniff" ]
+];

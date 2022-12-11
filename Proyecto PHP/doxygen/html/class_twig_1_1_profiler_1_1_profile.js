@@ -1,0 +1,28 @@
+var class_twig_1_1_profiler_1_1_profile =
+[
+    [ "__construct", "class_twig_1_1_profiler_1_1_profile.html#ab63c668a81687bdc44bf558a0d563795", null ],
+    [ "__serialize", "class_twig_1_1_profiler_1_1_profile.html#ab1d6abfbdcd8c9dd63dfef565bd2cfcf", null ],
+    [ "__unserialize", "class_twig_1_1_profiler_1_1_profile.html#a2fe5966ad9b8e1d91a37d3e055ac4938", null ],
+    [ "addProfile", "class_twig_1_1_profiler_1_1_profile.html#a9f2a2e59f45e99589564e6438967e8b6", null ],
+    [ "enter", "class_twig_1_1_profiler_1_1_profile.html#acf0a9167c58c504ae9d566ed183fbb8b", null ],
+    [ "getDuration", "class_twig_1_1_profiler_1_1_profile.html#ab46fe3d2750728c84bd71ae1bfd08ee8", null ],
+    [ "getIterator", "class_twig_1_1_profiler_1_1_profile.html#a7a9f937c2958e6f4dd7b030f86fb70b7", null ],
+    [ "getMemoryUsage", "class_twig_1_1_profiler_1_1_profile.html#a82fc8c3d55384c54b49784d244b0ed94", null ],
+    [ "getName", "class_twig_1_1_profiler_1_1_profile.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getPeakMemoryUsage", "class_twig_1_1_profiler_1_1_profile.html#ab3e9dfdb5976a874603e3cc721b94a8a", null ],
+    [ "getProfiles", "class_twig_1_1_profiler_1_1_profile.html#a927651326409d58d7f147af4f68615bd", null ],
+    [ "getTemplate", "class_twig_1_1_profiler_1_1_profile.html#a5d9dc4ee2d6563ea86a5d8f4d450d124", null ],
+    [ "getType", "class_twig_1_1_profiler_1_1_profile.html#a830b5c75df72b32396701bc563fbe3c7", null ],
+    [ "isBlock", "class_twig_1_1_profiler_1_1_profile.html#a8d8566f1bbdbb0cad606c303f07c062f", null ],
+    [ "isMacro", "class_twig_1_1_profiler_1_1_profile.html#afed616c177c7b39421fd84ecbc2659a0", null ],
+    [ "isRoot", "class_twig_1_1_profiler_1_1_profile.html#a846a3636e0fd9960ac164258af6d3552", null ],
+    [ "isTemplate", "class_twig_1_1_profiler_1_1_profile.html#a965825ba500d5526200b008e4f5f3029", null ],
+    [ "leave", "class_twig_1_1_profiler_1_1_profile.html#a8aee9a4b3e196b8ce9608eadd74bcb2d", null ],
+    [ "reset", "class_twig_1_1_profiler_1_1_profile.html#a4a20559544fdf4dcb457e258dc976cf8", null ],
+    [ "serialize", "class_twig_1_1_profiler_1_1_profile.html#a4d9813fea8525b19a1d370eeb8fe41d6", null ],
+    [ "unserialize", "class_twig_1_1_profiler_1_1_profile.html#a91b3cb8a65e42152cacf1cf222bd26f6", null ],
+    [ "BLOCK", "class_twig_1_1_profiler_1_1_profile.html#a21f9bc8ca6a0689323a56cea4bf5bc04", null ],
+    [ "MACRO", "class_twig_1_1_profiler_1_1_profile.html#aa27d7676d16112ba2e0089038f3f77c3", null ],
+    [ "ROOT", "class_twig_1_1_profiler_1_1_profile.html#a18c0644836e196aed6d63779e14d6bd8", null ],
+    [ "TEMPLATE", "class_twig_1_1_profiler_1_1_profile.html#a0c2e267c27b722d0c15ae21215cda92e", null ]
+];

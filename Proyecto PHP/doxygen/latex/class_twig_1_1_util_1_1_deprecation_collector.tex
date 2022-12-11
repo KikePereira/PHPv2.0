@@ -1,0 +1,68 @@
+\hypertarget{class_twig_1_1_util_1_1_deprecation_collector}{}\doxysection{Deprecation\+Collector Class Reference}
+\label{class_twig_1_1_util_1_1_deprecation_collector}\index{DeprecationCollector@{DeprecationCollector}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_twig_1_1_util_1_1_deprecation_collector_af9be0468f249901f76e19205536e2654}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$twig)
+\item 
+\mbox{\hyperlink{class_twig_1_1_util_1_1_deprecation_collector_a0b14c0026558ac42a86ac24c74a8c420}{collect\+Dir}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$dir, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$ext=\textquotesingle{}.twig\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_twig_1_1_util_1_1_deprecation_collector_a41cef5535d20f0c714226e7fb9886215}{collect}} (\textbackslash{}Traversable \$iterator)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_twig_1_1_util_1_1_deprecation_collector_af9be0468f249901f76e19205536e2654}\label{class_twig_1_1_util_1_1_deprecation_collector_af9be0468f249901f76e19205536e2654}} 
+\index{DeprecationCollector@{DeprecationCollector}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DeprecationCollector@{DeprecationCollector}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$twig }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_twig_1_1_util_1_1_deprecation_collector_a41cef5535d20f0c714226e7fb9886215}\label{class_twig_1_1_util_1_1_deprecation_collector_a41cef5535d20f0c714226e7fb9886215}} 
+\index{DeprecationCollector@{DeprecationCollector}!collect@{collect}}
+\index{collect@{collect}!DeprecationCollector@{DeprecationCollector}}
+\doxysubsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily collect (\begin{DoxyParamCaption}\item[{\textbackslash{}Traversable}]{\$iterator }\end{DoxyParamCaption})}
+
+Returns deprecations for passed templates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Traversable & {\em \$iterator} & An iterator of templates (where keys are template names and values the contents of the template)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array An array of deprecations 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_twig_1_1_util_1_1_deprecation_collector_a0b14c0026558ac42a86ac24c74a8c420}\label{class_twig_1_1_util_1_1_deprecation_collector_a0b14c0026558ac42a86ac24c74a8c420}} 
+\index{DeprecationCollector@{DeprecationCollector}!collectDir@{collectDir}}
+\index{collectDir@{collectDir}!DeprecationCollector@{DeprecationCollector}}
+\doxysubsubsection{\texorpdfstring{collectDir()}{collectDir()}}
+{\footnotesize\ttfamily collect\+Dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$dir,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$ext = {\ttfamily \textquotesingle{}.twig\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Returns deprecations for templates contained in a directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & \mbox{\hyperlink{class_a}{A}} directory where templates are stored \\
+\hline
+string & {\em \$ext} & Limit the loaded templates by extension\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array An array of deprecations 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Util/\mbox{\hyperlink{_deprecation_collector_8php}{Deprecation\+Collector.\+php}}\end{DoxyCompactItemize}

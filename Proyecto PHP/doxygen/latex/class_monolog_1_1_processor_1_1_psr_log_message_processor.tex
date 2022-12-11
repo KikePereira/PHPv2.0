@@ -1,0 +1,76 @@
+\hypertarget{class_monolog_1_1_processor_1_1_psr_log_message_processor}{}\doxysection{Psr\+Log\+Message\+Processor Class Reference}
+\label{class_monolog_1_1_processor_1_1_psr_log_message_processor}\index{PsrLogMessageProcessor@{PsrLogMessageProcessor}}
+Inheritance diagram for Psr\+Log\+Message\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monolog_1_1_processor_1_1_psr_log_message_processor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_psr_log_message_processor_a0d5979438b32607b88b18dc1f64e9d9d}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$date\+Format=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$remove\+Used\+Context\+Fields=false)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_psr_log_message_processor_af6bdfd8d87fb85ab75b06b34a3f3c1af}{\+\_\+\+\_\+invoke}} (array \$record)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_processor_1_1_psr_log_message_processor_abc0f4fada3cb818e2458cc95fd6305f2}{SIMPLE\+\_\+\+DATE}} = \char`\"{}Y-\/\mbox{\hyperlink{_p_e_a_r_2_tests_2_functions_2_function_call_signature_unit_test_8inc_aa39e8f58efe393a7afe875374c9afc97}{m}}-\/d\textbackslash{}\+TH\+:i\+:s.\+u\+P\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Processes a record\textquotesingle{}s message according to PSR-\/3 rules
+
+It replaces \{foo\} with the value from \$context\mbox{[}\textquotesingle{}foo\textquotesingle{}\mbox{]}
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_monolog_1_1_processor_1_1_psr_log_message_processor_a0d5979438b32607b88b18dc1f64e9d9d}\label{class_monolog_1_1_processor_1_1_psr_log_message_processor_a0d5979438b32607b88b18dc1f64e9d9d}} 
+\index{PsrLogMessageProcessor@{PsrLogMessageProcessor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PsrLogMessageProcessor@{PsrLogMessageProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$date\+Format = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$remove\+Used\+Context\+Fields = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$date\+Format} & The format of the timestamp\+: one supported by Date\+Time\+::format \\
+\hline
+bool & {\em \$remove\+Used\+Context\+Fields} & If set to true the fields interpolated into message gets unset \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_monolog_1_1_processor_1_1_psr_log_message_processor_af6bdfd8d87fb85ab75b06b34a3f3c1af}\label{class_monolog_1_1_processor_1_1_psr_log_message_processor_af6bdfd8d87fb85ab75b06b34a3f3c1af}} 
+\index{PsrLogMessageProcessor@{PsrLogMessageProcessor}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!PsrLogMessageProcessor@{PsrLogMessageProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{array}]{\$record }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array The processed record
+\end{DoxyReturn}
+@phpstan-\/param Record \$record @phpstan-\/return Record 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_processor_1_1_processor_interface_af6bdfd8d87fb85ab75b06b34a3f3c1af}{Processor\+Interface}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_monolog_1_1_processor_1_1_psr_log_message_processor_abc0f4fada3cb818e2458cc95fd6305f2}\label{class_monolog_1_1_processor_1_1_psr_log_message_processor_abc0f4fada3cb818e2458cc95fd6305f2}} 
+\index{PsrLogMessageProcessor@{PsrLogMessageProcessor}!SIMPLE\_DATE@{SIMPLE\_DATE}}
+\index{SIMPLE\_DATE@{SIMPLE\_DATE}!PsrLogMessageProcessor@{PsrLogMessageProcessor}}
+\doxysubsubsection{\texorpdfstring{SIMPLE\_DATE}{SIMPLE\_DATE}}
+{\footnotesize\ttfamily const SIMPLE\+\_\+\+DATE = \char`\"{}Y-\/\mbox{\hyperlink{_p_e_a_r_2_tests_2_functions_2_function_call_signature_unit_test_8inc_aa39e8f58efe393a7afe875374c9afc97}{m}}-\/d\textbackslash{}\+TH\+:i\+:s.\+u\+P\char`\"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/monolog/monolog/src/\+Monolog/\+Processor/\mbox{\hyperlink{_psr_log_message_processor_8php}{Psr\+Log\+Message\+Processor.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{class_slim_1_1_middleware_1_1_routing_middleware}{}\doxysection{Routing\+Middleware Class Reference}
+\label{class_slim_1_1_middleware_1_1_routing_middleware}\index{RoutingMiddleware@{RoutingMiddleware}}
+Inheritance diagram for Routing\+Middleware\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_slim_1_1_middleware_1_1_routing_middleware}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_middleware_1_1_routing_middleware_a770b3f02f75781d9ee3f527459bcc059}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}} \$route\+Resolver, \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}} \$route\+Parser)
+\item 
+\mbox{\hyperlink{class_slim_1_1_middleware_1_1_routing_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{process}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}} \$request, \mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_request_handler_interface}{Request\+Handler\+Interface}} \$handler)
+\item 
+\mbox{\hyperlink{class_slim_1_1_middleware_1_1_routing_middleware_a3101164ab525971ace7951d8f1118759}{perform\+Routing}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_middleware_1_1_routing_middleware_ad5a5e0a3cadd18c513152f98bf4fcf8e}{resolve\+Routing\+Results\+From\+Request}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}} \mbox{\hyperlink{class_slim_1_1_middleware_1_1_routing_middleware_a9a12d9cea4651748345578d6b3aa7002}{\$route\+Resolver}}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}} \mbox{\hyperlink{class_slim_1_1_middleware_1_1_routing_middleware_ad5b4854b14e7277b31a81307081e5521}{\$route\+Parser}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_middleware_1_1_routing_middleware_a770b3f02f75781d9ee3f527459bcc059}\label{class_slim_1_1_middleware_1_1_routing_middleware_a770b3f02f75781d9ee3f527459bcc059}} 
+\index{RoutingMiddleware@{RoutingMiddleware}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!RoutingMiddleware@{RoutingMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}}}]{\$route\+Resolver,  }\item[{\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}}}]{\$route\+Parser }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_middleware_1_1_routing_middleware_a3101164ab525971ace7951d8f1118759}\label{class_slim_1_1_middleware_1_1_routing_middleware_a3101164ab525971ace7951d8f1118759}} 
+\index{RoutingMiddleware@{RoutingMiddleware}!performRouting@{performRouting}}
+\index{performRouting@{performRouting}!RoutingMiddleware@{RoutingMiddleware}}
+\doxysubsubsection{\texorpdfstring{performRouting()}{performRouting()}}
+{\footnotesize\ttfamily perform\+Routing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}}}]{\$request }\end{DoxyParamCaption})}
+
+Perform routing
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & PSR7 Server Request\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Http\+Not\+Found\+Exception} & \\
+\hline
+{\em Http\+Method\+Not\+Allowed\+Exception} & \\
+\hline
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_slim_1_1_middleware_1_1_routing_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}\label{class_slim_1_1_middleware_1_1_routing_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}} 
+\index{RoutingMiddleware@{RoutingMiddleware}!process@{process}}
+\index{process@{process}!RoutingMiddleware@{RoutingMiddleware}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}}}]{\$request,  }\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_request_handler_interface}{Request\+Handler\+Interface}}}]{\$handler }\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Http\+Not\+Found\+Exception} & \\
+\hline
+{\em Http\+Method\+Not\+Allowed\+Exception} & \\
+\hline
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_middleware_interface_ab7b53bcad05abdc42206f7b2ac87a88a}{Middleware\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_middleware_1_1_routing_middleware_ad5a5e0a3cadd18c513152f98bf4fcf8e}\label{class_slim_1_1_middleware_1_1_routing_middleware_ad5a5e0a3cadd18c513152f98bf4fcf8e}} 
+\index{RoutingMiddleware@{RoutingMiddleware}!resolveRoutingResultsFromRequest@{resolveRoutingResultsFromRequest}}
+\index{resolveRoutingResultsFromRequest@{resolveRoutingResultsFromRequest}!RoutingMiddleware@{RoutingMiddleware}}
+\doxysubsubsection{\texorpdfstring{resolveRoutingResultsFromRequest()}{resolveRoutingResultsFromRequest()}}
+{\footnotesize\ttfamily resolve\+Routing\+Results\+From\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}}}]{\$request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolves the route from the given request 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_slim_1_1_middleware_1_1_routing_middleware_ad5b4854b14e7277b31a81307081e5521}\label{class_slim_1_1_middleware_1_1_routing_middleware_ad5b4854b14e7277b31a81307081e5521}} 
+\index{RoutingMiddleware@{RoutingMiddleware}!\$routeParser@{\$routeParser}}
+\index{\$routeParser@{\$routeParser}!RoutingMiddleware@{RoutingMiddleware}}
+\doxysubsubsection{\texorpdfstring{\$routeParser}{$routeParser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}} \$route\+Parser\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_middleware_1_1_routing_middleware_a9a12d9cea4651748345578d6b3aa7002}\label{class_slim_1_1_middleware_1_1_routing_middleware_a9a12d9cea4651748345578d6b3aa7002}} 
+\index{RoutingMiddleware@{RoutingMiddleware}!\$routeResolver@{\$routeResolver}}
+\index{\$routeResolver@{\$routeResolver}!RoutingMiddleware@{RoutingMiddleware}}
+\doxysubsubsection{\texorpdfstring{\$routeResolver}{$routeResolver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}} \$route\+Resolver\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/slim/\+Slim/\+Middleware/\mbox{\hyperlink{_routing_middleware_8php}{Routing\+Middleware.\+php}}\end{DoxyCompactItemize}

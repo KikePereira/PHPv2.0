@@ -1,0 +1,66 @@
+\hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory}{}\doxysection{Stream\+Factory Class Reference}
+\label{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory}\index{StreamFactory@{StreamFactory}}
+Inheritance diagram for Stream\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_a96eb3d011c550a6eb1c3702b72f8cc43}{create\+Stream}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$content=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_aaa052e32ad53921afe324c0411ad9413}{create\+Stream\+From\+File}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$filename, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$mode=\textquotesingle{}r\textquotesingle{}, \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$cache=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_a96f1ebc383f65735714533842bef725c}{create\+Stream\+From\+Resource}} (\$resource, \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$cache=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_a96eb3d011c550a6eb1c3702b72f8cc43}\label{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_a96eb3d011c550a6eb1c3702b72f8cc43}} 
+\index{StreamFactory@{StreamFactory}!createStream@{createStream}}
+\index{createStream@{createStream}!StreamFactory@{StreamFactory}}
+\doxysubsubsection{\texorpdfstring{createStream()}{createStream()}}
+{\footnotesize\ttfamily create\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$content = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\{Create a new stream from a string.
+
+The stream SHOULD be created with a temporary resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & String content with which to populate the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}
+\end{DoxyReturn}
+\}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a96eb3d011c550a6eb1c3702b72f8cc43}{Stream\+Factory\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_aaa052e32ad53921afe324c0411ad9413}\label{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_aaa052e32ad53921afe324c0411ad9413}} 
+\index{StreamFactory@{StreamFactory}!createStreamFromFile@{createStreamFromFile}}
+\index{createStreamFromFile@{createStreamFromFile}!StreamFactory@{StreamFactory}}
+\doxysubsubsection{\texorpdfstring{createStreamFromFile()}{createStreamFromFile()}}
+{\footnotesize\ttfamily create\+Stream\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$filename,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$mode = {\ttfamily \textquotesingle{}r\textquotesingle{}},  }\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$cache = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+\{\} \mbox{\Hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_a96f1ebc383f65735714533842bef725c}\label{class_slim_1_1_psr7_1_1_factory_1_1_stream_factory_a96f1ebc383f65735714533842bef725c}} 
+\index{StreamFactory@{StreamFactory}!createStreamFromResource@{createStreamFromResource}}
+\index{createStreamFromResource@{createStreamFromResource}!StreamFactory@{StreamFactory}}
+\doxysubsubsection{\texorpdfstring{createStreamFromResource()}{createStreamFromResource()}}
+{\footnotesize\ttfamily create\+Stream\+From\+Resource (\begin{DoxyParamCaption}\item[{}]{\$resource,  }\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$cache = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+\{\} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/psr7/src/\+Factory/\mbox{\hyperlink{_stream_factory_8php}{Stream\+Factory.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_inline_if_declaration_unit_test =
+[
+    [ "getCliValues", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_inline_if_declaration_unit_test.html#a70fa645940b273926292a1f586b48de3", null ],
+    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_inline_if_declaration_unit_test.html#a9ca16406dfa16bd12ad75652e7cf198e", null ],
+    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_inline_if_declaration_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
+];

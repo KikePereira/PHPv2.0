@@ -1,0 +1,114 @@
+\hypertarget{class_fast_route_1_1_data_generator_1_1_regex_based_abstract}{}\doxysection{Regex\+Based\+Abstract Class Reference}
+\label{class_fast_route_1_1_data_generator_1_1_regex_based_abstract}\index{RegexBasedAbstract@{RegexBasedAbstract}}
+Inheritance diagram for Regex\+Based\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_fast_route_1_1_data_generator_1_1_regex_based_abstract}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a91ccc64bb10773c404f1ec2a679f5940}{add\+Route}} (\$http\+Method, \$route\+Data, \$handler)
+\item 
+\mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a81a67162a6288d78fc4c55283325f0b4}{get\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a5737098059b31ce21ad9453662d43170}{get\+Approx\+Chunk\+Size}} ()
+\item 
+\mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a137d9d5d9ab7d7392719a0e4699fb306}{process\+Chunk}} (\$regex\+To\+Routes\+Map)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a4f9ef77b10607c4cb5b45197100be813}{\$static\+Routes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a45af54770e43acf9bf2d8335f97f4922}{\$method\+To\+Regex\+To\+Routes\+Map}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a91ccc64bb10773c404f1ec2a679f5940}\label{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a91ccc64bb10773c404f1ec2a679f5940}} 
+\index{RegexBasedAbstract@{RegexBasedAbstract}!addRoute@{addRoute}}
+\index{addRoute@{addRoute}!RegexBasedAbstract@{RegexBasedAbstract}}
+\doxysubsubsection{\texorpdfstring{addRoute()}{addRoute()}}
+{\footnotesize\ttfamily add\+Route (\begin{DoxyParamCaption}\item[{}]{\$http\+Method,  }\item[{}]{\$route\+Data,  }\item[{}]{\$handler }\end{DoxyParamCaption})}
+
+Adds a route to the data generator. The route data uses the same format that is returned by Router\+Parser\+::parser().
+
+The handler doesn\textquotesingle{}t necessarily need to be a callable, it can be arbitrary data that will be returned when the route matches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$http\+Method} & \\
+\hline
+array & {\em \$route\+Data} & \\
+\hline
+mixed & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_fast_route_1_1_data_generator_a91ccc64bb10773c404f1ec2a679f5940}{Data\+Generator}}.
+
+\mbox{\Hypertarget{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a5737098059b31ce21ad9453662d43170}\label{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a5737098059b31ce21ad9453662d43170}} 
+\index{RegexBasedAbstract@{RegexBasedAbstract}!getApproxChunkSize@{getApproxChunkSize}}
+\index{getApproxChunkSize@{getApproxChunkSize}!RegexBasedAbstract@{RegexBasedAbstract}}
+\doxysubsubsection{\texorpdfstring{getApproxChunkSize()}{getApproxChunkSize()}}
+{\footnotesize\ttfamily get\+Approx\+Chunk\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_char_count_based_a5737098059b31ce21ad9453662d43170}{Char\+Count\+Based}}, \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_group_count_based_a5737098059b31ce21ad9453662d43170}{Group\+Count\+Based}}, \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_group_pos_based_a5737098059b31ce21ad9453662d43170}{Group\+Pos\+Based}}, and \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_mark_based_a5737098059b31ce21ad9453662d43170}{Mark\+Based}}.
+
+\mbox{\Hypertarget{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a81a67162a6288d78fc4c55283325f0b4}\label{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a81a67162a6288d78fc4c55283325f0b4}} 
+\index{RegexBasedAbstract@{RegexBasedAbstract}!getData@{getData}}
+\index{getData@{getData}!RegexBasedAbstract@{RegexBasedAbstract}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+mixed\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_fast_route_1_1_data_generator_a81a67162a6288d78fc4c55283325f0b4}{Data\+Generator}}.
+
+\mbox{\Hypertarget{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a137d9d5d9ab7d7392719a0e4699fb306}\label{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a137d9d5d9ab7d7392719a0e4699fb306}} 
+\index{RegexBasedAbstract@{RegexBasedAbstract}!processChunk@{processChunk}}
+\index{processChunk@{processChunk}!RegexBasedAbstract@{RegexBasedAbstract}}
+\doxysubsubsection{\texorpdfstring{processChunk()}{processChunk()}}
+{\footnotesize\ttfamily process\+Chunk (\begin{DoxyParamCaption}\item[{}]{\$regex\+To\+Routes\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+mixed\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_char_count_based_a137d9d5d9ab7d7392719a0e4699fb306}{Char\+Count\+Based}}, \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_group_count_based_a137d9d5d9ab7d7392719a0e4699fb306}{Group\+Count\+Based}}, \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_group_pos_based_a137d9d5d9ab7d7392719a0e4699fb306}{Group\+Pos\+Based}}, and \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_mark_based_a137d9d5d9ab7d7392719a0e4699fb306}{Mark\+Based}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a45af54770e43acf9bf2d8335f97f4922}\label{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a45af54770e43acf9bf2d8335f97f4922}} 
+\index{RegexBasedAbstract@{RegexBasedAbstract}!\$methodToRegexToRoutesMap@{\$methodToRegexToRoutesMap}}
+\index{\$methodToRegexToRoutesMap@{\$methodToRegexToRoutesMap}!RegexBasedAbstract@{RegexBasedAbstract}}
+\doxysubsubsection{\texorpdfstring{\$methodToRegexToRoutesMap}{$methodToRegexToRoutesMap}}
+{\footnotesize\ttfamily \$method\+To\+Regex\+To\+Routes\+Map = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a4f9ef77b10607c4cb5b45197100be813}\label{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a4f9ef77b10607c4cb5b45197100be813}} 
+\index{RegexBasedAbstract@{RegexBasedAbstract}!\$staticRoutes@{\$staticRoutes}}
+\index{\$staticRoutes@{\$staticRoutes}!RegexBasedAbstract@{RegexBasedAbstract}}
+\doxysubsubsection{\texorpdfstring{\$staticRoutes}{$staticRoutes}}
+{\footnotesize\ttfamily \$static\+Routes = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/nikic/fast-\/route/src/\+Data\+Generator/\mbox{\hyperlink{_data_generator_2_regex_based_abstract_8php}{Regex\+Based\+Abstract.\+php}}\end{DoxyCompactItemize}

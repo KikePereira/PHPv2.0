@@ -1,0 +1,107 @@
+\hypertarget{class_twig_1_1_cache_1_1_filesystem_cache}{}\doxysection{Filesystem\+Cache Class Reference}
+\label{class_twig_1_1_cache_1_1_filesystem_cache}\index{FilesystemCache@{FilesystemCache}}
+Inheritance diagram for Filesystem\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_twig_1_1_cache_1_1_filesystem_cache}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_twig_1_1_cache_1_1_filesystem_cache_aa10765a651d234e9475e935f191443be}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$directory, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$options=0)
+\item 
+\mbox{\hyperlink{class_twig_1_1_cache_1_1_filesystem_cache_ad0f6e2fd521d743a97e81e9e62c3b72f}{generate\+Key}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$class\+Name)
+\item 
+\mbox{\hyperlink{class_twig_1_1_cache_1_1_filesystem_cache_a486dfb4d7cc9fbc8e33c089ad5ed75f2}{load}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$key)
+\item 
+\mbox{\hyperlink{class_twig_1_1_cache_1_1_filesystem_cache_aaa23ff10c2597ea61f62d9684b10cd19}{write}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$key, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$content)
+\item 
+\mbox{\hyperlink{class_twig_1_1_cache_1_1_filesystem_cache_af23cfeaf66d592b80bffc90bc300994a}{get\+Timestamp}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_twig_1_1_cache_1_1_filesystem_cache_ae234eda1efdf02107556d9b4d8e4846c}{FORCE\+\_\+\+BYTECODE\+\_\+\+INVALIDATION}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements a cache on the filesystem.
+
+\begin{DoxyAuthor}{Author}
+Andrew Tch \href{mailto:andrew@noop.lv}{\texttt{ andrew@noop.\+lv}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_twig_1_1_cache_1_1_filesystem_cache_aa10765a651d234e9475e935f191443be}\label{class_twig_1_1_cache_1_1_filesystem_cache_aa10765a651d234e9475e935f191443be}} 
+\index{FilesystemCache@{FilesystemCache}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!FilesystemCache@{FilesystemCache}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$directory,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}}}]{\$options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_twig_1_1_cache_1_1_filesystem_cache_ad0f6e2fd521d743a97e81e9e62c3b72f}\label{class_twig_1_1_cache_1_1_filesystem_cache_ad0f6e2fd521d743a97e81e9e62c3b72f}} 
+\index{FilesystemCache@{FilesystemCache}!generateKey@{generateKey}}
+\index{generateKey@{generateKey}!FilesystemCache@{FilesystemCache}}
+\doxysubsubsection{\texorpdfstring{generateKey()}{generateKey()}}
+{\footnotesize\ttfamily generate\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$class\+Name }\end{DoxyParamCaption})}
+
+Generates a cache key for the given template class name. 
+
+Implements \mbox{\hyperlink{interface_twig_1_1_cache_1_1_cache_interface_ad0f6e2fd521d743a97e81e9e62c3b72f}{Cache\+Interface}}.
+
+\mbox{\Hypertarget{class_twig_1_1_cache_1_1_filesystem_cache_af23cfeaf66d592b80bffc90bc300994a}\label{class_twig_1_1_cache_1_1_filesystem_cache_af23cfeaf66d592b80bffc90bc300994a}} 
+\index{FilesystemCache@{FilesystemCache}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!FilesystemCache@{FilesystemCache}}
+\doxysubsubsection{\texorpdfstring{getTimestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily get\+Timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$key }\end{DoxyParamCaption})}
+
+Returns the modification timestamp of a key. 
+
+Implements \mbox{\hyperlink{interface_twig_1_1_cache_1_1_cache_interface_af23cfeaf66d592b80bffc90bc300994a}{Cache\+Interface}}.
+
+\mbox{\Hypertarget{class_twig_1_1_cache_1_1_filesystem_cache_a486dfb4d7cc9fbc8e33c089ad5ed75f2}\label{class_twig_1_1_cache_1_1_filesystem_cache_a486dfb4d7cc9fbc8e33c089ad5ed75f2}} 
+\index{FilesystemCache@{FilesystemCache}!load@{load}}
+\index{load@{load}!FilesystemCache@{FilesystemCache}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$key }\end{DoxyParamCaption})}
+
+Loads a template from the cache. 
+
+Implements \mbox{\hyperlink{interface_twig_1_1_cache_1_1_cache_interface_a486dfb4d7cc9fbc8e33c089ad5ed75f2}{Cache\+Interface}}.
+
+\mbox{\Hypertarget{class_twig_1_1_cache_1_1_filesystem_cache_aaa23ff10c2597ea61f62d9684b10cd19}\label{class_twig_1_1_cache_1_1_filesystem_cache_aaa23ff10c2597ea61f62d9684b10cd19}} 
+\index{FilesystemCache@{FilesystemCache}!write@{write}}
+\index{write@{write}!FilesystemCache@{FilesystemCache}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$key,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$content }\end{DoxyParamCaption})}
+
+Writes the compiled template to cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & The template representation as a PHP class \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_twig_1_1_cache_1_1_cache_interface_aaa23ff10c2597ea61f62d9684b10cd19}{Cache\+Interface}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_twig_1_1_cache_1_1_filesystem_cache_ae234eda1efdf02107556d9b4d8e4846c}\label{class_twig_1_1_cache_1_1_filesystem_cache_ae234eda1efdf02107556d9b4d8e4846c}} 
+\index{FilesystemCache@{FilesystemCache}!FORCE\_BYTECODE\_INVALIDATION@{FORCE\_BYTECODE\_INVALIDATION}}
+\index{FORCE\_BYTECODE\_INVALIDATION@{FORCE\_BYTECODE\_INVALIDATION}!FilesystemCache@{FilesystemCache}}
+\doxysubsubsection{\texorpdfstring{FORCE\_BYTECODE\_INVALIDATION}{FORCE\_BYTECODE\_INVALIDATION}}
+{\footnotesize\ttfamily const FORCE\+\_\+\+BYTECODE\+\_\+\+INVALIDATION = 1}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Cache/\mbox{\hyperlink{_filesystem_cache_8php}{Filesystem\+Cache.\+php}}\end{DoxyCompactItemize}

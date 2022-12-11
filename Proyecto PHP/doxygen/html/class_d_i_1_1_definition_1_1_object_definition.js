@@ -1,0 +1,28 @@
+var class_d_i_1_1_definition_1_1_object_definition =
+[
+    [ "__construct", "class_d_i_1_1_definition_1_1_object_definition.html#ad9e45a36cd760784e93e2521fcb260ee", null ],
+    [ "__toString", "class_d_i_1_1_definition_1_1_object_definition.html#a7516ca30af0db3cdbf9a7739b48ce91d", null ],
+    [ "addMethodInjection", "class_d_i_1_1_definition_1_1_object_definition.html#a8935be86b009a374338b15d89c948a88", null ],
+    [ "addPropertyInjection", "class_d_i_1_1_definition_1_1_object_definition.html#a67f7c671c04e055762d6f025bfc36225", null ],
+    [ "classExists", "class_d_i_1_1_definition_1_1_object_definition.html#a9b99935465f1185d83c55bac010089a4", null ],
+    [ "completeConstructorInjection", "class_d_i_1_1_definition_1_1_object_definition.html#a052b76e1ab6336c05dfef793802ff1ed", null ],
+    [ "completeFirstMethodInjection", "class_d_i_1_1_definition_1_1_object_definition.html#a4b432832a4af1d7dcaccbf37209f22c7", null ],
+    [ "getClassName", "class_d_i_1_1_definition_1_1_object_definition.html#ab8f8ee56588ebf5091c288e44ebdfaf4", null ],
+    [ "getConstructorInjection", "class_d_i_1_1_definition_1_1_object_definition.html#a25567364a0368f36a7487a7f4963b4ee", null ],
+    [ "getMethodInjections", "class_d_i_1_1_definition_1_1_object_definition.html#af37de7c0017121e1de29d75a733125d5", null ],
+    [ "getName", "class_d_i_1_1_definition_1_1_object_definition.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getPropertyInjections", "class_d_i_1_1_definition_1_1_object_definition.html#ad86c0041486d0f6c562119e4ab03cba6", null ],
+    [ "isInstantiable", "class_d_i_1_1_definition_1_1_object_definition.html#a4f9fa4895859fbbcda918bff01bdd7b8", null ],
+    [ "isLazy", "class_d_i_1_1_definition_1_1_object_definition.html#aa922c019d093e078495aeb28f55318cf", null ],
+    [ "replaceNestedDefinitions", "class_d_i_1_1_definition_1_1_object_definition.html#acbd2518d1fa8e514a470398c73380153", null ],
+    [ "replaceWildcards", "class_d_i_1_1_definition_1_1_object_definition.html#a47031c375231cf1bdd45cf900856d333", null ],
+    [ "setClassName", "class_d_i_1_1_definition_1_1_object_definition.html#aca5ceadeab5c62697133498f7913ab39", null ],
+    [ "setConstructorInjection", "class_d_i_1_1_definition_1_1_object_definition.html#a9179bd6bdf443493af3146d016c6cfaa", null ],
+    [ "setLazy", "class_d_i_1_1_definition_1_1_object_definition.html#a8f22aea4f6c586fc689afe7bdfb36a7e", null ],
+    [ "setName", "class_d_i_1_1_definition_1_1_object_definition.html#a392752b62c4f6aacea5c269690921ef3", null ],
+    [ "$className", "class_d_i_1_1_definition_1_1_object_definition.html#acd6a475a6eeb092f4eea3e19e502d67d", null ],
+    [ "$constructorInjection", "class_d_i_1_1_definition_1_1_object_definition.html#a7fbc33dd47f47a08ceff1157544093c0", null ],
+    [ "$lazy", "class_d_i_1_1_definition_1_1_object_definition.html#aff495d5a81a3f19c89e30690aa84528a", null ],
+    [ "$methodInjections", "class_d_i_1_1_definition_1_1_object_definition.html#a16133a138933ab561dcd4d144a9a6f33", null ],
+    [ "$propertyInjections", "class_d_i_1_1_definition_1_1_object_definition.html#af05344e2b60409f9996d6965c133355f", null ]
+];

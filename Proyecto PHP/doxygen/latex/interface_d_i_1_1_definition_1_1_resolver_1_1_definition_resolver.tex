@@ -1,0 +1,80 @@
+\hypertarget{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{}\doxysection{Definition\+Resolver Interface Reference}
+\label{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}\index{DefinitionResolver@{DefinitionResolver}}
+Inheritance diagram for Definition\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.489362cm]{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{resolve}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{is\+Resolvable}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Resolves a definition to a value.
+
+\begin{DoxySince}{Since}
+4.\+0 
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}\label{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}} 
+\index{DefinitionResolver@{DefinitionResolver}!isResolvable@{isResolvable}}
+\index{isResolvable@{isResolvable}!DefinitionResolver@{DefinitionResolver}}
+\doxysubsubsection{\texorpdfstring{isResolvable()}{isResolvable()}}
+{\footnotesize\ttfamily is\+Resolvable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Check if a definition can be resolved.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} & {\em \$definition} & Object that defines how the value should be obtained. \\
+\hline
+array & {\em \$parameters} & Optional parameters to use to build the entry. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_array_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{Array\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{Decorator\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_environment_variable_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{Environment\+Variable\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_factory_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{Factory\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a4ebc1dc75e896b8de267eaf1b8f8297d}{Instance\+Injector}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a4ebc1dc75e896b8de267eaf1b8f8297d}{Object\+Creator}}, and \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_resolver_dispatcher_a4ebc1dc75e896b8de267eaf1b8f8297d}{Resolver\+Dispatcher}}.
+
+\mbox{\Hypertarget{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a8ad397eb8a9ba863700af9c9261f9bab}\label{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a8ad397eb8a9ba863700af9c9261f9bab}} 
+\index{DefinitionResolver@{DefinitionResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!DefinitionResolver@{DefinitionResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Resolve a definition to a value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} & {\em \$definition} & Object that defines how the value should be obtained. \\
+\hline
+array & {\em \$parameters} & Optional parameters to use to build the entry.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Definition} & If the definition cannot be resolved.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+mixed Value obtained from the definition. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_array_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{Array\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{Decorator\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_environment_variable_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{Environment\+Variable\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_factory_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{Factory\+Resolver}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a8ad397eb8a9ba863700af9c9261f9bab}{Instance\+Injector}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8ad397eb8a9ba863700af9c9261f9bab}{Object\+Creator}}, and \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_resolver_dispatcher_a8ad397eb8a9ba863700af9c9261f9bab}{Resolver\+Dispatcher}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Resolver/\mbox{\hyperlink{_definition_resolver_8php}{Definition\+Resolver.\+php}}\end{DoxyCompactItemize}

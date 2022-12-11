@@ -1,0 +1,132 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_generators_1_1_generator}{}\doxysection{Generator Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_generators_1_1_generator}\index{Generator@{Generator}}
+Inheritance diagram for Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p___code_sniffer_1_1_generators_1_1_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aabd3089f7bf0a4eb21dfc5f31f8effc1}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset}{Ruleset}} \$ruleset)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_a913873cf89f388d70a28de0b77d68884}{generate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aecaddd1bd9c1c6c40a0ef50d66600aab}{\$ruleset}} = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_ad20041d7f04105850a94c1640b2c745c}{\$doc\+Files}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aed41fc526d72f28d757588b37048b62f}{get\+Title}} (\textbackslash{}DOMNode \$doc)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_affe179b621646d0d78d2d6a265d6be99}{process\+Sniff}} (\textbackslash{}DOMNode \$doc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aabd3089f7bf0a4eb21dfc5f31f8effc1}\label{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aabd3089f7bf0a4eb21dfc5f31f8effc1}} 
+\index{Generator@{Generator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset}{Ruleset}}}]{\$ruleset }\end{DoxyParamCaption})}
+
+Constructs a doc generator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Ruleset & {\em \$ruleset} & The ruleset used for the run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_a913873cf89f388d70a28de0b77d68884}{generate()}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_a913873cf89f388d70a28de0b77d68884}\label{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_a913873cf89f388d70a28de0b77d68884}} 
+\index{Generator@{Generator}!generate@{generate}}
+\index{generate@{generate}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily generate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates the documentation for a standard.
+
+It\textquotesingle{}s probably wise for doc generators to override this method so they have control over how the docs are produced. Otherwise, the process\+Sniff method should be overridden to output content for each sniff.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_affe179b621646d0d78d2d6a265d6be99}{process\+Sniff()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_markdown_a913873cf89f388d70a28de0b77d68884}{Markdown}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aed41fc526d72f28d757588b37048b62f}\label{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aed41fc526d72f28d757588b37048b62f}} 
+\index{Generator@{Generator}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily get\+Title (\begin{DoxyParamCaption}\item[{\textbackslash{}DOMNode}]{\$doc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieves the title of the sniff from the DOMNode supplied.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMNode & {\em \$doc} & The DOMNode object for the sniff. It represents the \char`\"{}documentation\char`\"{} tag in the XML standard file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_affe179b621646d0d78d2d6a265d6be99}\label{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_affe179b621646d0d78d2d6a265d6be99}} 
+\index{Generator@{Generator}!processSniff@{processSniff}}
+\index{processSniff@{processSniff}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{processSniff()}{processSniff()}}
+{\footnotesize\ttfamily process\+Sniff (\begin{DoxyParamCaption}\item[{\textbackslash{}DOMNode}]{\$doc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Process the documentation for a single sniff.
+
+Doc generators must implement this function to produce output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMNode & {\em \$doc} & The DOMNode object for the sniff. It represents the \char`\"{}documentation\char`\"{} tag in the XML standard file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_a913873cf89f388d70a28de0b77d68884}{generate()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_markdown_affe179b621646d0d78d2d6a265d6be99}{Markdown}}, and \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_generators_1_1_text_affe179b621646d0d78d2d6a265d6be99}{Text}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_ad20041d7f04105850a94c1640b2c745c}\label{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_ad20041d7f04105850a94c1640b2c745c}} 
+\index{Generator@{Generator}!\$docFiles@{\$docFiles}}
+\index{\$docFiles@{\$docFiles}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{\$docFiles}{$docFiles}}
+{\footnotesize\ttfamily \$doc\+Files = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aecaddd1bd9c1c6c40a0ef50d66600aab}\label{class_p_h_p___code_sniffer_1_1_generators_1_1_generator_aecaddd1bd9c1c6c40a0ef50d66600aab}} 
+\index{Generator@{Generator}!\$ruleset@{\$ruleset}}
+\index{\$ruleset@{\$ruleset}!Generator@{Generator}}
+\doxysubsubsection{\texorpdfstring{\$ruleset}{$ruleset}}
+{\footnotesize\ttfamily \$ruleset = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Generators/\mbox{\hyperlink{squizlabs_2php__codesniffer_2src_2_generators_2_generator_8php}{Generator.\+php}}\end{DoxyCompactItemize}

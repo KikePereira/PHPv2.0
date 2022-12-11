@@ -1,0 +1,269 @@
+This library provides a fast implementation of a regular expression based router. \href{http://nikic.github.io/2014/02/18/Fast-request-routing-using-regular-expressions.html}{\texttt{ Blog post explaining how the implementation works and why it is fast.}}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md220}{}\doxysection{Install}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md220}
+To install with composer\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer require nikic/fast-\/route}
+
+\end{DoxyCode}
+
+
+Requires PHP 5.\+4 or newer.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md221}{}\doxysection{Usage}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md221}
+Here\textquotesingle{}s a basic usage example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{require \textcolor{stringliteral}{'/path/to/vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dispatcher = FastRoute\(\backslash\)simpleDispatcher(\textcolor{keyword}{function}(\mbox{\hyperlink{namespace_fast_route}{FastRoute}}\(\backslash\)RouteCollector \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/users'}, \textcolor{stringliteral}{'get\_all\_users\_handler'});}
+\DoxyCodeLine{    \textcolor{comment}{// \{id\} must be a number (\(\backslash\)d+)}}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{id:\(\backslash\)d+\}'}, \textcolor{stringliteral}{'get\_user\_handler'});}
+\DoxyCodeLine{    \textcolor{comment}{// The /\{title\} suffix is optional}}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/articles/\{id:\(\backslash\)d+\}[/\{title\}]'}, \textcolor{stringliteral}{'get\_article\_handler'});}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Fetch method and URI from somewhere}}
+\DoxyCodeLine{\$httpMethod = \$\_SERVER[\textcolor{stringliteral}{'REQUEST\_METHOD'}];}
+\DoxyCodeLine{\$uri = \$\_SERVER[\textcolor{stringliteral}{'REQUEST\_URI'}];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Strip query string (?foo=bar) and decode URI}}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (\textcolor{keyword}{false} !== \mbox{\hyperlink{_operator_bracket_unit_test_8inc_ae9d3c596e358d714f7386710046699a1}{\$pos}} = strpos(\$uri, \textcolor{charliteral}{'?'})) \{}
+\DoxyCodeLine{    \$uri = substr(\$uri, 0, \mbox{\hyperlink{_operator_bracket_unit_test_8inc_ae9d3c596e358d714f7386710046699a1}{\$pos}});}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\$uri = rawurldecode(\$uri);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$routeInfo = \$dispatcher-\/>dispatch(\$httpMethod, \$uri);}
+\DoxyCodeLine{\textcolor{keywordflow}{switch} (\$routeInfo[0]) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} FastRoute\(\backslash\)Dispatcher::NOT\_FOUND:}
+\DoxyCodeLine{        \textcolor{comment}{// ... 404 Not Found}}
+\DoxyCodeLine{        \textcolor{keywordflow}{break};}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} FastRoute\(\backslash\)Dispatcher::METHOD\_NOT\_ALLOWED:}
+\DoxyCodeLine{        \$allowedMethods = \$routeInfo[1];}
+\DoxyCodeLine{        \textcolor{comment}{// ... 405 Method Not Allowed}}
+\DoxyCodeLine{        \textcolor{keywordflow}{break};}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} FastRoute\(\backslash\)Dispatcher::FOUND:}
+\DoxyCodeLine{        \$handler = \$routeInfo[1];}
+\DoxyCodeLine{        \$vars = \$routeInfo[2];}
+\DoxyCodeLine{        \textcolor{comment}{// ... call \$handler with \$vars}}
+\DoxyCodeLine{        \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md222}{}\doxysubsection{Defining routes}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md222}
+The routes are defined by calling the {\ttfamily \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}}\textbackslash{}simple\+Dispatcher()} function, which accepts a callable taking a {\ttfamily \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}}\textbackslash{}Route\+Collector} instance. The routes are added by calling {\ttfamily add\+Route()} on the collector instance\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\$method, \$routePattern, \$handler);}
+
+\end{DoxyCode}
+
+
+The {\ttfamily \$method} is an uppercase HTTP method string for which a certain route should match. It is possible to specify multiple valid methods using an array\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// These two calls}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/test'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'POST'}, \textcolor{stringliteral}{'/test'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{\textcolor{comment}{// Are equivalent to this one call}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute([\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'POST'}], \textcolor{stringliteral}{'/test'}, \textcolor{stringliteral}{'handler'});}
+
+\end{DoxyCode}
+
+
+By default the {\ttfamily \$route\+Pattern} uses a syntax where {\ttfamily \{foo\}} specifies a placeholder with name {\ttfamily foo} and matching the regex {\ttfamily \mbox{[}$^\wedge$/\mbox{]}+}. To adjust the pattern the placeholder matches, you can specify a custom pattern by writing {\ttfamily \{bar\+:\mbox{[}0-\/9\mbox{]}+\}}. Some examples\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Matches /user/42, but not /user/xyz}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{id:\(\backslash\)d+\}'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Matches /user/foobar, but not /user/foo/bar}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{name\}'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Matches /user/foo/bar as well}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{name:.+\}'}, \textcolor{stringliteral}{'handler'});}
+
+\end{DoxyCode}
+
+
+Custom patterns for route placeholders cannot use capturing groups. For example {\ttfamily \{lang\+:(en$\vert$de)\}} is not a valid placeholder, because {\ttfamily ()} is a capturing group. Instead you can use either {\ttfamily \{lang\+:en$\vert$de\}} or {\ttfamily \{lang\+:(?\+:en$\vert$de)\}}.
+
+Furthermore parts of the route enclosed in {\ttfamily \mbox{[}...\mbox{]}} are considered optional, so that {\ttfamily /foo\mbox{[}bar\mbox{]}} will match both {\ttfamily /foo} and {\ttfamily /foobar}. Optional parts are only supported in a trailing position, not in the middle of a route.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// This route}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{id:\(\backslash\)d+\}[/\{name\}]'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{\textcolor{comment}{// Is equivalent to these two routes}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{id:\(\backslash\)d+\}'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{id:\(\backslash\)d+\}/\{name\}'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Multiple nested optional parts are possible as well}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user[/\{id:\(\backslash\)d+\}[/\{name\}]]'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// This route is NOT valid, because optional parts can only occur at the end}}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user[/\{id:\(\backslash\)d+\}]/\{name\}'}, \textcolor{stringliteral}{'handler'});}
+
+\end{DoxyCode}
+
+
+The {\ttfamily \$handler} parameter does not necessarily have to be a callback, it could also be a controller class name or any other kind of data you wish to associate with the route. \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}} only tells you which handler corresponds to your URI, how you interpret it is up to you.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md223}{}\doxysubsubsection{Shorcut methods for common request methods}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md223}
+For the {\ttfamily GET}, {\ttfamily POST}, {\ttfamily PUT}, {\ttfamily PATCH}, {\ttfamily DELETE} and {\ttfamily HEAD} request methods shortcut methods are available. For example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>get(\textcolor{stringliteral}{'/get-\/route'}, \textcolor{stringliteral}{'get\_handler'});}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>post(\textcolor{stringliteral}{'/post-\/route'}, \textcolor{stringliteral}{'post\_handler'});}
+
+\end{DoxyCode}
+
+
+Is equivalent to\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/get-\/route'}, \textcolor{stringliteral}{'get\_handler'});}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'POST'}, \textcolor{stringliteral}{'/post-\/route'}, \textcolor{stringliteral}{'post\_handler'});}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md224}{}\doxysubsubsection{Route Groups}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md224}
+Additionally, you can specify routes inside of a group. All routes defined inside a group will have a common prefix.
+
+For example, defining your routes as\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addGroup(\textcolor{stringliteral}{'/admin'}, \textcolor{keyword}{function} (RouteCollector \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/do-\/something'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/do-\/another-\/thing'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/do-\/something-\/else'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+Will have the same result as\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/admin/do-\/something'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/admin/do-\/another-\/thing'}, \textcolor{stringliteral}{'handler'});}
+\DoxyCodeLine{\mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/admin/do-\/something-\/else'}, \textcolor{stringliteral}{'handler'});}
+
+\end{DoxyCode}
+
+
+\mbox{\hyperlink{class_nested}{Nested}} groups are also supported, in which case the prefixes of all the nested groups are combined.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md225}{}\doxysubsection{Caching}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md225}
+The reason {\ttfamily simple\+Dispatcher} accepts a callback for defining the routes is to allow seamless caching. By using {\ttfamily cached\+Dispatcher} instead of {\ttfamily simple\+Dispatcher} you can cache the generated routing data and construct the dispatcher from the cached information\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dispatcher = FastRoute\(\backslash\)cachedDispatcher(\textcolor{keyword}{function}(\mbox{\hyperlink{namespace_fast_route}{FastRoute}}\(\backslash\)RouteCollector \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{name\}/\{id:[0-\/9]+\}'}, \textcolor{stringliteral}{'handler0'});}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{id:[0-\/9]+\}'}, \textcolor{stringliteral}{'handler1'});}
+\DoxyCodeLine{    \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}-\/>addRoute(\textcolor{stringliteral}{'GET'}, \textcolor{stringliteral}{'/user/\{name\}'}, \textcolor{stringliteral}{'handler2'});}
+\DoxyCodeLine{\}, [}
+\DoxyCodeLine{    \textcolor{stringliteral}{'cacheFile'} => \_\_DIR\_\_ . \textcolor{stringliteral}{'/route.cache'}, \textcolor{comment}{/* required */}}
+\DoxyCodeLine{    \textcolor{stringliteral}{'cacheDisabled'} => IS\_DEBUG\_ENABLED,     \textcolor{comment}{/* optional, enabled by default */}}
+\DoxyCodeLine{]);}
+
+\end{DoxyCode}
+
+
+The second parameter to the function is an options array, which can be used to specify the cache file location, among other things.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md226}{}\doxysubsection{Dispatching a URI}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md226}
+\mbox{\hyperlink{class_a}{A}} URI is dispatched by calling the {\ttfamily dispatch()} method of the created dispatcher. This method accepts the HTTP method and a URI. Getting those two bits of information (and normalizing them appropriately) is your job -\/ this library is not bound to the PHP web SAPIs.
+
+The {\ttfamily dispatch()} method returns an array whose first element contains a status code. It is one of {\ttfamily Dispatcher\+::\+NOT\+\_\+\+FOUND}, {\ttfamily Dispatcher\+::\+METHOD\+\_\+\+NOT\+\_\+\+ALLOWED} and {\ttfamily Dispatcher\+::\+FOUND}. For the method not allowed status the second array element contains a list of HTTP methods allowed for the supplied URI. For example\+: \begin{DoxyVerb}[FastRoute\Dispatcher::METHOD_NOT_ALLOWED, ['GET', 'POST']]
+\end{DoxyVerb}
+ \begin{quote}
+{\bfseries{NOTE\+:}} The HTTP specification requires that a {\ttfamily 405 Method Not Allowed} response include the \end{quote}
+{\ttfamily Allow\+:} header to detail available methods for the requested resource. Applications using \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}} should use the second array element to add this header when relaying a 405 response.
+
+For the found status the second array element is the handler that was associated with the route and the third array element is a dictionary of placeholder names to their values. For example\+: \begin{DoxyVerb}/* Routing against GET /user/nikic/42 */
+
+[FastRoute\Dispatcher::FOUND, 'handler0', ['name' => 'nikic', 'id' => '42']]
+\end{DoxyVerb}
+ \hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md227}{}\doxysubsection{Overriding the route parser and dispatcher}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md227}
+The routing process makes use of three components\+: \mbox{\hyperlink{class_a}{A}} route parser, a data generator and a dispatcher. The three components adhere to the following interfaces\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_fast_route}{FastRoute}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{interface }RouteParser \{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} parse(\$route);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{interface }DataGenerator \{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} addRoute(\$httpMethod, \$routeData, \$handler);}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} getData();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{interface }Dispatcher \{}
+\DoxyCodeLine{    \textcolor{keyword}{const} NOT\_FOUND = 0, FOUND = 1, METHOD\_NOT\_ALLOWED = 2;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} dispatch(\$httpMethod, \$uri);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+The route parser takes a route pattern string and converts it into an array of route infos, where each route info is again an array of it\textquotesingle{}s parts. The structure is best understood using an example\+: \begin{DoxyVerb}/* The route /user/{id:\d+}[/{name}] converts to the following array: */
+[
+    [
+        '/user/',
+        ['id', '\d+'],
+    ],
+    [
+        '/user/',
+        ['id', '\d+'],
+        '/',
+        ['name', '[^/]+'],
+    ],
+]
+\end{DoxyVerb}
+ This array can then be passed to the {\ttfamily add\+Route()} method of a data generator. After all routes have been added the {\ttfamily get\+Data()} of the generator is invoked, which returns all the routing data required by the dispatcher. The format of this data is not further specified -\/ it is tightly coupled to the corresponding dispatcher.
+
+The dispatcher accepts the routing data via a constructor and provides a {\ttfamily dispatch()} method, which you\textquotesingle{}re already familiar with.
+
+The route parser can be overwritten individually (to make use of some different pattern syntax), however the data generator and dispatcher should always be changed as a pair, as the output from the former is tightly coupled to the input of the latter. The reason the generator and the dispatcher are separate is that only the latter is needed when using caching (as the output of the former is what is being cached.)
+
+When using the {\ttfamily simple\+Dispatcher} / {\ttfamily cached\+Dispatcher} functions from above the override happens through the options array\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$dispatcher = FastRoute\(\backslash\)simpleDispatcher(\textcolor{keyword}{function}(\mbox{\hyperlink{namespace_fast_route}{FastRoute}}\(\backslash\)RouteCollector \mbox{\hyperlink{_lower_case_keyword_unit_test_8inc_a8abe176bc41afd728f32ba8c506cbd98}{\$r}}) \{}
+\DoxyCodeLine{    \textcolor{comment}{/* ... */}}
+\DoxyCodeLine{\}, [}
+\DoxyCodeLine{    \textcolor{stringliteral}{'routeParser'} => \textcolor{stringliteral}{'FastRoute\(\backslash\)\(\backslash\)RouteParser\(\backslash\)\(\backslash\)Std'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'dataGenerator'} => \textcolor{stringliteral}{'FastRoute\(\backslash\)\(\backslash\)DataGenerator\(\backslash\)\(\backslash\)GroupCountBased'},}
+\DoxyCodeLine{    \textcolor{stringliteral}{'dispatcher'} => \textcolor{stringliteral}{'FastRoute\(\backslash\)\(\backslash\)Dispatcher\(\backslash\)\(\backslash\)GroupCountBased'},}
+\DoxyCodeLine{]);}
+
+\end{DoxyCode}
+
+
+The above options array corresponds to the defaults. By replacing {\ttfamily Group\+Count\+Based} by {\ttfamily Group\+Pos\+Based} you could switch to a different dispatching strategy.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md228}{}\doxysubsection{A Note on HEAD Requests}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md228}
+The HTTP spec requires servers to \href{http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html\#sec5.1.1}{\texttt{ support both GET and HEAD methods}}\+:
+
+\begin{quote}
+The methods GET and HEAD MUST be supported by all general-\/purpose servers \end{quote}
+To avoid forcing users to manually register HEAD routes for each resource we fallback to matching an available GET route for a given resource. The PHP web SAPI transparently removes the entity body from HEAD responses so this behavior has no effect on the vast majority of users.
+
+However, implementers using \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}} outside the web SAPI environment (e.\+g. a custom server) MUST NOT send entity bodies generated in response to HEAD requests. If you are a non-\/\+SAPI user this is {\itshape your responsibility}; \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}} has no purview to prevent you from breaking HTTP in such cases.
+
+Finally, note that applications MAY always specify their own HEAD method route for a given resource to bypass this behavior entirely.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md229}{}\doxysubsection{Credits}\label{md__c__workspace__proyecto__p_h_p_project_vendor_nikic_fast_route__r_e_a_d_m_e_autotoc_md229}
+This library is based on a router that \href{https://github.com/morrisonlevi}{\texttt{ Levi Morrison}} implemented for the Aerys server.
+
+\mbox{\hyperlink{class_a}{A}} large number of tests, as well as HTTP compliance considerations, were provided by \href{https://github.com/rdlowrey}{\texttt{ Daniel Lowrey}}. 

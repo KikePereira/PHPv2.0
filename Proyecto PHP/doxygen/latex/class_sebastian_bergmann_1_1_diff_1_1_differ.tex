@@ -1,0 +1,128 @@
+\hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ}{}\doxysection{Differ Class Reference}
+\label{class_sebastian_bergmann_1_1_diff_1_1_differ}\index{Differ@{Differ}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_ac1067585006ba4cab5db1b1dea0d1d46}{\+\_\+\+\_\+construct}} (\$output\+Builder=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_a4451bc9cf579c9c127a3d0837f9430a0}{diff}} (\$from, \$to, \mbox{\hyperlink{interface_sebastian_bergmann_1_1_diff_1_1_longest_common_subsequence_calculator}{Longest\+Common\+Subsequence\+Calculator}} \$lcs=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_abc45e36681a4868a5392ebbadb363354}{diff\+To\+Array}} (\$from, \$to, \mbox{\hyperlink{interface_sebastian_bergmann_1_1_diff_1_1_longest_common_subsequence_calculator}{Longest\+Common\+Subsequence\+Calculator}} \$lcs=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_aa3c960620355380babe787deab5a9b4e}{OLD}} = 0
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_a9dcf44632176616f583582396a5d6ec9}{ADDED}} = 1
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_a407d200e9f16e51a21be57a9fcec09f0}{REMOVED}} = 2
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_a4644b10fa7b74701c1b9f8254bfa02f0}{DIFF\+\_\+\+LINE\+\_\+\+END\+\_\+\+WARNING}} = 3
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_differ_a1faced9a630ccdb26581752ba3965368}{NO\+\_\+\+LINE\+\_\+\+END\+\_\+\+EOF\+\_\+\+WARNING}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_ac1067585006ba4cab5db1b1dea0d1d46}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_ac1067585006ba4cab5db1b1dea0d1d46}} 
+\index{Differ@{Differ}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$output\+Builder = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Diff\+Output\+Builder\+Interface & {\em \$output\+Builder} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sebastian_bergmann_1_1_diff_1_1_invalid_argument_exception}{Invalid\+Argument\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_a4451bc9cf579c9c127a3d0837f9430a0}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_a4451bc9cf579c9c127a3d0837f9430a0}} 
+\index{Differ@{Differ}!diff@{diff}}
+\index{diff@{diff}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily diff (\begin{DoxyParamCaption}\item[{}]{\$from,  }\item[{}]{\$to,  }\item[{\mbox{\hyperlink{interface_sebastian_bergmann_1_1_diff_1_1_longest_common_subsequence_calculator}{Longest\+Common\+Subsequence\+Calculator}}}]{\$lcs = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Returns the diff between two arrays or strings as string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$from} & \\
+\hline
+array | string & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_abc45e36681a4868a5392ebbadb363354}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_abc45e36681a4868a5392ebbadb363354}} 
+\index{Differ@{Differ}!diffToArray@{diffToArray}}
+\index{diffToArray@{diffToArray}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{diffToArray()}{diffToArray()}}
+{\footnotesize\ttfamily diff\+To\+Array (\begin{DoxyParamCaption}\item[{}]{\$from,  }\item[{}]{\$to,  }\item[{\mbox{\hyperlink{interface_sebastian_bergmann_1_1_diff_1_1_longest_common_subsequence_calculator}{Longest\+Common\+Subsequence\+Calculator}}}]{\$lcs = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Returns the diff between two arrays or strings as array.
+
+Each array element contains two elements\+:
+\begin{DoxyItemize}
+\item \mbox{[}0\mbox{]} =\texorpdfstring{$>$}{>} mixed \$token
+\item \mbox{[}1\mbox{]} =\texorpdfstring{$>$}{>} 2$\vert$1$\vert$0
+\end{DoxyItemize}
+
+2\+: REMOVED\+: \$token was removed from \$from
+\begin{DoxyItemize}
+\item 1\+: ADDED\+: \$token was added to \$from
+\item 0\+: OLD\+: \$token is not changed in \$to
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$from} & \\
+\hline
+array | string & {\em \$to} & \\
+\hline
+\mbox{\hyperlink{interface_sebastian_bergmann_1_1_diff_1_1_longest_common_subsequence_calculator}{Longest\+Common\+Subsequence\+Calculator}} & {\em \$lcs} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_a9dcf44632176616f583582396a5d6ec9}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_a9dcf44632176616f583582396a5d6ec9}} 
+\index{Differ@{Differ}!ADDED@{ADDED}}
+\index{ADDED@{ADDED}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{ADDED}{ADDED}}
+{\footnotesize\ttfamily const ADDED = 1}
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_a4644b10fa7b74701c1b9f8254bfa02f0}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_a4644b10fa7b74701c1b9f8254bfa02f0}} 
+\index{Differ@{Differ}!DIFF\_LINE\_END\_WARNING@{DIFF\_LINE\_END\_WARNING}}
+\index{DIFF\_LINE\_END\_WARNING@{DIFF\_LINE\_END\_WARNING}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{DIFF\_LINE\_END\_WARNING}{DIFF\_LINE\_END\_WARNING}}
+{\footnotesize\ttfamily const DIFF\+\_\+\+LINE\+\_\+\+END\+\_\+\+WARNING = 3}
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_a1faced9a630ccdb26581752ba3965368}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_a1faced9a630ccdb26581752ba3965368}} 
+\index{Differ@{Differ}!NO\_LINE\_END\_EOF\_WARNING@{NO\_LINE\_END\_EOF\_WARNING}}
+\index{NO\_LINE\_END\_EOF\_WARNING@{NO\_LINE\_END\_EOF\_WARNING}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{NO\_LINE\_END\_EOF\_WARNING}{NO\_LINE\_END\_EOF\_WARNING}}
+{\footnotesize\ttfamily const NO\+\_\+\+LINE\+\_\+\+END\+\_\+\+EOF\+\_\+\+WARNING = 4}
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_aa3c960620355380babe787deab5a9b4e}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_aa3c960620355380babe787deab5a9b4e}} 
+\index{Differ@{Differ}!OLD@{OLD}}
+\index{OLD@{OLD}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{OLD}{OLD}}
+{\footnotesize\ttfamily const OLD = 0}
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_diff_1_1_differ_a407d200e9f16e51a21be57a9fcec09f0}\label{class_sebastian_bergmann_1_1_diff_1_1_differ_a407d200e9f16e51a21be57a9fcec09f0}} 
+\index{Differ@{Differ}!REMOVED@{REMOVED}}
+\index{REMOVED@{REMOVED}!Differ@{Differ}}
+\doxysubsubsection{\texorpdfstring{REMOVED}{REMOVED}}
+{\footnotesize\ttfamily const REMOVED = 2}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/sebastian/diff/src/\mbox{\hyperlink{sebastian_2diff_2src_2_differ_8php}{Differ.\+php}}\end{DoxyCompactItemize}

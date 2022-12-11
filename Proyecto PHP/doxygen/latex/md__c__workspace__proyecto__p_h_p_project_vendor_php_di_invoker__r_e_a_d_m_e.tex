@@ -1,0 +1,245 @@
+Generic and extensible callable invoker.
+
+\href{https://travis-ci.org/PHP-DI/Invoker}{\texttt{ }} \href{https://packagist.org/packages/PHP-DI/invoker}{\texttt{ }} \href{https://packagist.org/packages/php-di/invoker}{\texttt{ }}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md281}{}\doxysection{Why?}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md281}
+Who doesn\textquotesingle{}t need an over-\/engineered {\ttfamily call\+\_\+user\+\_\+func()}?\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md282}{}\doxysubsection{Named parameters}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md282}
+Does this \href{http://silex.sensiolabs.org}{\texttt{ Silex}} example look familiar\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{public_2index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}-\/>get(\textcolor{stringliteral}{'/project/\{project\}/issue/\{issue\}'}, \textcolor{keyword}{function} (\$project, \$issue) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+Or this command defined with \href{https://github.com/mnapoli/silly\#usage}{\texttt{ Silly}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{public_2index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}-\/>command(\textcolor{stringliteral}{'greet [name] [-\/-\/yell]'}, \textcolor{keyword}{function} (\$name, \$yell) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+Same pattern in \href{http://www.slimframework.com}{\texttt{ Slim}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{public_2index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}-\/>get(\textcolor{stringliteral}{'/hello/:name'}, \textcolor{keyword}{function} (\$name) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+You get the point. These frameworks invoke the controller/command/handler using something akin to named parameters\+: whatever the order of the parameters, they are matched by their name.
+
+{\bfseries{This library allows to invoke callables with named parameters in a generic and extensible way.}}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md283}{}\doxysubsection{Dependency injection}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md283}
+Anyone familiar with Angular\+JS is familiar with how dependency injection is performed\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{angular.controller('MyController', ['dep1', 'dep2', function(dep1, dep2) \{}
+\DoxyCodeLine{    // ...}
+\DoxyCodeLine{\}]);}
+
+\end{DoxyCode}
+
+
+In PHP we find this pattern again in some frameworks and \mbox{\hyperlink{namespace_d_i}{DI}} containers with partial to full support. For example in Silex you can type-\/hint the application to get it injected, but it only works with {\ttfamily Silex\textbackslash{}Application}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{public_2index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}-\/>get(\textcolor{stringliteral}{'/hello/\{name\}'}, \textcolor{keyword}{function} (Silex\(\backslash\)Application \mbox{\hyperlink{public_2index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}, \$name) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+In Silly, it only works with {\ttfamily Output\+Interface} to inject the application output\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{public_2index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}}-\/>command(\textcolor{stringliteral}{'greet [name]'}, \textcolor{keyword}{function} (\$name, OutputInterface \mbox{\hyperlink{_backtick_operator_unit_test_8inc_a73004ce9cd673c1bfafd1dc351134797}{\$output}}) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+\href{http://php-di.org/doc/container.html}{\texttt{ PHP-\/\+DI}} provides a way to invoke a callable and resolve all dependencies from the container using type-\/hints\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}}-\/>call(\textcolor{keyword}{function} (Logger \$logger, EntityManager \$em) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+{\bfseries{This library provides clear extension points to let frameworks implement any kind of dependency injection support they want.}}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md284}{}\doxysubsection{TL/\+DR}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md284}
+In short, this library is meant to be a base building block for calling a function with named parameters and/or dependency injection.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md285}{}\doxysection{Installation}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md285}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ composer require PHP-\/DI/invoker}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md286}{}\doxysection{Usage}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md286}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md287}{}\doxysubsection{Default behavior}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md287}
+By default the {\ttfamily \mbox{\hyperlink{namespace_invoker}{Invoker}}} can call using named parameters\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$invoker = \textcolor{keyword}{new} \mbox{\hyperlink{class_invoker_1_1_invoker}{Invoker\(\backslash\)Invoker}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$invoker-\/>\mbox{\hyperlink{class_invoker_1_1_invoker_a423f35c72efcab5368b54a3b03e98508}{call}}(\textcolor{keyword}{function} () \{}
+\DoxyCodeLine{    echo \textcolor{stringliteral}{'Hello world!'};}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Simple parameter array}}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{keyword}{function} (\$name) \{}
+\DoxyCodeLine{    echo \textcolor{stringliteral}{'Hello '} . \$name;}
+\DoxyCodeLine{\}, [\textcolor{stringliteral}{'John'}]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Named parameters}}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{keyword}{function} (\$name) \{}
+\DoxyCodeLine{    echo \textcolor{stringliteral}{'Hello '} . \$name;}
+\DoxyCodeLine{\}, [}
+\DoxyCodeLine{    \textcolor{stringliteral}{'name'} => \textcolor{stringliteral}{'John'}}
+\DoxyCodeLine{]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Use the default value}}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{keyword}{function} (\$name = \textcolor{stringliteral}{'world'}) \{}
+\DoxyCodeLine{    echo \textcolor{stringliteral}{'Hello '} . \$name;}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Invoke any PHP callable}}
+\DoxyCodeLine{\$invoker-\/>call([\textcolor{stringliteral}{'MyClass'}, \textcolor{stringliteral}{'myStaticMethod'}]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Using Class::method syntax}}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{stringliteral}{'MyClass::myStaticMethod'});}
+
+\end{DoxyCode}
+
+
+Dependency injection in parameters is supported but needs to be configured with your container. Read on or jump to $\ast$\+Built-\/in support for dependency injection$\ast$ if you are impatient.
+
+Additionally, callables can also be resolved from your container. Read on or jump to $\ast$\+Resolving callables from a container$\ast$ if you are impatient.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md288}{}\doxysubsection{Parameter resolvers}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md288}
+Extending the behavior of the {\ttfamily \mbox{\hyperlink{namespace_invoker}{Invoker}}} is easy and is done by implementing a \href{https://github.com/PHP-DI/Invoker/blob/master/src/ParameterResolver/ParameterResolver.php}{\texttt{ {\ttfamily Parameter\+Resolver}}}.
+
+This is explained in details the C\+:/workspace/\+Proyecto \mbox{\hyperlink{parameter-resolvers_8md}{PHP/project/vendor/php-\/di/invoker/doc/parameter-\/resolvers.\+md}} \char`\"{}\+Parameter resolvers documentation\char`\"{}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md289}{}\doxysubsubsection{Built-\/in support for dependency injection}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md289}
+Rather than have you re-\/implement support for dependency injection with different containers every time, this package ships with 2 optional resolvers\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/PHP-DI/Invoker/blob/master/src/ParameterResolver/Container/TypeHintContainerResolver.php}{\texttt{ {\ttfamily Type\+Hint\+Container\+Resolver}}}
+
+This resolver will inject container entries by searching for the class name using the type-\/hint\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{keyword}{function} (Psr\(\backslash\)Logger\(\backslash\)LoggerInterface \$logger) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+In this example it will `-\/\texorpdfstring{$>$}{>}get(\textquotesingle{}Psr\textbackslash{}\+Logger\textbackslash{}\+Logger\+Interface')\`{} from the container and inject it.
+
+This resolver is only useful if you store objects in your container using the class (or interface) name. Silex or Symfony for example store services under a custom name (e.\+g. {\ttfamily twig}, {\ttfamily db}, etc.) instead of the class name\+: in that case use the resolver shown below.
+\item \href{https://github.com/PHP-DI/Invoker/blob/master/src/ParameterResolver/Container/ParameterNameContainerResolver.php}{\texttt{ {\ttfamily Parameter\+Name\+Container\+Resolver}}}
+
+This resolver will inject container entries by searching for the name of the parameter\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{keyword}{function} (\mbox{\hyperlink{public_2index_8php_a95b22cf97ae99a402854f5f45a9871bf}{\$twig}}) \{}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+In this example it will `-\/\texorpdfstring{$>$}{>}get(\textquotesingle{}twig')\`{} from the container and inject it.
+\end{DoxyItemize}
+
+These resolvers can work with any dependency injection container compliant with \href{http://www.php-fig.org/psr/psr-11/}{\texttt{ PSR-\/11}}.
+
+Setting up those resolvers is simple\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// \$container must be an instance of Psr\(\backslash\)Container\(\backslash\)ContainerInterface}}
+\DoxyCodeLine{\mbox{\hyperlink{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}} = ...}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$containerResolver = \textcolor{keyword}{new} TypeHintContainerResolver(\mbox{\hyperlink{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}});}
+\DoxyCodeLine{\textcolor{comment}{// or}}
+\DoxyCodeLine{\$containerResolver = \textcolor{keyword}{new} ParameterNameContainerResolver(\mbox{\hyperlink{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$invoker = \textcolor{keyword}{new} \mbox{\hyperlink{class_invoker_1_1_invoker}{Invoker\(\backslash\)Invoker}};}
+\DoxyCodeLine{\textcolor{comment}{// Register it before all the other parameter resolvers}}
+\DoxyCodeLine{\$invoker-\/>\mbox{\hyperlink{class_invoker_1_1_invoker_a8386b6941ac713e9ee393d239cbea656}{getParameterResolver}}()-\/>prependResolver(\$containerResolver);}
+
+\end{DoxyCode}
+
+
+You can also register both resolvers at the same time if you wish by prepending both. Implementing support for more tricky things is easy and up to you!\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md290}{}\doxysubsection{Resolving callables from a container}\label{md__c__workspace__proyecto__p_h_p_project_vendor_php_di_invoker__r_e_a_d_m_e_autotoc_md290}
+The {\ttfamily \mbox{\hyperlink{namespace_invoker}{Invoker}}} can be wired to your \mbox{\hyperlink{namespace_d_i}{DI}} container to resolve the callables.
+
+For example with an invokable class\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }MyHandler}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{_camel_caps_function_name_unit_test_8inc_a9aac7e1475efe923de4e19cc2511f092}{\_\_invoke}}()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// By default this doesn't work: an instance of the class should be provided}}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{stringliteral}{'MyHandler'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// If we set up the container to use}}
+\DoxyCodeLine{\$invoker = \textcolor{keyword}{new} \mbox{\hyperlink{class_invoker_1_1_invoker}{Invoker\(\backslash\)Invoker}}(\textcolor{keyword}{null}, \mbox{\hyperlink{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}});}
+\DoxyCodeLine{\textcolor{comment}{// Now 'MyHandler' is resolved using the container!}}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{stringliteral}{'MyHandler'});}
+
+\end{DoxyCode}
+
+
+The same works for a class method\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }WelcomeController}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} home()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// By default this doesn't work: home() is not a static method}}
+\DoxyCodeLine{\$invoker-\/>call([\textcolor{stringliteral}{'WelcomeController'}, \textcolor{stringliteral}{'home'}]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// If we set up the container to use}}
+\DoxyCodeLine{\$invoker = \textcolor{keyword}{new} \mbox{\hyperlink{class_invoker_1_1_invoker}{Invoker\(\backslash\)Invoker}}(\textcolor{keyword}{null}, \mbox{\hyperlink{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}});}
+\DoxyCodeLine{\textcolor{comment}{// Now 'WelcomeController' is resolved using the container!}}
+\DoxyCodeLine{\$invoker-\/>call([\textcolor{stringliteral}{'WelcomeController'}, \textcolor{stringliteral}{'home'}]);}
+\DoxyCodeLine{\textcolor{comment}{// Alternatively we can use the Class::method syntax}}
+\DoxyCodeLine{\$invoker-\/>call(\textcolor{stringliteral}{'WelcomeController::home'});}
+
+\end{DoxyCode}
+
+
+That feature can be used as the base building block for a framework\textquotesingle{}s dispatcher.
+
+Again, any \href{http://www.php-fig.org/psr/psr-11/}{\texttt{ PSR-\/11}} compliant container can be provided. 

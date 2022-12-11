@@ -1,0 +1,27 @@
+var _operator_bracket_unit_test_8inc =
+[
+    [ "MyClass", "class_my_class.html", "class_my_class" ],
+    [ "myFunction", "_operator_bracket_unit_test_8inc.html#afa13b2443c6c745709fb9d77403743a4", null ],
+    [ "$a", "_operator_bracket_unit_test_8inc.html#acebf83966ef6d7e5645a6b62ba368f9f", null ],
+    [ "$cntPages", "_operator_bracket_unit_test_8inc.html#ac6d0b7153f1d32c3eae2bb67b71640f9", null ],
+    [ "$codeFiles", "_operator_bracket_unit_test_8inc.html#ae6e1d98a411b4d8961b66dc367dc9313", null ],
+    [ "$commentEnd", "_operator_bracket_unit_test_8inc.html#a072a3c9573a15853604a035f7b503791", null ],
+    [ "$commentStart", "_operator_bracket_unit_test_8inc.html#a4612962a4648e3a7c5b3e94766c21e6a", null ],
+    [ "$di", "_operator_bracket_unit_test_8inc.html#a29bf947b4faacc74552074b14f25c254", null ],
+    [ "$errorPos", "_operator_bracket_unit_test_8inc.html#a8cbf84829a11012f524b3943b09e94a3", null ],
+    [ "$expected", "_operator_bracket_unit_test_8inc.html#ac6ebb6aa383a61fd33394e338e934186", null ],
+    [ "$expectedPermission", "_operator_bracket_unit_test_8inc.html#a94f08e4d9f3a55d78b338757996abf49", null ],
+    [ "$expr", "_operator_bracket_unit_test_8inc.html#aa660a3177eb257a767c0323f967d877f", null ],
+    [ "$foo", "_operator_bracket_unit_test_8inc.html#a7a1efa8a0f6183fb3a5e8e8b0696526c", null ],
+    [ "$four", "_operator_bracket_unit_test_8inc.html#af3853378caf7981b56a106c978e8b4f5", null ],
+    [ "$line", "_operator_bracket_unit_test_8inc.html#a52f469b0182d9abac2d0f20548680c9c", null ],
+    [ "$pos", "_operator_bracket_unit_test_8inc.html#ae9d3c596e358d714f7386710046699a1", null ],
+    [ "$results", "_operator_bracket_unit_test_8inc.html#a233d12bd8b6d3453e9a7a3f0b8c31db2", null ],
+    [ "$test", "_operator_bracket_unit_test_8inc.html#a31daebf88fc668f410293e2c70cea3fc", null ],
+    [ "$three", "_operator_bracket_unit_test_8inc.html#a5e5b1817619ba3ace66c13cad8880e94", null ],
+    [ "$value", "_operator_bracket_unit_test_8inc.html#a0f298096f322952a72a50f98a74c7b60", null ],
+    [ "$var", "_operator_bracket_unit_test_8inc.html#a9184c9cf1f1e58b87296500a3c3a9291", null ],
+    [ "$words", "_operator_bracket_unit_test_8inc.html#a7018c653e9ec2b4c22b533145b4da2a6", null ],
+    [ "exit", "_operator_bracket_unit_test_8inc.html#a6733eb5f605d09eaede9845835d71c4e", null ],
+    [ "try", "_operator_bracket_unit_test_8inc.html#a0067ed07eb3e90d723a4dea0f662a458", null ]
+];

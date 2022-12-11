@@ -1,0 +1,953 @@
+\hypertarget{_core_extension_8php}{}\doxysection{C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Extension/\+Core\+Extension.php File Reference}
+\label{_core_extension_8php}\index{C:/workspace/Proyecto PHP/project/vendor/twig/twig/src/Extension/CoreExtension.php@{C:/workspace/Proyecto PHP/project/vendor/twig/twig/src/Extension/CoreExtension.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_twig_1_1_extension_1_1_core_extension}{Core\+Extension}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_twig}{Twig}}
+\item 
+namespace \mbox{\hyperlink{namespace_twig_1_1_extension}{Twig\textbackslash{}\+Extension}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_core_extension_8php_acdac197154574e891f0edffdfa46a9c1}{twig\+\_\+cycle}} (\$values, \$position)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a58143cb7cfe98f1ef38883299f5c1dee}{twig\+\_\+random}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$values=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$max=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_afb0a4462da7b07cd8ef58b8971471348}{twig\+\_\+date\+\_\+format\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$date, \$format=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$timezone=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a07e489c9601a8f4f0f5c524126964a64}{twig\+\_\+date\+\_\+modify\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$date, \$modifier)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a256f713fc398e53c34a8b510a6b252f8}{twig\+\_\+sprintf}} (\$format,... \$values)
+\item 
+\mbox{\hyperlink{_core_extension_8php_aa8f1fbdc8eaf8db4b9deea49e2cbd59d}{twig\+\_\+date\+\_\+converter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$date=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$timezone=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_ad7b11011c24881206b82608150d3ba36}{twig\+\_\+replace\+\_\+filter}} (\$str, \$from)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a3871a1576a44a93cfac02da165345918}{twig\+\_\+round}} (\$value, \$precision=0, \$method=\textquotesingle{}common\textquotesingle{})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a7c44483478720c8d780b28f769777a11}{twig\+\_\+number\+\_\+format\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$number, \$decimal=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$decimal\+Point=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$thousand\+Sep=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_aa3f48766e0124a7c43c08c04dc40fe27}{twig\+\_\+urlencode\+\_\+filter}} (\$url)
+\item 
+\mbox{\hyperlink{_core_extension_8php_aae986bdb2c15d3d538b5ab1efe6f2d9b}{twig\+\_\+array\+\_\+merge}} (\$arr1, \$arr2)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a54423653cc7a283018b0f5f6190674e0}{twig\+\_\+slice}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$item, \$start, \$length=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$preserve\+Keys=false)
+\item 
+\mbox{\hyperlink{_core_extension_8php_af8fd790efc18bdd1032b7a1472346128}{twig\+\_\+first}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$item)
+\item 
+\mbox{\hyperlink{_core_extension_8php_ac5a5585f07103df0baf49ffafe5183a0}{twig\+\_\+last}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$item)
+\item 
+\mbox{\hyperlink{_core_extension_8php_abc9e6cfa5e9862ae3e0a8d6a7f861377}{twig\+\_\+join\+\_\+filter}} (\$value, \$glue=\textquotesingle{}\textquotesingle{}, \$and=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_abf0d1d2febf9f600321025a5268b5408}{twig\+\_\+split\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$value, \$delimiter, \$limit=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_adf5ce5c7b07db84385ba1338e106fc3b}{\+\_\+twig\+\_\+default\+\_\+filter}} (\$value, \$default=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a385fc99eefd1e84922ecbb771b2630f5}{twig\+\_\+get\+\_\+array\+\_\+keys\+\_\+filter}} (\$array)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a7cf8cc6e5af517dab5808a1106307ab3}{twig\+\_\+reverse\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$item, \$preserve\+Keys=false)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a3006f420be01bab3497a0e35afd8edb6}{twig\+\_\+sort\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$array, \$arrow=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a865b65eeb9df87675788913e1e69fc7d}{twig\+\_\+in\+\_\+filter}} (\$value, \$compare)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a76c9a3e591fd568aa228cd768b990508}{twig\+\_\+compare}} (\$\mbox{\hyperlink{classa}{a}}, \$\mbox{\hyperlink{_array_declaration_unit_test_81_8inc_ace5525bd5f476f05d938801b5e8e3210}{b}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a9349109367189fd0ebd5abd109ce8b97}{twig\+\_\+trim\+\_\+filter}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}, \$character\+Mask=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$side=\textquotesingle{}both\textquotesingle{})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a10aac936e185fb3dd7b64dae59941323}{twig\+\_\+nl2br}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a15f656023e3e1f540fcb4e982c3c71cd}{twig\+\_\+spaceless}} (\$content)
+\item 
+\mbox{\hyperlink{_core_extension_8php_ae288325a1d8fc4e036d1e828d7fac1f6}{twig\+\_\+convert\+\_\+encoding}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}, \$to, \$from)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a9406216b24c030f1de8792d9a386eb77}{twig\+\_\+length\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$thing)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a643a13433b9ae2cdaf47b9e6961fdd6d}{twig\+\_\+upper\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_aa0bb65fe0b0be9985c7cbd73c649e4db}{twig\+\_\+lower\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a056180943ea95bf83fd3fedcdf5889f2}{twig\+\_\+striptags}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}, \$allowable\+\_\+tags=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_ac4d183808e43b0a866c05d1374835b46}{twig\+\_\+title\+\_\+string\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_aa6c7d82fc698023738d4e912a212a371}{twig\+\_\+capitalize\+\_\+string\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a01c03508433819ad3d9b5afd9ba53193}{twig\+\_\+call\+\_\+macro}} (\mbox{\hyperlink{class_twig_1_1_template}{Template}} \$template, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$method, array \$args, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$lineno, array \$context, \mbox{\hyperlink{class_twig_1_1_source}{Source}} \$source)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a62b2aa48653c37ade953be5493461c59}{twig\+\_\+ensure\+\_\+traversable}} (\$seq)
+\item 
+\mbox{\hyperlink{_core_extension_8php_add6085b705776ea6e84cec0f1f6c6e8b}{twig\+\_\+to\+\_\+array}} (\$seq, \$preserve\+Keys=\mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_ac345ab6a3d1194b2ac8ed45b678f9756}{twig\+\_\+test\+\_\+empty}} (\$value)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a09136b1251daa404746c546d31deb4d4}{twig\+\_\+test\+\_\+iterable}} (\$value)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a4505cf4718aff71887e0160fa1f15493}{twig\+\_\+include}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$context, \$template, \$variables=\mbox{[}$\,$\mbox{]}, \$with\+Context=\mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}, \$ignore\+Missing=false, \$sandboxed=false)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a9e3ff38f0adb3137277b4707a01272cb}{twig\+\_\+source}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$ignore\+Missing=false)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a31028d0e894853c9f66384acfea8cc15}{twig\+\_\+constant}} (\$constant, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a34ed4cda060ffc5ababa5e187c10a4aa}{object}}=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a0c25ef89e9287e906470fc60337a03a0}{twig\+\_\+constant\+\_\+is\+\_\+defined}} (\$constant, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a34ed4cda060ffc5ababa5e187c10a4aa}{object}}=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_ababc8bbe08cab8543e5caa12dc3e890a}{twig\+\_\+array\+\_\+batch}} (\$items, \$size, \$fill=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$preserve\+Keys=\mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_aeb74e277ae38926f0b4c91f83c580705}{twig\+\_\+get\+\_\+attribute}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \mbox{\hyperlink{class_twig_1_1_source}{Source}} \$source, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a34ed4cda060ffc5ababa5e187c10a4aa}{object}}, \$item, array \$arguments=\mbox{[}$\,$\mbox{]}, \$type=\textquotesingle{}any\textquotesingle{}, \$is\+Defined\+Test=false, \$ignore\+Strict\+Check=false, \$sandboxed=false, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$lineno=-\/1)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a26a804fe9c04629942fa7054d5535114}{twig\+\_\+array\+\_\+column}} (\$array, \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$index=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_a9b8628805b70519268067524b98b254a}{twig\+\_\+array\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$array, \$arrow)
+\item 
+\mbox{\hyperlink{_core_extension_8php_a03129d7130c47c72bc6a553f0510d9d8}{twig\+\_\+array\+\_\+map}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$array, \$arrow)
+\item 
+\mbox{\hyperlink{_core_extension_8php_ad4f20a3cef4673a1b2027227ea45bf7b}{twig\+\_\+array\+\_\+reduce}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$array, \$arrow, \$initial=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{_core_extension_8php_adae81b38e06ec6dd98905fff5019f654}{twig\+\_\+check\+\_\+arrow\+\_\+in\+\_\+sandbox}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$arrow, \$thing, \$type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_core_extension_8php_adf5ce5c7b07db84385ba1338e106fc3b}\label{_core_extension_8php_adf5ce5c7b07db84385ba1338e106fc3b}} 
+\index{CoreExtension.php@{CoreExtension.php}!\_twig\_default\_filter@{\_twig\_default\_filter}}
+\index{\_twig\_default\_filter@{\_twig\_default\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{\_twig\_default\_filter()}{\_twig\_default\_filter()}}
+{\footnotesize\ttfamily \+\_\+twig\+\_\+default\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$default = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_ababc8bbe08cab8543e5caa12dc3e890a}\label{_core_extension_8php_ababc8bbe08cab8543e5caa12dc3e890a}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_array\_batch@{twig\_array\_batch}}
+\index{twig\_array\_batch@{twig\_array\_batch}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_array\_batch()}{twig\_array\_batch()}}
+{\footnotesize\ttfamily twig\+\_\+array\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{\$items,  }\item[{}]{\$size,  }\item[{}]{\$fill = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$preserve\+Keys = {\ttfamily \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}} }\end{DoxyParamCaption})}
+
+Batches item.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$items} & An array of items \\
+\hline
+int & {\em \$size} & The size of the batch \\
+\hline
+mixed & {\em \$fill} & \mbox{\hyperlink{class_a}{A}} value used to fill missing items\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a26a804fe9c04629942fa7054d5535114}\label{_core_extension_8php_a26a804fe9c04629942fa7054d5535114}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_array\_column@{twig\_array\_column}}
+\index{twig\_array\_column@{twig\_array\_column}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_array\_column()}{twig\_array\_column()}}
+{\footnotesize\ttfamily twig\+\_\+array\+\_\+column (\begin{DoxyParamCaption}\item[{}]{\$array,  }\item[{}]{\$name,  }\item[{}]{\$index = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Returns the values from a single column in the input array.
+
+
+\begin{DoxyPre}
+ \{\% set items = [\{ 'fruit' : 'apple'\}, \{'fruit' : 'orange' \}] \%\}
+
+ \{\% set fruits = items|column('fruit') \%\}
+
+ \{\# fruits now contains ['apple', 'orange'] \#\}
+\end{DoxyPre}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Traversable & {\em \$array} & An array \\
+\hline
+mixed & {\em \$name} & The column name \\
+\hline
+mixed & {\em \$index} & The column to use as the index/keys for the returned array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array of values 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a9b8628805b70519268067524b98b254a}\label{_core_extension_8php_a9b8628805b70519268067524b98b254a}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_array\_filter@{twig\_array\_filter}}
+\index{twig\_array\_filter@{twig\_array\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_array\_filter()}{twig\_array\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+array\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$array,  }\item[{}]{\$arrow }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_a03129d7130c47c72bc6a553f0510d9d8}\label{_core_extension_8php_a03129d7130c47c72bc6a553f0510d9d8}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_array\_map@{twig\_array\_map}}
+\index{twig\_array\_map@{twig\_array\_map}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_array\_map()}{twig\_array\_map()}}
+{\footnotesize\ttfamily twig\+\_\+array\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$array,  }\item[{}]{\$arrow }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_aae986bdb2c15d3d538b5ab1efe6f2d9b}\label{_core_extension_8php_aae986bdb2c15d3d538b5ab1efe6f2d9b}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_array\_merge@{twig\_array\_merge}}
+\index{twig\_array\_merge@{twig\_array\_merge}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_array\_merge()}{twig\_array\_merge()}}
+{\footnotesize\ttfamily twig\+\_\+array\+\_\+merge (\begin{DoxyParamCaption}\item[{}]{\$arr1,  }\item[{}]{\$arr2 }\end{DoxyParamCaption})}
+
+Merges an array with another one.
+
+\{\% set items = \{ \textquotesingle{}apple\textquotesingle{}\+: \textquotesingle{}fruit\textquotesingle{}, \textquotesingle{}orange\textquotesingle{}\+: \textquotesingle{}fruit\textquotesingle{} \} \%\}
+
+\{\% set items = items$\vert$merge(\{ \textquotesingle{}peugeot\textquotesingle{}\+: \textquotesingle{}car\textquotesingle{} \}) \%\}
+
+\{\# items now contains \{ \textquotesingle{}apple\textquotesingle{}\+: \textquotesingle{}fruit\textquotesingle{}, \textquotesingle{}orange\textquotesingle{}\+: \textquotesingle{}fruit\textquotesingle{}, \textquotesingle{}peugeot\textquotesingle{}\+: \textquotesingle{}car\textquotesingle{} \} \#\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | \textbackslash{}\+Traversable & {\em \$arr1} & An array \\
+\hline
+array | \textbackslash{}\+Traversable & {\em \$arr2} & An array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The merged array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_ad4f20a3cef4673a1b2027227ea45bf7b}\label{_core_extension_8php_ad4f20a3cef4673a1b2027227ea45bf7b}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_array\_reduce@{twig\_array\_reduce}}
+\index{twig\_array\_reduce@{twig\_array\_reduce}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_array\_reduce()}{twig\_array\_reduce()}}
+{\footnotesize\ttfamily twig\+\_\+array\+\_\+reduce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$array,  }\item[{}]{\$arrow,  }\item[{}]{\$initial = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_a01c03508433819ad3d9b5afd9ba53193}\label{_core_extension_8php_a01c03508433819ad3d9b5afd9ba53193}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_call\_macro@{twig\_call\_macro}}
+\index{twig\_call\_macro@{twig\_call\_macro}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_call\_macro()}{twig\_call\_macro()}}
+{\footnotesize\ttfamily twig\+\_\+call\+\_\+macro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_template}{Template}}}]{\$template,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$method,  }\item[{array}]{\$args,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}}}]{\$lineno,  }\item[{array}]{\$context,  }\item[{\mbox{\hyperlink{class_twig_1_1_source}{Source}}}]{\$source }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_aa6c7d82fc698023738d4e912a212a371}\label{_core_extension_8php_aa6c7d82fc698023738d4e912a212a371}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_capitalize\_string\_filter@{twig\_capitalize\_string\_filter}}
+\index{twig\_capitalize\_string\_filter@{twig\_capitalize\_string\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_capitalize\_string\_filter()}{twig\_capitalize\_string\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+capitalize\+\_\+string\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Returns a capitalized string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \mbox{\hyperlink{class_a}{A}} string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The capitalized string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_adae81b38e06ec6dd98905fff5019f654}\label{_core_extension_8php_adae81b38e06ec6dd98905fff5019f654}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_check\_arrow\_in\_sandbox@{twig\_check\_arrow\_in\_sandbox}}
+\index{twig\_check\_arrow\_in\_sandbox@{twig\_check\_arrow\_in\_sandbox}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_check\_arrow\_in\_sandbox()}{twig\_check\_arrow\_in\_sandbox()}}
+{\footnotesize\ttfamily twig\+\_\+check\+\_\+arrow\+\_\+in\+\_\+sandbox (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$arrow,  }\item[{}]{\$thing,  }\item[{}]{\$type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_a76c9a3e591fd568aa228cd768b990508}\label{_core_extension_8php_a76c9a3e591fd568aa228cd768b990508}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_compare@{twig\_compare}}
+\index{twig\_compare@{twig\_compare}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_compare()}{twig\_compare()}}
+{\footnotesize\ttfamily twig\+\_\+compare (\begin{DoxyParamCaption}\item[{}]{\$a,  }\item[{}]{\$b }\end{DoxyParamCaption})}
+
+Compares two values using a more strict version of the PHP non-\/strict comparison operator.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://wiki.php.net/rfc/string_to_number_comparison}{\texttt{ https\+://wiki.\+php.\+net/rfc/string\+\_\+to\+\_\+number\+\_\+comparison}} 
+
+\href{https://wiki.php.net/rfc/trailing_whitespace_numerics}{\texttt{ https\+://wiki.\+php.\+net/rfc/trailing\+\_\+whitespace\+\_\+numerics}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_core_extension_8php_a31028d0e894853c9f66384acfea8cc15}\label{_core_extension_8php_a31028d0e894853c9f66384acfea8cc15}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_constant@{twig\_constant}}
+\index{twig\_constant@{twig\_constant}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_constant()}{twig\_constant()}}
+{\footnotesize\ttfamily twig\+\_\+constant (\begin{DoxyParamCaption}\item[{}]{\$constant,  }\item[{}]{\$object = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Provides the ability to get constants from instances as well as class/global constants.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$constant} & The name of the constant \\
+\hline
+object | null & {\em \$object} & The object to get the constant from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a0c25ef89e9287e906470fc60337a03a0}\label{_core_extension_8php_a0c25ef89e9287e906470fc60337a03a0}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_constant\_is\_defined@{twig\_constant\_is\_defined}}
+\index{twig\_constant\_is\_defined@{twig\_constant\_is\_defined}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_constant\_is\_defined()}{twig\_constant\_is\_defined()}}
+{\footnotesize\ttfamily twig\+\_\+constant\+\_\+is\+\_\+defined (\begin{DoxyParamCaption}\item[{}]{\$constant,  }\item[{}]{\$object = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Checks if a constant exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$constant} & The name of the constant \\
+\hline
+object | null & {\em \$object} & The object to get the constant from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_ae288325a1d8fc4e036d1e828d7fac1f6}\label{_core_extension_8php_ae288325a1d8fc4e036d1e828d7fac1f6}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_convert\_encoding@{twig\_convert\_encoding}}
+\index{twig\_convert\_encoding@{twig\_convert\_encoding}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_convert\_encoding()}{twig\_convert\_encoding()}}
+{\footnotesize\ttfamily twig\+\_\+convert\+\_\+encoding (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$to,  }\item[{}]{\$from }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \\
+\hline
+string & {\em \$to} & \\
+\hline
+string & {\em \$from} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_acdac197154574e891f0edffdfa46a9c1}\label{_core_extension_8php_acdac197154574e891f0edffdfa46a9c1}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_cycle@{twig\_cycle}}
+\index{twig\_cycle@{twig\_cycle}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_cycle()}{twig\_cycle()}}
+{\footnotesize\ttfamily twig\+\_\+cycle (\begin{DoxyParamCaption}\item[{}]{\$values,  }\item[{}]{\$position }\end{DoxyParamCaption})}
+
+Cycles over a value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Array\+Access | array & {\em \$values} & \\
+\hline
+int & {\em \$position} & The cycle position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The next value in the cycle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_aa8f1fbdc8eaf8db4b9deea49e2cbd59d}\label{_core_extension_8php_aa8f1fbdc8eaf8db4b9deea49e2cbd59d}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_date\_converter@{twig\_date\_converter}}
+\index{twig\_date\_converter@{twig\_date\_converter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_date\_converter()}{twig\_date\_converter()}}
+{\footnotesize\ttfamily twig\+\_\+date\+\_\+converter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$date = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$timezone = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Converts an input to a \textbackslash{}\+Date\+Time instance.
+
+\{\% if date(user.\+created\+\_\+at) \texorpdfstring{$<$}{<} date(\textquotesingle{}+2days\textquotesingle{}) \%\} \{\# do something \#\} \{\% endif \%\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | string | null & {\em \$date} & \mbox{\hyperlink{class_a}{A}} date or null to use the current time \\
+\hline
+\textbackslash{}\+Date\+Time\+Zone | string | false | null & {\em \$timezone} & The target timezone, null to use the default, false to leave unchanged\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\+Interface 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_afb0a4462da7b07cd8ef58b8971471348}\label{_core_extension_8php_afb0a4462da7b07cd8ef58b8971471348}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_date\_format\_filter@{twig\_date\_format\_filter}}
+\index{twig\_date\_format\_filter@{twig\_date\_format\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_date\_format\_filter()}{twig\_date\_format\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+date\+\_\+format\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$date,  }\item[{}]{\$format = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$timezone = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Converts a date to the given format.
+
+\{\{ post.\+published\+\_\+at$\vert$date(\char`\"{}m/d/\+Y\char`\"{}) \}\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | string & {\em \$date} & \mbox{\hyperlink{class_a}{A}} date \\
+\hline
+string | null & {\em \$format} & The target format, null to use the default \\
+\hline
+\textbackslash{}\+Date\+Time\+Zone | string | false | null & {\em \$timezone} & The target timezone, null to use the default, false to leave unchanged\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The formatted date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a07e489c9601a8f4f0f5c524126964a64}\label{_core_extension_8php_a07e489c9601a8f4f0f5c524126964a64}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_date\_modify\_filter@{twig\_date\_modify\_filter}}
+\index{twig\_date\_modify\_filter@{twig\_date\_modify\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_date\_modify\_filter()}{twig\_date\_modify\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+date\+\_\+modify\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$date,  }\item[{}]{\$modifier }\end{DoxyParamCaption})}
+
+Returns a new date object modified.
+
+\{\{ post.\+published\+\_\+at$\vert$date\+\_\+modify(\char`\"{}-\/1day\char`\"{})$\vert$date(\char`\"{}m/d/\+Y\char`\"{}) \}\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | string & {\em \$date} & \mbox{\hyperlink{class_a}{A}} date \\
+\hline
+string & {\em \$modifier} & \mbox{\hyperlink{class_a}{A}} modifier string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\+Interface 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a62b2aa48653c37ade953be5493461c59}\label{_core_extension_8php_a62b2aa48653c37ade953be5493461c59}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_ensure\_traversable@{twig\_ensure\_traversable}}
+\index{twig\_ensure\_traversable@{twig\_ensure\_traversable}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_ensure\_traversable()}{twig\_ensure\_traversable()}}
+{\footnotesize\ttfamily twig\+\_\+ensure\+\_\+traversable (\begin{DoxyParamCaption}\item[{}]{\$seq }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_af8fd790efc18bdd1032b7a1472346128}\label{_core_extension_8php_af8fd790efc18bdd1032b7a1472346128}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_first@{twig\_first}}
+\index{twig\_first@{twig\_first}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_first()}{twig\_first()}}
+{\footnotesize\ttfamily twig\+\_\+first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$item }\end{DoxyParamCaption})}
+
+Returns the first element of the item.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & \mbox{\hyperlink{class_a}{A}} variable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The first element of the item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a385fc99eefd1e84922ecbb771b2630f5}\label{_core_extension_8php_a385fc99eefd1e84922ecbb771b2630f5}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_get\_array\_keys\_filter@{twig\_get\_array\_keys\_filter}}
+\index{twig\_get\_array\_keys\_filter@{twig\_get\_array\_keys\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_get\_array\_keys\_filter()}{twig\_get\_array\_keys\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+get\+\_\+array\+\_\+keys\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$array }\end{DoxyParamCaption})}
+
+Returns the keys for the given array.
+
+It is useful when you want to iterate over the keys of an array\+:
+
+\{\% for key in array$\vert$keys \%\} \{\# ... \#\} \{\% endfor \%\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & An array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The keys 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_aeb74e277ae38926f0b4c91f83c580705}\label{_core_extension_8php_aeb74e277ae38926f0b4c91f83c580705}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_get\_attribute@{twig\_get\_attribute}}
+\index{twig\_get\_attribute@{twig\_get\_attribute}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_get\_attribute()}{twig\_get\_attribute()}}
+{\footnotesize\ttfamily twig\+\_\+get\+\_\+attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{\mbox{\hyperlink{class_twig_1_1_source}{Source}}}]{\$source,  }\item[{}]{\$object,  }\item[{}]{\$item,  }\item[{array}]{\$arguments = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$type = {\ttfamily \textquotesingle{}any\textquotesingle{}},  }\item[{}]{\$is\+Defined\+Test = {\ttfamily false},  }\item[{}]{\$ignore\+Strict\+Check = {\ttfamily false},  }\item[{}]{\$sandboxed = {\ttfamily false},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}}}]{\$lineno = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Returns the attribute value for a given array/object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$object} & The object or array from where to get the item \\
+\hline
+mixed & {\em \$item} & The item to get from the array or object \\
+\hline
+array & {\em \$arguments} & An array of arguments to pass if the item is an object method \\
+\hline
+string & {\em \$type} & The type of attribute (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Twig\textbackslash{}\+Template constants) 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$is\+Defined\+Test} & Whether this is only a defined check \\
+\hline
+bool & {\em \$ignore\+Strict\+Check} & Whether to ignore the strict attribute check or not \\
+\hline
+int & {\em \$lineno} & The template line where the attribute was called\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The attribute value, or a Boolean when \$is\+Defined\+Test is true, or null when the attribute is not set and \$ignore\+Strict\+Check is true
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Error} & if the attribute does not exist and \mbox{\hyperlink{namespace_twig}{Twig}} is running in strict mode and \$is\+Defined\+Test is false \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_core_extension_8php_a865b65eeb9df87675788913e1e69fc7d}\label{_core_extension_8php_a865b65eeb9df87675788913e1e69fc7d}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_in\_filter@{twig\_in\_filter}}
+\index{twig\_in\_filter@{twig\_in\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_in\_filter()}{twig\_in\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+in\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$compare }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_a4505cf4718aff71887e0160fa1f15493}\label{_core_extension_8php_a4505cf4718aff71887e0160fa1f15493}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_include@{twig\_include}}
+\index{twig\_include@{twig\_include}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_include()}{twig\_include()}}
+{\footnotesize\ttfamily twig\+\_\+include (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$context,  }\item[{}]{\$template,  }\item[{}]{\$variables = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$with\+Context = {\ttfamily \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}},  }\item[{}]{\$ignore\+Missing = {\ttfamily false},  }\item[{}]{\$sandboxed = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Renders a template.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$context} & \\
+\hline
+string | array & {\em \$template} & The template to render or an array of templates to try consecutively \\
+\hline
+array & {\em \$variables} & The variables to pass to the template \\
+\hline
+bool & {\em \$with\+Context} & \\
+\hline
+bool & {\em \$ignore\+Missing} & Whether to ignore missing templates or not \\
+\hline
+bool & {\em \$sandboxed} & Whether to sandbox the template or not\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The rendered template 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_abc9e6cfa5e9862ae3e0a8d6a7f861377}\label{_core_extension_8php_abc9e6cfa5e9862ae3e0a8d6a7f861377}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_join\_filter@{twig\_join\_filter}}
+\index{twig\_join\_filter@{twig\_join\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_join\_filter()}{twig\_join\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+join\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$glue = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$and = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Joins the values to a string.
+
+The separators between elements are empty strings per default, you can define them with the optional parameters.
+
+\{\{ \mbox{[}1, 2, 3\mbox{]}$\vert$join(\textquotesingle{}, \textquotesingle{}, \textquotesingle{} and \textquotesingle{}) \}\} \{\# returns 1, 2 and 3 \#\}
+
+\{\{ \mbox{[}1, 2, 3\mbox{]}$\vert$join(\textquotesingle{}$\vert$\textquotesingle{}) \}\} \{\# returns 1$\vert$2$\vert$3 \#\}
+
+\{\{ \mbox{[}1, 2, 3\mbox{]}$\vert$join \}\} \{\# returns 123 \#\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$value} & An array \\
+\hline
+string & {\em \$glue} & The separator \\
+\hline
+string | null & {\em \$and} & The separator for the last pair\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The concatenated string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_ac5a5585f07103df0baf49ffafe5183a0}\label{_core_extension_8php_ac5a5585f07103df0baf49ffafe5183a0}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_last@{twig\_last}}
+\index{twig\_last@{twig\_last}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_last()}{twig\_last()}}
+{\footnotesize\ttfamily twig\+\_\+last (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$item }\end{DoxyParamCaption})}
+
+Returns the last element of the item.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & \mbox{\hyperlink{class_a}{A}} variable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The last element of the item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a9406216b24c030f1de8792d9a386eb77}\label{_core_extension_8php_a9406216b24c030f1de8792d9a386eb77}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_length\_filter@{twig\_length\_filter}}
+\index{twig\_length\_filter@{twig\_length\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_length\_filter()}{twig\_length\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+length\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$thing }\end{DoxyParamCaption})}
+
+Returns the length of a variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$thing} & \mbox{\hyperlink{class_a}{A}} variable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The length of the value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_aa0bb65fe0b0be9985c7cbd73c649e4db}\label{_core_extension_8php_aa0bb65fe0b0be9985c7cbd73c649e4db}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_lower\_filter@{twig\_lower\_filter}}
+\index{twig\_lower\_filter@{twig\_lower\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_lower\_filter()}{twig\_lower\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+lower\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Converts a string to lowercase.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \mbox{\hyperlink{class_a}{A}} string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The lowercased string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a10aac936e185fb3dd7b64dae59941323}\label{_core_extension_8php_a10aac936e185fb3dd7b64dae59941323}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_nl2br@{twig\_nl2br}}
+\index{twig\_nl2br@{twig\_nl2br}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_nl2br()}{twig\_nl2br()}}
+{\footnotesize\ttfamily twig\+\_\+nl2br (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Inserts HTML line breaks before all newlines in a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a7c44483478720c8d780b28f769777a11}\label{_core_extension_8php_a7c44483478720c8d780b28f769777a11}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_number\_format\_filter@{twig\_number\_format\_filter}}
+\index{twig\_number\_format\_filter@{twig\_number\_format\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_number\_format\_filter()}{twig\_number\_format\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+number\+\_\+format\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$number,  }\item[{}]{\$decimal = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$decimal\+Point = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$thousand\+Sep = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Number format filter.
+
+All of the formatting options can be left null, in that case the defaults will be used. Supplying any of the parameters will override the defaults set in the environment object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$number} & \mbox{\hyperlink{class_a}{A}} float/int/string of the number to format \\
+\hline
+int & {\em \$decimal} & the number of decimal points to display \\
+\hline
+string & {\em \$decimal\+Point} & the character(s) to use for the decimal point \\
+\hline
+string & {\em \$thousand\+Sep} & the character(s) to use for the thousands separator\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The formatted number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a58143cb7cfe98f1ef38883299f5c1dee}\label{_core_extension_8php_a58143cb7cfe98f1ef38883299f5c1dee}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_random@{twig\_random}}
+\index{twig\_random@{twig\_random}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_random()}{twig\_random()}}
+{\footnotesize\ttfamily twig\+\_\+random (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$values = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$max = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Returns a random value depending on the supplied parameter type\+:
+\begin{DoxyItemize}
+\item a random item from a \textbackslash{}\+Traversable or array
+\item a random character from a string
+\item a random integer between 0 and the integer parameter.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Traversable | array | int | float | string & {\em \$values} & The values to pick a random item from \\
+\hline
+int | null & {\em \$max} & Maximum value used when \$values is an int\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Error} & when \$values is an empty array (does not apply to an empty string which is returned as is)\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+mixed \mbox{\hyperlink{class_a}{A}} random value from the given sequence 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_ad7b11011c24881206b82608150d3ba36}\label{_core_extension_8php_ad7b11011c24881206b82608150d3ba36}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_replace\_filter@{twig\_replace\_filter}}
+\index{twig\_replace\_filter@{twig\_replace\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_replace\_filter()}{twig\_replace\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+replace\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$str,  }\item[{}]{\$from }\end{DoxyParamCaption})}
+
+Replaces strings within a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$str} & String to replace in \\
+\hline
+array | \textbackslash{}\+Traversable & {\em \$from} & Replace values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a7cf8cc6e5af517dab5808a1106307ab3}\label{_core_extension_8php_a7cf8cc6e5af517dab5808a1106307ab3}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_reverse\_filter@{twig\_reverse\_filter}}
+\index{twig\_reverse\_filter@{twig\_reverse\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_reverse\_filter()}{twig\_reverse\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+reverse\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$item,  }\item[{}]{\$preserve\+Keys = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Reverses a variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | \textbackslash{}\+Traversable | string | null & {\em \$item} & An array, a \textbackslash{}\+Traversable instance, or a string \\
+\hline
+bool & {\em \$preserve\+Keys} & Whether to preserve key or not\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The reversed input 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a3871a1576a44a93cfac02da165345918}\label{_core_extension_8php_a3871a1576a44a93cfac02da165345918}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_round@{twig\_round}}
+\index{twig\_round@{twig\_round}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_round()}{twig\_round()}}
+{\footnotesize\ttfamily twig\+\_\+round (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$precision = {\ttfamily 0},  }\item[{}]{\$method = {\ttfamily \textquotesingle{}common\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Rounds a number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float | string | null & {\em \$value} & The value to round \\
+\hline
+int | float & {\em \$precision} & The rounding precision \\
+\hline
+string & {\em \$method} & The method to use for rounding\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\vert$float The rounded number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a54423653cc7a283018b0f5f6190674e0}\label{_core_extension_8php_a54423653cc7a283018b0f5f6190674e0}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_slice@{twig\_slice}}
+\index{twig\_slice@{twig\_slice}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_slice()}{twig\_slice()}}
+{\footnotesize\ttfamily twig\+\_\+slice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$item,  }\item[{}]{\$start,  }\item[{}]{\$length = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$preserve\+Keys = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Slices a variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & \mbox{\hyperlink{class_a}{A}} variable \\
+\hline
+int & {\em \$start} & Start of the slice \\
+\hline
+int & {\em \$length} & Size of the slice \\
+\hline
+bool & {\em \$preserve\+Keys} & Whether to preserve key or not (when the input is an array)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The sliced variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a3006f420be01bab3497a0e35afd8edb6}\label{_core_extension_8php_a3006f420be01bab3497a0e35afd8edb6}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_sort\_filter@{twig\_sort\_filter}}
+\index{twig\_sort\_filter@{twig\_sort\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_sort\_filter()}{twig\_sort\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+sort\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$array,  }\item[{}]{\$arrow = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Sorts an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | \textbackslash{}\+Traversable & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a9e3ff38f0adb3137277b4707a01272cb}\label{_core_extension_8php_a9e3ff38f0adb3137277b4707a01272cb}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_source@{twig\_source}}
+\index{twig\_source@{twig\_source}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_source()}{twig\_source()}}
+{\footnotesize\ttfamily twig\+\_\+source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$name,  }\item[{}]{\$ignore\+Missing = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Returns a template content without rendering it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+bool & {\em \$ignore\+Missing} & Whether to ignore missing templates or not\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The template source 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a15f656023e3e1f540fcb4e982c3c71cd}\label{_core_extension_8php_a15f656023e3e1f540fcb4e982c3c71cd}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_spaceless@{twig\_spaceless}}
+\index{twig\_spaceless@{twig\_spaceless}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_spaceless()}{twig\_spaceless()}}
+{\footnotesize\ttfamily twig\+\_\+spaceless (\begin{DoxyParamCaption}\item[{}]{\$content }\end{DoxyParamCaption})}
+
+Removes whitespaces between HTML tags.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_abf0d1d2febf9f600321025a5268b5408}\label{_core_extension_8php_abf0d1d2febf9f600321025a5268b5408}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_split\_filter@{twig\_split\_filter}}
+\index{twig\_split\_filter@{twig\_split\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_split\_filter()}{twig\_split\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+split\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$value,  }\item[{}]{\$delimiter,  }\item[{}]{\$limit = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Splits the string into an array.
+
+\{\{ \char`\"{}one,two,three\char`\"{}$\vert$split(\textquotesingle{},\textquotesingle{}) \}\} \{\# returns \mbox{[}one, two, three\mbox{]} \#\}
+
+\{\{ \char`\"{}one,two,three,four,five\char`\"{}$\vert$split(\textquotesingle{},\textquotesingle{}, 3) \}\} \{\# returns \mbox{[}one, two, \char`\"{}three,four,five\char`\"{}\mbox{]} \#\}
+
+\{\{ \char`\"{}123\char`\"{}$\vert$split(\textquotesingle{}\textquotesingle{}) \}\} \{\# returns \mbox{[}1, 2, 3\mbox{]} \#\}
+
+\{\{ \char`\"{}aabbcc\char`\"{}$\vert$split(\textquotesingle{}\textquotesingle{}, 2) \}\} \{\# returns \mbox{[}aa, bb, cc\mbox{]} \#\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$value} & \mbox{\hyperlink{class_a}{A}} string \\
+\hline
+string & {\em \$delimiter} & The delimiter \\
+\hline
+int & {\em \$limit} & The limit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The split string as an array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a256f713fc398e53c34a8b510a6b252f8}\label{_core_extension_8php_a256f713fc398e53c34a8b510a6b252f8}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_sprintf@{twig\_sprintf}}
+\index{twig\_sprintf@{twig\_sprintf}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_sprintf()}{twig\_sprintf()}}
+{\footnotesize\ttfamily twig\+\_\+sprintf (\begin{DoxyParamCaption}\item[{}]{\$format,  }\item[{}]{\$values }\end{DoxyParamCaption})}
+
+Returns a formatted string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$format} & \\
+\hline
+ & {\em ...\$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a056180943ea95bf83fd3fedcdf5889f2}\label{_core_extension_8php_a056180943ea95bf83fd3fedcdf5889f2}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_striptags@{twig\_striptags}}
+\index{twig\_striptags@{twig\_striptags}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_striptags()}{twig\_striptags()}}
+{\footnotesize\ttfamily twig\+\_\+striptags (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$allowable\+\_\+tags = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Strips HTML and PHP tags from a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \\
+\hline
+string\mbox{[}$\,$\mbox{]} | string | null & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_ac345ab6a3d1194b2ac8ed45b678f9756}\label{_core_extension_8php_ac345ab6a3d1194b2ac8ed45b678f9756}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_test\_empty@{twig\_test\_empty}}
+\index{twig\_test\_empty@{twig\_test\_empty}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_test\_empty()}{twig\_test\_empty()}}
+{\footnotesize\ttfamily twig\+\_\+test\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Checks if a variable is empty.
+
+\{\# evaluates to true if the foo variable is null, false, or the empty string \#\} \{\% if foo is empty \%\} \{\# ... \#\} \{\% endif \%\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \mbox{\hyperlink{class_a}{A}} variable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the value is empty, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_a09136b1251daa404746c546d31deb4d4}\label{_core_extension_8php_a09136b1251daa404746c546d31deb4d4}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_test\_iterable@{twig\_test\_iterable}}
+\index{twig\_test\_iterable@{twig\_test\_iterable}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_test\_iterable()}{twig\_test\_iterable()}}
+{\footnotesize\ttfamily twig\+\_\+test\+\_\+iterable (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Checks if a variable is traversable.
+
+\{\# evaluates to true if the foo variable is an array or a traversable object \#\} \{\% if foo is iterable \%\} \{\# ... \#\} \{\% endif \%\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \mbox{\hyperlink{class_a}{A}} variable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the value is traversable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_ac4d183808e43b0a866c05d1374835b46}\label{_core_extension_8php_ac4d183808e43b0a866c05d1374835b46}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_title\_string\_filter@{twig\_title\_string\_filter}}
+\index{twig\_title\_string\_filter@{twig\_title\_string\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_title\_string\_filter()}{twig\_title\_string\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+title\+\_\+string\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Returns a titlecased string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \mbox{\hyperlink{class_a}{A}} string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The titlecased string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_add6085b705776ea6e84cec0f1f6c6e8b}\label{_core_extension_8php_add6085b705776ea6e84cec0f1f6c6e8b}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_to\_array@{twig\_to\_array}}
+\index{twig\_to\_array@{twig\_to\_array}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_to\_array()}{twig\_to\_array()}}
+{\footnotesize\ttfamily twig\+\_\+to\+\_\+array (\begin{DoxyParamCaption}\item[{}]{\$seq,  }\item[{}]{\$preserve\+Keys = {\ttfamily \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_core_extension_8php_a9349109367189fd0ebd5abd109ce8b97}\label{_core_extension_8php_a9349109367189fd0ebd5abd109ce8b97}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_trim\_filter@{twig\_trim\_filter}}
+\index{twig\_trim\_filter@{twig\_trim\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_trim\_filter()}{twig\_trim\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+trim\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$character\+Mask = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$side = {\ttfamily \textquotesingle{}both\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Returns a trimmed string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \\
+\hline
+string | null & {\em \$character\+Mask} & \\
+\hline
+string & {\em \$side} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Error} & When an invalid trimming side is used (not a string or not \textquotesingle{}left\textquotesingle{}, \textquotesingle{}right\textquotesingle{}, or \textquotesingle{}both\textquotesingle{}) \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_core_extension_8php_a643a13433b9ae2cdaf47b9e6961fdd6d}\label{_core_extension_8php_a643a13433b9ae2cdaf47b9e6961fdd6d}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_upper\_filter@{twig\_upper\_filter}}
+\index{twig\_upper\_filter@{twig\_upper\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_upper\_filter()}{twig\_upper\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+upper\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Converts a string to uppercase.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \mbox{\hyperlink{class_a}{A}} string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The uppercased string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_core_extension_8php_aa3f48766e0124a7c43c08c04dc40fe27}\label{_core_extension_8php_aa3f48766e0124a7c43c08c04dc40fe27}} 
+\index{CoreExtension.php@{CoreExtension.php}!twig\_urlencode\_filter@{twig\_urlencode\_filter}}
+\index{twig\_urlencode\_filter@{twig\_urlencode\_filter}!CoreExtension.php@{CoreExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_urlencode\_filter()}{twig\_urlencode\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+urlencode\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$url }\end{DoxyParamCaption})}
+
+URL encodes (RFC 3986) a string as a path segment or an array as a query string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array | null & {\em \$url} & \mbox{\hyperlink{class_a}{A}} URL or an array of query parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The URL encoded value 
+\end{DoxyReturn}

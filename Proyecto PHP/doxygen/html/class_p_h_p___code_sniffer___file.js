@@ -1,0 +1,25 @@
+var class_p_h_p___code_sniffer___file =
+[
+    [ "__destruct", "class_p_h_p___code_sniffer___file.html#a421831a265621325e1fdd19aace0c758", null ],
+    [ "__destruct", "class_p_h_p___code_sniffer___file.html#a421831a265621325e1fdd19aace0c758", null ],
+    [ "_PHP_CodeSniffer_File", "class_p_h_p___code_sniffer___file.html#abd829b712d5a19159795dfdb20d8389d", null ],
+    [ "_PHP_CodeSniffer_File", "class_p_h_p___code_sniffer___file.html#abd829b712d5a19159795dfdb20d8389d", null ],
+    [ "accessTag", "class_p_h_p___code_sniffer___file.html#a9b7a082bccd9c8db04d10a842f5e4fa5", null ],
+    [ "accessTag", "class_p_h_p___code_sniffer___file.html#a9b7a082bccd9c8db04d10a842f5e4fa5", null ],
+    [ "extraDescriptionNewlines", "class_p_h_p___code_sniffer___file.html#ab0db691bfc44916dc0f62a91d87a3ca4", null ],
+    [ "extraDescriptionNewlines", "class_p_h_p___code_sniffer___file.html#ab0db691bfc44916dc0f62a91d87a3ca4", null ],
+    [ "invalidCommentStyle", "class_p_h_p___code_sniffer___file.html#a046dab4859db4b09786bde042c0d8cb2", null ],
+    [ "invalidCommentStyle", "class_p_h_p___code_sniffer___file.html#a046dab4859db4b09786bde042c0d8cb2", null ],
+    [ "missingComment", "class_p_h_p___code_sniffer___file.html#a044534d82b2254f71b3c5efe13fbcf4d", null ],
+    [ "missingComment", "class_p_h_p___code_sniffer___file.html#a044534d82b2254f71b3c5efe13fbcf4d", null ],
+    [ "missingDescription", "class_p_h_p___code_sniffer___file.html#a1c69da123d1d79ae86a0ca8675c0f139", null ],
+    [ "missingDescription", "class_p_h_p___code_sniffer___file.html#a1c69da123d1d79ae86a0ca8675c0f139", null ],
+    [ "missingNewlinesBeforeTags", "class_p_h_p___code_sniffer___file.html#a4b687f2babc8aedb8572a37af3d2a904", null ],
+    [ "missingNewlinesBeforeTags", "class_p_h_p___code_sniffer___file.html#a4b687f2babc8aedb8572a37af3d2a904", null ],
+    [ "noReturn", "class_p_h_p___code_sniffer___file.html#a580d9330e91f4c8b2b04f19e805f2d47", null ],
+    [ "noReturn", "class_p_h_p___code_sniffer___file.html#a580d9330e91f4c8b2b04f19e805f2d47", null ],
+    [ "oneSpaceAfterLongestVar", "class_p_h_p___code_sniffer___file.html#a1361ad7fffb2d3413ff73a7d8873e0d3", null ],
+    [ "oneSpaceAfterLongestVar", "class_p_h_p___code_sniffer___file.html#aeba3538d1739a299272436ce8c821f9c", null ],
+    [ "PHP_CodeSniffer_File", "class_p_h_p___code_sniffer___file.html#a67c16152dafbb2e9dc3dd8938324b388", null ],
+    [ "PHP_CodeSniffer_File", "class_p_h_p___code_sniffer___file.html#a67c16152dafbb2e9dc3dd8938324b388", null ]
+];

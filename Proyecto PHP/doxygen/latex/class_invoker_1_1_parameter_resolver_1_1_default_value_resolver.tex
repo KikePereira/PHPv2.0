@@ -1,0 +1,52 @@
+\hypertarget{class_invoker_1_1_parameter_resolver_1_1_default_value_resolver}{}\doxysection{Default\+Value\+Resolver Class Reference}
+\label{class_invoker_1_1_parameter_resolver_1_1_default_value_resolver}\index{DefaultValueResolver@{DefaultValueResolver}}
+Inheritance diagram for Default\+Value\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_invoker_1_1_parameter_resolver_1_1_default_value_resolver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_invoker_1_1_parameter_resolver_1_1_default_value_resolver_a867cbc4830a92b4fb0e791081bc1d860}{get\+Parameters}} (Reflection\+Function\+Abstract \$reflection, array \$provided\+Parameters, array \$resolved\+Parameters)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Finds the default value for a parameter, {\itshape if it exists}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_invoker_1_1_parameter_resolver_1_1_default_value_resolver_a867cbc4830a92b4fb0e791081bc1d860}\label{class_invoker_1_1_parameter_resolver_1_1_default_value_resolver_a867cbc4830a92b4fb0e791081bc1d860}} 
+\index{DefaultValueResolver@{DefaultValueResolver}!getParameters@{getParameters}}
+\index{getParameters@{getParameters}!DefaultValueResolver@{DefaultValueResolver}}
+\doxysubsubsection{\texorpdfstring{getParameters()}{getParameters()}}
+{\footnotesize\ttfamily get\+Parameters (\begin{DoxyParamCaption}\item[{Reflection\+Function\+Abstract}]{\$reflection,  }\item[{array}]{\$provided\+Parameters,  }\item[{array}]{\$resolved\+Parameters }\end{DoxyParamCaption})}
+
+Resolves the parameters to use to call the callable.
+
+{\ttfamily \$resolved\+Parameters} contains parameters that have already been resolved.
+
+Each \mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}} must resolve parameters that are not already in {\ttfamily \$resolved\+Parameters}. That allows to chain multiple \mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Function\+Abstract & {\em \$reflection} & \mbox{\hyperlink{namespace_invoker_1_1_reflection}{Reflection}} object for the callable. \\
+\hline
+array & {\em \$provided\+Parameters} & Parameters provided by the caller. \\
+\hline
+array & {\em \$resolved\+Parameters} & Parameters resolved (indexed by parameter position). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver_a867cbc4830a92b4fb0e791081bc1d860}{Parameter\+Resolver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/invoker/src/\+Parameter\+Resolver/\mbox{\hyperlink{_default_value_resolver_8php}{Default\+Value\+Resolver.\+php}}\end{DoxyCompactItemize}

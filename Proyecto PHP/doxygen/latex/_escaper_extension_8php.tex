@@ -1,0 +1,72 @@
+\hypertarget{_escaper_extension_8php}{}\doxysection{C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Extension/\+Escaper\+Extension.php File Reference}
+\label{_escaper_extension_8php}\index{C:/workspace/Proyecto PHP/project/vendor/twig/twig/src/Extension/EscaperExtension.php@{C:/workspace/Proyecto PHP/project/vendor/twig/twig/src/Extension/EscaperExtension.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_twig_1_1_extension_1_1_escaper_extension}{Escaper\+Extension}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_twig}{Twig}}
+\item 
+namespace \mbox{\hyperlink{namespace_twig_1_1_extension}{Twig\textbackslash{}\+Extension}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_escaper_extension_8php_a1487326c419735982cc3348ab3d98d6c}{twig\+\_\+raw\+\_\+filter}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{_escaper_extension_8php_aabeb5b51fb981707d997d1c588d7c509}{twig\+\_\+escape\+\_\+filter}} (\mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}, \$strategy=\textquotesingle{}html\textquotesingle{}, \$charset=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$autoescape=false)
+\item 
+\mbox{\hyperlink{_escaper_extension_8php_a57b86a55912e7c91cd4afbafc67b2f88}{twig\+\_\+escape\+\_\+filter\+\_\+is\+\_\+safe}} (\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}} \$filter\+Args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_escaper_extension_8php_aabeb5b51fb981707d997d1c588d7c509}\label{_escaper_extension_8php_aabeb5b51fb981707d997d1c588d7c509}} 
+\index{EscaperExtension.php@{EscaperExtension.php}!twig\_escape\_filter@{twig\_escape\_filter}}
+\index{twig\_escape\_filter@{twig\_escape\_filter}!EscaperExtension.php@{EscaperExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_escape\_filter()}{twig\_escape\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+escape\+\_\+filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env,  }\item[{}]{\$string,  }\item[{}]{\$strategy = {\ttfamily \textquotesingle{}html\textquotesingle{}},  }\item[{}]{\$charset = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$autoescape = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Escapes a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$string} & The value to be escaped \\
+\hline
+string & {\em \$strategy} & The escaping strategy \\
+\hline
+string & {\em \$charset} & The charset \\
+\hline
+bool & {\em \$autoescape} & Whether the function is called by the auto-\/escaping feature (true) or by the developer (false)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+This function is adapted from code coming from Zend Framework.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2005-\/2012 Zend Technologies USA Inc. (\href{https://www.zend.com}{\texttt{ https\+://www.\+zend.\+com}}) @license \href{https://framework.zend.com/license/new-bsd}{\texttt{ https\+://framework.\+zend.\+com/license/new-\/bsd}} New BSD License
+\end{DoxyCopyright}
+\mbox{\Hypertarget{_escaper_extension_8php_a57b86a55912e7c91cd4afbafc67b2f88}\label{_escaper_extension_8php_a57b86a55912e7c91cd4afbafc67b2f88}} 
+\index{EscaperExtension.php@{EscaperExtension.php}!twig\_escape\_filter\_is\_safe@{twig\_escape\_filter\_is\_safe}}
+\index{twig\_escape\_filter\_is\_safe@{twig\_escape\_filter\_is\_safe}!EscaperExtension.php@{EscaperExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_escape\_filter\_is\_safe()}{twig\_escape\_filter\_is\_safe()}}
+{\footnotesize\ttfamily twig\+\_\+escape\+\_\+filter\+\_\+is\+\_\+safe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}}}]{\$filter\+Args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_escaper_extension_8php_a1487326c419735982cc3348ab3d98d6c}\label{_escaper_extension_8php_a1487326c419735982cc3348ab3d98d6c}} 
+\index{EscaperExtension.php@{EscaperExtension.php}!twig\_raw\_filter@{twig\_raw\_filter}}
+\index{twig\_raw\_filter@{twig\_raw\_filter}!EscaperExtension.php@{EscaperExtension.php}}
+\doxysubsubsection{\texorpdfstring{twig\_raw\_filter()}{twig\_raw\_filter()}}
+{\footnotesize\ttfamily twig\+\_\+raw\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Marks a variable as being safe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \mbox{\hyperlink{class_a}{A}} PHP variable \\
+\hline
+\end{DoxyParams}

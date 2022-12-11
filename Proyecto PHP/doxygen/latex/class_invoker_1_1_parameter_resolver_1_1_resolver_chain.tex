@@ -1,0 +1,81 @@
+\hypertarget{class_invoker_1_1_parameter_resolver_1_1_resolver_chain}{}\doxysection{Resolver\+Chain Class Reference}
+\label{class_invoker_1_1_parameter_resolver_1_1_resolver_chain}\index{ResolverChain@{ResolverChain}}
+Inheritance diagram for Resolver\+Chain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_invoker_1_1_parameter_resolver_1_1_resolver_chain}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_a0694e662ab8e766206e62bffd350e69c}{\+\_\+\+\_\+construct}} (array \$resolvers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_a867cbc4830a92b4fb0e791081bc1d860}{get\+Parameters}} (Reflection\+Function\+Abstract \$reflection, array \$provided\+Parameters, array \$resolved\+Parameters)
+\item 
+\mbox{\hyperlink{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_ab2ec34f3a0a879cfaf5d9d24c2f95588}{append\+Resolver}} (\mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}} \$resolver)
+\item 
+\mbox{\hyperlink{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_ad64c31fb9c135e4e43a4ad01fe27f4e5}{prepend\+Resolver}} (\mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}} \$resolver)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Dispatches the call to other resolvers until all parameters are resolved.
+
+Chain of responsibility pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_a0694e662ab8e766206e62bffd350e69c}\label{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_a0694e662ab8e766206e62bffd350e69c}} 
+\index{ResolverChain@{ResolverChain}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ResolverChain@{ResolverChain}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$resolvers = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_ab2ec34f3a0a879cfaf5d9d24c2f95588}\label{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_ab2ec34f3a0a879cfaf5d9d24c2f95588}} 
+\index{ResolverChain@{ResolverChain}!appendResolver@{appendResolver}}
+\index{appendResolver@{appendResolver}!ResolverChain@{ResolverChain}}
+\doxysubsubsection{\texorpdfstring{appendResolver()}{appendResolver()}}
+{\footnotesize\ttfamily append\+Resolver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}}}]{\$resolver }\end{DoxyParamCaption})}
+
+Push a parameter resolver after the ones already registered. \mbox{\Hypertarget{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_a867cbc4830a92b4fb0e791081bc1d860}\label{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_a867cbc4830a92b4fb0e791081bc1d860}} 
+\index{ResolverChain@{ResolverChain}!getParameters@{getParameters}}
+\index{getParameters@{getParameters}!ResolverChain@{ResolverChain}}
+\doxysubsubsection{\texorpdfstring{getParameters()}{getParameters()}}
+{\footnotesize\ttfamily get\+Parameters (\begin{DoxyParamCaption}\item[{Reflection\+Function\+Abstract}]{\$reflection,  }\item[{array}]{\$provided\+Parameters,  }\item[{array}]{\$resolved\+Parameters }\end{DoxyParamCaption})}
+
+Resolves the parameters to use to call the callable.
+
+{\ttfamily \$resolved\+Parameters} contains parameters that have already been resolved.
+
+Each \mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}} must resolve parameters that are not already in {\ttfamily \$resolved\+Parameters}. That allows to chain multiple \mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Function\+Abstract & {\em \$reflection} & \mbox{\hyperlink{namespace_invoker_1_1_reflection}{Reflection}} object for the callable. \\
+\hline
+array & {\em \$provided\+Parameters} & Parameters provided by the caller. \\
+\hline
+array & {\em \$resolved\+Parameters} & Parameters resolved (indexed by parameter position). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver_a867cbc4830a92b4fb0e791081bc1d860}{Parameter\+Resolver}}.
+
+\mbox{\Hypertarget{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_ad64c31fb9c135e4e43a4ad01fe27f4e5}\label{class_invoker_1_1_parameter_resolver_1_1_resolver_chain_ad64c31fb9c135e4e43a4ad01fe27f4e5}} 
+\index{ResolverChain@{ResolverChain}!prependResolver@{prependResolver}}
+\index{prependResolver@{prependResolver}!ResolverChain@{ResolverChain}}
+\doxysubsubsection{\texorpdfstring{prependResolver()}{prependResolver()}}
+{\footnotesize\ttfamily prepend\+Resolver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_invoker_1_1_parameter_resolver_1_1_parameter_resolver}{Parameter\+Resolver}}}]{\$resolver }\end{DoxyParamCaption})}
+
+Insert a parameter resolver before the ones already registered. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/invoker/src/\+Parameter\+Resolver/\mbox{\hyperlink{_resolver_chain_8php}{Resolver\+Chain.\+php}}\end{DoxyCompactItemize}

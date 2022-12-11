@@ -1,0 +1,5 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_p_e_a_r_1_1_sniffs_1_1_control_structures_1_1_control_signature_sniff =
+[
+    [ "getPatterns", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_e_a_r_1_1_sniffs_1_1_control_structures_1_1_control_signature_sniff.html#a148a61db3ecd914e55580fcdcab20f92", null ],
+    [ "$ignoreComments", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_e_a_r_1_1_sniffs_1_1_control_structures_1_1_control_signature_sniff.html#a9a9c1f012e33d4eb6bacdfadb2e684d9", null ]
+];

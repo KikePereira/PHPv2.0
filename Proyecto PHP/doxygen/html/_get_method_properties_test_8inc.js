@@ -1,0 +1,27 @@
+var _get_method_properties_test_8inc =
+[
+    [ "MyClass", "class_my_class.html", "class_my_class" ],
+    [ "MyInterface", "interface_my_interface.html", "interface_my_interface" ],
+    [ "ReturnMe", "class_return_me.html", null ],
+    [ "FooBar", "class_foo_bar.html", "class_foo_bar" ],
+    [ "duplicateTypeInUnion", "_get_method_properties_test_8inc.html#a7c3712f908483f095632b5d8b623631d", null ],
+    [ "intersectionTypes", "_get_method_properties_test_8inc.html#ab50da81ff822af2a46ebe319ee9cc1bf", null ],
+    [ "mixedTypeHint", "_get_method_properties_test_8inc.html#a66003d1ce461c0ce345af6bb6eaf1440", null ],
+    [ "mixedTypeHintNullable", "_get_method_properties_test_8inc.html#a14ada23cd79d86006f852f9ad76704b4", null ],
+    [ "moreIntersectionTypes", "_get_method_properties_test_8inc.html#a78c2a94c0636285bc8338a53b540e8c8", null ],
+    [ "myFunction", "_get_method_properties_test_8inc.html#a95403ad5c70e7b2791c1df817e131916", null ],
+    [ "myFunction", "_get_method_properties_test_8inc.html#a204b65d8f136a103352d9ca7fb3e3ea4", null ],
+    [ "namespaceOperatorTypeHint", "_get_method_properties_test_8inc.html#a8676d528092f46fee36600c9680fe156", null ],
+    [ "never", "_get_method_properties_test_8inc.html#a5f3c11b90fed1f1f1cd123af8f802285", null ],
+    [ "nullableNever", "_get_method_properties_test_8inc.html#ab506b5af5e9bf56f5603b4330d27a27b", null ],
+    [ "objectAndClass", "_get_method_properties_test_8inc.html#ab0f864e7c76ace9441d7fd7523822498", null ],
+    [ "pseudoTypeFalse", "_get_method_properties_test_8inc.html#a5627660c12ee0001fa8e8fb446cbe904", null ],
+    [ "pseudoTypeFalseAndBool", "_get_method_properties_test_8inc.html#a57cf7df0bb67c18af7ef1f5ee3132b53", null ],
+    [ "pseudoTypeNull", "_get_method_properties_test_8inc.html#a07fd9625afdff7868df8fdd8786b079b", null ],
+    [ "unionTypesAllBaseTypes", "_get_method_properties_test_8inc.html#a44d51c3fcc0c09e9b4f112a7fb6daa37", null ],
+    [ "unionTypesAllPseudoTypes", "_get_method_properties_test_8inc.html#a1ddd1590e0d39575d81b76dd1de27276", null ],
+    [ "unionTypeSimple", "_get_method_properties_test_8inc.html#aa472fdee8938f0cb3399125a64ca1d23", null ],
+    [ "$closure", "_get_method_properties_test_8inc.html#ab56fa0195cdd401640e691ee90982eed", null ],
+    [ "$fn", "_get_method_properties_test_8inc.html#ae5a9a6a84264f056f20d2c65802ca794", null ],
+    [ "$result", "_get_method_properties_test_8inc.html#a112ef069ddc0454086e3d1e6d8d55d07", null ]
+];

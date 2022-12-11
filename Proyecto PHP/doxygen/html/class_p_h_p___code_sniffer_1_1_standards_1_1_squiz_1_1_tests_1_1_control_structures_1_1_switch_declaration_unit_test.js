@@ -1,0 +1,5 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_switch_declaration_unit_test =
+[
+    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_switch_declaration_unit_test.html#a34efc375b210980fb63ed9fb64598dc8", null ],
+    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_switch_declaration_unit_test.html#abd7a9db2ce2d8b43e4b1e7a7446656af", null ]
+];

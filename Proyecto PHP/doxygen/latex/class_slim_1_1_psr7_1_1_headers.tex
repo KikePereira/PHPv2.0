@@ -1,0 +1,395 @@
+\hypertarget{class_slim_1_1_psr7_1_1_headers}{}\doxysection{Headers Class Reference}
+\label{class_slim_1_1_psr7_1_1_headers}\index{Headers@{Headers}}
+Inheritance diagram for Headers\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_slim_1_1_psr7_1_1_headers}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a9d0a1f0a45104b41bcf449f2a022c64e}{\+\_\+\+\_\+construct}} (array \$headers=\mbox{[}$\,$\mbox{]}, ?array \$globals=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a22ea539cc1939fde5ded26ff6b8d90c7}{add\+Header}} (\$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$value)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a2253d802ee1fbf8d9a8beaffa2301d67}{remove\+Header}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_acf43f3d4cdfb39b1b961d622c79f779f}{get\+Header}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$default=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a48ca020ea3da5f108feab0fa8efde068}{set\+Header}} (\$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$value)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_ad62c7c9cad0e3ccfdbff9144c914090b}{set\+Headers}} (array \$headers)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_adab88ffd7ef2e5dae162ab869470b5ad}{has\+Header}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a0b665cf3900186fb88544769fc18e685}{get\+Headers}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$original\+Case=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a79ce60596ee2f79e24a5188ba3e3d74f}{create\+From\+Globals}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a238a68c308cdd07935d7a65a8f4be808}{normalize\+Header\+Name}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$preserve\+Case=false)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a221856500189d5265e102517dd02332c}{parse\+Authorization\+Header}} (array \$headers)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a5680b16d42ef8a3821753a838f0d8107}{trim\+Header\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a4895fb51ed54dbbc7135da0e916cbfe4}{prepare\+Header}} (\$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$value)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a22d581af430fbbc5d9fa158f6acd5dda}{validate\+Header}} (\$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$value)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_ab1cb0d361b29e31cb6dda2bbef3adbfe}{validate\+Header\+Name}} (\$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a8d6b9dc3e1125d6b18dda03a8e83665c}{validate\+Header\+Value}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a0c5ae541a59a2c4a5703384afcda75ec}{\$globals}}
+\item 
+array \mbox{\hyperlink{class_slim_1_1_psr7_1_1_headers_a914c4187a92589e98dc298a488c6f4ca}{\$headers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a9d0a1f0a45104b41bcf449f2a022c64e}\label{class_slim_1_1_psr7_1_1_headers_a9d0a1f0a45104b41bcf449f2a022c64e}} 
+\index{Headers@{Headers}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$headers = {\ttfamily \mbox{[}\mbox{]}},  }\item[{?array}]{\$globals = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & \\
+\hline
+array | null & {\em \$globals} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a22ea539cc1939fde5ded26ff6b8d90c7}\label{class_slim_1_1_psr7_1_1_headers_a22ea539cc1939fde5ded26ff6b8d90c7}} 
+\index{Headers@{Headers}!addHeader@{addHeader}}
+\index{addHeader@{addHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{addHeader()}{addHeader()}}
+{\footnotesize\ttfamily add\+Header (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+\{Add header value
+
+This method appends the value to the existing array of values
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface}{Headers\+Interface}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface_a22ea539cc1939fde5ded26ff6b8d90c7}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a79ce60596ee2f79e24a5188ba3e3d74f}\label{class_slim_1_1_psr7_1_1_headers_a79ce60596ee2f79e24a5188ba3e3d74f}} 
+\index{Headers@{Headers}!createFromGlobals@{createFromGlobals}}
+\index{createFromGlobals@{createFromGlobals}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{createFromGlobals()}{createFromGlobals()}}
+{\footnotesize\ttfamily static create\+From\+Globals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_acf43f3d4cdfb39b1b961d622c79f779f}\label{class_slim_1_1_psr7_1_1_headers_acf43f3d4cdfb39b1b961d622c79f779f}} 
+\index{Headers@{Headers}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{getHeader()}{getHeader()}}
+{\footnotesize\ttfamily get\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name,  }\item[{}]{\$default = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+\{Get header value or values. If the array has a single value it will return that single value. If the array has multiple values, it will return an array of values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface_acf43f3d4cdfb39b1b961d622c79f779f}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a0b665cf3900186fb88544769fc18e685}\label{class_slim_1_1_psr7_1_1_headers_a0b665cf3900186fb88544769fc18e685}} 
+\index{Headers@{Headers}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{getHeaders()}{getHeaders()}}
+{\footnotesize\ttfamily get\+Headers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$original\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\{Return all headers in the stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$original\+Case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface_a83f986a78f8bf12a0048f90cee3c13c3}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_adab88ffd7ef2e5dae162ab869470b5ad}\label{class_slim_1_1_psr7_1_1_headers_adab88ffd7ef2e5dae162ab869470b5ad}} 
+\index{Headers@{Headers}!hasHeader@{hasHeader}}
+\index{hasHeader@{hasHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{hasHeader()}{hasHeader()}}
+{\footnotesize\ttfamily has\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+\{Is the header present in the stack.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface_adab88ffd7ef2e5dae162ab869470b5ad}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a238a68c308cdd07935d7a65a8f4be808}\label{class_slim_1_1_psr7_1_1_headers_a238a68c308cdd07935d7a65a8f4be808}} 
+\index{Headers@{Headers}!normalizeHeaderName@{normalizeHeaderName}}
+\index{normalizeHeaderName@{normalizeHeaderName}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{normalizeHeaderName()}{normalizeHeaderName()}}
+{\footnotesize\ttfamily normalize\+Header\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$preserve\+Case = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+bool & {\em \$preserve\+Case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a221856500189d5265e102517dd02332c}\label{class_slim_1_1_psr7_1_1_headers_a221856500189d5265e102517dd02332c}} 
+\index{Headers@{Headers}!parseAuthorizationHeader@{parseAuthorizationHeader}}
+\index{parseAuthorizationHeader@{parseAuthorizationHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{parseAuthorizationHeader()}{parseAuthorizationHeader()}}
+{\footnotesize\ttfamily parse\+Authorization\+Header (\begin{DoxyParamCaption}\item[{array}]{\$headers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse incoming headers and determine Authorization header from original headers
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a4895fb51ed54dbbc7135da0e916cbfe4}\label{class_slim_1_1_psr7_1_1_headers_a4895fb51ed54dbbc7135da0e916cbfe4}} 
+\index{Headers@{Headers}!prepareHeader@{prepareHeader}}
+\index{prepareHeader@{prepareHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{prepareHeader()}{prepareHeader()}}
+{\footnotesize\ttfamily prepare\+Header (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a2253d802ee1fbf8d9a8beaffa2301d67}\label{class_slim_1_1_psr7_1_1_headers_a2253d802ee1fbf8d9a8beaffa2301d67}} 
+\index{Headers@{Headers}!removeHeader@{removeHeader}}
+\index{removeHeader@{removeHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{removeHeader()}{removeHeader()}}
+{\footnotesize\ttfamily remove\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+\{Remove header value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface}{Headers\+Interface}}
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface_a2253d802ee1fbf8d9a8beaffa2301d67}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a48ca020ea3da5f108feab0fa8efde068}\label{class_slim_1_1_psr7_1_1_headers_a48ca020ea3da5f108feab0fa8efde068}} 
+\index{Headers@{Headers}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily set\+Header (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+\{Replaces the existing header value with the new value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface}{Headers\+Interface}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface_a48ca020ea3da5f108feab0fa8efde068}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_ad62c7c9cad0e3ccfdbff9144c914090b}\label{class_slim_1_1_psr7_1_1_headers_ad62c7c9cad0e3ccfdbff9144c914090b}} 
+\index{Headers@{Headers}!setHeaders@{setHeaders}}
+\index{setHeaders@{setHeaders}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{setHeaders()}{setHeaders()}}
+{\footnotesize\ttfamily set\+Headers (\begin{DoxyParamCaption}\item[{array}]{\$headers }\end{DoxyParamCaption})}
+
+\{Replaces all existing headers with the new values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface}{Headers\+Interface}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface_ad62c7c9cad0e3ccfdbff9144c914090b}{Headers\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a5680b16d42ef8a3821753a838f0d8107}\label{class_slim_1_1_psr7_1_1_headers_a5680b16d42ef8a3821753a838f0d8107}} 
+\index{Headers@{Headers}!trimHeaderValue@{trimHeaderValue}}
+\index{trimHeaderValue@{trimHeaderValue}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{trimHeaderValue()}{trimHeaderValue()}}
+{\footnotesize\ttfamily trim\+Header\+Value (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a22d581af430fbbc5d9fa158f6acd5dda}\label{class_slim_1_1_psr7_1_1_headers_a22d581af430fbbc5d9fa158f6acd5dda}} 
+\index{Headers@{Headers}!validateHeader@{validateHeader}}
+\index{validateHeader@{validateHeader}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{validateHeader()}{validateHeader()}}
+{\footnotesize\ttfamily validate\+Header (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Make sure the header complies with RFC 7230.
+
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_header}{Header}} names must be a non-\/empty string consisting of token characters.
+
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_header}{Header}} values must be strings consisting of visible characters with all optional leading and trailing whitespace stripped. This method will always strip such optional whitespace. Note that the method does not allow folding whitespace within the values as this was deprecated for almost all instances by the RFC.
+
+header-\/field = field-\/name \char`\"{}\+:\char`\"{} OWS field-\/value OWS field-\/name = 1$\ast$( \char`\"{}!\char`\"{} / \char`\"{}\#\char`\"{} / \char`\"{}\$\char`\"{} / \char`\"{}\%\char`\"{} / \char`\"{}\&\char`\"{} / \char`\"{}\textquotesingle{}\char`\"{} / \char`\"{}$\ast$\char`\"{} / \char`\"{}+\char`\"{} / \char`\"{}-\/\char`\"{} / \char`\"{}.\char`\"{} / \char`\"{}$^\wedge$\char`\"{} / \char`\"{}\+\_\+\char`\"{} / \char`\"{}\`{}\char`\"{} / \char`\"{}$\vert$\char`\"{} / \char`\"{}$\sim$\char`\"{} / x30-\/39 / ( x41-\/5\mbox{\hyperlink{class_a}{A}} / x61-\/7\mbox{\hyperlink{class_a}{A}} ) ) OWS = $\ast$( SP / HTAB ) field-\/value = $\ast$( ( x21-\/7E / x80-\/FF ) \mbox{[} 1$\ast$( SP / HTAB ) ( x21-\/7E / x80-\/FF ) \mbox{]} )
+
+\begin{DoxySeeAlso}{See also}
+\href{https://tools.ietf.org/html/rfc7230\#section-3.2.4}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc7230\#section-\/3.\+2.\+4}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception;} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_ab1cb0d361b29e31cb6dda2bbef3adbfe}\label{class_slim_1_1_psr7_1_1_headers_ab1cb0d361b29e31cb6dda2bbef3adbfe}} 
+\index{Headers@{Headers}!validateHeaderName@{validateHeaderName}}
+\index{validateHeaderName@{validateHeaderName}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{validateHeaderName()}{validateHeaderName()}}
+{\footnotesize\ttfamily validate\+Header\+Name (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a8d6b9dc3e1125d6b18dda03a8e83665c}\label{class_slim_1_1_psr7_1_1_headers_a8d6b9dc3e1125d6b18dda03a8e83665c}} 
+\index{Headers@{Headers}!validateHeaderValue@{validateHeaderValue}}
+\index{validateHeaderValue@{validateHeaderValue}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{validateHeaderValue()}{validateHeaderValue()}}
+{\footnotesize\ttfamily validate\+Header\+Value (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a0c5ae541a59a2c4a5703384afcda75ec}\label{class_slim_1_1_psr7_1_1_headers_a0c5ae541a59a2c4a5703384afcda75ec}} 
+\index{Headers@{Headers}!\$globals@{\$globals}}
+\index{\$globals@{\$globals}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{\$globals}{$globals}}
+{\footnotesize\ttfamily array \$globals\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_headers_a914c4187a92589e98dc298a488c6f4ca}\label{class_slim_1_1_psr7_1_1_headers_a914c4187a92589e98dc298a488c6f4ca}} 
+\index{Headers@{Headers}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!Headers@{Headers}}
+\doxysubsubsection{\texorpdfstring{\$headers}{$headers}}
+{\footnotesize\ttfamily array \$headers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/psr7/src/\mbox{\hyperlink{_headers_8php}{Headers.\+php}}\end{DoxyCompactItemize}

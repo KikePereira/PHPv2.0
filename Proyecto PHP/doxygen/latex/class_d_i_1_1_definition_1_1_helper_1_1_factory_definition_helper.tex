@@ -1,0 +1,89 @@
+\hypertarget{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper}{}\doxysection{Factory\+Definition\+Helper Class Reference}
+\label{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper}\index{FactoryDefinitionHelper@{FactoryDefinitionHelper}}
+Inheritance diagram for Factory\+Definition\+Helper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a5ef5094eb7fb9e499234085c0922ed4c}{\+\_\+\+\_\+construct}} (\$factory, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$decorate=false)
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a97074f25fdd86f04c957f4d57c716fce}{get\+Definition}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$entry\+Name)
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a012e4545ca7e481ada3a98d7f5afc517}{parameter}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$parameter, \$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helps defining how to create an instance of a class using a factory (callable).
+
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a5ef5094eb7fb9e499234085c0922ed4c}\label{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a5ef5094eb7fb9e499234085c0922ed4c}} 
+\index{FactoryDefinitionHelper@{FactoryDefinitionHelper}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!FactoryDefinitionHelper@{FactoryDefinitionHelper}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$factory,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$decorate = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$factory} & \\
+\hline
+bool & {\em \$decorate} & Is the factory decorating a previous definition? \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a97074f25fdd86f04c957f4d57c716fce}\label{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a97074f25fdd86f04c957f4d57c716fce}} 
+\index{FactoryDefinitionHelper@{FactoryDefinitionHelper}!getDefinition@{getDefinition}}
+\index{getDefinition@{getDefinition}!FactoryDefinitionHelper@{FactoryDefinitionHelper}}
+\doxysubsubsection{\texorpdfstring{getDefinition()}{getDefinition()}}
+{\footnotesize\ttfamily get\+Definition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$entry\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$entry\+Name} & \mbox{\hyperlink{class_d_i_1_1_container}{Container}} entry name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_factory_definition}{Factory\+Definition}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_helper_1_1_definition_helper_a97074f25fdd86f04c957f4d57c716fce}{Definition\+Helper}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a012e4545ca7e481ada3a98d7f5afc517}\label{class_d_i_1_1_definition_1_1_helper_1_1_factory_definition_helper_a012e4545ca7e481ada3a98d7f5afc517}} 
+\index{FactoryDefinitionHelper@{FactoryDefinitionHelper}!parameter@{parameter}}
+\index{parameter@{parameter}!FactoryDefinitionHelper@{FactoryDefinitionHelper}}
+\doxysubsubsection{\texorpdfstring{parameter()}{parameter()}}
+{\footnotesize\ttfamily parameter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$parameter,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Defines arguments to pass to the factory.
+
+Because factory methods do not yet support annotations or autowiring, this method should be used to define all parameters except the Container\+Interface and Requested\+Entry.
+
+Multiple calls can be made to the method to override individual values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parameter} & Name or index of the parameter for which the value will be given. \\
+\hline
+mixed & {\em \$value} & Value to give to this parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Helper/\mbox{\hyperlink{_factory_definition_helper_8php}{Factory\+Definition\+Helper.\+php}}\end{DoxyCompactItemize}

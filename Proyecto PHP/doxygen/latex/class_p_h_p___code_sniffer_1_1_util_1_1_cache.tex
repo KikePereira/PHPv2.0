@@ -1,0 +1,97 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_cache}{}\doxysection{Cache Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_util_1_1_cache}\index{Cache@{Cache}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_cache_a3b2e00532220fa94de5f8f476f50eed8}{load}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset}{Ruleset}} \$ruleset, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}} \$config)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_cache_afa1cd546d65bce9ebf087860256dd9c8}{save}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_cache_a82573a1fd96882dc3e556b781f900516}{get}} (\$key=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_cache_aa485369b2925858d92e468d405bd0798}{set}} (\$key, \$value)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_cache_ac5aa2e01c11a5de4f8991f5c54412b93}{get\+Size}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_cache_a82573a1fd96882dc3e556b781f900516}\label{class_p_h_p___code_sniffer_1_1_util_1_1_cache_a82573a1fd96882dc3e556b781f900516}} 
+\index{Cache@{Cache}!get@{get}}
+\index{get@{get}!Cache@{Cache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily static get (\begin{DoxyParamCaption}\item[{}]{\$key = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves a single entry from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The key of the data to get. If NULL, everything in the cache is returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_cache_ac5aa2e01c11a5de4f8991f5c54412b93}\label{class_p_h_p___code_sniffer_1_1_util_1_1_cache_ac5aa2e01c11a5de4f8991f5c54412b93}} 
+\index{Cache@{Cache}!getSize@{getSize}}
+\index{getSize@{getSize}!Cache@{Cache}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily static get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves the number of cache entries.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_cache_a3b2e00532220fa94de5f8f476f50eed8}\label{class_p_h_p___code_sniffer_1_1_util_1_1_cache_a3b2e00532220fa94de5f8f476f50eed8}} 
+\index{Cache@{Cache}!load@{load}}
+\index{load@{load}!Cache@{Cache}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset}{Ruleset}}}]{\$ruleset,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}}}]{\$config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads existing cache data for the run, if any.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Ruleset & {\em \$ruleset} & The ruleset used for the run. \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Config & {\em \$config} & The config data for the run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_cache_afa1cd546d65bce9ebf087860256dd9c8}\label{class_p_h_p___code_sniffer_1_1_util_1_1_cache_afa1cd546d65bce9ebf087860256dd9c8}} 
+\index{Cache@{Cache}!save@{save}}
+\index{save@{save}!Cache@{Cache}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily static save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Saves the current cache to the filesystem.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_cache_aa485369b2925858d92e468d405bd0798}\label{class_p_h_p___code_sniffer_1_1_util_1_1_cache_aa485369b2925858d92e468d405bd0798}} 
+\index{Cache@{Cache}!set@{set}}
+\index{set@{set}!Cache@{Cache}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily static set (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves a single entry from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The key of the data to set. If NULL, sets the entire cache. \\
+\hline
+mixed & {\em \$value} & The value to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Util/\mbox{\hyperlink{_cache_8php}{Cache.\+php}}\end{DoxyCompactItemize}

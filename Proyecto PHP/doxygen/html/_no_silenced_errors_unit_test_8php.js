@@ -1,0 +1,4 @@
+var _no_silenced_errors_unit_test_8php =
+[
+    [ "NoSilencedErrorsUnitTest", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_p_h_p_1_1_no_silenced_errors_unit_test.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_p_h_p_1_1_no_silenced_errors_unit_test" ]
+];

@@ -1,0 +1,106 @@
+\hypertarget{class_prophecy_1_1_argument_1_1_token_1_1_callback_token}{}\doxysection{Callback\+Token Class Reference}
+\label{class_prophecy_1_1_argument_1_1_token_1_1_callback_token}\index{CallbackToken@{CallbackToken}}
+Inheritance diagram for Callback\+Token\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_prophecy_1_1_argument_1_1_token_1_1_callback_token}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_aae70a2214e4c3d274a97b54e983b5fdf}{\+\_\+\+\_\+construct}} (\$callback)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_a8d5bf47ab6eaa935458d5ad160e52822}{score\+Argument}} (\$argument)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_ac72b8349b1340887fc1af30eca2b951c}{is\+Last}} ()
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Callback-\/verified token.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_aae70a2214e4c3d274a97b54e983b5fdf}\label{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_aae70a2214e4c3d274a97b54e983b5fdf}} 
+\index{CallbackToken@{CallbackToken}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CallbackToken@{CallbackToken}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$callback }\end{DoxyParamCaption})}
+
+Initializes token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}\textbackslash{}\+Exception\textbackslash{}\+Invalid\+Argument\+Exception 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_a7516ca30af0db3cdbf9a7739b48ce91d}\label{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_a7516ca30af0db3cdbf9a7739b48ce91d}} 
+\index{CallbackToken@{CallbackToken}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!CallbackToken@{CallbackToken}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns string representation for token.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_argument_1_1_token_1_1_token_interface_a7516ca30af0db3cdbf9a7739b48ce91d}{Token\+Interface}}.
+
+\mbox{\Hypertarget{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_ac72b8349b1340887fc1af30eca2b951c}\label{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_ac72b8349b1340887fc1af30eca2b951c}} 
+\index{CallbackToken@{CallbackToken}!isLast@{isLast}}
+\index{isLast@{isLast}!CallbackToken@{CallbackToken}}
+\doxysubsubsection{\texorpdfstring{isLast()}{isLast()}}
+{\footnotesize\ttfamily is\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns false.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_argument_1_1_token_1_1_token_interface_ac72b8349b1340887fc1af30eca2b951c}{Token\+Interface}}.
+
+\mbox{\Hypertarget{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_a8d5bf47ab6eaa935458d5ad160e52822}\label{class_prophecy_1_1_argument_1_1_token_1_1_callback_token_a8d5bf47ab6eaa935458d5ad160e52822}} 
+\index{CallbackToken@{CallbackToken}!scoreArgument@{scoreArgument}}
+\index{scoreArgument@{scoreArgument}!CallbackToken@{CallbackToken}}
+\doxysubsubsection{\texorpdfstring{scoreArgument()}{scoreArgument()}}
+{\footnotesize\ttfamily score\+Argument (\begin{DoxyParamCaption}\item[{}]{\$argument }\end{DoxyParamCaption})}
+
+Scores 7 if callback returns true, false otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$argument} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$\vert$int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_argument_1_1_token_1_1_token_interface_a8d5bf47ab6eaa935458d5ad160e52822}{Token\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\+Argument/\+Token/\mbox{\hyperlink{_callback_token_8php}{Callback\+Token.\+php}}\end{DoxyCompactItemize}

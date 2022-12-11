@@ -1,0 +1,68 @@
+\hypertarget{interface_d_i_1_1_factory_interface}{}\doxysection{Factory\+Interface Interface Reference}
+\label{interface_d_i_1_1_factory_interface}\index{FactoryInterface@{FactoryInterface}}
+Inheritance diagram for Factory\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_d_i_1_1_factory_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_d_i_1_1_factory_interface_ae18052262d68a7712df85bbbeb6b429e}{make}} (\$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Describes the basic interface of a factory.
+
+@api
+
+\begin{DoxySince}{Since}
+4.\+0 
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_d_i_1_1_factory_interface_ae18052262d68a7712df85bbbeb6b429e}\label{interface_d_i_1_1_factory_interface_ae18052262d68a7712df85bbbeb6b429e}} 
+\index{FactoryInterface@{FactoryInterface}!make@{make}}
+\index{make@{make}!FactoryInterface@{FactoryInterface}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily make (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Resolves an entry by its name. If given a class name, it will return a new instance of that class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Entry name or a class name. \\
+\hline
+array & {\em \$parameters} & Optional parameters to use to build the entry. Use this to force specific parameters to specific values. Parameters not defined in this array will be automatically resolved.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception The name parameter must be of type string. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_d_i_1_1_dependency_exception}{Dependency\+Exception}}} & Error while resolving the entry. \\
+\hline
+{\em \mbox{\hyperlink{class_d_i_1_1_not_found_exception}{Not\+Found\+Exception}}} & No entry or class found for the given name. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_d_i_1_1_container_ae18052262d68a7712df85bbbeb6b429e}{Container}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\mbox{\hyperlink{_factory_interface_8php}{Factory\+Interface.\+php}}\end{DoxyCompactItemize}

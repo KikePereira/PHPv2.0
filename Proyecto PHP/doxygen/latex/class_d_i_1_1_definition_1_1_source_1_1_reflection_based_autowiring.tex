@@ -1,0 +1,83 @@
+\hypertarget{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring}{}\doxysection{Reflection\+Based\+Autowiring Class Reference}
+\label{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring}\index{ReflectionBasedAutowiring@{ReflectionBasedAutowiring}}
+Inheritance diagram for Reflection\+Based\+Autowiring\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_ac630bb4d3d51d3fc55dbed6ad878ae41}{autowire}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_object_definition}{Object\+Definition}} \$definition=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_ab3643b07f6fe88fcc883aee5334b59d0}{get\+Definition}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_aa7fdbbb3dfc93e31928ed08ccfed63fd}{get\+Definitions}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reads \mbox{\hyperlink{namespace_d_i}{DI}} class definitions using reflection.
+
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_ac630bb4d3d51d3fc55dbed6ad878ae41}\label{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_ac630bb4d3d51d3fc55dbed6ad878ae41}} 
+\index{ReflectionBasedAutowiring@{ReflectionBasedAutowiring}!autowire@{autowire}}
+\index{autowire@{autowire}!ReflectionBasedAutowiring@{ReflectionBasedAutowiring}}
+\doxysubsubsection{\texorpdfstring{autowire()}{autowire()}}
+{\footnotesize\ttfamily autowire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name,  }\item[{\mbox{\hyperlink{class_d_i_1_1_definition_1_1_object_definition}{Object\+Definition}}}]{\$definition = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Autowire the given definition.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Definition} & An invalid definition was found. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Object\+Definition$\vert$null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_autowiring_ac630bb4d3d51d3fc55dbed6ad878ae41}{Autowiring}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_ab3643b07f6fe88fcc883aee5334b59d0}\label{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_ab3643b07f6fe88fcc883aee5334b59d0}} 
+\index{ReflectionBasedAutowiring@{ReflectionBasedAutowiring}!getDefinition@{getDefinition}}
+\index{getDefinition@{getDefinition}!ReflectionBasedAutowiring@{ReflectionBasedAutowiring}}
+\doxysubsubsection{\texorpdfstring{getDefinition()}{getDefinition()}}
+{\footnotesize\ttfamily get\+Definition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{namespace_d_i}{DI}} definition for the entry name.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Definition} & An invalid definition was found. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Definition$\vert$null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_ab3643b07f6fe88fcc883aee5334b59d0}{Definition\+Source}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_aa7fdbbb3dfc93e31928ed08ccfed63fd}\label{class_d_i_1_1_definition_1_1_source_1_1_reflection_based_autowiring_aa7fdbbb3dfc93e31928ed08ccfed63fd}} 
+\index{ReflectionBasedAutowiring@{ReflectionBasedAutowiring}!getDefinitions@{getDefinitions}}
+\index{getDefinitions@{getDefinitions}!ReflectionBasedAutowiring@{ReflectionBasedAutowiring}}
+\doxysubsubsection{\texorpdfstring{getDefinitions()}{getDefinitions()}}
+{\footnotesize\ttfamily get\+Definitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_autowiring}{Autowiring}} cannot guess all existing definitions. 
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_definition_source_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Definition\+Source}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Source/\mbox{\hyperlink{_reflection_based_autowiring_8php}{Reflection\+Based\+Autowiring.\+php}}\end{DoxyCompactItemize}

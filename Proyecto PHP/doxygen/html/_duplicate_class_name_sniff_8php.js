@@ -1,0 +1,4 @@
+var _duplicate_class_name_sniff_8php =
+[
+    [ "DuplicateClassNameSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_classes_1_1_duplicate_class_name_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_classes_1_1_duplicate_class_name_sniff" ]
+];

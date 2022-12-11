@@ -1,0 +1,117 @@
+\hypertarget{class_prophecy_1_1_doubler_1_1_lazy_double}{}\doxysection{Lazy\+Double Class Reference}
+\label{class_prophecy_1_1_doubler_1_1_lazy_double}\index{LazyDouble@{LazyDouble}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_lazy_double_a8e491234072b12a2eafa143624a9769b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler}{Doubler}} \$doubler)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_lazy_double_a36c45e1400b3e0404a90bfa058ef8019}{set\+Parent\+Class}} (\$class)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_lazy_double_a8ee340e93f5c12065057df00a3b37e3a}{add\+Interface}} (\$interface)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_lazy_double_a5398ebf107a0f0c136b0d134714b13ff}{set\+Arguments}} (array \$arguments=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_lazy_double_afba86dd08ac8528cc6cfe07a44c91fbe}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Lazy double. Gives simple interface to describe double before creating it.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_lazy_double_a8e491234072b12a2eafa143624a9769b}\label{class_prophecy_1_1_doubler_1_1_lazy_double_a8e491234072b12a2eafa143624a9769b}} 
+\index{LazyDouble@{LazyDouble}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!LazyDouble@{LazyDouble}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler}{Doubler}}}]{\$doubler }\end{DoxyParamCaption})}
+
+Initializes lazy double.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler}{Doubler}} & {\em \$doubler} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_lazy_double_a8ee340e93f5c12065057df00a3b37e3a}\label{class_prophecy_1_1_doubler_1_1_lazy_double_a8ee340e93f5c12065057df00a3b37e3a}} 
+\index{LazyDouble@{LazyDouble}!addInterface@{addInterface}}
+\index{addInterface@{addInterface}!LazyDouble@{LazyDouble}}
+\doxysubsubsection{\texorpdfstring{addInterface()}{addInterface()}}
+{\footnotesize\ttfamily add\+Interface (\begin{DoxyParamCaption}\item[{}]{\$interface }\end{DoxyParamCaption})}
+
+Tells doubler to implement specific interface with double.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Reflection\+Class & {\em \$interface} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}\textbackslash{}\+Exception\textbackslash{}\+Doubler\textbackslash{}\+Interface\+Not\+Found\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}\textbackslash{}\+Exception\textbackslash{}\+Doubler\textbackslash{}\+Double\+Exception \mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_lazy_double_afba86dd08ac8528cc6cfe07a44c91fbe}\label{class_prophecy_1_1_doubler_1_1_lazy_double_afba86dd08ac8528cc6cfe07a44c91fbe}} 
+\index{LazyDouble@{LazyDouble}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!LazyDouble@{LazyDouble}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates double instance or returns already created one.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_double_interface}{Double\+Interface}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_lazy_double_a5398ebf107a0f0c136b0d134714b13ff}\label{class_prophecy_1_1_doubler_1_1_lazy_double_a5398ebf107a0f0c136b0d134714b13ff}} 
+\index{LazyDouble@{LazyDouble}!setArguments@{setArguments}}
+\index{setArguments@{setArguments}!LazyDouble@{LazyDouble}}
+\doxysubsubsection{\texorpdfstring{setArguments()}{setArguments()}}
+{\footnotesize\ttfamily set\+Arguments (\begin{DoxyParamCaption}\item[{array}]{\$arguments = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Sets constructor arguments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_lazy_double_a36c45e1400b3e0404a90bfa058ef8019}\label{class_prophecy_1_1_doubler_1_1_lazy_double_a36c45e1400b3e0404a90bfa058ef8019}} 
+\index{LazyDouble@{LazyDouble}!setParentClass@{setParentClass}}
+\index{setParentClass@{setParentClass}!LazyDouble@{LazyDouble}}
+\doxysubsubsection{\texorpdfstring{setParentClass()}{setParentClass()}}
+{\footnotesize\ttfamily set\+Parent\+Class (\begin{DoxyParamCaption}\item[{}]{\$class }\end{DoxyParamCaption})}
+
+Tells doubler to use specific class as parent one for double.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Reflection\+Class & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}\textbackslash{}\+Exception\textbackslash{}\+Doubler\textbackslash{}\+Class\+Not\+Found\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}\textbackslash{}\+Exception\textbackslash{}\+Doubler\textbackslash{}\+Double\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\+Doubler/\mbox{\hyperlink{_lazy_double_8php}{Lazy\+Double.\+php}}\end{DoxyCompactItemize}

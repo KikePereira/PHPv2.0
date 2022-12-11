@@ -1,0 +1,386 @@
+\mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}} helps you create deep copies (clones) of your objects. It is designed to handle cycles in the association graph.
+
+\href{https://packagist.org/packages/myclabs/deep-copy}{\texttt{ }} \href{https://github.com/myclabs/DeepCopy/actions}{\texttt{ }}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md196}{}\doxysection{Table of Contents}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md196}
+
+\begin{DoxyEnumerate}
+\item How
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Why
+\begin{DoxyEnumerate}
+\item Using simply \`{}clone\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Overriding \`{}\+\_\+\+\_\+clone()\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item With \`{}\+Deep\+Copy\`{}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item How it works
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Going further
+\begin{DoxyEnumerate}
+\item Matchers
+\begin{DoxyEnumerate}
+\item Property name
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Specific property
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Type
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Filters
+\begin{DoxyEnumerate}
+\item \`{}\+Set\+Null\+Filter\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \`{}\+Keep\+Filter\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \`{}\+Doctrine\+Collection\+Filter\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \`{}\+Doctrine\+Empty\+Collection\+Filter\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \`{}\+Doctrine\+Proxy\+Filter\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \`{}\+Replace\+Filter\`{}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \`{}\+Shallow\+Copy\+Filter\`{}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Edge cases
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Contributing
+\begin{DoxyEnumerate}
+\item Tests
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md197}{}\doxysection{How?}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md197}
+Install with \mbox{\hyperlink{namespace_composer}{Composer}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer require myclabs/deep-\/copy}
+
+\end{DoxyCode}
+
+
+Use it\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\$myCopy = \$copier-\/>copy(\$myObject);}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md198}{}\doxysection{Why?}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md198}
+
+\begin{DoxyItemize}
+\item How do you create copies of your objects?
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$myCopy = clone \$myObject;}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item How do you create {\bfseries{deep}} copies of your objects (i.\+e. copying also all the objects referenced in the properties)?
+\end{DoxyItemize}
+
+You use \href{http://www.php.net/manual/en/language.oop5.cloning.php\#object.clone}{\texttt{ {\ttfamily \+\_\+\+\_\+clone()}}} and implement the behavior yourself.
+
+
+\begin{DoxyItemize}
+\item But how do you handle {\bfseries{cycles}} in the association graph?
+\end{DoxyItemize}
+
+Now you\textquotesingle{}re in for a big mess \+:(
+
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md199}{}\doxysubsection{Using simply $<$tt$>$clone$<$/tt$>$}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md199}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md200}{}\doxysubsection{Overriding $<$tt$>$\+\_\+\+\_\+clone()$<$/tt$>$}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md200}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md201}{}\doxysubsection{With $<$tt$>$\+Deep\+Copy$<$/tt$>$}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md201}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md202}{}\doxysection{How it works}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md202}
+\mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}} recursively traverses all the object\textquotesingle{}s properties and clones them. To avoid cloning the same object twice it keeps a hash map of all instances and thus preserves the object graph.
+
+To use it\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \textcolor{keyword}{function} DeepCopy\(\backslash\)deep\_copy;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = deep\_copy(\$var);}
+
+\end{DoxyCode}
+
+
+Alternatively, you can create your own {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}} instance to configure it differently for example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy(\$var);}
+
+\end{DoxyCode}
+
+
+You may want to roll your own deep copy function\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{namespace }Acme;}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{function} deep\_copy(\$var)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{static} \$copier = \textcolor{keyword}{null};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (\textcolor{keyword}{null} === \$copier) \{}
+\DoxyCodeLine{        \$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \$copier-\/>copy(\$var);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md203}{}\doxysection{Going further}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md203}
+You can add filters to customize the copy process.
+
+The method to add a filter is {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Deep\+Copy\+::add\+Filter(\$filter, \$matcher)}, with {\ttfamily \$filter} implementing {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Filter\textbackslash{}Filter} and {\ttfamily \$matcher} implementing {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Matcher\textbackslash{}Matcher}.
+
+We provide some generic filters and matchers.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md204}{}\doxysubsection{Matchers}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md204}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Matcher} applies on a object attribute.
+\item {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Type\+Matcher} applies on any element found in graph, including array elements.
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md205}{}\doxysubsubsection{Property name}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md205}
+The {\ttfamily Property\+Name\+Matcher} will match a property by its name\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_property_name_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)PropertyNameMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Will apply a filter to any property of any objects named "{}id"{}}}
+\DoxyCodeLine{\mbox{\hyperlink{_backfill_match_token_test_8inc_aa136490e36dce53a32ba6e590f7f49ed}{\$matcher}} = \textcolor{keyword}{new} PropertyNameMatcher(\textcolor{stringliteral}{'id'});}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md206}{}\doxysubsubsection{Specific property}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md206}
+The {\ttfamily Property\+Matcher} will match a specific property of a specific class\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_property_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)PropertyMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Will apply a filter to the property "{}id"{} of any objects of the class "{}MyClass"{}}}
+\DoxyCodeLine{\mbox{\hyperlink{_backfill_match_token_test_8inc_aa136490e36dce53a32ba6e590f7f49ed}{\$matcher}} = \textcolor{keyword}{new} PropertyMatcher(\textcolor{stringliteral}{'MyClass'}, \textcolor{stringliteral}{'id'});}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md207}{}\doxysubsubsection{Type}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md207}
+The {\ttfamily Type\+Matcher} will match any element by its type (instance of a class or any value that could be parameter of \href{http://php.net/manual/en/function.gettype.php}{\texttt{ gettype()}} function)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_type_matcher_1_1_type_matcher}{DeepCopy\(\backslash\)TypeMatcher\(\backslash\)TypeMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Will apply a filter to any object that is an instance of Doctrine\(\backslash\)Common\(\backslash\)Collections\(\backslash\)Collection}}
+\DoxyCodeLine{\mbox{\hyperlink{_backfill_match_token_test_8inc_aa136490e36dce53a32ba6e590f7f49ed}{\$matcher}} = \textcolor{keyword}{new} TypeMatcher(\textcolor{stringliteral}{'Doctrine\(\backslash\)Common\(\backslash\)Collections\(\backslash\)Collection'});}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md208}{}\doxysubsection{Filters}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md208}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Filter} applies a transformation to the object attribute matched by {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Matcher}
+\item {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Type\+Filter} applies a transformation to any element matched by {\ttfamily \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}\textbackslash{}Type\+Matcher}
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md209}{}\doxysubsubsection{$<$tt$>$\+Set\+Null\+Filter$<$/tt$>$ (filter)}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md209}
+Let\textquotesingle{}s say for example that you are copying a database record (or a Doctrine entity), so you want the copy not to have any ID\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_filter_1_1_set_null_filter}{DeepCopy\(\backslash\)Filter\(\backslash\)SetNullFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_property_name_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)PropertyNameMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$object = MyClass::load(123);}
+\DoxyCodeLine{echo \$object-\/>id; \textcolor{comment}{// 123}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\$copier-\/>addFilter(\textcolor{keyword}{new} SetNullFilter(), \textcolor{keyword}{new} PropertyNameMatcher(\textcolor{stringliteral}{'id'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy(\$object);}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo \mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}}-\/>id; \textcolor{comment}{// null}}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md210}{}\doxysubsubsection{$<$tt$>$\+Keep\+Filter$<$/tt$>$ (filter)}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md210}
+If you want a property to remain untouched (for example, an association to an object)\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_filter_1_1_keep_filter}{DeepCopy\(\backslash\)Filter\(\backslash\)KeepFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_property_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)PropertyMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\$copier-\/>addFilter(\textcolor{keyword}{new} KeepFilter(), \textcolor{keyword}{new} PropertyMatcher(\textcolor{stringliteral}{'MyClass'}, \textcolor{stringliteral}{'category'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy(\$object);}
+\DoxyCodeLine{\textcolor{comment}{// \$copy-\/>category has not been touched}}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md211}{}\doxysubsubsection{$<$tt$>$\+Doctrine\+Collection\+Filter$<$/tt$>$ (filter)}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md211}
+If you use Doctrine and want to copy an entity, you will need to use the {\ttfamily Doctrine\+Collection\+Filter}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_filter_1_1_doctrine_1_1_doctrine_collection_filter}{DeepCopy\(\backslash\)Filter\(\backslash\)Doctrine\(\backslash\)DoctrineCollectionFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_property_type_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)PropertyTypeMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\$copier-\/>addFilter(\textcolor{keyword}{new} DoctrineCollectionFilter(), \textcolor{keyword}{new} PropertyTypeMatcher(\textcolor{stringliteral}{'Doctrine\(\backslash\)Common\(\backslash\)Collections\(\backslash\)Collection'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy(\$object);}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md212}{}\doxysubsubsection{$<$tt$>$\+Doctrine\+Empty\+Collection\+Filter$<$/tt$>$ (filter)}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md212}
+If you use Doctrine and want to copy an entity who contains a {\ttfamily Collection} that you want to be reset, you can use the {\ttfamily Doctrine\+Empty\+Collection\+Filter}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_filter_1_1_doctrine_1_1_doctrine_empty_collection_filter}{DeepCopy\(\backslash\)Filter\(\backslash\)Doctrine\(\backslash\)DoctrineEmptyCollectionFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_property_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)PropertyMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\$copier-\/>addFilter(\textcolor{keyword}{new} DoctrineEmptyCollectionFilter(), \textcolor{keyword}{new} PropertyMatcher(\textcolor{stringliteral}{'MyClass'}, \textcolor{stringliteral}{'myProperty'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy(\$object);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// \$copy-\/>myProperty will return an empty collection}}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md213}{}\doxysubsubsection{$<$tt$>$\+Doctrine\+Proxy\+Filter$<$/tt$>$ (filter)}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md213}
+If you use Doctrine and use cloning on lazy loaded entities, you might encounter errors mentioning missing fields on a Doctrine proxy class (...\textbackslash{}\+\_\+\+\_\+\+CG\+\_\+\+\_\+\textbackslash{}\+Proxy). You can use the {\ttfamily Doctrine\+Proxy\+Filter} to load the actual entity behind the Doctrine proxy class. {\bfseries{Make sure, though, to put this as one of your very first filters in the filter chain so that the entity is loaded before other filters are applied!}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_filter_1_1_doctrine_1_1_doctrine_proxy_filter}{DeepCopy\(\backslash\)Filter\(\backslash\)Doctrine\(\backslash\)DoctrineProxyFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_doctrine_1_1_doctrine_proxy_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)Doctrine\(\backslash\)DoctrineProxyMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\$copier-\/>addFilter(\textcolor{keyword}{new} DoctrineProxyFilter(), \textcolor{keyword}{new} DoctrineProxyMatcher());}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy(\$object);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// \$copy should now contain a clone of all entities, including those that were not yet fully loaded.}}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md214}{}\doxysubsubsection{$<$tt$>$\+Replace\+Filter$<$/tt$>$ (type filter)}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md214}
+
+\begin{DoxyEnumerate}
+\item If you want to replace the value of a property\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_filter_1_1_replace_filter}{DeepCopy\(\backslash\)Filter\(\backslash\)ReplaceFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_matcher_1_1_property_matcher}{DeepCopy\(\backslash\)Matcher\(\backslash\)PropertyMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\mbox{\hyperlink{_squiz_2_tests_2_commenting_2_function_comment_unit_test_8inc_abc7c2ac0d93d22f71221e8b60512c860}{\$callback}} = \textcolor{keyword}{function} (\$currentValue) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \$currentValue . \textcolor{stringliteral}{' (copy)'}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\$copier-\/>addFilter(\textcolor{keyword}{new} ReplaceFilter(\mbox{\hyperlink{_squiz_2_tests_2_commenting_2_function_comment_unit_test_8inc_abc7c2ac0d93d22f71221e8b60512c860}{\$callback}}), \textcolor{keyword}{new} PropertyMatcher(\textcolor{stringliteral}{'MyClass'}, \textcolor{stringliteral}{'title'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy(\$object);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// \$copy-\/>title will contain the data returned by the callback, e.g. 'The title (copy)'}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item If you want to replace whole element\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_type_filter_1_1_replace_filter}{DeepCopy\(\backslash\)TypeFilter\(\backslash\)ReplaceFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_type_matcher_1_1_type_matcher}{DeepCopy\(\backslash\)TypeMatcher\(\backslash\)TypeMatcher}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$copier = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\mbox{\hyperlink{_squiz_2_tests_2_commenting_2_function_comment_unit_test_8inc_abc7c2ac0d93d22f71221e8b60512c860}{\$callback}} = \textcolor{keyword}{function} (\mbox{\hyperlink{namespace_my_class}{MyClass}} \$myClass) \{}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} get\_class(\$myClass);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{\$copier-\/>addTypeFilter(\textcolor{keyword}{new} ReplaceFilter(\mbox{\hyperlink{_squiz_2_tests_2_commenting_2_function_comment_unit_test_8inc_abc7c2ac0d93d22f71221e8b60512c860}{\$callback}}), \textcolor{keyword}{new} TypeMatcher(\textcolor{stringliteral}{'MyClass'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceforeach_acc87acb08ac53f3e2373bfeca76850ce}{\$copy}} = \$copier-\/>copy([\textcolor{keyword}{new} \mbox{\hyperlink{namespace_my_class}{MyClass}}, \textcolor{stringliteral}{'some string'}, \textcolor{keyword}{new} \mbox{\hyperlink{namespace_my_class}{MyClass}}]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// \$copy will contain ['MyClass', 'some string', 'MyClass']}}
+
+\end{DoxyCode}
+
+
+The {\ttfamily \$callback} parameter of the {\ttfamily Replace\+Filter} constructor accepts any PHP callable.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md215}{}\doxysubsubsection{$<$tt$>$\+Shallow\+Copy\+Filter$<$/tt$>$ (type filter)}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md215}
+Stop {\itshape \mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}}} from recursively copying element, using standard {\ttfamily clone} instead\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_deep_copy}{DeepCopy\(\backslash\)DeepCopy}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_type_filter_1_1_shallow_copy_filter}{DeepCopy\(\backslash\)TypeFilter\(\backslash\)ShallowCopyFilter}};}
+\DoxyCodeLine{use \mbox{\hyperlink{class_deep_copy_1_1_type_matcher_1_1_type_matcher}{DeepCopy\(\backslash\)TypeMatcher\(\backslash\)TypeMatcher}};}
+\DoxyCodeLine{use Mockery as \mbox{\hyperlink{_p_e_a_r_2_tests_2_functions_2_function_call_signature_unit_test_8inc_aa39e8f58efe393a7afe875374c9afc97}{m}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$this-\/>deepCopy = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_deep_copy}{DeepCopy}}();}
+\DoxyCodeLine{\$this-\/>deepCopy-\/>addTypeFilter(}
+\DoxyCodeLine{    \textcolor{keyword}{new} ShallowCopyFilter,}
+\DoxyCodeLine{    \textcolor{keyword}{new} TypeMatcher(\mbox{\hyperlink{_p_e_a_r_2_tests_2_functions_2_function_call_signature_unit_test_8inc_aa39e8f58efe393a7afe875374c9afc97}{m}}\(\backslash\)MockInterface::class)}
+\DoxyCodeLine{);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$myServiceWithMocks = \textcolor{keyword}{new} MyService(m::mock(MyDependency1::class), m::mock(MyDependency2::class));}
+\DoxyCodeLine{\textcolor{comment}{// All mocks will be just cloned, not deep copied}}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md216}{}\doxysection{Edge cases}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md216}
+The following structures cannot be deep-\/copied with PHP Reflection. As a result they are shallow cloned and filters are not applied. There is two ways for you to handle them\+:
+
+
+\begin{DoxyItemize}
+\item Implement your own {\ttfamily \mbox{\hyperlink{_camel_caps_function_name_unit_test_8inc_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone()}}} method
+\item Use a filter with a type matcher
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md217}{}\doxysection{Contributing}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md217}
+\mbox{\hyperlink{namespace_deep_copy}{Deep\+Copy}} is distributed under the MIT license.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md218}{}\doxysubsection{Tests}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md218}
+Running the tests is simple\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{vendor/bin/phpunit}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md219}{}\doxysubsection{Support}\label{md__c__workspace__proyecto__p_h_p_project_vendor_myclabs_deep_copy__r_e_a_d_m_e_autotoc_md219}
+Get professional support via \href{https://tidelift.com/subscription/pkg/packagist-myclabs-deep-copy?utm_source=packagist-myclabs-deep-copy&utm_medium=referral&utm_campaign=readme}{\texttt{ the Tidelift Subscription}}. 

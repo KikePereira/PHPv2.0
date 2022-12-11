@@ -1,0 +1,128 @@
+\hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition}{}\doxysection{Environment\+Variable\+Definition Class Reference}
+\label{class_d_i_1_1_definition_1_1_environment_variable_definition}\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+Inheritance diagram for Environment\+Variable\+Definition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_d_i_1_1_definition_1_1_environment_variable_definition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_aebac772dcdaea2ffd90038a46f7eb011}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$variable\+Name, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_aa771d9e74542caa5d10f197d706fdecc}{is\+Optional}}=false, \$\mbox{\hyperlink{_get_method_parameters_test_8inc_abecffd75b28cf8986f4d497c329a9e72}{default\+Value}}=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_a392752b62c4f6aacea5c269690921ef3}{set\+Name}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_a20af85a4f4041ed681b095e1427b2a1d}{get\+Variable\+Name}} ()
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_aa771d9e74542caa5d10f197d706fdecc}{is\+Optional}} ()
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_af9b9401c63918169457fe8516324950f}{get\+Default\+Value}} ()
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_acbd2518d1fa8e514a470398c73380153}{replace\+Nested\+Definitions}} (callable \$replacer)
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_environment_variable_definition_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a reference to an environment variable, with fallback to a default value if the environment variable is not defined.
+
+\begin{DoxyAuthor}{Author}
+James Harris \href{mailto:james.harris@icecave.com.au}{\texttt{ james.\+harris@icecave.\+com.\+au}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_aebac772dcdaea2ffd90038a46f7eb011}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_aebac772dcdaea2ffd90038a46f7eb011}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$variable\+Name,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$is\+Optional = {\ttfamily false},  }\item[{}]{\$default\+Value = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$variable\+Name} & The name of the environment variable \\
+\hline
+bool & {\em \$is\+Optional} & Whether or not the environment variable definition is optional \\
+\hline
+mixed & {\em \$default\+Value} & The default value to use if the environment variable is optional and not provided \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_a7516ca30af0db3cdbf9a7739b48ce91d}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_a7516ca30af0db3cdbf9a7739b48ce91d}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Definitions can be cast to string for debugging information. 
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition_a7516ca30af0db3cdbf9a7739b48ce91d}{Definition}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_af9b9401c63918169457fe8516324950f}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_af9b9401c63918169457fe8516324950f}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!getDefaultValue@{getDefaultValue}}
+\index{getDefaultValue@{getDefaultValue}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{getDefaultValue()}{getDefaultValue()}}
+{\footnotesize\ttfamily get\+Default\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+mixed The default value to use if the environment variable is optional and not provided 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_a3d0963e68bb313b163a73f2803c64600}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_a3d0963e68bb313b163a73f2803c64600}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!getName@{getName}}
+\index{getName@{getName}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the entry in the container. 
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition_a3d0963e68bb313b163a73f2803c64600}{Definition}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_a20af85a4f4041ed681b095e1427b2a1d}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_a20af85a4f4041ed681b095e1427b2a1d}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!getVariableName@{getVariableName}}
+\index{getVariableName@{getVariableName}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{getVariableName()}{getVariableName()}}
+{\footnotesize\ttfamily get\+Variable\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string The name of the environment variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_aa771d9e74542caa5d10f197d706fdecc}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_aa771d9e74542caa5d10f197d706fdecc}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!isOptional@{isOptional}}
+\index{isOptional@{isOptional}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{isOptional()}{isOptional()}}
+{\footnotesize\ttfamily is\+Optional (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool Whether or not the environment variable definition is optional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_acbd2518d1fa8e514a470398c73380153}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_acbd2518d1fa8e514a470398c73380153}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!replaceNestedDefinitions@{replaceNestedDefinitions}}
+\index{replaceNestedDefinitions@{replaceNestedDefinitions}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{replaceNestedDefinitions()}{replaceNestedDefinitions()}}
+{\footnotesize\ttfamily replace\+Nested\+Definitions (\begin{DoxyParamCaption}\item[{callable}]{\$replacer }\end{DoxyParamCaption})}
+
+Apply a callable that replaces the definitions nested in this definition. 
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition_acbd2518d1fa8e514a470398c73380153}{Definition}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_environment_variable_definition_a392752b62c4f6aacea5c269690921ef3}\label{class_d_i_1_1_definition_1_1_environment_variable_definition_a392752b62c4f6aacea5c269690921ef3}} 
+\index{EnvironmentVariableDefinition@{EnvironmentVariableDefinition}!setName@{setName}}
+\index{setName@{setName}!EnvironmentVariableDefinition@{EnvironmentVariableDefinition}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily set\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+Set the name of the entry in the container. 
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition_a392752b62c4f6aacea5c269690921ef3}{Definition}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\mbox{\hyperlink{_environment_variable_definition_8php}{Environment\+Variable\+Definition.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+All notable changes are documented in this file using the \href{http://keepachangelog.com/}{\texttt{ Keep a CHANGELOG}} principles.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1139}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/3.\+1.\+0...\+3.\+2.\+0\char`\"{} $>$3.\+2.\+0$<$/a$>$ -\/ 2022-\/09-\/12}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1139}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1140}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1140}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/type/issues/25}{\texttt{ \#25}}\+: Support Disjunctive Normal Form types
+\item Added {\ttfamily Reflection\+Mapper\+::from\+Parameter\+Types()}
+\item Added {\ttfamily Intersection\+Type\+::types()} and {\ttfamily Union\+Type\+::types()}
+\item Added {\ttfamily Union\+Type\+::contains\+Intersection\+Types()}
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1141}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/3.\+0.\+0...\+3.\+1.\+0\char`\"{} $>$3.\+1.\+0$<$/a$>$ -\/ 2022-\/08-\/29}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1141}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1142}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1142}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/type/issues/21}{\texttt{ \#21}}\+: Support {\ttfamily true} as stand-\/alone type
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1143}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+3.\+4...\+3.\+0.\+0\char`\"{} $>$3.\+0.\+0$<$/a$>$ -\/ 2022-\/03-\/15}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1143}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1144}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1144}
+
+\begin{DoxyItemize}
+\item Support for intersection types introduced in PHP 8.\+1
+\item Support for the {\ttfamily never} return type introduced in PHP 8.\+1
+\item Added {\ttfamily Type\+::is\+Callable()}, {\ttfamily Type\+::is\+Generic\+Object()}, {\ttfamily Type\+::is\+Iterable()}, {\ttfamily Type\+::is\+Mixed()}, {\ttfamily Type\+::is\+Never()}, {\ttfamily Type\+::is\+Null()}, {\ttfamily Type\+::is\+Object()}, {\ttfamily Type\+::is\+Simple()}, {\ttfamily Type\+::is\+Static()}, {\ttfamily Type\+::is\+Union()}, {\ttfamily Type\+::is\+Unknown()}, and {\ttfamily Type\+::is\+Void()}
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1145}{}\doxysubsection{Changed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1145}
+
+\begin{DoxyItemize}
+\item Renamed {\ttfamily Reflection\+Mapper\+::from\+Method\+Return\+Type(Reflection\+Method \$method)} to {\ttfamily Reflection\+Mapper\+::from\+Return\+Type(Reflection\+Function\+Abstract \$function\+Or\+Method)}
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1146}{}\doxysubsection{Removed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1146}
+
+\begin{DoxyItemize}
+\item Removed {\ttfamily Type\+::get\+Return\+Type\+Declaration()} (use {\ttfamily Type\+::as\+String()} instead and prefix its result with `'\+: \textquotesingle{}{\ttfamily )}
+\item {\ttfamily Removed}Type\+Name\+::get\+Namespace\+Name(){\ttfamily (use}Type\+Name\+::namespace\+Name(){\ttfamily instead)}
+\item {\ttfamily Removed}Type\+Name\+::get\+Simple\+Name(){\ttfamily (use}Type\+Name\+::simple\+Name(){\ttfamily instead)}
+\item {\ttfamily Removed}Type\+Name\+::get\+Qualified\+Name(){\ttfamily (use}Type\+Name\+::qualified\+Name()\`{} instead)
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1147}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/ca39369c41313ed12c071ed38ecda8fcdb248859...\+2.\+3.\+4\char`\"{} $>$2.\+3.\+4$<$/a$>$ -\/ 2021-\/06-\/15}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1147}
+
+\begin{DoxyItemize}
+\item Fixed regression introduced in 2.\+3.\+3
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1148}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+3.\+2...\+ca39369c41313ed12c071ed38ecda8fcdb248859\char`\"{} $>$2.\+3.\+3$<$/a$>$ -\/ 2021-\/06-\/15 \mbox{[}\+YANKED\mbox{]}}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1148}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1149}{}\doxysubsection{Fixed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1149}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/type/issues/15}{\texttt{ \#15}}\+: \char`\"{}false\char`\"{} pseudo type is not handled properly
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1150}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+3.\+1...\+2.\+3.\+2\char`\"{} $>$2.\+3.\+2$<$/a$>$ -\/ 2021-\/06-\/04}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1150}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1151}{}\doxysubsection{Fixed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1151}
+
+\begin{DoxyItemize}
+\item Fixed handling of tentatively declared return types
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1152}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+3.\+0...\+2.\+3.\+1\char`\"{} $>$2.\+3.\+1$<$/a$>$ -\/ 2020-\/10-\/26}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1152}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1153}{}\doxysubsection{Fixed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1153}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}}\textbackslash{}Type\textbackslash{}Exception} now correctly extends {\ttfamily \textbackslash{}Throwable}
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1154}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+2.\+2...\+2.\+3.\+0\char`\"{} $>$2.\+3.\+0$<$/a$>$ -\/ 2020-\/10-\/06}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1154}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1155}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1155}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/sebastianbergmann/type/issues/14}{\texttt{ \#14}}\+: Support for {\ttfamily static} return type that is introduced in PHP 8
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1156}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+2.\+1...\+2.\+2.\+2\char`\"{} $>$2.\+2.\+2$<$/a$>$ -\/ 2020-\/09-\/28}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1156}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1157}{}\doxysubsection{Changed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1157}
+
+\begin{DoxyItemize}
+\item Changed PHP version constraint in {\ttfamily composer.\+json} from {\ttfamily $^\wedge$7.3 $\vert$$\vert$ $^\wedge$8.0} to {\ttfamily \texorpdfstring{$>$}{>}=7.\+3}
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1158}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+2.\+0...\+2.\+2.\+1\char`\"{} $>$2.\+2.\+1$<$/a$>$ -\/ 2020-\/07-\/05}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1158}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1159}{}\doxysubsection{Fixed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1159}
+
+\begin{DoxyItemize}
+\item Fixed handling of {\ttfamily mixed} type in {\ttfamily Reflection\+Mapper\+::from\+Method\+Return\+Type()}
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1160}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+1.\+1...\+2.\+2.\+0\char`\"{} $>$2.\+2.\+0$<$/a$>$ -\/ 2020-\/07-\/05}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1160}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1161}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1161}
+
+\begin{DoxyItemize}
+\item Added {\ttfamily Mixed\+Type} object for representing PHP 8\textquotesingle{}s {\ttfamily mixed} type
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1162}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+1.\+0...\+2.\+1.\+1\char`\"{} $>$2.\+1.\+1$<$/a$>$ -\/ 2020-\/06-\/26}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1162}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1163}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1163}
+
+\begin{DoxyItemize}
+\item This component is now supported on PHP 8
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1164}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/2.\+0.\+0...\+2.\+1.\+0\char`\"{} $>$2.\+1.\+0$<$/a$>$ -\/ 2020-\/06-\/01}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1164}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1165}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1165}
+
+\begin{DoxyItemize}
+\item Added {\ttfamily Union\+Type} object for representing PHP 8\textquotesingle{}s Union Types
+\item Added {\ttfamily Reflection\+Mapper\+::from\+Method\+Return\+Type()} for mapping {\ttfamily \textbackslash{}Reflection\+Method\+::get\+Return\+Type()} to a {\ttfamily Type} object
+\item Added {\ttfamily Type\+::name()} for retrieving the name of a type
+\item Added {\ttfamily Type\+::as\+String()} for retrieving a textual representation of a type
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1166}{}\doxysubsection{Changed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1166}
+
+\begin{DoxyItemize}
+\item Deprecated {\ttfamily Type\+::get\+Return\+Type\+Declaration()} (use {\ttfamily Type\+::as\+String()} instead and prefix its result with `'\+: \textquotesingle{}{\ttfamily )}
+\item {\ttfamily Deprecated}Type\+Name\+::get\+Namespace\+Name(){\ttfamily (use}Type\+Name\+::namespace\+Name(){\ttfamily instead)}
+\item {\ttfamily Deprecated}Type\+Name\+::get\+Simple\+Name(){\ttfamily (use}Type\+Name\+::simple\+Name(){\ttfamily instead)}
+\item {\ttfamily Deprecated}Type\+Name\+::get\+Qualified\+Name(){\ttfamily (use}Type\+Name\+::qualified\+Name()\`{} instead)
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1167}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/1.\+1.\+3...\+2.\+0.\+0\char`\"{} $>$2.\+0.\+0$<$/a$>$ -\/ 2020-\/02-\/07}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1167}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1168}{}\doxysubsection{Removed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1168}
+
+\begin{DoxyItemize}
+\item This component is no longer supported on PHP 7.\+2
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1169}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/1.\+1.\+2...\+1.\+1.\+3\char`\"{} $>$1.\+1.\+3$<$/a$>$ -\/ 2019-\/07-\/02}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1169}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1170}{}\doxysubsection{Fixed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1170}
+
+\begin{DoxyItemize}
+\item Fixed class name comparison in {\ttfamily Object\+Type} to be case-\/insensitive
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1171}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/1.\+1.\+1...\+1.\+1.\+2\char`\"{} $>$1.\+1.\+2$<$/a$>$ -\/ 2019-\/06-\/19}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1171}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1172}{}\doxysubsection{Fixed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1172}
+
+\begin{DoxyItemize}
+\item Fixed handling of {\ttfamily object} type
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1173}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/1.\+1.\+0...\+1.\+1.\+1\char`\"{} $>$1.\+1.\+1$<$/a$>$ -\/ 2019-\/06-\/08}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1173}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1174}{}\doxysubsection{Fixed}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1174}
+
+\begin{DoxyItemize}
+\item Fixed autoloading of {\ttfamily callback\+\_\+function.\+php} fixture file
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1175}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/1.\+0.\+0...\+1.\+1.\+0\char`\"{} $>$1.\+1.\+0$<$/a$>$ -\/ 2019-\/06-\/07}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1175}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1176}{}\doxysubsection{Added}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1176}
+
+\begin{DoxyItemize}
+\item Added support for {\ttfamily callable} type
+\item Added support for {\ttfamily iterable} type
+\end{DoxyItemize}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1177}{}\doxysection{$<$a href=\char`\"{}https\+://github.\+com/sebastianbergmann/type/compare/ff74aa41746bd8d10e931843ebf37d42da513ede...\+1.\+0.\+0\char`\"{} $>$1.\+0.\+0$<$/a$>$ -\/ 2019-\/06-\/06}\label{md__c__workspace__proyecto__p_h_p_project_vendor_sebastian_type__change_log_autotoc_md1177}
+
+\begin{DoxyItemize}
+\item Initial release based on \href{https://github.com/sebastianbergmann/phpunit/pull/3673}{\texttt{ code contributed by Michel Hartmann to PHPUnit}} 
+\end{DoxyItemize}

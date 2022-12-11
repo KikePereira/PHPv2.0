@@ -1,0 +1,4 @@
+var _disallow_short_array_syntax_sniff_8php =
+[
+    [ "DisallowShortArraySyntaxSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_arrays_1_1_disallow_short_array_syntax_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_arrays_1_1_disallow_short_array_syntax_sniff" ]
+];

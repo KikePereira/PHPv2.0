@@ -1,0 +1,72 @@
+\hypertarget{class_twig_1_1_token_parser_1_1_set_token_parser}{}\doxysection{Set\+Token\+Parser Class Reference}
+\label{class_twig_1_1_token_parser_1_1_set_token_parser}\index{SetTokenParser@{SetTokenParser}}
+Inheritance diagram for Set\+Token\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_twig_1_1_token_parser_1_1_set_token_parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_twig_1_1_token_parser_1_1_set_token_parser_a9555bfac01648dc509d1b4026b1363ae}{parse}} (\mbox{\hyperlink{class_twig_1_1_token}{Token}} \$token)
+\item 
+\mbox{\hyperlink{class_twig_1_1_token_parser_1_1_set_token_parser_a6a58c40ae7bce3ca1d6ede5af6cc1243}{decide\+Block\+End}} (\mbox{\hyperlink{class_twig_1_1_token}{Token}} \$token)
+\item 
+\mbox{\hyperlink{class_twig_1_1_token_parser_1_1_set_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{get\+Tag}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Defines a variable.
+
+\{\% set foo = \textquotesingle{}foo\textquotesingle{} \%\} \{\% set foo = \mbox{[}1, 2\mbox{]} \%\} \{\% set foo = \{\textquotesingle{}foo\textquotesingle{}\+: \textquotesingle{}bar\textquotesingle{}\} \%\} \{\% set foo = \textquotesingle{}foo\textquotesingle{} $\sim$ \textquotesingle{}bar\textquotesingle{} \%\} \{\% set foo, bar = \textquotesingle{}foo\textquotesingle{}, \textquotesingle{}bar\textquotesingle{} \%\} \{\% set foo \%\}Some content\{\% endset \%\} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_twig_1_1_token_parser_1_1_set_token_parser_a6a58c40ae7bce3ca1d6ede5af6cc1243}\label{class_twig_1_1_token_parser_1_1_set_token_parser_a6a58c40ae7bce3ca1d6ede5af6cc1243}} 
+\index{SetTokenParser@{SetTokenParser}!decideBlockEnd@{decideBlockEnd}}
+\index{decideBlockEnd@{decideBlockEnd}!SetTokenParser@{SetTokenParser}}
+\doxysubsubsection{\texorpdfstring{decideBlockEnd()}{decideBlockEnd()}}
+{\footnotesize\ttfamily decide\+Block\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_token}{Token}}}]{\$token }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_twig_1_1_token_parser_1_1_set_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}\label{class_twig_1_1_token_parser_1_1_set_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}} 
+\index{SetTokenParser@{SetTokenParser}!getTag@{getTag}}
+\index{getTag@{getTag}!SetTokenParser@{SetTokenParser}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the tag name associated with this token parser.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_twig_1_1_token_parser_1_1_token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}{Token\+Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_twig_1_1_token_parser_1_1_set_token_parser_a9555bfac01648dc509d1b4026b1363ae}\label{class_twig_1_1_token_parser_1_1_set_token_parser_a9555bfac01648dc509d1b4026b1363ae}} 
+\index{SetTokenParser@{SetTokenParser}!parse@{parse}}
+\index{parse@{parse}!SetTokenParser@{SetTokenParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_token}{Token}}}]{\$token }\end{DoxyParamCaption})}
+
+Parses a token and returns a node.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_twig_1_1_node}{Node}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_twig_1_1_token_parser_1_1_token_parser_interface_a9555bfac01648dc509d1b4026b1363ae}{Token\+Parser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Token\+Parser/\mbox{\hyperlink{_set_token_parser_8php}{Set\+Token\+Parser.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var _static_this_usage_unit_test_8php =
+[
+    [ "StaticThisUsageUnitTest", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_scope_1_1_static_this_usage_unit_test.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_scope_1_1_static_this_usage_unit_test" ]
+];

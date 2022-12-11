@@ -1,0 +1,4 @@
+var _p_s_r2_2_sniffs_2_classes_2_class_declaration_sniff_8php =
+[
+    [ "ClassDeclarationSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_classes_1_1_class_declaration_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_classes_1_1_class_declaration_sniff" ]
+];

@@ -1,0 +1,98 @@
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure}{}\doxysection{Test\+Failure Class Reference}
+\label{class_p_h_p_unit_1_1_framework_1_1_test_failure}\index{TestFailure@{TestFailure}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_a82055a4dd40d807ad748448188d9b853}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_test}{Test}} \$\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_afb5353a5bb9ebe3f0b731d176a5f6019}{failed\+Test}}, Throwable \$t)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_af5ab125fcd6e125ddf02594c56eadf8b}{get\+Exception\+As\+String}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_af10615e21287d59c3ce1623fa03d79ac}{get\+Test\+Name}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_afb5353a5bb9ebe3f0b731d176a5f6019}{failed\+Test}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_a957f1cb5c23dde4acd265af6a43c87a7}{thrown\+Exception}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_acb00ff713fcfbba6ef26c985232d5d28}{exception\+Message}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_aca7c2d13862869a3538adf2d6a8fc4f5}{is\+Failure}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure_ace4307168cc9c308f2c59bc4185093ba}{exception\+To\+String}} (Throwable \$e)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_a82055a4dd40d807ad748448188d9b853}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_a82055a4dd40d807ad748448188d9b853}} 
+\index{TestFailure@{TestFailure}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_test}{Test}}}]{\$failed\+Test,  }\item[{Throwable}]{\$t }\end{DoxyParamCaption})}
+
+Constructs a \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_failure}{Test\+Failure}} with the given test and exception. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_acb00ff713fcfbba6ef26c985232d5d28}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_acb00ff713fcfbba6ef26c985232d5d28}} 
+\index{TestFailure@{TestFailure}!exceptionMessage@{exceptionMessage}}
+\index{exceptionMessage@{exceptionMessage}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{exceptionMessage()}{exceptionMessage()}}
+{\footnotesize\ttfamily exception\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the exception\textquotesingle{}s message. \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_ace4307168cc9c308f2c59bc4185093ba}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_ace4307168cc9c308f2c59bc4185093ba}} 
+\index{TestFailure@{TestFailure}!exceptionToString@{exceptionToString}}
+\index{exceptionToString@{exceptionToString}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{exceptionToString()}{exceptionToString()}}
+{\footnotesize\ttfamily static exception\+To\+String (\begin{DoxyParamCaption}\item[{Throwable}]{\$e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a description for an exception. \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_afb5353a5bb9ebe3f0b731d176a5f6019}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_afb5353a5bb9ebe3f0b731d176a5f6019}} 
+\index{TestFailure@{TestFailure}!failedTest@{failedTest}}
+\index{failedTest@{failedTest}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{failedTest()}{failedTest()}}
+{\footnotesize\ttfamily failed\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the failing test.
+
+Note\+: The test object is not set when the test is executed in process isolation.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_exception}{Exception}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_af5ab125fcd6e125ddf02594c56eadf8b}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_af5ab125fcd6e125ddf02594c56eadf8b}} 
+\index{TestFailure@{TestFailure}!getExceptionAsString@{getExceptionAsString}}
+\index{getExceptionAsString@{getExceptionAsString}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{getExceptionAsString()}{getExceptionAsString()}}
+{\footnotesize\ttfamily get\+Exception\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a description for the thrown exception. \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_af10615e21287d59c3ce1623fa03d79ac}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_af10615e21287d59c3ce1623fa03d79ac}} 
+\index{TestFailure@{TestFailure}!getTestName@{getTestName}}
+\index{getTestName@{getTestName}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{getTestName()}{getTestName()}}
+{\footnotesize\ttfamily get\+Test\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the failing test (including data set, if any). \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_aca7c2d13862869a3538adf2d6a8fc4f5}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_aca7c2d13862869a3538adf2d6a8fc4f5}} 
+\index{TestFailure@{TestFailure}!isFailure@{isFailure}}
+\index{isFailure@{isFailure}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{isFailure()}{isFailure()}}
+{\footnotesize\ttfamily is\+Failure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the thrown exception is of type \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_assertion_failed_error}{Assertion\+Failed\+Error}}. \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_a957f1cb5c23dde4acd265af6a43c87a7}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_a957f1cb5c23dde4acd265af6a43c87a7}} 
+\index{TestFailure@{TestFailure}!thrownException@{thrownException}}
+\index{thrownException@{thrownException}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{thrownException()}{thrownException()}}
+{\footnotesize\ttfamily thrown\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the thrown exception. \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_test_failure_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit_1_1_framework_1_1_test_failure_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{TestFailure@{TestFailure}!toString@{toString}}
+\index{toString@{toString}!TestFailure@{TestFailure}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a short description of the failure. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/phpunit/src/\+Framework/\mbox{\hyperlink{_test_failure_8php}{Test\+Failure.\+php}}\end{DoxyCompactItemize}

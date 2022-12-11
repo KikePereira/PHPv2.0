@@ -1,0 +1,4 @@
+var _browser_specific_styles_sniff_8php =
+[
+    [ "BrowserSpecificStylesSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_sniffs_1_1_c_s_s_1_1_browser_specific_styles_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_sniffs_1_1_c_s_s_1_1_browser_specific_styles_sniff" ]
+];

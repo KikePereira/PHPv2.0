@@ -1,0 +1,185 @@
+\hypertarget{class_slim_1_1_psr7_1_1_response}{}\doxysection{Response Class Reference}
+\label{class_slim_1_1_psr7_1_1_response}\index{Response@{Response}}
+Inheritance diagram for Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_slim_1_1_psr7_1_1_response}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_a185eeb35763fd8f535ecc7595549451c}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$status=Status\+Code\+Interface\+::\+STATUS\+\_\+\+OK, ?\mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface}{Headers\+Interface}} \$headers=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, ?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$body=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_a094778dd1c04fe44626000b47ea0c0bb}{get\+Status\+Code}} ()
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_adea4a553d385286f0457844663023b27}{with\+Status}} (\$code, \$reason\+Phrase=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_ad2574b5790012944a05218ed095d919d}{get\+Reason\+Phrase}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_ad84875af84ce07c092d60fa7d8094ac9}{filter\+Status}} (\$status)
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_a4f5d065b0cd111580fcac14630ab9655}{filter\+Reason\+Phrase}} (\$reason\+Phrase=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_a07de858ed297365dc8549b26ffcd599e}{\$status}} = Status\+Code\+Interface\+::\+STATUS\+\_\+\+OK
+\item 
+\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_a500a9991449de54fa74e1f4b283aacd6}{\$reason\+Phrase}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static array \mbox{\hyperlink{class_slim_1_1_psr7_1_1_response_aaf8d38bd4e7d07a3d97cc2f497f6d13f}{\$messages}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_a185eeb35763fd8f535ecc7595549451c}\label{class_slim_1_1_psr7_1_1_response_a185eeb35763fd8f535ecc7595549451c}} 
+\index{Response@{Response}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}}}]{\$status = {\ttfamily StatusCodeInterface\+:\+:STATUS\+\_\+OK},  }\item[{?\mbox{\hyperlink{interface_slim_1_1_psr7_1_1_interfaces_1_1_headers_interface}{Headers\+Interface}}}]{\$headers = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$body = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & The response status code. \\
+\hline
+Headers\+Interface | null & {\em \$headers} & The response headers. \\
+\hline
+Stream\+Interface | null & {\em \$body} & The response body. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_ad0cb87b388bc74d63dc884accdca8713}\label{class_slim_1_1_psr7_1_1_response_ad0cb87b388bc74d63dc884accdca8713}} 
+\index{Response@{Response}!\_\_clone@{\_\_clone}}
+\index{\_\_clone@{\_\_clone}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{\_\_clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is applied to the cloned object after PHP performs an initial shallow-\/copy. This method completes a deep-\/copy by creating new objects for the cloned object\textquotesingle{}s internal reference pointers. \mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_a4f5d065b0cd111580fcac14630ab9655}\label{class_slim_1_1_psr7_1_1_response_a4f5d065b0cd111580fcac14630ab9655}} 
+\index{Response@{Response}!filterReasonPhrase@{filterReasonPhrase}}
+\index{filterReasonPhrase@{filterReasonPhrase}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{filterReasonPhrase()}{filterReasonPhrase()}}
+{\footnotesize\ttfamily filter\+Reason\+Phrase (\begin{DoxyParamCaption}\item[{}]{\$reason\+Phrase = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Filter Reason Phrase
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$reason\+Phrase} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_ad84875af84ce07c092d60fa7d8094ac9}\label{class_slim_1_1_psr7_1_1_response_ad84875af84ce07c092d60fa7d8094ac9}} 
+\index{Response@{Response}!filterStatus@{filterStatus}}
+\index{filterStatus@{filterStatus}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{filterStatus()}{filterStatus()}}
+{\footnotesize\ttfamily filter\+Status (\begin{DoxyParamCaption}\item[{}]{\$status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Filter HTTP status code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & HTTP status code.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If an invalid HTTP status code is provided. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_ad2574b5790012944a05218ed095d919d}\label{class_slim_1_1_psr7_1_1_response_ad2574b5790012944a05218ed095d919d}} 
+\index{Response@{Response}!getReasonPhrase@{getReasonPhrase}}
+\index{getReasonPhrase@{getReasonPhrase}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{getReasonPhrase()}{getReasonPhrase()}}
+{\footnotesize\ttfamily get\+Reason\+Phrase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\{Gets the response reason phrase associated with the status code.
+
+Because a reason phrase is not a required element in a response status line, the reason phrase value MAY be null. Implementations MAY choose to return the default RFC 7231 recommended reason phrase (or those listed in the IANA HTTP Status Code Registry) for the response\textquotesingle{}s status code.
+
+\mbox{\hyperlink{}{\href{http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml}{\texttt{ http\+://www.\+iana.\+org/assignments/http-\/status-\/codes/http-\/status-\/codes.\+xhtml}}  string Reason phrase; must return an empty string if none present.}}\} 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_interface_ad2574b5790012944a05218ed095d919d}{Response\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_a094778dd1c04fe44626000b47ea0c0bb}\label{class_slim_1_1_psr7_1_1_response_a094778dd1c04fe44626000b47ea0c0bb}} 
+\index{Response@{Response}!getStatusCode@{getStatusCode}}
+\index{getStatusCode@{getStatusCode}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{getStatusCode()}{getStatusCode()}}
+{\footnotesize\ttfamily get\+Status\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\{Gets the response status code.
+
+The status code is a 3-\/digit integer result code of the server\textquotesingle{}s attempt to understand and satisfy the request.
+
+\begin{DoxyReturn}{Returns}
+int Status code.
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_interface_a094778dd1c04fe44626000b47ea0c0bb}{Response\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_adea4a553d385286f0457844663023b27}\label{class_slim_1_1_psr7_1_1_response_adea4a553d385286f0457844663023b27}} 
+\index{Response@{Response}!withStatus@{withStatus}}
+\index{withStatus@{withStatus}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{withStatus()}{withStatus()}}
+{\footnotesize\ttfamily with\+Status (\begin{DoxyParamCaption}\item[{}]{\$code,  }\item[{}]{\$reason\+Phrase = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\{Return an instance with the specified status code and, optionally, reason phrase.
+
+If no reason phrase is specified, implementations MAY choose to default to the RFC 7231 or IANA recommended reason phrase for the response\textquotesingle{}s status code.
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the updated status and reason phrase.
+
+\mbox{\hyperlink{}{\href{http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml}{\texttt{ http\+://www.\+iana.\+org/assignments/http-\/status-\/codes/http-\/status-\/codes.\+xhtml}}  int \$code The 3-\/digit integer result code to set.  string \$reason\+Phrase The reason phrase to use with the provided status code; if none is provided, implementations MAY use the defaults as suggested in the HTTP specification.  static   For invalid status code arguments.}}\} \begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_interface_adea4a553d385286f0457844663023b27}{Response\+Interface}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_aaf8d38bd4e7d07a3d97cc2f497f6d13f}\label{class_slim_1_1_psr7_1_1_response_aaf8d38bd4e7d07a3d97cc2f497f6d13f}} 
+\index{Response@{Response}!\$messages@{\$messages}}
+\index{\$messages@{\$messages}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{\$messages}{$messages}}
+{\footnotesize\ttfamily array \$messages\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_a500a9991449de54fa74e1f4b283aacd6}\label{class_slim_1_1_psr7_1_1_response_a500a9991449de54fa74e1f4b283aacd6}} 
+\index{Response@{Response}!\$reasonPhrase@{\$reasonPhrase}}
+\index{\$reasonPhrase@{\$reasonPhrase}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{\$reasonPhrase}{$reasonPhrase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$reason\+Phrase = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_response_a07de858ed297365dc8549b26ffcd599e}\label{class_slim_1_1_psr7_1_1_response_a07de858ed297365dc8549b26ffcd599e}} 
+\index{Response@{Response}!\$status@{\$status}}
+\index{\$status@{\$status}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{\$status}{$status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$status = Status\+Code\+Interface\+::\+STATUS\+\_\+\+OK\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/psr7/src/\mbox{\hyperlink{_response_8php}{Response.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch}{}\doxysection{Reflection\+Class\+New\+Instance\+Patch Class Reference}
+\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch}\index{ReflectionClassNewInstancePatch@{ReflectionClassNewInstancePatch}}
+Inheritance diagram for Reflection\+Class\+New\+Instance\+Patch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a99b2455ac194faf79aff042c55719ac2}{supports}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}} \$node)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a62fdb697928f35fc782d6889b8fe9b8b}{apply}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}} \$node)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a1e7a3c168dcd0901a0d2669c67575b55}{get\+Priority}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reflection\+Class\+::new\+Instance patch. Makes first argument of new\+Instance optional, since it works but signature is misleading
+
+\begin{DoxyAuthor}{Author}
+Florian Klein \href{mailto:florian.klein@free.fr}{\texttt{ florian.\+klein@free.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a62fdb697928f35fc782d6889b8fe9b8b}\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a62fdb697928f35fc782d6889b8fe9b8b}} 
+\index{ReflectionClassNewInstancePatch@{ReflectionClassNewInstancePatch}!apply@{apply}}
+\index{apply@{apply}!ReflectionClassNewInstancePatch@{ReflectionClassNewInstancePatch}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}}}]{\$node }\end{DoxyParamCaption})}
+
+Updates new\+Instance\textquotesingle{}s first argument to make it optional
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a62fdb697928f35fc782d6889b8fe9b8b}{Class\+Patch\+Interface}}.
+
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a1e7a3c168dcd0901a0d2669c67575b55}\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a1e7a3c168dcd0901a0d2669c67575b55}} 
+\index{ReflectionClassNewInstancePatch@{ReflectionClassNewInstancePatch}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!ReflectionClassNewInstancePatch@{ReflectionClassNewInstancePatch}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
+{\footnotesize\ttfamily get\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns patch priority, which determines when patch will be applied.
+
+\begin{DoxyReturn}{Returns}
+int Priority number (higher = earlier) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a1e7a3c168dcd0901a0d2669c67575b55}{Class\+Patch\+Interface}}.
+
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a99b2455ac194faf79aff042c55719ac2}\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a99b2455ac194faf79aff042c55719ac2}} 
+\index{ReflectionClassNewInstancePatch@{ReflectionClassNewInstancePatch}!supports@{supports}}
+\index{supports@{supports}!ReflectionClassNewInstancePatch@{ReflectionClassNewInstancePatch}}
+\doxysubsubsection{\texorpdfstring{supports()}{supports()}}
+{\footnotesize\ttfamily supports (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}}}]{\$node }\end{DoxyParamCaption})}
+
+Supports Reflection\+Class
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a99b2455ac194faf79aff042c55719ac2}{Class\+Patch\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\+Doubler/\+Class\+Patch/\mbox{\hyperlink{_reflection_class_new_instance_patch_8php}{Reflection\+Class\+New\+Instance\+Patch.\+php}}\end{DoxyCompactItemize}

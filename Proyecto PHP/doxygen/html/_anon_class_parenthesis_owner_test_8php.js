@@ -1,0 +1,4 @@
+var _anon_class_parenthesis_owner_test_8php =
+[
+    [ "AnonClassParenthesisOwnerTest", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_anon_class_parenthesis_owner_test.html", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_anon_class_parenthesis_owner_test" ]
+];

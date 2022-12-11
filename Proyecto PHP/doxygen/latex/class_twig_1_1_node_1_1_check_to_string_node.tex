@@ -1,0 +1,56 @@
+\hypertarget{class_twig_1_1_node_1_1_check_to_string_node}{}\doxysection{Check\+To\+String\+Node Class Reference}
+\label{class_twig_1_1_node_1_1_check_to_string_node}\index{CheckToStringNode@{CheckToStringNode}}
+Inheritance diagram for Check\+To\+String\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_twig_1_1_node_1_1_check_to_string_node}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_twig_1_1_node_1_1_check_to_string_node_ac9cc26470f307ad5732041543b31aea6}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_twig_1_1_node_1_1_expression_1_1_abstract_expression}{Abstract\+Expression}} \$expr)
+\item 
+\mbox{\hyperlink{class_twig_1_1_node_1_1_check_to_string_node_aed43bf58315e7fc1bb85d23433150438}{compile}} (\mbox{\hyperlink{class_twig_1_1_compiler}{Compiler}} \$compiler)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Checks if casting an expression to \mbox{\hyperlink{class_twig_1_1_node_1_1_node_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String()}} is allowed by the sandbox.
+
+For instance, when there is a simple Print statement, like \{\{ article \}\}, and if the sandbox is enabled, we need to check that the \mbox{\hyperlink{class_twig_1_1_node_1_1_node_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String()}} method is allowed if \textquotesingle{}article\textquotesingle{} is an object. The same goes for \{\{ article$\vert$upper \}\} or \{\{ random(article) \}\}
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_twig_1_1_node_1_1_check_to_string_node_ac9cc26470f307ad5732041543b31aea6}\label{class_twig_1_1_node_1_1_check_to_string_node_ac9cc26470f307ad5732041543b31aea6}} 
+\index{CheckToStringNode@{CheckToStringNode}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CheckToStringNode@{CheckToStringNode}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_node_1_1_expression_1_1_abstract_expression}{Abstract\+Expression}}}]{\$expr }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_twig_1_1_node_1_1_check_to_string_node_aed43bf58315e7fc1bb85d23433150438}\label{class_twig_1_1_node_1_1_check_to_string_node_aed43bf58315e7fc1bb85d23433150438}} 
+\index{CheckToStringNode@{CheckToStringNode}!compile@{compile}}
+\index{compile@{compile}!CheckToStringNode@{CheckToStringNode}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily compile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_compiler}{Compiler}}}]{\$compiler }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_twig_1_1_node_1_1_node_aed43bf58315e7fc1bb85d23433150438}{Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Node/\mbox{\hyperlink{_check_to_string_node_8php}{Check\+To\+String\+Node.\+php}}\end{DoxyCompactItemize}

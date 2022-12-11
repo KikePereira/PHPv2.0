@@ -1,0 +1,91 @@
+\hypertarget{class_sebastian_bergmann_1_1_recursion_context_1_1_context}{}\doxysection{Context Class Reference}
+\label{class_sebastian_bergmann_1_1_recursion_context_1_1_context}\index{Context@{Context}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_recursion_context_1_1_context_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_recursion_context_1_1_context_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_recursion_context_1_1_context_af1ed54161c97c29f4c8c1714df6feccc}{add}} (\&\$value)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_recursion_context_1_1_context_ab5894516f0a3adabdf1e5579d9ede76d}{contains}} (\&\$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} context containing previously processed arrays and objects when recursively processing a value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_recursion_context_1_1_context_a095c5d389db211932136b53f25f39685}\label{class_sebastian_bergmann_1_1_recursion_context_1_1_context_a095c5d389db211932136b53f25f39685}} 
+\index{Context@{Context}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Context@{Context}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialises the context. \mbox{\Hypertarget{class_sebastian_bergmann_1_1_recursion_context_1_1_context_a421831a265621325e1fdd19aace0c758}\label{class_sebastian_bergmann_1_1_recursion_context_1_1_context_a421831a265621325e1fdd19aace0c758}} 
+\index{Context@{Context}!\_\_destruct@{\_\_destruct}}
+\index{\_\_destruct@{\_\_destruct}!Context@{Context}}
+\doxysubsubsection{\texorpdfstring{\_\_destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@code\+Coverage\+Ignore 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_recursion_context_1_1_context_af1ed54161c97c29f4c8c1714df6feccc}\label{class_sebastian_bergmann_1_1_recursion_context_1_1_context_af1ed54161c97c29f4c8c1714df6feccc}} 
+\index{Context@{Context}!add@{add}}
+\index{add@{add}!Context@{Context}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily add (\begin{DoxyParamCaption}\item[{\&}]{\$value }\end{DoxyParamCaption})}
+
+Adds a value to the context.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object & {\em \$value} & the value to add\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sebastian_bergmann_1_1_recursion_context_1_1_invalid_argument_exception}{Invalid\+Argument\+Exception}}} & Thrown if \$value is not an array or object\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+bool$\vert$int$\vert$string the ID of the stored value, either as a string or integer
+\end{DoxyReturn}
+@psalm-\/template T @psalm-\/param T \$value 
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & T \$value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_recursion_context_1_1_context_ab5894516f0a3adabdf1e5579d9ede76d}\label{class_sebastian_bergmann_1_1_recursion_context_1_1_context_ab5894516f0a3adabdf1e5579d9ede76d}} 
+\index{Context@{Context}!contains@{contains}}
+\index{contains@{contains}!Context@{Context}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily contains (\begin{DoxyParamCaption}\item[{\&}]{\$value }\end{DoxyParamCaption})}
+
+Checks if the given value exists within the context.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object & {\em \$value} & the value to check\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sebastian_bergmann_1_1_recursion_context_1_1_invalid_argument_exception}{Invalid\+Argument\+Exception}}} & Thrown if \$value is not an array or object\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+false$\vert$int$\vert$string the string or integer ID of the stored value if it has already been seen, or false if the value is not stored
+\end{DoxyReturn}
+@psalm-\/template T @psalm-\/param T \$value 
+\begin{DoxyParams}{Parameters}
+{\em -\/out} & T \$value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/sebastian/recursion-\/context/src/\mbox{\hyperlink{sebastian_2recursion-context_2src_2_context_8php}{Context.\+php}}\end{DoxyCompactItemize}

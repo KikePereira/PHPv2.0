@@ -1,0 +1,8 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff =
+[
+    [ "isMultiLineDeclaration", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff.html#ae58d42fd8213df0f558e4c4bff70d539", null ],
+    [ "processBracket", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff.html#a428f6b9ca4952f6f59fa3ffc47224d94", null ],
+    [ "processMultiLineDeclaration", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff.html#a6d202ebf2a20327347c64f48d98837f3", null ],
+    [ "processSingleLineDeclaration", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff.html#a48c6bd87ba4286fc6935cfc1c80a8c8e", null ],
+    [ "$supportedTokenizers", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_multi_line_function_declaration_sniff.html#a14f6bd971ae8b179988e5abd4139e5cf", null ]
+];

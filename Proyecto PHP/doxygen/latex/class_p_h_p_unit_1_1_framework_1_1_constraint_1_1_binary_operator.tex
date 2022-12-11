@@ -1,0 +1,119 @@
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator}{}\doxysection{Binary\+Operator Class Reference}
+\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator}\index{BinaryOperator@{BinaryOperator}}
+Inheritance diagram for Binary\+Operator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_aecb273becbedcf46aedb2d32075ae564}{set\+Constraints}} (array \$\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_abe80b5d744db9994200a4f5235ad10db}{constraints}})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac767caa80bc405c376810231f932920b}{arity}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a79d783420b6f72654481f79d8ec29afe}{from\+Constraints}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}} ... \$\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_abe80b5d744db9994200a4f5235ad10db}{constraints}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_abe80b5d744db9994200a4f5235ad10db}{constraints}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}{constraint\+Needs\+Parentheses}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}} \$constraint)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a6cac52a9b5c3ca0a1bb833c95d8147fd}{reduce}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \mbox{\hyperlink{namespace_p_h_p_unit}{PHPUnit}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac767caa80bc405c376810231f932920b}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac767caa80bc405c376810231f932920b}} 
+\index{BinaryOperator@{BinaryOperator}!arity@{arity}}
+\index{arity@{arity}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{arity()}{arity()}}
+{\footnotesize\ttfamily arity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Returns the number of operands (constraints). 
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_ac767caa80bc405c376810231f932920b}{Operator}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}} 
+\index{BinaryOperator@{BinaryOperator}!constraintNeedsParentheses@{constraintNeedsParentheses}}
+\index{constraintNeedsParentheses@{constraintNeedsParentheses}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{constraintNeedsParentheses()}{constraintNeedsParentheses()}}
+{\footnotesize\ttfamily constraint\+Needs\+Parentheses (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}}}]{\$constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}}
+
+Returns true if the \$constraint needs to be wrapped with braces. 
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}{Operator}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_abe80b5d744db9994200a4f5235ad10db}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_abe80b5d744db9994200a4f5235ad10db}} 
+\index{BinaryOperator@{BinaryOperator}!constraints@{constraints}}
+\index{constraints@{constraints}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{constraints()}{constraints()}}
+{\footnotesize\ttfamily constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}}
+
+Returns the nested constraints. \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac751e87b3d4c4bf2feb03bee8b092755}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac751e87b3d4c4bf2feb03bee8b092755}} 
+\index{BinaryOperator@{BinaryOperator}!count@{count}}
+\index{count@{count}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Counts the number of constraint elements. 
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_ac751e87b3d4c4bf2feb03bee8b092755}{Constraint}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a79d783420b6f72654481f79d8ec29afe}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a79d783420b6f72654481f79d8ec29afe}} 
+\index{BinaryOperator@{BinaryOperator}!fromConstraints@{fromConstraints}}
+\index{fromConstraints@{fromConstraints}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{fromConstraints()}{fromConstraints()}}
+{\footnotesize\ttfamily static from\+Constraints (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}} ...}]{\$constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a6cac52a9b5c3ca0a1bb833c95d8147fd}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a6cac52a9b5c3ca0a1bb833c95d8147fd}} 
+\index{BinaryOperator@{BinaryOperator}!reduce@{reduce}}
+\index{reduce@{reduce}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily reduce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reduces the sub-\/expression starting at \$this by skipping degenerate sub-\/expression and returns first descendant constraint that starts a non-\/reducible sub-\/expression.
+
+See \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a6cac52a9b5c3ca0a1bb833c95d8147fd}{Constraint\+::reduce()}} for more. 
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a6cac52a9b5c3ca0a1bb833c95d8147fd}{Constraint}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_aecb273becbedcf46aedb2d32075ae564}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_aecb273becbedcf46aedb2d32075ae564}} 
+\index{BinaryOperator@{BinaryOperator}!setConstraints@{setConstraints}}
+\index{setConstraints@{setConstraints}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{setConstraints()}{setConstraints()}}
+{\footnotesize\ttfamily set\+Constraints (\begin{DoxyParamCaption}\item[{array}]{\$constraints }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed\mbox{[}$\,$\mbox{]} & {\em \$constraints} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{BinaryOperator@{BinaryOperator}!toString@{toString}}
+\index{toString@{toString}!BinaryOperator@{BinaryOperator}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the constraint. 
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{Self\+Describing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\+Operator/\mbox{\hyperlink{_binary_operator_8php}{Binary\+Operator.\+php}}\end{DoxyCompactItemize}

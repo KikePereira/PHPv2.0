@@ -1,0 +1,193 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s}{}\doxysection{JS Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s}\index{JS@{JS}}
+Inheritance diagram for JS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a629741680df6b53b86cabefe74f46fcd}{\+\_\+\+\_\+construct}} (\$content, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}} \$config, \$eol\+Char=\textquotesingle{}\textbackslash{}n\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a2605b7284198c41c0551eca215bf65e1}{tokenize}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a9d20de01e6f5c4fb43e90ecee5517d80}{get\+Regex\+Token}} (\$char, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}, \$chars, \$tokens)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_ae9feaa114cfdb387b421a0ebd8235d74}{process\+Additional}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_aa377970f7a1e8fab9ed698e572fb3222}{\$scope\+Openers}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_ad3ae70cc91d445980636874600462512}{\$end\+Scope\+Tokens}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_abc7f43cf73bc544013818f1c9298a24b}{\$token\+Values}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a82412b6934556010b672d449e00d7114}{\$string\+Tokens}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a400b42d12f12de0283bf635ea4f91dd7}{\$comment\+Tokens}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a629741680df6b53b86cabefe74f46fcd}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a629741680df6b53b86cabefe74f46fcd}} 
+\index{JS@{JS}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$content,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}}}]{\$config,  }\item[{}]{\$eol\+Char = {\ttfamily \textquotesingle{}\textbackslash{}n\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Initialise the tokenizer.
+
+Pre-\/checks the content to see if it looks minified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & The content to tokenize, \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Config & {\em \$config} & The config data for the run. \\
+\hline
+string & {\em \$eol\+Char} & The EOL char used in the content.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Tokenizer\+Exception If the file appears to be minified. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a9d20de01e6f5c4fb43e90ecee5517d80}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a9d20de01e6f5c4fb43e90ecee5517d80}} 
+\index{JS@{JS}!getRegexToken@{getRegexToken}}
+\index{getRegexToken@{getRegexToken}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{getRegexToken()}{getRegexToken()}}
+{\footnotesize\ttfamily get\+Regex\+Token (\begin{DoxyParamCaption}\item[{}]{\$char,  }\item[{}]{\$string,  }\item[{}]{\$chars,  }\item[{}]{\$tokens }\end{DoxyParamCaption})}
+
+Tokenizes a regular expression if one is found.
+
+If a regular expression is not found, NULL is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$char} & The index of the possible regex start character. \\
+\hline
+string & {\em \$string} & The complete content of the string being tokenized. \\
+\hline
+string & {\em \$chars} & An array of characters being tokenized. \\
+\hline
+string & {\em \$tokens} & The current array of tokens found in the string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$$\vert$null 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_ae9feaa114cfdb387b421a0ebd8235d74}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_ae9feaa114cfdb387b421a0ebd8235d74}} 
+\index{JS@{JS}!processAdditional@{processAdditional}}
+\index{processAdditional@{processAdditional}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{processAdditional()}{processAdditional()}}
+{\footnotesize\ttfamily process\+Additional (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Performs additional processing after main tokenizing.
+
+This additional processing looks for properties, closures, labels and objects.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_tokenizer_ae9feaa114cfdb387b421a0ebd8235d74}{Tokenizer}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a2605b7284198c41c0551eca215bf65e1}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a2605b7284198c41c0551eca215bf65e1}} 
+\index{JS@{JS}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily tokenize (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Creates an array of tokens when given some \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s}{JS}} code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string to tokenize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_tokenizer_a2605b7284198c41c0551eca215bf65e1}{Tokenizer}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a400b42d12f12de0283bf635ea4f91dd7}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a400b42d12f12de0283bf635ea4f91dd7}} 
+\index{JS@{JS}!\$commentTokens@{\$commentTokens}}
+\index{\$commentTokens@{\$commentTokens}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{\$commentTokens}{$commentTokens}}
+{\footnotesize\ttfamily \$comment\+Tokens\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'//'}  => \textcolor{keyword}{null},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'/*'}  => \textcolor{stringliteral}{'*/'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{''},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_ad3ae70cc91d445980636874600462512}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_ad3ae70cc91d445980636874600462512}} 
+\index{JS@{JS}!\$endScopeTokens@{\$endScopeTokens}}
+\index{\$endScopeTokens@{\$endScopeTokens}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{\$endScopeTokens}{$endScopeTokens}}
+{\footnotesize\ttfamily \$end\+Scope\+Tokens}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_util_a1ae5998f20ad5df78a4ecded32d46da7}{T\_CLOSE\_CURLY\_BRACKET}} => \mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_util_a1ae5998f20ad5df78a4ecded32d46da7}{T\_CLOSE\_CURLY\_BRACKET}},}
+\DoxyCodeLine{        T\_BREAK               => T\_BREAK,}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_aa377970f7a1e8fab9ed698e572fb3222}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_aa377970f7a1e8fab9ed698e572fb3222}} 
+\index{JS@{JS}!\$scopeOpeners@{\$scopeOpeners}}
+\index{\$scopeOpeners@{\$scopeOpeners}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{\$scopeOpeners}{$scopeOpeners}}
+{\footnotesize\ttfamily \$scope\+Openers}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a82412b6934556010b672d449e00d7114}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_a82412b6934556010b672d449e00d7114}} 
+\index{JS@{JS}!\$stringTokens@{\$stringTokens}}
+\index{\$stringTokens@{\$stringTokens}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{\$stringTokens}{$stringTokens}}
+{\footnotesize\ttfamily \$string\+Tokens\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{charliteral}{'\(\backslash\)''} => \textcolor{charliteral}{'\(\backslash\)''},}
+\DoxyCodeLine{        \textcolor{charliteral}{'"{}'}  => \textcolor{charliteral}{'"{}'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_abc7f43cf73bc544013818f1c9298a24b}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_j_s_abc7f43cf73bc544013818f1c9298a24b}} 
+\index{JS@{JS}!\$tokenValues@{\$tokenValues}}
+\index{\$tokenValues@{\$tokenValues}!JS@{JS}}
+\doxysubsubsection{\texorpdfstring{\$tokenValues}{$tokenValues}}
+{\footnotesize\ttfamily \$token\+Values\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Tokenizers/\mbox{\hyperlink{_j_s_8php}{JS.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\hypertarget{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface}{}\doxysection{Uploaded\+File\+Factory\+Interface Interface Reference}
+\label{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface}\index{UploadedFileFactoryInterface@{UploadedFileFactoryInterface}}
+Inheritance diagram for Uploaded\+File\+Factory\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_acbcc538b83b22c57ed28618fdef759fe}{create\+Uploaded\+File}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$size=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$error=\textbackslash{}UPLOAD\+\_\+\+ERR\+\_\+\+OK, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$client\+Filename=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$client\+Media\+Type=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_acbcc538b83b22c57ed28618fdef759fe}\label{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_acbcc538b83b22c57ed28618fdef759fe}} 
+\index{UploadedFileFactoryInterface@{UploadedFileFactoryInterface}!createUploadedFile@{createUploadedFile}}
+\index{createUploadedFile@{createUploadedFile}!UploadedFileFactoryInterface@{UploadedFileFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{createUploadedFile()}{createUploadedFile()}}
+{\footnotesize\ttfamily create\+Uploaded\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}}}]{\$size = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}}}]{\$error = {\ttfamily \textbackslash{}UPLOAD\+\_\+ERR\+\_\+OK},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$client\+Filename = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$client\+Media\+Type = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Create a new uploaded file.
+
+If a size is not provided it will be determined by checking the size of the file.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/manual/features.file-upload.post-method.php}{\texttt{ http\+://php.\+net/manual/features.\+file-\/upload.\+post-\/method.\+php}} 
+
+\href{http://php.net/manual/features.file-upload.errors.php}{\texttt{ http\+://php.\+net/manual/features.\+file-\/upload.\+errors.\+php}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} & {\em \$stream} & Underlying stream representing the uploaded file content. \\
+\hline
+int & {\em \$size} & in bytes \\
+\hline
+int & {\em \$error} & PHP file upload error \\
+\hline
+string & {\em \$client\+Filename} & Filename as provided by the client, if any. \\
+\hline
+string & {\em \$client\+Media\+Type} & Media type as provided by the client, if any.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_interface}{Uploaded\+File\+Interface}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the file resource is not readable. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/psr/http-\/factory/src/\mbox{\hyperlink{_uploaded_file_factory_interface_8php}{Uploaded\+File\+Factory\+Interface.\+php}}\end{DoxyCompactItemize}

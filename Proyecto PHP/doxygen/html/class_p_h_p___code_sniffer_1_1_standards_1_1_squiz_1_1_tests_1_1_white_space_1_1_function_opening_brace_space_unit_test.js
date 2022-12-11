@@ -1,0 +1,5 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_white_space_1_1_function_opening_brace_space_unit_test =
+[
+    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_white_space_1_1_function_opening_brace_space_unit_test.html#a7a195c69378d816a23e69d2c3b9c5758", null ],
+    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_white_space_1_1_function_opening_brace_space_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
+];

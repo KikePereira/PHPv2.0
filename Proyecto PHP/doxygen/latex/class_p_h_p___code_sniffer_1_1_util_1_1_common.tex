@@ -1,0 +1,290 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common}{}\doxysection{Common Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_util_1_1_common}\index{Common@{Common}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a693d62b58795a2303bee600477a81d9a}{is\+Phar\+File}} (\$path)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_ae782eade946528c2eef61aaf40835e6e}{is\+Readable}} (\$path)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a28802a30d56b096333ecd305f02fccc3}{realpath}} (\$path)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_af8d31d9c629e5d14364f864371749ed3}{strip\+Basepath}} (\$path, \$basepath)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a26689a540323f7f794bb817d635ccbdd}{detect\+Line\+Endings}} (\$contents)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_aa28841e872c664c416d0de292971f85c}{is\+Stdin\+ATTY}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a6892584b31cc5339950663b9465bd847}{escapeshellcmd}} (\$cmd)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a5f28c3858964cff6ca7d0d033472d625}{prepare\+For\+Output}} (\$content, \$exclude=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a76b3dd4fba42fbf80a726c7b8c88e121}{is\+Camel\+Caps}} ( \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}, \$class\+Format=false, \$public=\mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}, \$strict=\mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}})
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a227c4d4b66d78a99ded5382f5a59b8c7}{is\+Underscore\+Name}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a60e96bdab1d0cde2b64231ee57c67bb5}{suggest\+Type}} (\$var\+Type)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_a571311b996c89e290ad27bf562c9b1f7}{get\+Sniff\+Code}} (\$sniff\+Class)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_acf4b7cbf9d1bce9d426ec0d5a691b097}{clean\+Sniff\+Class}} (\$sniff\+Class)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_util_1_1_common_ad6189ace3a396b38db31d835a028104e}{\$allowed\+Types}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_acf4b7cbf9d1bce9d426ec0d5a691b097}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_acf4b7cbf9d1bce9d426ec0d5a691b097}} 
+\index{Common@{Common}!cleanSniffClass@{cleanSniffClass}}
+\index{cleanSniffClass@{cleanSniffClass}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{cleanSniffClass()}{cleanSniffClass()}}
+{\footnotesize\ttfamily static clean\+Sniff\+Class (\begin{DoxyParamCaption}\item[{}]{\$sniff\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Removes project-\/specific information from a sniff class name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sniff\+Class} & The fully qualified sniff class name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a26689a540323f7f794bb817d635ccbdd}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a26689a540323f7f794bb817d635ccbdd}} 
+\index{Common@{Common}!detectLineEndings@{detectLineEndings}}
+\index{detectLineEndings@{detectLineEndings}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{detectLineEndings()}{detectLineEndings()}}
+{\footnotesize\ttfamily static detect\+Line\+Endings (\begin{DoxyParamCaption}\item[{}]{\$contents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Detects the EOL character being used in a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$contents} & The contents to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a6892584b31cc5339950663b9465bd847}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a6892584b31cc5339950663b9465bd847}} 
+\index{Common@{Common}!escapeshellcmd@{escapeshellcmd}}
+\index{escapeshellcmd@{escapeshellcmd}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{escapeshellcmd()}{escapeshellcmd()}}
+{\footnotesize\ttfamily static escapeshellcmd (\begin{DoxyParamCaption}\item[{}]{\$cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Escape a path to a system command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cmd} & The path to the system command.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a571311b996c89e290ad27bf562c9b1f7}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a571311b996c89e290ad27bf562c9b1f7}} 
+\index{Common@{Common}!getSniffCode@{getSniffCode}}
+\index{getSniffCode@{getSniffCode}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{getSniffCode()}{getSniffCode()}}
+{\footnotesize\ttfamily static get\+Sniff\+Code (\begin{DoxyParamCaption}\item[{}]{\$sniff\+Class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Given a sniff class name, returns the code for the sniff.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sniff\+Class} & The fully qualified sniff class name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a76b3dd4fba42fbf80a726c7b8c88e121}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a76b3dd4fba42fbf80a726c7b8c88e121}} 
+\index{Common@{Common}!isCamelCaps@{isCamelCaps}}
+\index{isCamelCaps@{isCamelCaps}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{isCamelCaps()}{isCamelCaps()}}
+{\footnotesize\ttfamily static is\+Camel\+Caps (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$class\+Format = {\ttfamily false},  }\item[{}]{\$public = {\ttfamily \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}},  }\item[{}]{\$strict = {\ttfamily \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true if the specified string is in the camel caps format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string the verify. \\
+\hline
+boolean & {\em \$class\+Format} & If true, check to see if the string is in the class format. Class format strings must start with a capital letter and contain no underscores. \\
+\hline
+boolean & {\em \$public} & If true, the first character in the string must be an a-\/z character. If false, the character must be an underscore. This argument is only applicable if \$class\+Format is false. \\
+\hline
+boolean & {\em \$strict} & If true, the string must not have two capital letters next to each other. If false, a relaxed camel caps policy is used to allow for acronyms.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a693d62b58795a2303bee600477a81d9a}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a693d62b58795a2303bee600477a81d9a}} 
+\index{Common@{Common}!isPharFile@{isPharFile}}
+\index{isPharFile@{isPharFile}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{isPharFile()}{isPharFile()}}
+{\footnotesize\ttfamily static is\+Phar\+File (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return TRUE if the path is a PHAR file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_ae782eade946528c2eef61aaf40835e6e}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_ae782eade946528c2eef61aaf40835e6e}} 
+\index{Common@{Common}!isReadable@{isReadable}}
+\index{isReadable@{isReadable}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{isReadable()}{isReadable()}}
+{\footnotesize\ttfamily static is\+Readable (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if a file is readable.
+
+Addresses PHP bug related to reading files from network drives on Windows. e.\+g. when using WSL2.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_aa28841e872c664c416d0de292971f85c}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_aa28841e872c664c416d0de292971f85c}} 
+\index{Common@{Common}!isStdinATTY@{isStdinATTY}}
+\index{isStdinATTY@{isStdinATTY}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{isStdinATTY()}{isStdinATTY()}}
+{\footnotesize\ttfamily static is\+Stdin\+ATTY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if STDIN is a TTY.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a227c4d4b66d78a99ded5382f5a59b8c7}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a227c4d4b66d78a99ded5382f5a59b8c7}} 
+\index{Common@{Common}!isUnderscoreName@{isUnderscoreName}}
+\index{isUnderscoreName@{isUnderscoreName}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{isUnderscoreName()}{isUnderscoreName()}}
+{\footnotesize\ttfamily static is\+Underscore\+Name (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true if the specified string is in the underscore caps format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string to verify.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a5f28c3858964cff6ca7d0d033472d625}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a5f28c3858964cff6ca7d0d033472d625}} 
+\index{Common@{Common}!prepareForOutput@{prepareForOutput}}
+\index{prepareForOutput@{prepareForOutput}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{prepareForOutput()}{prepareForOutput()}}
+{\footnotesize\ttfamily static prepare\+For\+Output (\begin{DoxyParamCaption}\item[{}]{\$content,  }\item[{}]{\$exclude = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Prepares token content for output to screen.
+
+Replaces invisible characters so they are visible. On non-\/\+Windows operating systems it will also colour the invisible characters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & The content to prepare. \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$exclude} & \mbox{\hyperlink{class_a}{A}} list of characters to leave invisible. Can contain \textbackslash{}r, ~\newline
+, \textbackslash{}t and a space.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a28802a30d56b096333ecd305f02fccc3}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a28802a30d56b096333ecd305f02fccc3}} 
+\index{Common@{Common}!realpath@{realpath}}
+\index{realpath@{realpath}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{realpath()}{realpath()}}
+{\footnotesize\ttfamily static realpath (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Code\+Sniffer alternative for realpath.
+
+Allows for PHAR support.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_af8d31d9c629e5d14364f864371749ed3}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_af8d31d9c629e5d14364f864371749ed3}} 
+\index{Common@{Common}!stripBasepath@{stripBasepath}}
+\index{stripBasepath@{stripBasepath}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{stripBasepath()}{stripBasepath()}}
+{\footnotesize\ttfamily static strip\+Basepath (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$basepath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Removes a base path from the front of a file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path of the file. \\
+\hline
+string & {\em \$basepath} & The base path to remove. This should not end with a directory separator.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_a60e96bdab1d0cde2b64231ee57c67bb5}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_a60e96bdab1d0cde2b64231ee57c67bb5}} 
+\index{Common@{Common}!suggestType@{suggestType}}
+\index{suggestType@{suggestType}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{suggestType()}{suggestType()}}
+{\footnotesize\ttfamily static suggest\+Type (\begin{DoxyParamCaption}\item[{}]{\$var\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a valid variable type for param/var tags.
+
+If type is not one of the standard types, it must be a custom type. Returns the correct type name suggestion if type name is invalid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$var\+Type} & The variable type to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_util_1_1_common_ad6189ace3a396b38db31d835a028104e}\label{class_p_h_p___code_sniffer_1_1_util_1_1_common_ad6189ace3a396b38db31d835a028104e}} 
+\index{Common@{Common}!\$allowedTypes@{\$allowedTypes}}
+\index{\$allowedTypes@{\$allowedTypes}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{\$allowedTypes}{$allowedTypes}}
+{\footnotesize\ttfamily \$allowed\+Types\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'array'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'boolean'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'float'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'integer'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'mixed'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'object'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'string'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'resource'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'callable'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Util/\mbox{\hyperlink{_common_8php}{Common.\+php}}\end{DoxyCompactItemize}

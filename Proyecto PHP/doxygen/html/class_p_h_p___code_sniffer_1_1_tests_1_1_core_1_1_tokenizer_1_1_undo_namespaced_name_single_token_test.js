@@ -1,0 +1,5 @@
+var class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_undo_namespaced_name_single_token_test =
+[
+    [ "dataIdentifierTokenization", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_undo_namespaced_name_single_token_test.html#ad4a82e808915df40a185048b19bfa5e3", null ],
+    [ "testIdentifierTokenization", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_undo_namespaced_name_single_token_test.html#a4eb6e3fd7e7598c1d475145a51b348a1", null ]
+];

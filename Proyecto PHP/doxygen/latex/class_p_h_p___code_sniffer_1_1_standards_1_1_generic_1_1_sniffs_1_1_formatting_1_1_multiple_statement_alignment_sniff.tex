@@ -1,0 +1,128 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff}{}\doxysection{Multiple\+Statement\+Alignment\+Sniff Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff}\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+Inheritance diagram for Multiple\+Statement\+Alignment\+Sniff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{process}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a2b5b90345875e1ed6048ee9ab0669f59}{check\+Alignment}} (\$phpcs\+File, \$stack\+Ptr, \$end=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a14f6bd971ae8b179988e5abd4139e5cf}{\$supported\+Tokenizers}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_aeba2ab722cedda53dbb7ec1a59f45550}{\$error}} = false
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a2cfa14c965f6a133ca04f41aa192bf41}{\$max\+Padding}} = 1000
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_ac62da25665b43cbd9696e026380c358e}{\$align\+At\+End}} = \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a2b5b90345875e1ed6048ee9ab0669f59}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a2b5b90345875e1ed6048ee9ab0669f59}} 
+\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}!checkAlignment@{checkAlignment}}
+\index{checkAlignment@{checkAlignment}!MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+\doxysubsubsection{\texorpdfstring{checkAlignment()}{checkAlignment()}}
+{\footnotesize\ttfamily check\+Alignment (\begin{DoxyParamCaption}\item[{}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr,  }\item[{}]{\$end = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Processes this test, when one of its tokens is encountered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens. \\
+\hline
+int & {\em \$end} & The token where checking should end. If NULL, the entire file will be checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a145c97f53fb2c1ddb1c188ceba18865f}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a145c97f53fb2c1ddb1c188ceba18865f}} 
+\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}!process@{process}}
+\index{process@{process}!MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})}
+
+Processes this test, when one of its tokens is encountered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_acc294a6cc8e69743746820e3d15e3f78}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_acc294a6cc8e69743746820e3d15e3f78}} 
+\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}!register@{register}}
+\index{register@{register}!MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of tokens this test wants to listen for.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_acc294a6cc8e69743746820e3d15e3f78}{Sniff}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_ac62da25665b43cbd9696e026380c358e}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_ac62da25665b43cbd9696e026380c358e}} 
+\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}!\$alignAtEnd@{\$alignAtEnd}}
+\index{\$alignAtEnd@{\$alignAtEnd}!MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+\doxysubsubsection{\texorpdfstring{\$alignAtEnd}{$alignAtEnd}}
+{\footnotesize\ttfamily \$align\+At\+End = \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_aeba2ab722cedda53dbb7ec1a59f45550}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_aeba2ab722cedda53dbb7ec1a59f45550}} 
+\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}!\$error@{\$error}}
+\index{\$error@{\$error}!MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+\doxysubsubsection{\texorpdfstring{\$error}{$error}}
+{\footnotesize\ttfamily \$error = false}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a2cfa14c965f6a133ca04f41aa192bf41}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a2cfa14c965f6a133ca04f41aa192bf41}} 
+\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}!\$maxPadding@{\$maxPadding}}
+\index{\$maxPadding@{\$maxPadding}!MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+\doxysubsubsection{\texorpdfstring{\$maxPadding}{$maxPadding}}
+{\footnotesize\ttfamily \$max\+Padding = 1000}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a14f6bd971ae8b179988e5abd4139e5cf}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_formatting_1_1_multiple_statement_alignment_sniff_a14f6bd971ae8b179988e5abd4139e5cf}} 
+\index{MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}!\$supportedTokenizers@{\$supportedTokenizers}}
+\index{\$supportedTokenizers@{\$supportedTokenizers}!MultipleStatementAlignmentSniff@{MultipleStatementAlignmentSniff}}
+\doxysubsubsection{\texorpdfstring{\$supportedTokenizers}{$supportedTokenizers}}
+{\footnotesize\ttfamily \$supported\+Tokenizers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'PHP'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'JS'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Standards/\+Generic/\+Sniffs/\+Formatting/\mbox{\hyperlink{_multiple_statement_alignment_sniff_8php}{Multiple\+Statement\+Alignment\+Sniff.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver}{}\doxysection{Decorator\+Resolver Class Reference}
+\label{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver}\index{DecoratorResolver@{DecoratorResolver}}
+Inheritance diagram for Decorator\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a3433669a32fb59492a2a6fd028cc243f}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}} \$container, \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}} \$definition\+Resolver)
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{resolve}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{is\+Resolvable}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Resolves a decorator definition to a value.
+
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a3433669a32fb59492a2a6fd028cc243f}\label{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a3433669a32fb59492a2a6fd028cc243f}} 
+\index{DecoratorResolver@{DecoratorResolver}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DecoratorResolver@{DecoratorResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}}}]{\$container,  }\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}}}]{\$definition\+Resolver }\end{DoxyParamCaption})}
+
+The resolver needs a container. This container will be passed to the factory as a parameter so that the factory can access other entries of the container.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}} & {\em \$definition\+Resolver} & Used to resolve nested definitions. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}\label{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}} 
+\index{DecoratorResolver@{DecoratorResolver}!isResolvable@{isResolvable}}
+\index{isResolvable@{isResolvable}!DecoratorResolver@{DecoratorResolver}}
+\doxysubsubsection{\texorpdfstring{isResolvable()}{isResolvable()}}
+{\footnotesize\ttfamily is\+Resolvable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Check if a definition can be resolved.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} & {\em \$definition} & Object that defines how the value should be obtained. \\
+\hline
+array & {\em \$parameters} & Optional parameters to use to build the entry. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{Definition\+Resolver}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a8ad397eb8a9ba863700af9c9261f9bab}\label{class_d_i_1_1_definition_1_1_resolver_1_1_decorator_resolver_a8ad397eb8a9ba863700af9c9261f9bab}} 
+\index{DecoratorResolver@{DecoratorResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!DecoratorResolver@{DecoratorResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Resolve a decorator definition to a value.
+
+This will call the callable of the definition and pass it the decorated entry.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_decorator_definition}{Decorator\+Definition}} & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{Definition\+Resolver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Resolver/\mbox{\hyperlink{_decorator_resolver_8php}{Decorator\+Resolver.\+php}}\end{DoxyCompactItemize}

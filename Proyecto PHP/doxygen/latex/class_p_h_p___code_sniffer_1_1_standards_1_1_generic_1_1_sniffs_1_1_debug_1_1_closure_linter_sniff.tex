@@ -1,0 +1,95 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff}{}\doxysection{Closure\+Linter\+Sniff Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff}\index{ClosureLinterSniff@{ClosureLinterSniff}}
+Inheritance diagram for Closure\+Linter\+Sniff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{process}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a3b93da793cd81d9e4667f7b3729d4f43}{\$error\+Codes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_aaa38d1d8200dc67a07620a321cc2d11a}{\$ignore\+Codes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a14f6bd971ae8b179988e5abd4139e5cf}{\$supported\+Tokenizers}} = \mbox{[}\textquotesingle{}JS\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a145c97f53fb2c1ddb1c188ceba18865f}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a145c97f53fb2c1ddb1c188ceba18865f}} 
+\index{ClosureLinterSniff@{ClosureLinterSniff}!process@{process}}
+\index{process@{process}!ClosureLinterSniff@{ClosureLinterSniff}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})}
+
+Processes the tokens that this sniff is interested in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file where the token was found. \\
+\hline
+int & {\em \$stack\+Ptr} & The position in the stack where the token was found.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Runtime\+Exception If jslint.\+js could not be run 
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_acc294a6cc8e69743746820e3d15e3f78}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_acc294a6cc8e69743746820e3d15e3f78}} 
+\index{ClosureLinterSniff@{ClosureLinterSniff}!register@{register}}
+\index{register@{register}!ClosureLinterSniff@{ClosureLinterSniff}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the token types that this sniff is interested in.
+
+\begin{DoxyReturn}{Returns}
+int\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_acc294a6cc8e69743746820e3d15e3f78}{Sniff}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a3b93da793cd81d9e4667f7b3729d4f43}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a3b93da793cd81d9e4667f7b3729d4f43}} 
+\index{ClosureLinterSniff@{ClosureLinterSniff}!\$errorCodes@{\$errorCodes}}
+\index{\$errorCodes@{\$errorCodes}!ClosureLinterSniff@{ClosureLinterSniff}}
+\doxysubsubsection{\texorpdfstring{\$errorCodes}{$errorCodes}}
+{\footnotesize\ttfamily \$error\+Codes = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_aaa38d1d8200dc67a07620a321cc2d11a}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_aaa38d1d8200dc67a07620a321cc2d11a}} 
+\index{ClosureLinterSniff@{ClosureLinterSniff}!\$ignoreCodes@{\$ignoreCodes}}
+\index{\$ignoreCodes@{\$ignoreCodes}!ClosureLinterSniff@{ClosureLinterSniff}}
+\doxysubsubsection{\texorpdfstring{\$ignoreCodes}{$ignoreCodes}}
+{\footnotesize\ttfamily \$ignore\+Codes = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a14f6bd971ae8b179988e5abd4139e5cf}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_debug_1_1_closure_linter_sniff_a14f6bd971ae8b179988e5abd4139e5cf}} 
+\index{ClosureLinterSniff@{ClosureLinterSniff}!\$supportedTokenizers@{\$supportedTokenizers}}
+\index{\$supportedTokenizers@{\$supportedTokenizers}!ClosureLinterSniff@{ClosureLinterSniff}}
+\doxysubsubsection{\texorpdfstring{\$supportedTokenizers}{$supportedTokenizers}}
+{\footnotesize\ttfamily \$supported\+Tokenizers = \mbox{[}\textquotesingle{}JS\textquotesingle{}\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Standards/\+Generic/\+Sniffs/\+Debug/\mbox{\hyperlink{_closure_linter_sniff_8php}{Closure\+Linter\+Sniff.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector}{}\doxysection{Instance\+Injector Class Reference}
+\label{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector}\index{InstanceInjector@{InstanceInjector}}
+Inheritance diagram for Instance\+Injector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a8ad397eb8a9ba863700af9c9261f9bab}{resolve}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a4ebc1dc75e896b8de267eaf1b8f8297d}{is\+Resolvable}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Injects dependencies on an existing instance.
+
+\begin{DoxySince}{Since}
+5.\+0 
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a4ebc1dc75e896b8de267eaf1b8f8297d}\label{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a4ebc1dc75e896b8de267eaf1b8f8297d}} 
+\index{InstanceInjector@{InstanceInjector}!isResolvable@{isResolvable}}
+\index{isResolvable@{isResolvable}!InstanceInjector@{InstanceInjector}}
+\doxysubsubsection{\texorpdfstring{isResolvable()}{isResolvable()}}
+{\footnotesize\ttfamily is\+Resolvable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+The definition is not resolvable if the class is not instantiable (interface or abstract) or if the class doesn\textquotesingle{}t exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_object_definition}{Object\+Definition}} & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a4ebc1dc75e896b8de267eaf1b8f8297d}{Object\+Creator}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a8ad397eb8a9ba863700af9c9261f9bab}\label{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a8ad397eb8a9ba863700af9c9261f9bab}} 
+\index{InstanceInjector@{InstanceInjector}!resolve@{resolve}}
+\index{resolve@{resolve}!InstanceInjector@{InstanceInjector}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Injects dependencies on an existing instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_instance_definition}{Instance\+Definition}} & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8ad397eb8a9ba863700af9c9261f9bab}{Object\+Creator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Resolver/\mbox{\hyperlink{_instance_injector_8php}{Instance\+Injector.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_naming_conventions_1_1_constructor_name_sniff =
+[
+    [ "__construct", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_naming_conventions_1_1_constructor_name_sniff.html#a095c5d389db211932136b53f25f39685", null ],
+    [ "loadFunctionNamesInScope", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_naming_conventions_1_1_constructor_name_sniff.html#a5908f8fbda76d0fa1a69ff9ef7fccd21", null ],
+    [ "processTokenOutsideScope", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_naming_conventions_1_1_constructor_name_sniff.html#ab6010be3957acc3a6d2c301caa23a950", null ],
+    [ "processTokenWithinScope", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_naming_conventions_1_1_constructor_name_sniff.html#a5b158f98e455e906f167070520ff2256", null ]
+];

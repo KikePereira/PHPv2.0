@@ -1,0 +1,40 @@
+\hypertarget{class_p_h_p_unit_1_1_util_1_1_file_loader}{}\doxysection{File\+Loader Class Reference}
+\label{class_p_h_p_unit_1_1_util_1_1_file_loader}\index{FileLoader@{FileLoader}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_file_loader_ae3f1a629395ffbe88bc9d60562bcdb1e}{check\+And\+Load}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$filename)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_file_loader_af4a03f1c42f59485344c6153730cfad8}{load}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_file_loader_ae3f1a629395ffbe88bc9d60562bcdb1e}\label{class_p_h_p_unit_1_1_util_1_1_file_loader_ae3f1a629395ffbe88bc9d60562bcdb1e}} 
+\index{FileLoader@{FileLoader}!checkAndLoad@{checkAndLoad}}
+\index{checkAndLoad@{checkAndLoad}!FileLoader@{FileLoader}}
+\doxysubsubsection{\texorpdfstring{checkAndLoad()}{checkAndLoad()}}
+{\footnotesize\ttfamily static check\+And\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if a \mbox{\hyperlink{namespace_p_h_p_unit_1_1_util_1_1_p_h_p}{PHP}} sourcecode file is readable. The sourcecode file is loaded through the \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_file_loader_af4a03f1c42f59485344c6153730cfad8}{load()}} method.
+
+As a fallback, \mbox{\hyperlink{namespace_p_h_p_unit_1_1_util_1_1_p_h_p}{PHP}} looks in the directory of the file executing the stream\+\_\+resolve\+\_\+include\+\_\+path function. We do not want to load the Test.\+php file here, so skip it if it found that. \mbox{\hyperlink{namespace_p_h_p_unit_1_1_util_1_1_p_h_p}{PHP}} prioritizes the include\+\_\+path setting, so if the current directory is in there, it will first look in the current working directory.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_exception}{Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_file_loader_af4a03f1c42f59485344c6153730cfad8}\label{class_p_h_p_unit_1_1_util_1_1_file_loader_af4a03f1c42f59485344c6153730cfad8}} 
+\index{FileLoader@{FileLoader}!load@{load}}
+\index{load@{load}!FileLoader@{FileLoader}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads a \mbox{\hyperlink{namespace_p_h_p_unit_1_1_util_1_1_p_h_p}{PHP}} sourcefile. @noinspection Php\+Include\+Inspection
+
+@psalm-\/suppress Unresolvable\+Include
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/phpunit/src/\+Util/\mbox{\hyperlink{_file_loader_8php}{File\+Loader.\+php}}\end{DoxyCompactItemize}

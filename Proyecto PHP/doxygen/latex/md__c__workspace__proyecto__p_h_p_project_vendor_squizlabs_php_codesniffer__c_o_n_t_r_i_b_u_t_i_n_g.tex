@@ -1,0 +1,6 @@
+Before you contribute code to \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}, please make sure it conforms to the PHPCS coding standard and that the \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} unit tests still pass. The easiest way to contribute is to work on a checkout of the repository, or your own fork, rather than an installed PEAR version. If you do this, you can run the following commands to check if everything is ready to submit\+: \begin{DoxyVerb}cd PHP_CodeSniffer
+php bin/phpcs
+\end{DoxyVerb}
+ Which should display no coding standard errors. And then\+: \begin{DoxyVerb}phpunit
+\end{DoxyVerb}
+ Which should give you no failures or errors. You can ignore any skipped tests as these are for external tools. 

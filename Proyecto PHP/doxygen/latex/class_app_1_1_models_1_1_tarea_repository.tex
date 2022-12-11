@@ -1,0 +1,191 @@
+\hypertarget{class_app_1_1_models_1_1_tarea_repository}{}\doxysection{Tarea\+Repository Class Reference}
+\label{class_app_1_1_models_1_1_tarea_repository}\index{TareaRepository@{TareaRepository}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_a646ac1a0b5c352678f5e570a6ce0745f}{get\+Tareas}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_a886832ada5c26b00fb733b3db86bf22c}{get\+Provincias}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_a1af957d1d69689a14f57ff77dce0d25e}{get\+Operarios}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_a77e359685047989669ee650d97f86342}{get\+Tareas\+Pendientes}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_afb80053b40a3f8c54343589bbfada9af}{add\+Tarea}} (\$dni, \$nombre, \$apellido, \$telefono, \$correo, \$direccion, \$poblacion, \$codigopostal, \$provincia, \$operario, \$fecharealizacion, \$anotacion)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_ab6a8e1754f56669569df5d0e1e8a7577}{Tarea\+Completa}} (\$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_a0ddaeaf70604460bffb34b6662094e37}{update\+Tarea}} (\$tarea)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_ae7270d2efc1d3eea0bb138012130a55e}{Eliminar\+Tarea}} (\$id)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_a14e6227129f89f0782e67307d4fbe514}{paginas}} (\$num\+Tareas)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_aa840776cea9930336da19a4feb8d899d}{get\+Tareas\+Pag}} (\$num\+Tareas, \$pagina)
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository_a39c663368d74daf040492a1bebe2d794}{Ultima\+Tarea}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_app_1_1_models_1_1_tarea_repository}{Tarea\+Repository}} Clase Reposotiro de las tareas que nos saca las consultas con la base de datos 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_afb80053b40a3f8c54343589bbfada9af}\label{class_app_1_1_models_1_1_tarea_repository_afb80053b40a3f8c54343589bbfada9af}} 
+\index{TareaRepository@{TareaRepository}!addTarea@{addTarea}}
+\index{addTarea@{addTarea}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{addTarea()}{addTarea()}}
+{\footnotesize\ttfamily static add\+Tarea (\begin{DoxyParamCaption}\item[{}]{\$dni,  }\item[{}]{\$nombre,  }\item[{}]{\$apellido,  }\item[{}]{\$telefono,  }\item[{}]{\$correo,  }\item[{}]{\$direccion,  }\item[{}]{\$poblacion,  }\item[{}]{\$codigopostal,  }\item[{}]{\$provincia,  }\item[{}]{\$operario,  }\item[{}]{\$fecharealizacion,  }\item[{}]{\$anotacion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+add\+Tarea Funcion que nos agrega una tarea a la base de datos con sus respectivos datos 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$dni} & \\
+\hline
+mixed & {\em \$nombre} & \\
+\hline
+mixed & {\em \$apellido} & \\
+\hline
+mixed & {\em \$telefono} & \\
+\hline
+mixed & {\em \$correo} & \\
+\hline
+mixed & {\em \$direccion} & \\
+\hline
+mixed & {\em \$poblacion} & \\
+\hline
+mixed & {\em \$codigopostal} & \\
+\hline
+mixed & {\em \$provincia} & \\
+\hline
+mixed & {\em \$operario} & \\
+\hline
+mixed & {\em \$fecharealizacion} & \\
+\hline
+mixed & {\em \$anotacion} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_ae7270d2efc1d3eea0bb138012130a55e}\label{class_app_1_1_models_1_1_tarea_repository_ae7270d2efc1d3eea0bb138012130a55e}} 
+\index{TareaRepository@{TareaRepository}!EliminarTarea@{EliminarTarea}}
+\index{EliminarTarea@{EliminarTarea}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{EliminarTarea()}{EliminarTarea()}}
+{\footnotesize\ttfamily static Eliminar\+Tarea (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Eliminar\+Tarea Funcion que nos elimina una tarea de la base de datos 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_a1af957d1d69689a14f57ff77dce0d25e}\label{class_app_1_1_models_1_1_tarea_repository_a1af957d1d69689a14f57ff77dce0d25e}} 
+\index{TareaRepository@{TareaRepository}!getOperarios@{getOperarios}}
+\index{getOperarios@{getOperarios}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{getOperarios()}{getOperarios()}}
+{\footnotesize\ttfamily static get\+Operarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get\+Operarios Funcion que nos retorna todos los operarios de la base de datos \begin{DoxyReturn}{Returns}
+\$operarios 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_a886832ada5c26b00fb733b3db86bf22c}\label{class_app_1_1_models_1_1_tarea_repository_a886832ada5c26b00fb733b3db86bf22c}} 
+\index{TareaRepository@{TareaRepository}!getProvincias@{getProvincias}}
+\index{getProvincias@{getProvincias}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{getProvincias()}{getProvincias()}}
+{\footnotesize\ttfamily static get\+Provincias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get\+Provincias Funcion que nos retorna todas las provincias de la base de datos \begin{DoxyReturn}{Returns}
+\$provincias 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_a646ac1a0b5c352678f5e570a6ce0745f}\label{class_app_1_1_models_1_1_tarea_repository_a646ac1a0b5c352678f5e570a6ce0745f}} 
+\index{TareaRepository@{TareaRepository}!getTareas@{getTareas}}
+\index{getTareas@{getTareas}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{getTareas()}{getTareas()}}
+{\footnotesize\ttfamily static get\+Tareas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get\+Tareas Funcion que nos retorna todas las tareas de la base de datos y nos las ornde a por orden descendiente \begin{DoxyReturn}{Returns}
+\$tareas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_aa840776cea9930336da19a4feb8d899d}\label{class_app_1_1_models_1_1_tarea_repository_aa840776cea9930336da19a4feb8d899d}} 
+\index{TareaRepository@{TareaRepository}!getTareasPag@{getTareasPag}}
+\index{getTareasPag@{getTareasPag}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{getTareasPag()}{getTareasPag()}}
+{\footnotesize\ttfamily static get\+Tareas\+Pag (\begin{DoxyParamCaption}\item[{}]{\$num\+Tareas,  }\item[{}]{\$pagina }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get\+Tareas\+Pag Funcion que nos devuelve las Tareas paginadas segun el numero de tareas que queremos ver en la lista 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$num\+Tareas} & \\
+\hline
+mixed & {\em \$pagina} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$tareas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_a77e359685047989669ee650d97f86342}\label{class_app_1_1_models_1_1_tarea_repository_a77e359685047989669ee650d97f86342}} 
+\index{TareaRepository@{TareaRepository}!getTareasPendientes@{getTareasPendientes}}
+\index{getTareasPendientes@{getTareasPendientes}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{getTareasPendientes()}{getTareasPendientes()}}
+{\footnotesize\ttfamily static get\+Tareas\+Pendientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+get\+Tareas\+Pendientes Funcion que nos retorna todas las tareas en estado \char`\"{}pendiente\char`\"{} de la base de datos \begin{DoxyReturn}{Returns}
+tareas\+Pendientes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_a14e6227129f89f0782e67307d4fbe514}\label{class_app_1_1_models_1_1_tarea_repository_a14e6227129f89f0782e67307d4fbe514}} 
+\index{TareaRepository@{TareaRepository}!paginas@{paginas}}
+\index{paginas@{paginas}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{paginas()}{paginas()}}
+{\footnotesize\ttfamily static paginas (\begin{DoxyParamCaption}\item[{}]{\$num\+Tareas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+paginas Funcion que nos calcula el total de paginas de la lista de tareas segun cuantas queremos representar 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$num\+Tareas} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$resultado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_ab6a8e1754f56669569df5d0e1e8a7577}\label{class_app_1_1_models_1_1_tarea_repository_ab6a8e1754f56669569df5d0e1e8a7577}} 
+\index{TareaRepository@{TareaRepository}!TareaCompleta@{TareaCompleta}}
+\index{TareaCompleta@{TareaCompleta}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{TareaCompleta()}{TareaCompleta()}}
+{\footnotesize\ttfamily static Tarea\+Completa (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tarea\+Completa Funcion que nos retorna todos los datos de la tarea con la id que le pasamos como parametro 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_a39c663368d74daf040492a1bebe2d794}\label{class_app_1_1_models_1_1_tarea_repository_a39c663368d74daf040492a1bebe2d794}} 
+\index{TareaRepository@{TareaRepository}!UltimaTarea@{UltimaTarea}}
+\index{UltimaTarea@{UltimaTarea}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{UltimaTarea()}{UltimaTarea()}}
+{\footnotesize\ttfamily static Ultima\+Tarea (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Ultima\+Tarea Funcion que nos devuelve la ultima tarea agregada a la base de datos, la tarea con el ID mas alto \begin{DoxyReturn}{Returns}
+\$resultado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_tarea_repository_a0ddaeaf70604460bffb34b6662094e37}\label{class_app_1_1_models_1_1_tarea_repository_a0ddaeaf70604460bffb34b6662094e37}} 
+\index{TareaRepository@{TareaRepository}!updateTarea@{updateTarea}}
+\index{updateTarea@{updateTarea}!TareaRepository@{TareaRepository}}
+\doxysubsubsection{\texorpdfstring{updateTarea()}{updateTarea()}}
+{\footnotesize\ttfamily static update\+Tarea (\begin{DoxyParamCaption}\item[{}]{\$tarea }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+update\+Tarea Funcion que nos actualiza los parametros que le pasamos por parametro a la tarea cuya id le pasamos tambien por parametro 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$tarea} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/src/\+Models/\mbox{\hyperlink{_tarea_repository_8php}{Tarea\+Repository.\+php}}\end{DoxyCompactItemize}

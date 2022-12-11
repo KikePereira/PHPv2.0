@@ -1,0 +1,182 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_reporter}{}\doxysection{Reporter Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_reporter}\index{Reporter@{Reporter}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a2c52bdef8f5cb36f7758d6104cde85ee}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}} \$config)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a92d39a1a124452fcece08e8b24b32025}{print\+Reports}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a799e02834584a8c5fb0f47a2eeb7df83}{print\+Report}} (\$report)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_ac0afe6dffdd0f5cdedb4cca0fe70fe1c}{cache\+File\+Report}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a8898174a8447dd8ab1e66f4cad4c995d}{prepare\+File\+Report}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}} = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a45853a2ddf0a8e90993352b16a1bedf5}{\$total\+Files}} = 0
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a412cafb36d8f050b02bf65a0bc310d08}{\$total\+Errors}} = 0
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a02a60a6c55ebf66453e4d5e9dd8cefa1}{\$total\+Warnings}} = 0
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a0a94de91313d348e8c518a38aa1e2034}{\$total\+Fixable}} = 0
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a085346edc6b997ecc63efa62d80d7143}{\$total\+Fixed}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reporter_a404df05d2efcd6bb0551ecd8e7ae2315}{\$start\+Time}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a2c52bdef8f5cb36f7758d6104cde85ee}\label{class_p_h_p___code_sniffer_1_1_reporter_a2c52bdef8f5cb36f7758d6104cde85ee}} 
+\index{Reporter@{Reporter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}}}]{\$config }\end{DoxyParamCaption})}
+
+Initialise the reporter.
+
+All reports specified in the config will be created and their output file (or a temp file if none is specified) initialised by clearing the current contents.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Config & {\em \$config} & The config data for the run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Deep\+Exit\+Exception If a custom report class could not be found. 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Runtime\+Exception If a report class is incorrectly set up. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_ac0afe6dffdd0f5cdedb4cca0fe70fe1c}\label{class_p_h_p___code_sniffer_1_1_reporter_ac0afe6dffdd0f5cdedb4cca0fe70fe1c}} 
+\index{Reporter@{Reporter}!cacheFileReport@{cacheFileReport}}
+\index{cacheFileReport@{cacheFileReport}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{cacheFileReport()}{cacheFileReport()}}
+{\footnotesize\ttfamily cache\+File\+Report (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File }\end{DoxyParamCaption})}
+
+Caches the result of a single processed file for all reports.
+
+The report content that is generated is appended to the output file assigned to each report. This content may be an intermediate report format and not reflect the final report output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file that has been processed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a8898174a8447dd8ab1e66f4cad4c995d}\label{class_p_h_p___code_sniffer_1_1_reporter_a8898174a8447dd8ab1e66f4cad4c995d}} 
+\index{Reporter@{Reporter}!prepareFileReport@{prepareFileReport}}
+\index{prepareFileReport@{prepareFileReport}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{prepareFileReport()}{prepareFileReport()}}
+{\footnotesize\ttfamily prepare\+File\+Report (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File }\end{DoxyParamCaption})}
+
+Generate summary information to be used during report generation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file that has been processed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a799e02834584a8c5fb0f47a2eeb7df83}\label{class_p_h_p___code_sniffer_1_1_reporter_a799e02834584a8c5fb0f47a2eeb7df83}} 
+\index{Reporter@{Reporter}!printReport@{printReport}}
+\index{printReport@{printReport}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{printReport()}{printReport()}}
+{\footnotesize\ttfamily print\+Report (\begin{DoxyParamCaption}\item[{}]{\$report }\end{DoxyParamCaption})}
+
+Generates and prints a single final report.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$report} & The report type to print.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a92d39a1a124452fcece08e8b24b32025}\label{class_p_h_p___code_sniffer_1_1_reporter_a92d39a1a124452fcece08e8b24b32025}} 
+\index{Reporter@{Reporter}!printReports@{printReports}}
+\index{printReports@{printReports}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{printReports()}{printReports()}}
+{\footnotesize\ttfamily print\+Reports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates and prints final versions of all reports.
+
+Returns TRUE if any of the reports output content to the screen or FALSE if all reports were silently printed to a file.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a49c7011be9c979d9174c52a8b83e5d8e}\label{class_p_h_p___code_sniffer_1_1_reporter_a49c7011be9c979d9174c52a8b83e5d8e}} 
+\index{Reporter@{Reporter}!\$config@{\$config}}
+\index{\$config@{\$config}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\$config}{$config}}
+{\footnotesize\ttfamily \$config = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a404df05d2efcd6bb0551ecd8e7ae2315}\label{class_p_h_p___code_sniffer_1_1_reporter_a404df05d2efcd6bb0551ecd8e7ae2315}} 
+\index{Reporter@{Reporter}!\$startTime@{\$startTime}}
+\index{\$startTime@{\$startTime}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\$startTime}{$startTime}}
+{\footnotesize\ttfamily \$start\+Time = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a412cafb36d8f050b02bf65a0bc310d08}\label{class_p_h_p___code_sniffer_1_1_reporter_a412cafb36d8f050b02bf65a0bc310d08}} 
+\index{Reporter@{Reporter}!\$totalErrors@{\$totalErrors}}
+\index{\$totalErrors@{\$totalErrors}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\$totalErrors}{$totalErrors}}
+{\footnotesize\ttfamily \$total\+Errors = 0}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a45853a2ddf0a8e90993352b16a1bedf5}\label{class_p_h_p___code_sniffer_1_1_reporter_a45853a2ddf0a8e90993352b16a1bedf5}} 
+\index{Reporter@{Reporter}!\$totalFiles@{\$totalFiles}}
+\index{\$totalFiles@{\$totalFiles}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\$totalFiles}{$totalFiles}}
+{\footnotesize\ttfamily \$total\+Files = 0}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a0a94de91313d348e8c518a38aa1e2034}\label{class_p_h_p___code_sniffer_1_1_reporter_a0a94de91313d348e8c518a38aa1e2034}} 
+\index{Reporter@{Reporter}!\$totalFixable@{\$totalFixable}}
+\index{\$totalFixable@{\$totalFixable}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\$totalFixable}{$totalFixable}}
+{\footnotesize\ttfamily \$total\+Fixable = 0}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a085346edc6b997ecc63efa62d80d7143}\label{class_p_h_p___code_sniffer_1_1_reporter_a085346edc6b997ecc63efa62d80d7143}} 
+\index{Reporter@{Reporter}!\$totalFixed@{\$totalFixed}}
+\index{\$totalFixed@{\$totalFixed}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\$totalFixed}{$totalFixed}}
+{\footnotesize\ttfamily \$total\+Fixed = 0}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reporter_a02a60a6c55ebf66453e4d5e9dd8cefa1}\label{class_p_h_p___code_sniffer_1_1_reporter_a02a60a6c55ebf66453e4d5e9dd8cefa1}} 
+\index{Reporter@{Reporter}!\$totalWarnings@{\$totalWarnings}}
+\index{\$totalWarnings@{\$totalWarnings}!Reporter@{Reporter}}
+\doxysubsubsection{\texorpdfstring{\$totalWarnings}{$totalWarnings}}
+{\footnotesize\ttfamily \$total\+Warnings = 0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\mbox{\hyperlink{_reporter_8php}{Reporter.\+php}}\end{DoxyCompactItemize}

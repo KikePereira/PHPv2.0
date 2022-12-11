@@ -1,0 +1,92 @@
+\hypertarget{class_twig_1_1_node_visitor_1_1_abstract_node_visitor}{}\doxysection{Abstract\+Node\+Visitor Class Reference}
+\label{class_twig_1_1_node_visitor_1_1_abstract_node_visitor}\index{AbstractNodeVisitor@{AbstractNodeVisitor}}
+Inheritance diagram for Abstract\+Node\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_twig_1_1_node_visitor_1_1_abstract_node_visitor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_ace41ffc86b3ec3a45ff1766a95d69e79}{enter\+Node}} (\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}} \$node, \mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env)
+\item 
+\mbox{\hyperlink{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_a4cc01934748f1d74931c884f27a8b921}{leave\+Node}} (\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}} \$node, \mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_aa3849383294707c43bb2544f13062964}{do\+Enter\+Node}} (\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}} \$node, \mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env)
+\item 
+\mbox{\hyperlink{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_a7e64bb23ff19556d83b3e2199e01eea4}{do\+Leave\+Node}} (\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}} \$node, \mbox{\hyperlink{class_twig_1_1_environment}{Environment}} \$env)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used to make node visitors compatible with \mbox{\hyperlink{namespace_twig}{Twig}} 1.\+x and 2.\+x.
+
+To be removed in \mbox{\hyperlink{namespace_twig}{Twig}} 3.\+1.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_aa3849383294707c43bb2544f13062964}\label{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_aa3849383294707c43bb2544f13062964}} 
+\index{AbstractNodeVisitor@{AbstractNodeVisitor}!doEnterNode@{doEnterNode}}
+\index{doEnterNode@{doEnterNode}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{doEnterNode()}{doEnterNode()}}
+{\footnotesize\ttfamily do\+Enter\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}}}]{\$node,  }\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Called before child nodes are visited.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_twig_1_1_node}{Node}} The modified node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_a7e64bb23ff19556d83b3e2199e01eea4}\label{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_a7e64bb23ff19556d83b3e2199e01eea4}} 
+\index{AbstractNodeVisitor@{AbstractNodeVisitor}!doLeaveNode@{doLeaveNode}}
+\index{doLeaveNode@{doLeaveNode}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{doLeaveNode()}{doLeaveNode()}}
+{\footnotesize\ttfamily do\+Leave\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}}}]{\$node,  }\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Called after child nodes are visited.
+
+\begin{DoxyReturn}{Returns}
+Node$\vert$null The modified node or null if the node must be removed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_ace41ffc86b3ec3a45ff1766a95d69e79}\label{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_ace41ffc86b3ec3a45ff1766a95d69e79}} 
+\index{AbstractNodeVisitor@{AbstractNodeVisitor}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily enter\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}}}]{\$node,  }\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Called before child nodes are visited.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_twig_1_1_node}{Node}} The modified node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_twig_1_1_node_visitor_1_1_node_visitor_interface_ace41ffc86b3ec3a45ff1766a95d69e79}{Node\+Visitor\+Interface}}.
+
+\mbox{\Hypertarget{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_a4cc01934748f1d74931c884f27a8b921}\label{class_twig_1_1_node_visitor_1_1_abstract_node_visitor_a4cc01934748f1d74931c884f27a8b921}} 
+\index{AbstractNodeVisitor@{AbstractNodeVisitor}!leaveNode@{leaveNode}}
+\index{leaveNode@{leaveNode}!AbstractNodeVisitor@{AbstractNodeVisitor}}
+\doxysubsubsection{\texorpdfstring{leaveNode()}{leaveNode()}}
+{\footnotesize\ttfamily leave\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_node_1_1_node}{Node}}}]{\$node,  }\item[{\mbox{\hyperlink{class_twig_1_1_environment}{Environment}}}]{\$env }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Called after child nodes are visited.
+
+\begin{DoxyReturn}{Returns}
+Node$\vert$null The modified node or null if the node must be removed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_twig_1_1_node_visitor_1_1_node_visitor_interface_a4cc01934748f1d74931c884f27a8b921}{Node\+Visitor\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Node\+Visitor/\mbox{\hyperlink{_abstract_node_visitor_8php}{Abstract\+Node\+Visitor.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\hypertarget{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface}{}\doxysection{Class\+Patch\+Interface Interface Reference}
+\label{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface}\index{ClassPatchInterface@{ClassPatchInterface}}
+Inheritance diagram for Class\+Patch\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a99b2455ac194faf79aff042c55719ac2}{supports}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}} \$node)
+\item 
+\mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a62fdb697928f35fc782d6889b8fe9b8b}{apply}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}} \$node)
+\item 
+\mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a1e7a3c168dcd0901a0d2669c67575b55}{get\+Priority}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class patch interface. Class patches extend doubles functionality or help \mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}} to avoid some internal PHP bugs.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a62fdb697928f35fc782d6889b8fe9b8b}\label{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a62fdb697928f35fc782d6889b8fe9b8b}} 
+\index{ClassPatchInterface@{ClassPatchInterface}!apply@{apply}}
+\index{apply@{apply}!ClassPatchInterface@{ClassPatchInterface}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}}}]{\$node }\end{DoxyParamCaption})}
+
+Applies patch to the specific class node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_disable_constructor_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Disable\+Constructor\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_keyword_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Keyword\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_magic_call_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Magic\+Call\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Prophecy\+Subject\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Reflection\+Class\+New\+Instance\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_spl_file_info_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Spl\+File\+Info\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_throwable_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Throwable\+Patch}}, and \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_traversable_patch_a62fdb697928f35fc782d6889b8fe9b8b}{Traversable\+Patch}}.
+
+\mbox{\Hypertarget{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a1e7a3c168dcd0901a0d2669c67575b55}\label{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a1e7a3c168dcd0901a0d2669c67575b55}} 
+\index{ClassPatchInterface@{ClassPatchInterface}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!ClassPatchInterface@{ClassPatchInterface}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
+{\footnotesize\ttfamily get\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns patch priority, which determines when patch will be applied.
+
+\begin{DoxyReturn}{Returns}
+int Priority number (higher -\/ earlier) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_disable_constructor_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Disable\+Constructor\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_keyword_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Keyword\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_magic_call_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Magic\+Call\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Prophecy\+Subject\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Reflection\+Class\+New\+Instance\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_spl_file_info_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Spl\+File\+Info\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_throwable_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Throwable\+Patch}}, and \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_traversable_patch_a1e7a3c168dcd0901a0d2669c67575b55}{Traversable\+Patch}}.
+
+\mbox{\Hypertarget{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a99b2455ac194faf79aff042c55719ac2}\label{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a99b2455ac194faf79aff042c55719ac2}} 
+\index{ClassPatchInterface@{ClassPatchInterface}!supports@{supports}}
+\index{supports@{supports}!ClassPatchInterface@{ClassPatchInterface}}
+\doxysubsubsection{\texorpdfstring{supports()}{supports()}}
+{\footnotesize\ttfamily supports (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}}}]{\$node }\end{DoxyParamCaption})}
+
+Checks if patch supports specific class node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_disable_constructor_patch_a99b2455ac194faf79aff042c55719ac2}{Disable\+Constructor\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_keyword_patch_a99b2455ac194faf79aff042c55719ac2}{Keyword\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_magic_call_patch_a99b2455ac194faf79aff042c55719ac2}{Magic\+Call\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a99b2455ac194faf79aff042c55719ac2}{Prophecy\+Subject\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_reflection_class_new_instance_patch_a99b2455ac194faf79aff042c55719ac2}{Reflection\+Class\+New\+Instance\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_spl_file_info_patch_a99b2455ac194faf79aff042c55719ac2}{Spl\+File\+Info\+Patch}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_throwable_patch_a99b2455ac194faf79aff042c55719ac2}{Throwable\+Patch}}, and \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_traversable_patch_a99b2455ac194faf79aff042c55719ac2}{Traversable\+Patch}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\+Doubler/\+Class\+Patch/\mbox{\hyperlink{_class_patch_interface_8php}{Class\+Patch\+Interface.\+php}}\end{DoxyCompactItemize}

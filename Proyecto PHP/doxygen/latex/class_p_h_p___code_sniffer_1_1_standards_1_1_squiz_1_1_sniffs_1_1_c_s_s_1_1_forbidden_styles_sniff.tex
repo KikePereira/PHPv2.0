@@ -1,0 +1,150 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff}{}\doxysection{Forbidden\+Styles\+Sniff Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff}\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+Inheritance diagram for Forbidden\+Styles\+Sniff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{process}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a14f6bd971ae8b179988e5abd4139e5cf}{\$supported\+Tokenizers}} = \mbox{[}\textquotesingle{}CSS\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_aeba2ab722cedda53dbb7ec1a59f45550}{\$error}} = \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a5f87f4e0de7f9bd05f29be418b53462b}{add\+Error}} (\$phpcs\+File, \$stack\+Ptr, \$style, \$pattern=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_ad374062587183bd7d764d4667f73e623}{\$forbidden\+Styles}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_af0ef430ae2e2e55eb961cedc2e4ffbd2}{\$forbidden\+Style\+Names}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_acbbaf4b2a7142ae6e892801415ecf38a}{\$pattern\+Match}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a5f87f4e0de7f9bd05f29be418b53462b}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a5f87f4e0de7f9bd05f29be418b53462b}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!addError@{addError}}
+\index{addError@{addError}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{addError()}{addError()}}
+{\footnotesize\ttfamily add\+Error (\begin{DoxyParamCaption}\item[{}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr,  }\item[{}]{\$style,  }\item[{}]{\$pattern = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates the error or warning for this sniff.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the forbidden style in the token array. \\
+\hline
+string & {\em \$style} & The name of the forbidden style. \\
+\hline
+string & {\em \$pattern} & The pattern used for the match.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a145c97f53fb2c1ddb1c188ceba18865f}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a145c97f53fb2c1ddb1c188ceba18865f}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!process@{process}}
+\index{process@{process}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})}
+
+Processes this test, when one of its tokens is encountered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_acc294a6cc8e69743746820e3d15e3f78}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_acc294a6cc8e69743746820e3d15e3f78}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!register@{register}}
+\index{register@{register}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of tokens this test wants to listen for.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_acc294a6cc8e69743746820e3d15e3f78}{Sniff}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_aeba2ab722cedda53dbb7ec1a59f45550}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_aeba2ab722cedda53dbb7ec1a59f45550}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!\$error@{\$error}}
+\index{\$error@{\$error}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{\$error}{$error}}
+{\footnotesize\ttfamily \$error = \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_af0ef430ae2e2e55eb961cedc2e4ffbd2}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_af0ef430ae2e2e55eb961cedc2e4ffbd2}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!\$forbiddenStyleNames@{\$forbiddenStyleNames}}
+\index{\$forbiddenStyleNames@{\$forbiddenStyleNames}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{\$forbiddenStyleNames}{$forbiddenStyleNames}}
+{\footnotesize\ttfamily \$forbidden\+Style\+Names = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_ad374062587183bd7d764d4667f73e623}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_ad374062587183bd7d764d4667f73e623}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!\$forbiddenStyles@{\$forbiddenStyles}}
+\index{\$forbiddenStyles@{\$forbiddenStyles}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{\$forbiddenStyles}{$forbiddenStyles}}
+{\footnotesize\ttfamily \$forbidden\+Styles\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/moz-\/border-\/radius'}             => \textcolor{stringliteral}{'border-\/radius'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/webkit-\/border-\/radius'}          => \textcolor{stringliteral}{'border-\/radius'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/moz-\/border-\/radius-\/topleft'}     => \textcolor{stringliteral}{'border-\/top-\/left-\/radius'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/moz-\/border-\/radius-\/topright'}    => \textcolor{stringliteral}{'border-\/top-\/right-\/radius'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/moz-\/border-\/radius-\/bottomright'} => \textcolor{stringliteral}{'border-\/bottom-\/right-\/radius'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/moz-\/border-\/radius-\/bottomleft'}  => \textcolor{stringliteral}{'border-\/bottom-\/left-\/radius'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/moz-\/box-\/shadow'}                => \textcolor{stringliteral}{'box-\/shadow'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'-\/webkit-\/box-\/shadow'}             => \textcolor{stringliteral}{'box-\/shadow'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_acbbaf4b2a7142ae6e892801415ecf38a}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_acbbaf4b2a7142ae6e892801415ecf38a}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!\$patternMatch@{\$patternMatch}}
+\index{\$patternMatch@{\$patternMatch}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{\$patternMatch}{$patternMatch}}
+{\footnotesize\ttfamily \$pattern\+Match = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a14f6bd971ae8b179988e5abd4139e5cf}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_c_s_s_1_1_forbidden_styles_sniff_a14f6bd971ae8b179988e5abd4139e5cf}} 
+\index{ForbiddenStylesSniff@{ForbiddenStylesSniff}!\$supportedTokenizers@{\$supportedTokenizers}}
+\index{\$supportedTokenizers@{\$supportedTokenizers}!ForbiddenStylesSniff@{ForbiddenStylesSniff}}
+\doxysubsubsection{\texorpdfstring{\$supportedTokenizers}{$supportedTokenizers}}
+{\footnotesize\ttfamily \$supported\+Tokenizers = \mbox{[}\textquotesingle{}CSS\textquotesingle{}\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Standards/\+Squiz/\+Sniffs/\+CSS/\mbox{\hyperlink{_forbidden_styles_sniff_8php}{Forbidden\+Styles\+Sniff.\+php}}\end{DoxyCompactItemize}

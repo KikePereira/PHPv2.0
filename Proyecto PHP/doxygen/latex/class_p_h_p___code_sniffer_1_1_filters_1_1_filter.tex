@@ -1,0 +1,179 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter}{}\doxysection{Filter Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter}\index{Filter@{Filter}}
+Inheritance diagram for Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_h_p___code_sniffer_1_1_filters_1_1_filter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aff3a1dcd9773bc9a05a4cc08e2acb5a3}{\+\_\+\+\_\+construct}} (\$iterator, \$basedir, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}} \$config, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset}{Ruleset}} \$ruleset)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_acb64affba32059c09533892d9ded224a}{accept}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a8650a4f6150ed357d88fa043f1685ac5}{get\+Children}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a04d74d4a1ad56b52fd8c88ab189c8fdc}{should\+Process\+File}} (\$path)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aeccab208fa93d18fe912e42cc2a79b3e}{should\+Ignore\+Path}} (\$path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aaa31838e86513cb3a51e398894ee4b35}{\$basedir}} = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a49c7011be9c979d9174c52a8b83e5d8e}{\$config}} = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aecaddd1bd9c1c6c40a0ef50d66600aab}{\$ruleset}} = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_acfe84d6812008bcbec811589208989a9}{\$ignore\+Dir\+Patterns}} = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_af381bde1c90c0888c88a7ec31e80149f}{\$ignore\+File\+Patterns}} = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a190fb9fe0a3ecc5acb5a0fcab76b9354}{\$accepted\+Paths}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aff3a1dcd9773bc9a05a4cc08e2acb5a3}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aff3a1dcd9773bc9a05a4cc08e2acb5a3}} 
+\index{Filter@{Filter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$iterator,  }\item[{}]{\$basedir,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}}}]{\$config,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset}{Ruleset}}}]{\$ruleset }\end{DoxyParamCaption})}
+
+Constructs a filter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Recursive\+Iterator & {\em \$iterator} & The iterator we are using to get file paths. \\
+\hline
+string & {\em \$basedir} & The top-\/level path we are filtering. \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Config & {\em \$config} & The config data for the run. \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Ruleset & {\em \$ruleset} & The ruleset used for the run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_acb64affba32059c09533892d9ded224a}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_acb64affba32059c09533892d9ded224a}} 
+\index{Filter@{Filter}!accept@{accept}}
+\index{accept@{accept}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check whether the current element of the iterator is acceptable.
+
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_files}{Files}} are checked for allowed extensions and ignore patterns. Directories are checked for ignore patterns only.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_exact_match_acb64affba32059c09533892d9ded224a}{Exact\+Match}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a8650a4f6150ed357d88fa043f1685ac5}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a8650a4f6150ed357d88fa043f1685ac5}} 
+\index{Filter@{Filter}!getChildren@{getChildren}}
+\index{getChildren@{getChildren}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{getChildren()}{getChildren()}}
+{\footnotesize\ttfamily get\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an iterator for the current entry.
+
+Ensures that the ignore patterns are preserved so they don\textquotesingle{}t have to be generated each time.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Recursive\+Iterator 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_filters_1_1_exact_match_a8650a4f6150ed357d88fa043f1685ac5}{Exact\+Match}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aeccab208fa93d18fe912e42cc2a79b3e}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aeccab208fa93d18fe912e42cc2a79b3e}} 
+\index{Filter@{Filter}!shouldIgnorePath@{shouldIgnorePath}}
+\index{shouldIgnorePath@{shouldIgnorePath}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{shouldIgnorePath()}{shouldIgnorePath()}}
+{\footnotesize\ttfamily should\+Ignore\+Path (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks filtering rules to see if a path should be ignored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to the file or directory being checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a04d74d4a1ad56b52fd8c88ab189c8fdc}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a04d74d4a1ad56b52fd8c88ab189c8fdc}} 
+\index{Filter@{Filter}!shouldProcessFile@{shouldProcessFile}}
+\index{shouldProcessFile@{shouldProcessFile}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{shouldProcessFile()}{shouldProcessFile()}}
+{\footnotesize\ttfamily should\+Process\+File (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks filtering rules to see if a file should be checked.
+
+Checks both file extension filters and path ignore filters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to the file being checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a190fb9fe0a3ecc5acb5a0fcab76b9354}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a190fb9fe0a3ecc5acb5a0fcab76b9354}} 
+\index{Filter@{Filter}!\$acceptedPaths@{\$acceptedPaths}}
+\index{\$acceptedPaths@{\$acceptedPaths}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\$acceptedPaths}{$acceptedPaths}}
+{\footnotesize\ttfamily \$accepted\+Paths = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aaa31838e86513cb3a51e398894ee4b35}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aaa31838e86513cb3a51e398894ee4b35}} 
+\index{Filter@{Filter}!\$basedir@{\$basedir}}
+\index{\$basedir@{\$basedir}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\$basedir}{$basedir}}
+{\footnotesize\ttfamily \$basedir = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a49c7011be9c979d9174c52a8b83e5d8e}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_a49c7011be9c979d9174c52a8b83e5d8e}} 
+\index{Filter@{Filter}!\$config@{\$config}}
+\index{\$config@{\$config}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\$config}{$config}}
+{\footnotesize\ttfamily \$config = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_acfe84d6812008bcbec811589208989a9}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_acfe84d6812008bcbec811589208989a9}} 
+\index{Filter@{Filter}!\$ignoreDirPatterns@{\$ignoreDirPatterns}}
+\index{\$ignoreDirPatterns@{\$ignoreDirPatterns}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\$ignoreDirPatterns}{$ignoreDirPatterns}}
+{\footnotesize\ttfamily \$ignore\+Dir\+Patterns = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_af381bde1c90c0888c88a7ec31e80149f}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_af381bde1c90c0888c88a7ec31e80149f}} 
+\index{Filter@{Filter}!\$ignoreFilePatterns@{\$ignoreFilePatterns}}
+\index{\$ignoreFilePatterns@{\$ignoreFilePatterns}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\$ignoreFilePatterns}{$ignoreFilePatterns}}
+{\footnotesize\ttfamily \$ignore\+File\+Patterns = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aecaddd1bd9c1c6c40a0ef50d66600aab}\label{class_p_h_p___code_sniffer_1_1_filters_1_1_filter_aecaddd1bd9c1c6c40a0ef50d66600aab}} 
+\index{Filter@{Filter}!\$ruleset@{\$ruleset}}
+\index{\$ruleset@{\$ruleset}!Filter@{Filter}}
+\doxysubsubsection{\texorpdfstring{\$ruleset}{$ruleset}}
+{\footnotesize\ttfamily \$ruleset = \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Filters/\mbox{\hyperlink{squizlabs_2php__codesniffer_2src_2_filters_2_filter_8php}{Filter.\+php}}\end{DoxyCompactItemize}

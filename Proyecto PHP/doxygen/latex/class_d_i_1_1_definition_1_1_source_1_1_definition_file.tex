@@ -1,0 +1,81 @@
+\hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_file}{}\doxysection{Definition\+File Class Reference}
+\label{class_d_i_1_1_definition_1_1_source_1_1_definition_file}\index{DefinitionFile@{DefinitionFile}}
+Inheritance diagram for Definition\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_d_i_1_1_definition_1_1_source_1_1_definition_file}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_file_a76676c4e94023db3b70dae1c00fe8260}{\+\_\+\+\_\+construct}} (\$file, \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_autowiring}{Autowiring}} \$autowiring=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_file_ab3643b07f6fe88fcc883aee5334b59d0}{get\+Definition}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_file_aa7fdbbb3dfc93e31928ed08ccfed63fd}{get\+Definitions}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Reads \mbox{\hyperlink{namespace_d_i}{DI}} definitions from a file returning a PHP array.
+
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_file_a76676c4e94023db3b70dae1c00fe8260}\label{class_d_i_1_1_definition_1_1_source_1_1_definition_file_a76676c4e94023db3b70dae1c00fe8260}} 
+\index{DefinitionFile@{DefinitionFile}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!DefinitionFile@{DefinitionFile}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$file,  }\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_source_1_1_autowiring}{Autowiring}}}]{\$autowiring = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \mbox{\hyperlink{class_file}{File}} in which the definitions are returned as an array. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_file_ab3643b07f6fe88fcc883aee5334b59d0}\label{class_d_i_1_1_definition_1_1_source_1_1_definition_file_ab3643b07f6fe88fcc883aee5334b59d0}} 
+\index{DefinitionFile@{DefinitionFile}!getDefinition@{getDefinition}}
+\index{getDefinition@{getDefinition}!DefinitionFile@{DefinitionFile}}
+\doxysubsubsection{\texorpdfstring{getDefinition()}{getDefinition()}}
+{\footnotesize\ttfamily get\+Definition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{namespace_d_i}{DI}} definition for the entry name.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Definition} & An invalid definition was found. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Definition$\vert$null 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_array_ab3643b07f6fe88fcc883aee5334b59d0}{Definition\+Array}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_source_1_1_definition_file_aa7fdbbb3dfc93e31928ed08ccfed63fd}\label{class_d_i_1_1_definition_1_1_source_1_1_definition_file_aa7fdbbb3dfc93e31928ed08ccfed63fd}} 
+\index{DefinitionFile@{DefinitionFile}!getDefinitions@{getDefinitions}}
+\index{getDefinitions@{getDefinitions}!DefinitionFile@{DefinitionFile}}
+\doxysubsubsection{\texorpdfstring{getDefinitions()}{getDefinitions()}}
+{\footnotesize\ttfamily get\+Definitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}\mbox{[}\mbox{]} Definitions indexed by their name. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_d_i_1_1_definition_1_1_source_1_1_definition_array_aa7fdbbb3dfc93e31928ed08ccfed63fd}{Definition\+Array}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Source/\mbox{\hyperlink{_definition_file_8php}{Definition\+File.\+php}}\end{DoxyCompactItemize}

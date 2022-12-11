@@ -1,0 +1,109 @@
+\hypertarget{class_app_1_1_models_1_1_usuario}{}\doxysection{Usuario Class Reference}
+\label{class_app_1_1_models_1_1_usuario}\index{Usuario@{Usuario}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_a3bb50d56d814b9ac01505fd65c6b5b59}{user\+Exists}} (\$nombre, \$pass)
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_a0c2d6fd574411362e1d168f07bc69eed}{set\+User}} (\$nombre)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_usuario_a3e139dc1424f875f745b45af2458d6ce}{update\+Login}} (\$nombre, \$hora)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_aaa7b9d1ce32c1d2e32f7ad3e0b59aac2}{\$nombre}}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_ac11f126d3206dd09c3b7db0a6d99543b}{\$tipo}}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario_a53d7d011255eafe8a37815fd36055cf3}{\$hora}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_app_1_1_models_1_1_usuario}{Usuario}} Clase \mbox{\hyperlink{class_app_1_1_models_1_1_usuario}{Usuario}} que nos sacara y validara un usuario de la base de datos 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a0c2d6fd574411362e1d168f07bc69eed}\label{class_app_1_1_models_1_1_usuario_a0c2d6fd574411362e1d168f07bc69eed}} 
+\index{Usuario@{Usuario}!setUser@{setUser}}
+\index{setUser@{setUser}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{setUser()}{setUser()}}
+{\footnotesize\ttfamily set\+User (\begin{DoxyParamCaption}\item[{}]{\$nombre }\end{DoxyParamCaption})}
+
+set\+User Funcion que nos sacara de la base de datos toda la informacion del usuario pasado por parametro 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$nombre} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a3e139dc1424f875f745b45af2458d6ce}\label{class_app_1_1_models_1_1_usuario_a3e139dc1424f875f745b45af2458d6ce}} 
+\index{Usuario@{Usuario}!updateLogin@{updateLogin}}
+\index{updateLogin@{updateLogin}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{updateLogin()}{updateLogin()}}
+{\footnotesize\ttfamily static update\+Login (\begin{DoxyParamCaption}\item[{}]{\$nombre,  }\item[{}]{\$hora }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+update\+Login Funcion que nos actualizara la hora de la ultima conexion del usuario pasado por parametro 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$nombre} & \\
+\hline
+mixed & {\em \$hora} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a3bb50d56d814b9ac01505fd65c6b5b59}\label{class_app_1_1_models_1_1_usuario_a3bb50d56d814b9ac01505fd65c6b5b59}} 
+\index{Usuario@{Usuario}!userExists@{userExists}}
+\index{userExists@{userExists}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{userExists()}{userExists()}}
+{\footnotesize\ttfamily user\+Exists (\begin{DoxyParamCaption}\item[{}]{\$nombre,  }\item[{}]{\$pass }\end{DoxyParamCaption})}
+
+user\+Exists Funcion que nos validara si el \mbox{\hyperlink{class_app_1_1_models_1_1_usuario}{Usuario}} pasado por parametros al loguearse es correcto 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$nombre} & \\
+\hline
+mixed & {\em \$pass} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a53d7d011255eafe8a37815fd36055cf3}\label{class_app_1_1_models_1_1_usuario_a53d7d011255eafe8a37815fd36055cf3}} 
+\index{Usuario@{Usuario}!\$hora@{\$hora}}
+\index{\$hora@{\$hora}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{\$hora}{$hora}}
+{\footnotesize\ttfamily \$hora}
+
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_aaa7b9d1ce32c1d2e32f7ad3e0b59aac2}\label{class_app_1_1_models_1_1_usuario_aaa7b9d1ce32c1d2e32f7ad3e0b59aac2}} 
+\index{Usuario@{Usuario}!\$nombre@{\$nombre}}
+\index{\$nombre@{\$nombre}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{\$nombre}{$nombre}}
+{\footnotesize\ttfamily \$nombre}
+
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{class_app_1_1_models_1_1_usuario_a607686ef9f99ea7c42f4f3dd3dbb2b0d}} 
+\index{Usuario@{Usuario}!\$password@{\$password}}
+\index{\$password@{\$password}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{\$password}{$password}}
+{\footnotesize\ttfamily \$password}
+
+\mbox{\Hypertarget{class_app_1_1_models_1_1_usuario_ac11f126d3206dd09c3b7db0a6d99543b}\label{class_app_1_1_models_1_1_usuario_ac11f126d3206dd09c3b7db0a6d99543b}} 
+\index{Usuario@{Usuario}!\$tipo@{\$tipo}}
+\index{\$tipo@{\$tipo}!Usuario@{Usuario}}
+\doxysubsubsection{\texorpdfstring{\$tipo}{$tipo}}
+{\footnotesize\ttfamily \$tipo}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/src/\+Models/\mbox{\hyperlink{_usuario_8php}{Usuario.\+php}}\end{DoxyCompactItemize}

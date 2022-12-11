@@ -1,0 +1,114 @@
+\hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator}{}\doxysection{Object\+Comparator Class Reference}
+\label{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator}\index{ObjectComparator@{ObjectComparator}}
+Inheritance diagram for Object\+Comparator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.909091cm]{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_ae9bdf0cba02ce3470169280656cdeb84}{accepts}} (\$expected, \$actual)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_aa8cacb45e573b499bdb3d2ed2da42518}{assert\+Equals}} (\$expected, \$actual, \$delta=0.\+0, \$canonicalize=false, \$ignore\+Case=false, array \&\$processed=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_afd1cb3de15bd99be95ad5c707a97c493}{to\+Array}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a34ed4cda060ffc5ababa5e187c10a4aa}{object}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Compares objects for equality. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_ae9bdf0cba02ce3470169280656cdeb84}\label{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_ae9bdf0cba02ce3470169280656cdeb84}} 
+\index{ObjectComparator@{ObjectComparator}!accepts@{accepts}}
+\index{accepts@{accepts}!ObjectComparator@{ObjectComparator}}
+\doxysubsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily accepts (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual }\end{DoxyParamCaption})}
+
+Returns whether the comparator can compare two values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & The first value to compare \\
+\hline
+mixed & {\em \$actual} & The second value to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_ae9bdf0cba02ce3470169280656cdeb84}{Array\+Comparator}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_prophecy_1_1_comparator_1_1_prophecy_comparator_ae9bdf0cba02ce3470169280656cdeb84}{Prophecy\+Comparator}}, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_date_time_comparator_ae9bdf0cba02ce3470169280656cdeb84}{Date\+Time\+Comparator}}, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_d_o_m_node_comparator_ae9bdf0cba02ce3470169280656cdeb84}{DOMNode\+Comparator}}, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_exception_comparator_ae9bdf0cba02ce3470169280656cdeb84}{Exception\+Comparator}}, and \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_mock_object_comparator_ae9bdf0cba02ce3470169280656cdeb84}{Mock\+Object\+Comparator}}.
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_aa8cacb45e573b499bdb3d2ed2da42518}\label{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_aa8cacb45e573b499bdb3d2ed2da42518}} 
+\index{ObjectComparator@{ObjectComparator}!assertEquals@{assertEquals}}
+\index{assertEquals@{assertEquals}!ObjectComparator@{ObjectComparator}}
+\doxysubsubsection{\texorpdfstring{assertEquals()}{assertEquals()}}
+{\footnotesize\ttfamily assert\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false},  }\item[{array \&}]{\$processed = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Asserts that two values are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & First value to compare \\
+\hline
+mixed & {\em \$actual} & Second value to compare \\
+\hline
+float & {\em \$delta} & Allowed numerical distance between two values to consider them equal \\
+\hline
+bool & {\em \$canonicalize} & Arrays are sorted before comparison when set to true \\
+\hline
+bool & {\em \$ignore\+Case} & Case is ignored when set to true \\
+\hline
+array & {\em \$processed} & List of already processed elements (used to prevent infinite recursion)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparison_failure}{Comparison\+Failure}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_array_comparator_aa8cacb45e573b499bdb3d2ed2da42518}{Array\+Comparator}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_d_o_m_node_comparator_aa8cacb45e573b499bdb3d2ed2da42518}{DOMNode\+Comparator}}, and \mbox{\hyperlink{class_prophecy_1_1_comparator_1_1_prophecy_comparator_a85a7369896910cf1d55e31d477c29f1e}{Prophecy\+Comparator}}.
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_afd1cb3de15bd99be95ad5c707a97c493}\label{class_sebastian_bergmann_1_1_comparator_1_1_object_comparator_afd1cb3de15bd99be95ad5c707a97c493}} 
+\index{ObjectComparator@{ObjectComparator}!toArray@{toArray}}
+\index{toArray@{toArray}!ObjectComparator@{ObjectComparator}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily to\+Array (\begin{DoxyParamCaption}\item[{}]{\$object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts an object to an array containing all of its private, protected and public properties.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_exception_comparator_afd1cb3de15bd99be95ad5c707a97c493}{Exception\+Comparator}}, and \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_mock_object_comparator_afd1cb3de15bd99be95ad5c707a97c493}{Mock\+Object\+Comparator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/sebastian/comparator/src/\mbox{\hyperlink{_object_comparator_8php}{Object\+Comparator.\+php}}\end{DoxyCompactItemize}

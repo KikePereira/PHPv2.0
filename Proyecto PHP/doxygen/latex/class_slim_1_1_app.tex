@@ -1,0 +1,212 @@
+\hypertarget{class_slim_1_1_app}{}\doxysection{App Class Reference}
+\label{class_slim_1_1_app}\index{App@{App}}
+Inheritance diagram for App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_slim_1_1_app}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_ae7b011c261f0f83202e317245943b8f0}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_factory_interface}{Response\+Factory\+Interface}} \$response\+Factory, ?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}} \$container=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, ?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_callable_resolver_interface}{Callable\+Resolver\+Interface}} \$callable\+Resolver=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, ?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface}{Route\+Collector\+Interface}} \$route\+Collector=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, ?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}} \$route\+Resolver=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, ?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface}{Middleware\+Dispatcher\+Interface}} \$middleware\+Dispatcher=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_aceb2f1ca2b9a49d05eafbbd3a3782bbe}{get\+Route\+Resolver}} ()
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_aaded76839fa0c4539f836504a7a543d3}{get\+Middleware\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_a7018e02ea762c520472929132fd2f937}{add}} (\$middleware)
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_ac56a59b06090d3f77f8366f34dcac0ac}{add\+Middleware}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_middleware_interface}{Middleware\+Interface}} \$middleware)
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_a45ecbc45614e6e3321ce3ef8a96f022a}{add\+Routing\+Middleware}} ()
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_a2d160df6b9f1b6a9dc4de75e3a9df1d8}{add\+Error\+Middleware}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$display\+Error\+Details, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$log\+Errors, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$log\+Error\+Details, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_a108a4a36fcab0b9f85d356981b71ab80}{add\+Body\+Parsing\+Middleware}} (array \$body\+Parsers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_a3cef20a7105f0a7bc72ef8252a272072}{run}} (?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}} \$request=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_app_a426da9efc10c90c1fdee43f2107a7e28}{handle}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_slim_1_1_app_af71005841ce53adac00581ab0ba24c1f}{VERSION}} = \textquotesingle{}4.\+10.\+0\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}} \mbox{\hyperlink{class_slim_1_1_app_a9a12d9cea4651748345578d6b3aa7002}{\$route\+Resolver}}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface}{Middleware\+Dispatcher\+Interface}} \mbox{\hyperlink{class_slim_1_1_app_afd5019c313d957e6d3bc3e62af2e5a88}{\$middleware\+Dispatcher}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_app_ae7b011c261f0f83202e317245943b8f0}\label{class_slim_1_1_app_ae7b011c261f0f83202e317245943b8f0}} 
+\index{App@{App}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!App@{App}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_factory_interface}{Response\+Factory\+Interface}}}]{\$response\+Factory,  }\item[{?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}}}]{\$container = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_callable_resolver_interface}{Callable\+Resolver\+Interface}}}]{\$callable\+Resolver = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface}{Route\+Collector\+Interface}}}]{\$route\+Collector = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}}}]{\$route\+Resolver = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{?\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface}{Middleware\+Dispatcher\+Interface}}}]{\$middleware\+Dispatcher = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_app_a7018e02ea762c520472929132fd2f937}\label{class_slim_1_1_app_a7018e02ea762c520472929132fd2f937}} 
+\index{App@{App}!add@{add}}
+\index{add@{add}!App@{App}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily add (\begin{DoxyParamCaption}\item[{}]{\$middleware }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Middleware\+Interface | string | callable & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_slim_1_1_app_a108a4a36fcab0b9f85d356981b71ab80}\label{class_slim_1_1_app_a108a4a36fcab0b9f85d356981b71ab80}} 
+\index{App@{App}!addBodyParsingMiddleware@{addBodyParsingMiddleware}}
+\index{addBodyParsingMiddleware@{addBodyParsingMiddleware}!App@{App}}
+\doxysubsubsection{\texorpdfstring{addBodyParsingMiddleware()}{addBodyParsingMiddleware()}}
+{\footnotesize\ttfamily add\+Body\+Parsing\+Middleware (\begin{DoxyParamCaption}\item[{array}]{\$body\+Parsers = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Add the \mbox{\hyperlink{namespace_slim}{Slim}} body parsing middleware to the app middleware stack
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable\mbox{[}$\,$\mbox{]} & {\em \$body\+Parsers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Body\+Parsing\+Middleware 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_app_a2d160df6b9f1b6a9dc4de75e3a9df1d8}\label{class_slim_1_1_app_a2d160df6b9f1b6a9dc4de75e3a9df1d8}} 
+\index{App@{App}!addErrorMiddleware@{addErrorMiddleware}}
+\index{addErrorMiddleware@{addErrorMiddleware}!App@{App}}
+\doxysubsubsection{\texorpdfstring{addErrorMiddleware()}{addErrorMiddleware()}}
+{\footnotesize\ttfamily add\+Error\+Middleware (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$display\+Error\+Details,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$log\+Errors,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$log\+Error\+Details,  }\item[{?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Add the \mbox{\hyperlink{namespace_slim}{Slim}} built-\/in error middleware to the app middleware stack
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$display\+Error\+Details} & \\
+\hline
+bool & {\em \$log\+Errors} & \\
+\hline
+bool & {\em \$log\+Error\+Details} & \\
+\hline
+Logger\+Interface | null & {\em \$logger} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Error\+Middleware 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_app_ac56a59b06090d3f77f8366f34dcac0ac}\label{class_slim_1_1_app_ac56a59b06090d3f77f8366f34dcac0ac}} 
+\index{App@{App}!addMiddleware@{addMiddleware}}
+\index{addMiddleware@{addMiddleware}!App@{App}}
+\doxysubsubsection{\texorpdfstring{addMiddleware()}{addMiddleware()}}
+{\footnotesize\ttfamily add\+Middleware (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_middleware_interface}{Middleware\+Interface}}}]{\$middleware }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Middleware\+Interface & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_slim_1_1_app_a45ecbc45614e6e3321ce3ef8a96f022a}\label{class_slim_1_1_app_a45ecbc45614e6e3321ce3ef8a96f022a}} 
+\index{App@{App}!addRoutingMiddleware@{addRoutingMiddleware}}
+\index{addRoutingMiddleware@{addRoutingMiddleware}!App@{App}}
+\doxysubsubsection{\texorpdfstring{addRoutingMiddleware()}{addRoutingMiddleware()}}
+{\footnotesize\ttfamily add\+Routing\+Middleware (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add the \mbox{\hyperlink{namespace_slim}{Slim}} built-\/in routing middleware to the app middleware stack
+
+This method can be used to control middleware order and is not required for default routing operation.
+
+\begin{DoxyReturn}{Returns}
+Routing\+Middleware 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_app_aaded76839fa0c4539f836504a7a543d3}\label{class_slim_1_1_app_aaded76839fa0c4539f836504a7a543d3}} 
+\index{App@{App}!getMiddlewareDispatcher@{getMiddlewareDispatcher}}
+\index{getMiddlewareDispatcher@{getMiddlewareDispatcher}!App@{App}}
+\doxysubsubsection{\texorpdfstring{getMiddlewareDispatcher()}{getMiddlewareDispatcher()}}
+{\footnotesize\ttfamily get\+Middleware\+Dispatcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Middleware\+Dispatcher\+Interface 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_app_aceb2f1ca2b9a49d05eafbbd3a3782bbe}\label{class_slim_1_1_app_aceb2f1ca2b9a49d05eafbbd3a3782bbe}} 
+\index{App@{App}!getRouteResolver@{getRouteResolver}}
+\index{getRouteResolver@{getRouteResolver}!App@{App}}
+\doxysubsubsection{\texorpdfstring{getRouteResolver()}{getRouteResolver()}}
+{\footnotesize\ttfamily get\+Route\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Route\+Resolver\+Interface 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_app_a426da9efc10c90c1fdee43f2107a7e28}\label{class_slim_1_1_app_a426da9efc10c90c1fdee43f2107a7e28}} 
+\index{App@{App}!handle@{handle}}
+\index{handle@{handle}!App@{App}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}}}]{\$request }\end{DoxyParamCaption})}
+
+Handle a request
+
+This method traverses the application middleware stack and then returns the resultant Response object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface 
+\end{DoxyReturn}
+This is to be in compliance with RFC 2616, Section 9. If the incoming request method is HEAD, we need to ensure that the response body is empty as the request may fall back on a GET route handler due to \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}}\textquotesingle{}s routing logic which could potentially append content to the response body \href{https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html\#sec9.4}{\texttt{ https\+://www.\+w3.\+org/\+Protocols/rfc2616/rfc2616-\/sec9.\+html\#sec9.\+4}}
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_request_handler_interface_a426da9efc10c90c1fdee43f2107a7e28}{Request\+Handler\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_app_a3cef20a7105f0a7bc72ef8252a272072}\label{class_slim_1_1_app_a3cef20a7105f0a7bc72ef8252a272072}} 
+\index{App@{App}!run@{run}}
+\index{run@{run}!App@{App}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily run (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}}}]{\$request = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Run application
+
+This method traverses the application middleware stack and then sends the resultant Response object to the HTTP client.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Server\+Request\+Interface | null & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_slim_1_1_app_afd5019c313d957e6d3bc3e62af2e5a88}\label{class_slim_1_1_app_afd5019c313d957e6d3bc3e62af2e5a88}} 
+\index{App@{App}!\$middlewareDispatcher@{\$middlewareDispatcher}}
+\index{\$middlewareDispatcher@{\$middlewareDispatcher}!App@{App}}
+\doxysubsubsection{\texorpdfstring{\$middlewareDispatcher}{$middlewareDispatcher}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_middleware_dispatcher_interface}{Middleware\+Dispatcher\+Interface}} \$middleware\+Dispatcher\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_app_a9a12d9cea4651748345578d6b3aa7002}\label{class_slim_1_1_app_a9a12d9cea4651748345578d6b3aa7002}} 
+\index{App@{App}!\$routeResolver@{\$routeResolver}}
+\index{\$routeResolver@{\$routeResolver}!App@{App}}
+\doxysubsubsection{\texorpdfstring{\$routeResolver}{$routeResolver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_resolver_interface}{Route\+Resolver\+Interface}} \$route\+Resolver\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_app_af71005841ce53adac00581ab0ba24c1f}\label{class_slim_1_1_app_af71005841ce53adac00581ab0ba24c1f}} 
+\index{App@{App}!VERSION@{VERSION}}
+\index{VERSION@{VERSION}!App@{App}}
+\doxysubsubsection{\texorpdfstring{VERSION}{VERSION}}
+{\footnotesize\ttfamily const VERSION = \textquotesingle{}4.\+10.\+0\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/slim/\+Slim/\mbox{\hyperlink{_app_8php}{App.\+php}}\end{DoxyCompactItemize}

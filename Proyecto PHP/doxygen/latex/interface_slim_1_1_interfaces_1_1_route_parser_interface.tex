@@ -1,0 +1,100 @@
+\hypertarget{interface_slim_1_1_interfaces_1_1_route_parser_interface}{}\doxysection{Route\+Parser\+Interface Interface Reference}
+\label{interface_slim_1_1_interfaces_1_1_route_parser_interface}\index{RouteParserInterface@{RouteParserInterface}}
+Inheritance diagram for Route\+Parser\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_slim_1_1_interfaces_1_1_route_parser_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface_ad3ebfc2e8344040db0c1307e9a1af0f2}{relative\+Url\+For}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]}, array \$query\+Params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface_ab24e235684c6e1bf1b19f93477b27c3f}{url\+For}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]}, array \$query\+Params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface_aed2d06468e06fa1099b8d00ad96a524a}{full\+Url\+For}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]}, array \$query\+Params=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_parser_interface_aed2d06468e06fa1099b8d00ad96a524a}\label{interface_slim_1_1_interfaces_1_1_route_parser_interface_aed2d06468e06fa1099b8d00ad96a524a}} 
+\index{RouteParserInterface@{RouteParserInterface}!fullUrlFor@{fullUrlFor}}
+\index{fullUrlFor@{fullUrlFor}!RouteParserInterface@{RouteParserInterface}}
+\doxysubsubsection{\texorpdfstring{fullUrlFor()}{fullUrlFor()}}
+{\footnotesize\ttfamily full\+Url\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}}}]{\$uri,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$query\+Params = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Get fully qualified URL for named route
+
+
+\begin{DoxyParams}[1]{Parameters}
+Uri\+Interface & {\em \$uri} & \\
+\hline
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Named argument replacement data \\
+\hline
+ & {\em array$<$string,string$>$} & \$query\+Params Optional query string parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_parser_aed2d06468e06fa1099b8d00ad96a524a}{Route\+Parser}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_parser_interface_ad3ebfc2e8344040db0c1307e9a1af0f2}\label{interface_slim_1_1_interfaces_1_1_route_parser_interface_ad3ebfc2e8344040db0c1307e9a1af0f2}} 
+\index{RouteParserInterface@{RouteParserInterface}!relativeUrlFor@{relativeUrlFor}}
+\index{relativeUrlFor@{relativeUrlFor}!RouteParserInterface@{RouteParserInterface}}
+\doxysubsubsection{\texorpdfstring{relativeUrlFor()}{relativeUrlFor()}}
+{\footnotesize\ttfamily relative\+Url\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$query\+Params = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Build the path for a named route excluding the base path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Named argument replacement data \\
+\hline
+ & {\em array$<$string,string$>$} & \$query\+Params Optional query string parameters\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If named route does not exist \\
+\hline
+{\em Invalid\+Argument\+Exception} & If required data not provided \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_parser_interface_ab24e235684c6e1bf1b19f93477b27c3f}\label{interface_slim_1_1_interfaces_1_1_route_parser_interface_ab24e235684c6e1bf1b19f93477b27c3f}} 
+\index{RouteParserInterface@{RouteParserInterface}!urlFor@{urlFor}}
+\index{urlFor@{urlFor}!RouteParserInterface@{RouteParserInterface}}
+\doxysubsubsection{\texorpdfstring{urlFor()}{urlFor()}}
+{\footnotesize\ttfamily url\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$query\+Params = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Build the path for a named route including the base path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Named argument replacement data \\
+\hline
+ & {\em array$<$string,string$>$} & \$query\+Params Optional query string parameters\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If named route does not exist \\
+\hline
+{\em Invalid\+Argument\+Exception} & If required data not provided \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_parser_ab24e235684c6e1bf1b19f93477b27c3f}{Route\+Parser}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/slim/\+Slim/\+Interfaces/\mbox{\hyperlink{_route_parser_interface_8php}{Route\+Parser\+Interface.\+php}}\end{DoxyCompactItemize}

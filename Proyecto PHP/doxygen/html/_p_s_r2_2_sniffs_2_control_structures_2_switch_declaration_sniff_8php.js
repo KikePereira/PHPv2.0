@@ -1,0 +1,4 @@
+var _p_s_r2_2_sniffs_2_control_structures_2_switch_declaration_sniff_8php =
+[
+    [ "SwitchDeclarationSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_control_structures_1_1_switch_declaration_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_control_structures_1_1_switch_declaration_sniff" ]
+];

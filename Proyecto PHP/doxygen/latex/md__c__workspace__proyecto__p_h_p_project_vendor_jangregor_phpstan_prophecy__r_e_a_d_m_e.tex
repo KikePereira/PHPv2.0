@@ -1,0 +1,227 @@
+\href{https://github.com/Jan0707/phpstan-prophecy/actions}{\texttt{ }} \href{https://github.com/Jan0707/phpstan-prophecy/actions}{\texttt{ }} \href{https://github.com/Jan0707/phpstan-prophecy/actions}{\texttt{ }} \href{https://github.com/Jan0707/phpstan-prophecy/actions}{\texttt{ }}
+
+\href{https://packagist.org/packages/jangregor/phpstan-prophecy}{\texttt{ }} \href{https://packagist.org/packages/jangregor/phpstan-prophecy}{\texttt{ }}
+
+\href{https://violinist.io}{\texttt{ }}
+
+Provides a \href{https://github.com/phpspec/prophecy}{\texttt{ {\ttfamily prophecy/prophecy}}} extension for \href{https://github.com/phpstan/phpstan}{\texttt{ {\ttfamily phpstan/phpstan}}}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md83}{}\doxysection{Installation}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md83}
+Run
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ composer require -\/-\/dev jangregor/phpstan-\/prophecy}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md84}{}\doxysection{Configuration}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md84}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md85}{}\doxysubsection{Automatic}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md85}
+When using \href{https://github.com/phpstan/extension-installer}{\texttt{ {\ttfamily phpstan/extension-\/installer}}}, no further setup is required.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md86}{}\doxysubsection{Manual}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md86}
+When not using \href{https://github.com/phpstan/extension-installer}{\texttt{ {\ttfamily phpstan/extension-\/installer}}}, \href{extension.neon}{\texttt{ {\ttfamily extension.\+neon}}} needs to be included in {\ttfamily phpstan.\+neon}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ includes:}
+\DoxyCodeLine{+   -\/ vendor/jangregor/phpstan-\/prophecy/extension.neon}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md87}{}\doxysection{Usage}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md87}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md88}{}\doxysubsection{$<$tt$>$prophesize()$<$/tt$>$ and $<$tt$>$reveal()$<$/tt$>$}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md88}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \mbox{\hyperlink{namespace_p_h_p_unit_1_1_framework}{PHPUnit\(\backslash\)Framework}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{final} \textcolor{keyword}{class }ExampleTest \textcolor{keyword}{extends} Framework\(\backslash\)TestCase}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \$prophecy;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{protected} \textcolor{keyword}{function} setUp()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$this-\/>prophecy = \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomething(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$prophecy = \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$testDouble = \$prophecy-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomethingElse(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$testDouble = \$this-\/>prophecy-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomethingDifferent(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$testDouble = \$this-\/>createProphecy()-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} createProphecy()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\+:bulb\+: With this extension enabled, {\ttfamily phpstan/phpstan} will understand that {\ttfamily \$test\+Double} is an instance of {\ttfamily Some\+Model}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md89}{}\doxysubsection{$<$tt$>$prophesize()$<$/tt$>$, $<$tt$>$will\+Extend()$<$/tt$>$, and $<$tt$>$reveal()$<$/tt$>$}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md89}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \mbox{\hyperlink{namespace_p_h_p_unit_1_1_framework}{PHPUnit\(\backslash\)Framework}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{final} \textcolor{keyword}{class }ExampleTest \textcolor{keyword}{extends} Framework\(\backslash\)TestCase}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \$prophecy;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{protected} \textcolor{keyword}{function} setUp()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$this-\/>prophecy = \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}()-\/>willExtend(SomeModel::class);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomething(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$prophecy = \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}()-\/>willExtend(SomeModel::class);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$testDouble = \$prophecy-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomethingElse(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$testDouble = \$this-\/>prophecy-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomethingDifferent(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$testDouble = \$this-\/>createProphecy()-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} createProphecy()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class)-\/>willExtend(SomeInterface::class);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\+:bulb\+: With this extension enabled, {\ttfamily phpstan/phpstan} will understand that {\ttfamily \$test\+Double} is an instance of {\ttfamily Some\+Model}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md90}{}\doxysubsection{$<$tt$>$prophesize()$<$/tt$>$, $<$tt$>$will\+Implement()$<$/tt$>$, and $<$tt$>$reveal()$<$/tt$>$}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md90}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \mbox{\hyperlink{namespace_p_h_p_unit_1_1_framework}{PHPUnit\(\backslash\)Framework}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{final} \textcolor{keyword}{class }ExampleTest \textcolor{keyword}{extends} Framework\(\backslash\)TestCase}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \$prophecy;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{protected} \textcolor{keyword}{function} setUp()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$this-\/>prophecy = \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class)-\/>willImplement(SomeInterface::class);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomething(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$prophecy = \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class)-\/>willImplement(SomeInterface::class);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$testDouble = \$prophecy-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomethingElse(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$testDouble = \$this-\/>prophecy-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomethingDifferent(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$testDouble = \$this-\/>createProphecy()-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{function} createProphecy()}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class)-\/>willImplement(SomeInterface::class);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\+:bulb\+: With this extension enabled, {\ttfamily phpstan/phpstan} will understand that {\ttfamily \$test\+Double} is an instance of {\ttfamily Some\+Model} that also implements {\ttfamily Some\+Interface}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md91}{}\doxysubsection{Method Predictions}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md91}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{use \mbox{\hyperlink{namespace_p_h_p_unit_1_1_framework}{PHPUnit\(\backslash\)Framework}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{final} \textcolor{keyword}{class }ExampleTest \textcolor{keyword}{extends} Framework\(\backslash\)TestCase}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{function} testSomething(): void}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \$prophecy = \$this-\/>\mbox{\hyperlink{namespace_prophecy_1_1_php_unit_a3ff8db8bf2f51b9bb372f342c6965c61}{prophesize}}(SomeModel::class);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$prophecy}
+\DoxyCodeLine{            -\/>doubleTheNumber(Argument::is(2))}
+\DoxyCodeLine{            -\/>willReturn(4);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \$testDouble = \$prophecy-\/>reveal();}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// ...}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\+:bulb\+: With this extension enabled, {\ttfamily phpstan/phpstan} will understand that {\ttfamily \$prophecy} accepts method calls to all methods that are implemented by its prophesized class (or additionally implemented interfaces, when using {\ttfamily will\+Implement()}).\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md92}{}\doxysubsection{Method Arguments}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md92}
+\+:exclamation\+: Currently here are no checks in place to validate the arguments of methods that are invoked on prophecies.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md93}{}\doxysection{Development}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md93}
+\mbox{\hyperlink{class_a}{A}} development environment is provided via \href{.docker/Dockerfile}{\texttt{ {\ttfamily .docker/\+Dockerfile}}}.
+
+Run
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ docker build -\/-\/tag phpstan-\/prophecy .docker/}
+
+\end{DoxyCode}
+
+
+to build and tag the Docker image.
+
+Run
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ docker run -\/it -\/-\/rm  -\/-\/volume "{}\$PWD"{}:/var/www/html -\/-\/workdir /var/www/html phpstan-\/prophecy bash}
+
+\end{DoxyCode}
+
+
+to open a shell in the Docker container.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md94}{}\doxysection{Changelog}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md94}
+Please have a look at C\+:/workspace/\+Proyecto \mbox{\hyperlink{jangregor_2phpstan-prophecy_2_c_h_a_n_g_e_l_o_g_8md}{PHP/project/vendor/jangregor/phpstan-\/prophecy/\+CHANGELOG.\+md}} \char`\"{}\`{}\+CHANGELOG.\+md\`{}\char`\"{}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md95}{}\doxysection{Contributing}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md95}
+Please have a look at \`{}\+CONTRIBUTING.md\`{}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md96}{}\doxysection{License}\label{md__c__workspace__proyecto__p_h_p_project_vendor_jangregor_phpstan_prophecy__r_e_a_d_m_e_autotoc_md96}
+This package is licensed using the MIT License.
+
+Please have a look at C\+:/workspace/\+Proyecto \mbox{\hyperlink{jangregor_2phpstan-prophecy_2_l_i_c_e_n_s_e_8md}{PHP/project/vendor/jangregor/phpstan-\/prophecy/\+LICENSE.\+md}} \char`\"{}\`{}\+LICENSE.\+md\`{}\char`\"{}. 

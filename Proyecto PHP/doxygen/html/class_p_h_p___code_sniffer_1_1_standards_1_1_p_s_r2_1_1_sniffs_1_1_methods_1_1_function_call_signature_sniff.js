@@ -1,0 +1,5 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_methods_1_1_function_call_signature_sniff =
+[
+    [ "isMultiLineCall", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_methods_1_1_function_call_signature_sniff.html#aa2310eead5ec1e5c17482851036b0205", null ],
+    [ "$allowMultipleArguments", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_methods_1_1_function_call_signature_sniff.html#a04f446ef9f013740488ffd1a03fd3e65", null ]
+];

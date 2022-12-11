@@ -1,0 +1,68 @@
+\hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor}{}\doxysection{Ignored\+Lines\+Finding\+Visitor Class Reference}
+\label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor}\index{IgnoredLinesFindingVisitor@{IgnoredLinesFindingVisitor}}
+Inheritance diagram for Ignored\+Lines\+Finding\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a829b90c4744356e4604cce952d8413fc}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$use\+Annotations\+For\+Ignoring\+Code, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$ignore\+Deprecated)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a258563fd5f8326ed07053ed0c19a242e}{ignored\+Lines}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a829b90c4744356e4604cce952d8413fc}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a829b90c4744356e4604cce952d8413fc}} 
+\index{IgnoredLinesFindingVisitor@{IgnoredLinesFindingVisitor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!IgnoredLinesFindingVisitor@{IgnoredLinesFindingVisitor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$use\+Annotations\+For\+Ignoring\+Code,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$ignore\+Deprecated }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a72d9ab2b97095f3bf1c97eb453a386d1}} 
+\index{IgnoredLinesFindingVisitor@{IgnoredLinesFindingVisitor}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!IgnoredLinesFindingVisitor@{IgnoredLinesFindingVisitor}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily enter\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node }\end{DoxyParamCaption})}
+
+Called when entering a node.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null =\texorpdfstring{$>$}{>} \$node stays as-\/is
+\item Node\+Traverser\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN =\texorpdfstring{$>$}{>} Children of \$node are not traversed. \$node stays as-\/is
+\item Node\+Traverser\+::\+STOP\+\_\+\+TRAVERSAL =\texorpdfstring{$>$}{>} Traversal is aborted. \$node stays as-\/is
+\item otherwise =\texorpdfstring{$>$}{>} \$node is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{namespace_sebastian_bergmann_1_1_code_coverage_1_1_node}{Node}} & {\em \$node} & \mbox{\hyperlink{namespace_sebastian_bergmann_1_1_code_coverage_1_1_node}{Node}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$int$\vert$\+Node Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a72d9ab2b97095f3bf1c97eb453a386d1}{Node\+Visitor\+Abstract}}.
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a258563fd5f8326ed07053ed0c19a242e}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor_a258563fd5f8326ed07053ed0c19a242e}} 
+\index{IgnoredLinesFindingVisitor@{IgnoredLinesFindingVisitor}!ignoredLines@{ignoredLines}}
+\index{ignoredLines@{ignoredLines}!IgnoredLinesFindingVisitor@{IgnoredLinesFindingVisitor}}
+\doxysubsubsection{\texorpdfstring{ignoredLines()}{ignoredLines()}}
+{\footnotesize\ttfamily ignored\+Lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@psalm-\/return list$<$int$>$ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/php-\/code-\/coverage/src/\+Static\+Analysis/\mbox{\hyperlink{_ignored_lines_finding_visitor_8php}{Ignored\+Lines\+Finding\+Visitor.\+php}}\end{DoxyCompactItemize}

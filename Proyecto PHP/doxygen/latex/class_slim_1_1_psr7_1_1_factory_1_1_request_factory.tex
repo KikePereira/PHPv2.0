@@ -1,0 +1,83 @@
+\hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_request_factory}{}\doxysection{Request\+Factory Class Reference}
+\label{class_slim_1_1_psr7_1_1_factory_1_1_request_factory}\index{RequestFactory@{RequestFactory}}
+Inheritance diagram for Request\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_slim_1_1_psr7_1_1_factory_1_1_request_factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a371f027fa759202db04a38e714492856}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface}{Stream\+Factory\+Interface}} \$stream\+Factory=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, ?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_factory_interface}{Uri\+Factory\+Interface}} \$uri\+Factory=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a5dda7cb70150d8b6261db3075a00a4d2}{create\+Request}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$method, \$uri)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface}{Stream\+Factory\+Interface}} \mbox{\hyperlink{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a4b1594b0a4829ec5cfd719188985c19d}{\$stream\+Factory}}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_factory_interface}{Uri\+Factory\+Interface}} \mbox{\hyperlink{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a27be615ebc71270194944674afae0dff}{\$uri\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a371f027fa759202db04a38e714492856}\label{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a371f027fa759202db04a38e714492856}} 
+\index{RequestFactory@{RequestFactory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!RequestFactory@{RequestFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface}{Stream\+Factory\+Interface}}}]{\$stream\+Factory = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_factory_interface}{Uri\+Factory\+Interface}}}]{\$uri\+Factory = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Factory\+Interface | null & {\em \$stream\+Factory} & \\
+\hline
+Uri\+Factory\+Interface | null & {\em \$uri\+Factory} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a5dda7cb70150d8b6261db3075a00a4d2}\label{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a5dda7cb70150d8b6261db3075a00a4d2}} 
+\index{RequestFactory@{RequestFactory}!createRequest@{createRequest}}
+\index{createRequest@{createRequest}!RequestFactory@{RequestFactory}}
+\doxysubsubsection{\texorpdfstring{createRequest()}{createRequest()}}
+{\footnotesize\ttfamily create\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$method,  }\item[{}]{\$uri }\end{DoxyParamCaption})}
+
+\{Create a new request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & The HTTP method associated with the request. \\
+\hline
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} | string & {\em \$uri} & The URI associated with the request. If the value is a string, the factory MUST create a \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} instance based on it.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}}
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_factory_interface_a5dda7cb70150d8b6261db3075a00a4d2}{Request\+Factory\+Interface}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a4b1594b0a4829ec5cfd719188985c19d}\label{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a4b1594b0a4829ec5cfd719188985c19d}} 
+\index{RequestFactory@{RequestFactory}!\$streamFactory@{\$streamFactory}}
+\index{\$streamFactory@{\$streamFactory}!RequestFactory@{RequestFactory}}
+\doxysubsubsection{\texorpdfstring{\$streamFactory}{$streamFactory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface}{Stream\+Factory\+Interface}} \$stream\+Factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a27be615ebc71270194944674afae0dff}\label{class_slim_1_1_psr7_1_1_factory_1_1_request_factory_a27be615ebc71270194944674afae0dff}} 
+\index{RequestFactory@{RequestFactory}!\$uriFactory@{\$uriFactory}}
+\index{\$uriFactory@{\$uriFactory}!RequestFactory@{RequestFactory}}
+\doxysubsubsection{\texorpdfstring{\$uriFactory}{$uriFactory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_factory_interface}{Uri\+Factory\+Interface}} \$uri\+Factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/psr7/src/\+Factory/\mbox{\hyperlink{_request_factory_8php}{Request\+Factory.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{interface_fast_route_1_1_data_generator}{}\doxysection{Data\+Generator Interface Reference}
+\label{interface_fast_route_1_1_data_generator}\index{DataGenerator@{DataGenerator}}
+Inheritance diagram for Data\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_fast_route_1_1_data_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_fast_route_1_1_data_generator_a91ccc64bb10773c404f1ec2a679f5940}{add\+Route}} (\$http\+Method, \$route\+Data, \$handler)
+\item 
+\mbox{\hyperlink{interface_fast_route_1_1_data_generator_a81a67162a6288d78fc4c55283325f0b4}{get\+Data}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_fast_route_1_1_data_generator_a91ccc64bb10773c404f1ec2a679f5940}\label{interface_fast_route_1_1_data_generator_a91ccc64bb10773c404f1ec2a679f5940}} 
+\index{DataGenerator@{DataGenerator}!addRoute@{addRoute}}
+\index{addRoute@{addRoute}!DataGenerator@{DataGenerator}}
+\doxysubsubsection{\texorpdfstring{addRoute()}{addRoute()}}
+{\footnotesize\ttfamily add\+Route (\begin{DoxyParamCaption}\item[{}]{\$http\+Method,  }\item[{}]{\$route\+Data,  }\item[{}]{\$handler }\end{DoxyParamCaption})}
+
+Adds a route to the data generator. The route data uses the same format that is returned by Router\+Parser\+::parser().
+
+The handler doesn\textquotesingle{}t necessarily need to be a callable, it can be arbitrary data that will be returned when the route matches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$http\+Method} & \\
+\hline
+array & {\em \$route\+Data} & \\
+\hline
+mixed & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a91ccc64bb10773c404f1ec2a679f5940}{Regex\+Based\+Abstract}}.
+
+\mbox{\Hypertarget{interface_fast_route_1_1_data_generator_a81a67162a6288d78fc4c55283325f0b4}\label{interface_fast_route_1_1_data_generator_a81a67162a6288d78fc4c55283325f0b4}} 
+\index{DataGenerator@{DataGenerator}!getData@{getData}}
+\index{getData@{getData}!DataGenerator@{DataGenerator}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns dispatcher data in some unspecified format, which depends on the used method of dispatch. 
+
+Implemented in \mbox{\hyperlink{class_fast_route_1_1_data_generator_1_1_regex_based_abstract_a81a67162a6288d78fc4c55283325f0b4}{Regex\+Based\+Abstract}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/nikic/fast-\/route/src/\mbox{\hyperlink{_data_generator_8php}{Data\+Generator.\+php}}\end{DoxyCompactItemize}

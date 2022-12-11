@@ -1,0 +1,86 @@
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}{}\doxysection{Operator Class Reference}
+\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}\index{Operator@{Operator}}
+Inheritance diagram for Operator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_a27d661679d6ca841f034118ea52159d8}{operator}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_ab3376c6136f8ad76eb724c58be6cdd61}{precedence}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_ac767caa80bc405c376810231f932920b}{arity}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_a764a45612a0cfe2d52bf32740714804a}{check\+Constraint}} (\$constraint)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}{constraint\+Needs\+Parentheses}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}} \$constraint)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \mbox{\hyperlink{namespace_p_h_p_unit}{PHPUnit}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_ac767caa80bc405c376810231f932920b}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_ac767caa80bc405c376810231f932920b}} 
+\index{Operator@{Operator}!arity@{arity}}
+\index{arity@{arity}!Operator@{Operator}}
+\doxysubsubsection{\texorpdfstring{arity()}{arity()}}
+{\footnotesize\ttfamily arity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the number of operands. 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac767caa80bc405c376810231f932920b}{Binary\+Operator}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_unary_operator_ac767caa80bc405c376810231f932920b}{Unary\+Operator}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_a764a45612a0cfe2d52bf32740714804a}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_a764a45612a0cfe2d52bf32740714804a}} 
+\index{Operator@{Operator}!checkConstraint@{checkConstraint}}
+\index{checkConstraint@{checkConstraint}!Operator@{Operator}}
+\doxysubsubsection{\texorpdfstring{checkConstraint()}{checkConstraint()}}
+{\footnotesize\ttfamily check\+Constraint (\begin{DoxyParamCaption}\item[{}]{\$constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validates \$constraint argument. \mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}} 
+\index{Operator@{Operator}!constraintNeedsParentheses@{constraintNeedsParentheses}}
+\index{constraintNeedsParentheses@{constraintNeedsParentheses}!Operator@{Operator}}
+\doxysubsubsection{\texorpdfstring{constraintNeedsParentheses()}{constraintNeedsParentheses()}}
+{\footnotesize\ttfamily constraint\+Needs\+Parentheses (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{Constraint}}}]{\$constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true if the \$constraint needs to be wrapped with braces. 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}{Binary\+Operator}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_unary_operator_aacfc331f4dbbe6cf97e7d00a29a6578e}{Unary\+Operator}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_a27d661679d6ca841f034118ea52159d8}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_a27d661679d6ca841f034118ea52159d8}} 
+\index{Operator@{Operator}!operator@{operator}}
+\index{operator@{operator}!Operator@{Operator}}
+\doxysubsubsection{\texorpdfstring{operator()}{operator()}}
+{\footnotesize\ttfamily operator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the name of this operator. 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_and_a27d661679d6ca841f034118ea52159d8}{Logical\+And}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not_a27d661679d6ca841f034118ea52159d8}{Logical\+Not}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_or_a27d661679d6ca841f034118ea52159d8}{Logical\+Or}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_xor_a27d661679d6ca841f034118ea52159d8}{Logical\+Xor}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_ab3376c6136f8ad76eb724c58be6cdd61}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator_ab3376c6136f8ad76eb724c58be6cdd61}} 
+\index{Operator@{Operator}!precedence@{precedence}}
+\index{precedence@{precedence}!Operator@{Operator}}
+\doxysubsubsection{\texorpdfstring{precedence()}{precedence()}}
+{\footnotesize\ttfamily precedence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns this operator\textquotesingle{}s precedence.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/language.operators.precedence.php}{\texttt{ https\+://www.\+php.\+net/manual/en/language.\+operators.\+precedence.\+php}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_and_ab3376c6136f8ad76eb724c58be6cdd61}{Logical\+And}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not_ab3376c6136f8ad76eb724c58be6cdd61}{Logical\+Not}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_or_ab3376c6136f8ad76eb724c58be6cdd61}{Logical\+Or}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_xor_ab3376c6136f8ad76eb724c58be6cdd61}{Logical\+Xor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\+Operator/\mbox{\hyperlink{_operator_8php}{Operator.\+php}}\end{DoxyCompactItemize}

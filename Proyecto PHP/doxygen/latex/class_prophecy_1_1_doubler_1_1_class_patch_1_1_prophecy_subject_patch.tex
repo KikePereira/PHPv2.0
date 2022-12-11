@@ -1,0 +1,85 @@
+\hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch}{}\doxysection{Prophecy\+Subject\+Patch Class Reference}
+\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch}\index{ProphecySubjectPatch@{ProphecySubjectPatch}}
+Inheritance diagram for Prophecy\+Subject\+Patch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a99b2455ac194faf79aff042c55719ac2}{supports}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}} \$node)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a62fdb697928f35fc782d6889b8fe9b8b}{apply}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}} \$node)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a1e7a3c168dcd0901a0d2669c67575b55}{get\+Priority}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Add \mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}} functionality to the double. This is a core class patch for \mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a62fdb697928f35fc782d6889b8fe9b8b}\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a62fdb697928f35fc782d6889b8fe9b8b}} 
+\index{ProphecySubjectPatch@{ProphecySubjectPatch}!apply@{apply}}
+\index{apply@{apply}!ProphecySubjectPatch@{ProphecySubjectPatch}}
+\doxysubsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}}}]{\$node }\end{DoxyParamCaption})}
+
+Apply \mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}} functionality to class node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a62fdb697928f35fc782d6889b8fe9b8b}{Class\+Patch\+Interface}}.
+
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a1e7a3c168dcd0901a0d2669c67575b55}\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a1e7a3c168dcd0901a0d2669c67575b55}} 
+\index{ProphecySubjectPatch@{ProphecySubjectPatch}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!ProphecySubjectPatch@{ProphecySubjectPatch}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
+{\footnotesize\ttfamily get\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns patch priority, which determines when patch will be applied.
+
+\begin{DoxyReturn}{Returns}
+int Priority number (higher -\/ earlier) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a1e7a3c168dcd0901a0d2669c67575b55}{Class\+Patch\+Interface}}.
+
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a99b2455ac194faf79aff042c55719ac2}\label{class_prophecy_1_1_doubler_1_1_class_patch_1_1_prophecy_subject_patch_a99b2455ac194faf79aff042c55719ac2}} 
+\index{ProphecySubjectPatch@{ProphecySubjectPatch}!supports@{supports}}
+\index{supports@{supports}!ProphecySubjectPatch@{ProphecySubjectPatch}}
+\doxysubsubsection{\texorpdfstring{supports()}{supports()}}
+{\footnotesize\ttfamily supports (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_node_1_1_class_node}{Class\+Node}}}]{\$node }\end{DoxyParamCaption})}
+
+Always returns true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface_a99b2455ac194faf79aff042c55719ac2}{Class\+Patch\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\+Doubler/\+Class\+Patch/\mbox{\hyperlink{_prophecy_subject_patch_8php}{Prophecy\+Subject\+Patch.\+php}}\end{DoxyCompactItemize}

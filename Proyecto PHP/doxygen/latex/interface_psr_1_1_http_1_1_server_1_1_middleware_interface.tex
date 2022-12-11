@@ -1,0 +1,38 @@
+\hypertarget{interface_psr_1_1_http_1_1_server_1_1_middleware_interface}{}\doxysection{Middleware\+Interface Interface Reference}
+\label{interface_psr_1_1_http_1_1_server_1_1_middleware_interface}\index{MiddlewareInterface@{MiddlewareInterface}}
+Inheritance diagram for Middleware\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{interface_psr_1_1_http_1_1_server_1_1_middleware_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_middleware_interface_ab7b53bcad05abdc42206f7b2ac87a88a}{process}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}} \$request, \mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_request_handler_interface}{Request\+Handler\+Interface}} \$handler)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Participant in processing a server request and response.
+
+An HTTP middleware component participates in processing an HTTP message\+: by acting on the request, generating the response, or forwarding the request to a subsequent middleware and possibly acting on its response. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_psr_1_1_http_1_1_server_1_1_middleware_interface_ab7b53bcad05abdc42206f7b2ac87a88a}\label{interface_psr_1_1_http_1_1_server_1_1_middleware_interface_ab7b53bcad05abdc42206f7b2ac87a88a}} 
+\index{MiddlewareInterface@{MiddlewareInterface}!process@{process}}
+\index{process@{process}!MiddlewareInterface@{MiddlewareInterface}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_interface}{Server\+Request\+Interface}}}]{\$request,  }\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_server_1_1_request_handler_interface}{Request\+Handler\+Interface}}}]{\$handler }\end{DoxyParamCaption})}
+
+Process an incoming server request.
+
+Processes an incoming server request in order to produce a response. If unable to produce the response itself, it may delegate to the provided request handler to do so. 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_middleware_1_1_body_parsing_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{Body\+Parsing\+Middleware}}, \mbox{\hyperlink{class_slim_1_1_middleware_1_1_content_length_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{Content\+Length\+Middleware}}, \mbox{\hyperlink{class_slim_1_1_middleware_1_1_error_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{Error\+Middleware}}, \mbox{\hyperlink{class_slim_1_1_middleware_1_1_method_override_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{Method\+Override\+Middleware}}, \mbox{\hyperlink{class_slim_1_1_middleware_1_1_output_buffering_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{Output\+Buffering\+Middleware}}, \mbox{\hyperlink{class_slim_1_1_middleware_1_1_routing_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{Routing\+Middleware}}, and \mbox{\hyperlink{class_slim_1_1_views_1_1_twig_middleware_ab7b53bcad05abdc42206f7b2ac87a88a}{Twig\+Middleware}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/psr/http-\/server-\/middleware/src/\mbox{\hyperlink{_middleware_interface_8php}{Middleware\+Interface.\+php}}\end{DoxyCompactItemize}

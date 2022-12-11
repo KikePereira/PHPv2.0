@@ -1,0 +1,188 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p}{}\doxysection{PHP Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p}\index{PHP@{PHP}}
+Inheritance diagram for PHP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad25f3f8566642e0fd2288858a018ed8a}{standardise\+Token}} (\$token)
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_a7e85c32d2a7853d8b7a8ae404000a42c}{resolve\+Simple\+Token}} (\$token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_aa377970f7a1e8fab9ed698e572fb3222}{\$scope\+Openers}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad3ae70cc91d445980636874600462512}{\$end\+Scope\+Tokens}}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_af531c63799f56214ac75c963966e342f}{\$known\+Lengths}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_a2605b7284198c41c0551eca215bf65e1}{tokenize}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ae9feaa114cfdb387b421a0ebd8235d74}{process\+Additional}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad77fce70de9f094246862caa0d3d57ba}{\$tstring\+Contexts}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ae9feaa114cfdb387b421a0ebd8235d74}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ae9feaa114cfdb387b421a0ebd8235d74}} 
+\index{PHP@{PHP}!processAdditional@{processAdditional}}
+\index{processAdditional@{processAdditional}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{processAdditional()}{processAdditional()}}
+{\footnotesize\ttfamily process\+Additional (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Performs additional processing after main tokenizing.
+
+This additional processing checks for CASE statements that are using curly braces for scope openers and closers. It also turns some T\+\_\+\+FUNCTION tokens into T\+\_\+\+CLOSURE when they are not standard function definitions. It also detects short array syntax and converts those square brackets into new tokens. It also corrects some usage of the static and class keywords. It also assigns tokens to function return types.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_tokenizer_ae9feaa114cfdb387b421a0ebd8235d74}{Tokenizer}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_a7e85c32d2a7853d8b7a8ae404000a42c}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_a7e85c32d2a7853d8b7a8ae404000a42c}} 
+\index{PHP@{PHP}!resolveSimpleToken@{resolveSimpleToken}}
+\index{resolveSimpleToken@{resolveSimpleToken}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{resolveSimpleToken()}{resolveSimpleToken()}}
+{\footnotesize\ttfamily static resolve\+Simple\+Token (\begin{DoxyParamCaption}\item[{}]{\$token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts simple tokens into a format that conforms to complex tokens produced by token\+\_\+get\+\_\+all().
+
+Simple tokens are tokens that are not in array form when produced from token\+\_\+get\+\_\+all().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & The simple token to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The new token in array format. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad25f3f8566642e0fd2288858a018ed8a}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad25f3f8566642e0fd2288858a018ed8a}} 
+\index{PHP@{PHP}!standardiseToken@{standardiseToken}}
+\index{standardiseToken@{standardiseToken}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{standardiseToken()}{standardiseToken()}}
+{\footnotesize\ttfamily static standardise\+Token (\begin{DoxyParamCaption}\item[{}]{\$token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes a token produced from {\ttfamily token\+\_\+get\+\_\+all()} and produces a more uniform token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$token} & The token to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The new token. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_a2605b7284198c41c0551eca215bf65e1}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_a2605b7284198c41c0551eca215bf65e1}} 
+\index{PHP@{PHP}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily tokenize (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates an array of tokens when given some \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p}{PHP}} code.
+
+Starts by using token\+\_\+get\+\_\+all() but does a lot of extra processing to insert information about the context of the token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string to tokenize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_tokenizer_a2605b7284198c41c0551eca215bf65e1}{Tokenizer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s_a2605b7284198c41c0551eca215bf65e1}{CSS}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad3ae70cc91d445980636874600462512}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad3ae70cc91d445980636874600462512}} 
+\index{PHP@{PHP}!\$endScopeTokens@{\$endScopeTokens}}
+\index{\$endScopeTokens@{\$endScopeTokens}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{\$endScopeTokens}{$endScopeTokens}}
+{\footnotesize\ttfamily \$end\+Scope\+Tokens}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_util_a1ae5998f20ad5df78a4ecded32d46da7}{T\_CLOSE\_CURLY\_BRACKET}} => \mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_util_a1ae5998f20ad5df78a4ecded32d46da7}{T\_CLOSE\_CURLY\_BRACKET}},}
+\DoxyCodeLine{        T\_ENDIF               => T\_ENDIF,}
+\DoxyCodeLine{        T\_ENDFOR              => T\_ENDFOR,}
+\DoxyCodeLine{        T\_ENDFOREACH          => T\_ENDFOREACH,}
+\DoxyCodeLine{        T\_ENDWHILE            => T\_ENDWHILE,}
+\DoxyCodeLine{        T\_ENDSWITCH           => T\_ENDSWITCH,}
+\DoxyCodeLine{        T\_ENDDECLARE          => T\_ENDDECLARE,}
+\DoxyCodeLine{        T\_BREAK               => T\_BREAK,}
+\DoxyCodeLine{        T\_END\_HEREDOC         => T\_END\_HEREDOC,}
+\DoxyCodeLine{        \mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_util_a2c2082767535fc049bb98944b3dc17e4}{T\_END\_NOWDOC}}          => \mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_util_a2c2082767535fc049bb98944b3dc17e4}{T\_END\_NOWDOC}},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_af531c63799f56214ac75c963966e342f}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_af531c63799f56214ac75c963966e342f}} 
+\index{PHP@{PHP}!\$knownLengths@{\$knownLengths}}
+\index{\$knownLengths@{\$knownLengths}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{\$knownLengths}{$knownLengths}}
+{\footnotesize\ttfamily \$known\+Lengths}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_aa377970f7a1e8fab9ed698e572fb3222}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_aa377970f7a1e8fab9ed698e572fb3222}} 
+\index{PHP@{PHP}!\$scopeOpeners@{\$scopeOpeners}}
+\index{\$scopeOpeners@{\$scopeOpeners}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{\$scopeOpeners}{$scopeOpeners}}
+{\footnotesize\ttfamily \$scope\+Openers}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad77fce70de9f094246862caa0d3d57ba}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_ad77fce70de9f094246862caa0d3d57ba}} 
+\index{PHP@{PHP}!\$tstringContexts@{\$tstringContexts}}
+\index{\$tstringContexts@{\$tstringContexts}!PHP@{PHP}}
+\doxysubsubsection{\texorpdfstring{\$tstringContexts}{$tstringContexts}}
+{\footnotesize\ttfamily \$tstring\+Contexts\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        T\_OBJECT\_OPERATOR          => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_NULLSAFE\_OBJECT\_OPERATOR => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_FUNCTION                 => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_CLASS                    => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_INTERFACE                => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_TRAIT                    => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_ENUM                     => \textcolor{keyword}{true},}
+\DoxyCodeLine{        \mbox{\hyperlink{namespace_p_h_p___code_sniffer_1_1_util_ac5f93d08c62b695baa9a86dbb4f6a063}{T\_ENUM\_CASE}}                => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_EXTENDS                  => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_IMPLEMENTS               => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_ATTRIBUTE                => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_NEW                      => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_CONST                    => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_NS\_SEPARATOR             => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_USE                      => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_NAMESPACE                => \textcolor{keyword}{true},}
+\DoxyCodeLine{        T\_PAAMAYIM\_NEKUDOTAYIM     => \textcolor{keyword}{true},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Tokenizers/\mbox{\hyperlink{squizlabs_2php__codesniffer_2src_2_tokenizers_2_p_h_p_8php}{PHP.\+php}}\end{DoxyCompactItemize}

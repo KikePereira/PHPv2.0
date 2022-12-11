@@ -1,0 +1,1215 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 4312.714844
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.115936 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 251 def
+/cols 4 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(AbstractSniffUnitTest) cw
+(TestCase) cw
+(Assert) cw
+(Reorderable) cw
+(SelfDescribing) cw
+(Test) cw
+(Countable) cw
+(ArrayIndentUnitTest) cw
+(DisallowLongArraySyntaxUnitTest) cw
+(DisallowShortArraySyntaxUnitTest) cw
+(DuplicateClassNameUnitTest) cw
+(OpeningBraceSameLineUnitTest) cw
+(AssignmentInConditionUnitTest) cw
+(EmptyPHPStatementUnitTest) cw
+(EmptyStatementUnitTest) cw
+(ForLoopShouldBeWhileLoopUnitTest) cw
+(ForLoopWithTestFunctionCallUnitTest) cw
+(JumbledIncrementerUnitTest) cw
+(UnconditionalIfStatementUnitTest) cw
+(UnnecessaryFinalModifierUnitTest) cw
+(UnusedFunctionParameterUnitTest) cw
+(UselessOverridingMethodUnitTest) cw
+(DocCommentUnitTest) cw
+(FixmeUnitTest) cw
+(TodoUnitTest) cw
+(DisallowYodaConditionsUnitTest) cw
+(InlineControlStructureUnitTest) cw
+(CSSLintUnitTest) cw
+(ClosureLinterUnitTest) cw
+(ESLintUnitTest) cw
+(JSHintUnitTest) cw
+(ByteOrderMarkUnitTest) cw
+(EndFileNewlineUnitTest) cw
+(EndFileNoNewlineUnitTest) cw
+(ExecutableFileUnitTest) cw
+(InlineHTMLUnitTest) cw
+(LineEndingsUnitTest) cw
+(LineLengthUnitTest) cw
+(LowercasedFilenameUnitTest) cw
+(OneClassPerFileUnitTest) cw
+(OneInterfacePerFileUnitTest) cw
+(OneObjectStructurePerFileUnitTest) cw
+(OneTraitPerFileUnitTest) cw
+(DisallowMultipleStatementsUnitTest) cw
+(MultipleStatementAlignmentUnitTest) cw
+(NoSpaceAfterCastUnitTest) cw
+(SpaceAfterCastUnitTest) cw
+(SpaceAfterNotUnitTest) cw
+(SpaceBeforeCastUnitTest) cw
+(CallTimePassByReferenceUnitTest) cw
+(FunctionCallArgumentSpacingUnitTest) cw
+(OpeningFunctionBraceBsdAllmanUnitTest) cw
+(OpeningFunctionBraceKernighanRitchieUnitTest) cw
+(CyclomaticComplexityUnitTest) cw
+(NestingLevelUnitTest) cw
+(AbstractClassNamePrefixUnitTest) cw
+(CamelCapsFunctionNameUnitTest) cw
+(ConstructorNameUnitTest) cw
+(InterfaceNameSuffixUnitTest) cw
+(TraitNameSuffixUnitTest) cw
+(UpperCaseConstantNameUnitTest) cw
+(BacktickOperatorUnitTest) cw
+(CharacterBeforePHPOpeningTagUnitTest) cw
+(ClosingPHPTagUnitTest) cw
+(DeprecatedFunctionsUnitTest) cw
+(DisallowAlternativePHPTagsUnitTest) cw
+(DisallowRequestSuperglobalUnitTest) cw
+(DisallowShortOpenTagUnitTest) cw
+(DiscourageGotoUnitTest) cw
+(ForbiddenFunctionsUnitTest) cw
+(LowerCaseConstantUnitTest) cw
+(LowerCaseKeywordUnitTest) cw
+(LowerCaseTypeUnitTest) cw
+(NoSilencedErrorsUnitTest) cw
+(RequireStrictTypesUnitTest) cw
+(SAPIUsageUnitTest) cw
+(SyntaxUnitTest) cw
+(UpperCaseConstantUnitTest) cw
+(UnnecessaryStringConcatUnitTest) cw
+(GitMergeConflictUnitTest) cw
+(SubversionPropertiesUnitTest) cw
+(ArbitraryParenthesesSpacingUnitTest) cw
+(DisallowSpaceIndentUnitTest) cw
+(DisallowTabIndentUnitTest) cw
+(IncrementDecrementSpacingUnitTest) cw
+(LanguageConstructSpacingUnitTest) cw
+(ScopeIndentUnitTest) cw
+(SpreadOperatorSpacingAfterUnitTest) cw
+(BrowserSpecificStylesUnitTest) cw
+(DisallowSelfActionsUnitTest) cw
+(IncludeSystemUnitTest) cw
+(UnusedSystemUnitTest) cw
+(FunctionCommentUnitTest) cw
+(DebugCodeUnitTest) cw
+(FirebugConsoleUnitTest) cw
+(AssignThisUnitTest) cw
+(CreateWidgetTypeCallbackUnitTest) cw
+(DisallowNewWidgetUnitTest) cw
+(AjaxNullComparisonUnitTest) cw
+(EvalObjectFactoryUnitTest) cw
+(GetRequestDataUnitTest) cw
+(ReturnFunctionValueUnitTest) cw
+(JoinStringsUnitTest) cw
+(ClassDeclarationUnitTest) cw
+(ClassCommentUnitTest) cw
+(FileCommentUnitTest) cw
+(FunctionCommentUnitTest) cw
+(InlineCommentUnitTest) cw
+(ControlSignatureUnitTest) cw
+(MultiLineConditionUnitTest) cw
+(IncludingFileUnitTest) cw
+(MultiLineAssignmentUnitTest) cw
+(FunctionCallSignatureUnitTest) cw
+(FunctionDeclarationUnitTest) cw
+(ValidDefaultValueUnitTest) cw
+(ValidClassNameUnitTest) cw
+(ValidFunctionNameUnitTest) cw
+(ValidVariableNameUnitTest) cw
+(ObjectOperatorIndentUnitTest) cw
+(ScopeClosingBraceUnitTest) cw
+(ScopeIndentUnitTest) cw
+(AnonClassDeclarationUnitTest) cw
+(ClassInstantiationUnitTest) cw
+(ClosingBraceUnitTest) cw
+(OpeningBraceSpaceUnitTest) cw
+(BooleanOperatorPlacementUnitTest) cw
+(ControlStructureSpacingUnitTest) cw
+(DeclareStatementUnitTest) cw
+(FileHeaderUnitTest) cw
+(ImportStatementUnitTest) cw
+(OpenTagUnitTest) cw
+(NullableTypeDeclarationUnitTest) cw
+(ReturnTypeDeclarationUnitTest) cw
+(ShortFormTypeKeywordsUnitTest) cw
+(CompoundNamespaceDepthUnitTest) cw
+(OperatorSpacingUnitTest) cw
+(ConstantVisibilityUnitTest) cw
+(UseDeclarationUnitTest) cw
+(ClassDeclarationUnitTest) cw
+(SideEffectsUnitTest) cw
+(CamelCapsMethodNameUnitTest) cw
+(ClassDeclarationUnitTest) cw
+(PropertyDeclarationUnitTest) cw
+(ControlStructureSpacingUnitTest) cw
+(ElseIfDeclarationUnitTest) cw
+(SwitchDeclarationUnitTest) cw
+(ClosingTagUnitTest) cw
+(EndFileNewlineUnitTest) cw
+(FunctionCallSignatureUnitTest) cw
+(FunctionClosingBraceUnitTest) cw
+(MethodDeclarationUnitTest) cw
+(NamespaceDeclarationUnitTest) cw
+(UseDeclarationUnitTest) cw
+(ArrayBracketSpacingUnitTest) cw
+(ArrayDeclarationUnitTest) cw
+(ClassDefinitionClosingBraceSpaceUnitTest) cw
+(ClassDefinitionNameSpacingUnitTest) cw
+(ClassDefinitionOpeningBraceSpaceUnitTest) cw
+(ColonSpacingUnitTest) cw
+(ColourDefinitionUnitTest) cw
+(DisallowMultipleStyleDefinitionsUnitTest) cw
+(DuplicateClassDefinitionUnitTest) cw
+(DuplicateStyleDefinitionUnitTest) cw
+(EmptyClassDefinitionUnitTest) cw
+(EmptyStyleDefinitionUnitTest) cw
+(ForbiddenStylesUnitTest) cw
+(IndentationUnitTest) cw
+(LowercaseStyleDefinitionUnitTest) cw
+(MissingColonUnitTest) cw
+(NamedColoursUnitTest) cw
+(OpacityUnitTest) cw
+(SemicolonSpacingUnitTest) cw
+(ShorthandSizeUnitTest) cw
+(ClassDeclarationUnitTest) cw
+(ClassFileNameUnitTest) cw
+(DuplicatePropertyUnitTest) cw
+(LowercaseClassKeywordsUnitTest) cw
+(SelfMemberReferenceUnitTest) cw
+(ValidClassNameUnitTest) cw
+(BlockCommentUnitTest) cw
+(ClassCommentUnitTest) cw
+(ClosingDeclarationCommentUnitTest) cw
+(DocCommentAlignmentUnitTest) cw
+(EmptyCatchCommentUnitTest) cw
+(FileCommentUnitTest) cw
+(FunctionCommentThrowTagUnitTest) cw
+(FunctionCommentUnitTest) cw
+(InlineCommentUnitTest) cw
+(LongConditionClosingCommentUnitTest) cw
+(PostStatementCommentUnitTest) cw
+(VariableCommentUnitTest) cw
+(ControlSignatureUnitTest) cw
+(ElseIfDeclarationUnitTest) cw
+(ForEachLoopDeclarationUnitTest) cw
+(ForLoopDeclarationUnitTest) cw
+(InlineIfDeclarationUnitTest) cw
+(LowercaseDeclarationUnitTest) cw
+(SwitchDeclarationUnitTest) cw
+(JSLintUnitTest) cw
+(JavaScriptLintUnitTest) cw
+(FileExtensionUnitTest) cw
+(OperatorBracketUnitTest) cw
+(FunctionDeclarationArgumentSpacingUnitTest) cw
+(FunctionDeclarationUnitTest) cw
+(FunctionDuplicateArgumentUnitTest) cw
+(GlobalFunctionUnitTest) cw
+(LowercaseFunctionKeywordsUnitTest) cw
+(MultiLineFunctionDeclarationUnitTest) cw
+(ValidFunctionNameUnitTest) cw
+(ValidVariableNameUnitTest) cw
+(DisallowObjectStringIndexUnitTest) cw
+(ObjectInstantiationUnitTest) cw
+(ObjectMemberCommaUnitTest) cw
+(ComparisonOperatorUsageUnitTest) cw
+(IncrementDecrementUsageUnitTest) cw
+(ValidLogicalOperatorsUnitTest) cw
+(CommentedOutCodeUnitTest) cw
+(DisallowBooleanStatementUnitTest) cw
+(DisallowComparisonAssignmentUnitTest) cw
+(DisallowInlineIfUnitTest) cw
+(DisallowMultipleAssignmentsUnitTest) cw
+(DisallowSizeFunctionsInLoopsUnitTest) cw
+(DiscouragedFunctionsUnitTest) cw
+(EmbeddedPhpUnitTest) cw
+(EvalUnitTest) cw
+(GlobalKeywordUnitTest) cw
+(HeredocUnitTest) cw
+(InnerFunctionsUnitTest) cw
+(LowercasePHPFunctionsUnitTest) cw
+(NonExecutableCodeUnitTest) cw
+(MemberVarScopeUnitTest) cw
+(MethodScopeUnitTest) cw
+(StaticThisUsageUnitTest) cw
+(ConcatenationSpacingUnitTest) cw
+(DoubleQuoteUsageUnitTest) cw
+(EchoedStringsUnitTest) cw
+(CastSpacingUnitTest) cw
+(ControlStructureSpacingUnitTest) cw
+(FunctionClosingBraceSpaceUnitTest) cw
+(FunctionOpeningBraceSpaceUnitTest) cw
+(FunctionSpacingUnitTest) cw
+(LanguageConstructSpacingUnitTest) cw
+(LogicalOperatorSpacingUnitTest) cw
+(MemberVarSpacingUnitTest) cw
+(ObjectOperatorSpacingUnitTest) cw
+(OperatorSpacingUnitTest) cw
+(PropertyLabelSpacingUnitTest) cw
+(ScopeClosingBraceUnitTest) cw
+(ScopeKeywordSpacingUnitTest) cw
+(SemicolonSpacingUnitTest) cw
+(SuperfluousWhitespaceUnitTest) cw
+(CodeAnalyzerUnitTest) cw
+(ClosingTagUnitTest) cw
+(ValidVariableNameUnitTest) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (AbstractSniffUnitTest) 1.500000 247.000000 box
+ (TestCase) 1.500000 248.000000 box
+ (Assert) 0.000000 249.000000 box
+ (Reorderable) 1.000000 249.000000 box
+ (SelfDescribing) 2.000000 249.000000 box
+ (Test) 3.000000 249.000000 box
+ (Countable) 3.000000 250.000000 box
+ (ArrayIndentUnitTest) 2.500000 246.000000 box
+ (DisallowLongArraySyntaxUnitTest) 2.500000 245.000000 box
+ (DisallowShortArraySyntaxUnitTest) 2.500000 244.000000 box
+ (DuplicateClassNameUnitTest) 2.500000 243.000000 box
+ (OpeningBraceSameLineUnitTest) 2.500000 242.000000 box
+ (AssignmentInConditionUnitTest) 2.500000 241.000000 box
+ (EmptyPHPStatementUnitTest) 2.500000 240.000000 box
+ (EmptyStatementUnitTest) 2.500000 239.000000 box
+ (ForLoopShouldBeWhileLoopUnitTest) 2.500000 238.000000 box
+ (ForLoopWithTestFunctionCallUnitTest) 2.500000 237.000000 box
+ (JumbledIncrementerUnitTest) 2.500000 236.000000 box
+ (UnconditionalIfStatementUnitTest) 2.500000 235.000000 box
+ (UnnecessaryFinalModifierUnitTest) 2.500000 234.000000 box
+ (UnusedFunctionParameterUnitTest) 2.500000 233.000000 box
+ (UselessOverridingMethodUnitTest) 2.500000 232.000000 box
+ (DocCommentUnitTest) 2.500000 231.000000 box
+ (FixmeUnitTest) 2.500000 230.000000 box
+ (TodoUnitTest) 2.500000 229.000000 box
+ (DisallowYodaConditionsUnitTest) 2.500000 228.000000 box
+ (InlineControlStructureUnitTest) 2.500000 227.000000 box
+ (CSSLintUnitTest) 2.500000 226.000000 box
+ (ClosureLinterUnitTest) 2.500000 225.000000 box
+ (ESLintUnitTest) 2.500000 224.000000 box
+ (JSHintUnitTest) 2.500000 223.000000 box
+ (ByteOrderMarkUnitTest) 2.500000 222.000000 box
+ (EndFileNewlineUnitTest) 2.500000 221.000000 box
+ (EndFileNoNewlineUnitTest) 2.500000 220.000000 box
+ (ExecutableFileUnitTest) 2.500000 219.000000 box
+ (InlineHTMLUnitTest) 2.500000 218.000000 box
+ (LineEndingsUnitTest) 2.500000 217.000000 box
+ (LineLengthUnitTest) 2.500000 216.000000 box
+ (LowercasedFilenameUnitTest) 2.500000 215.000000 box
+ (OneClassPerFileUnitTest) 2.500000 214.000000 box
+ (OneInterfacePerFileUnitTest) 2.500000 213.000000 box
+ (OneObjectStructurePerFileUnitTest) 2.500000 212.000000 box
+ (OneTraitPerFileUnitTest) 2.500000 211.000000 box
+ (DisallowMultipleStatementsUnitTest) 2.500000 210.000000 box
+ (MultipleStatementAlignmentUnitTest) 2.500000 209.000000 box
+ (NoSpaceAfterCastUnitTest) 2.500000 208.000000 box
+ (SpaceAfterCastUnitTest) 2.500000 207.000000 box
+ (SpaceAfterNotUnitTest) 2.500000 206.000000 box
+ (SpaceBeforeCastUnitTest) 2.500000 205.000000 box
+ (CallTimePassByReferenceUnitTest) 2.500000 204.000000 box
+ (FunctionCallArgumentSpacingUnitTest) 2.500000 203.000000 box
+ (OpeningFunctionBraceBsdAllmanUnitTest) 2.500000 202.000000 box
+ (OpeningFunctionBraceKernighanRitchieUnitTest) 2.500000 201.000000 box
+ (CyclomaticComplexityUnitTest) 2.500000 200.000000 box
+ (NestingLevelUnitTest) 2.500000 199.000000 box
+ (AbstractClassNamePrefixUnitTest) 2.500000 198.000000 box
+ (CamelCapsFunctionNameUnitTest) 2.500000 197.000000 box
+ (ConstructorNameUnitTest) 2.500000 196.000000 box
+ (InterfaceNameSuffixUnitTest) 2.500000 195.000000 box
+ (TraitNameSuffixUnitTest) 2.500000 194.000000 box
+ (UpperCaseConstantNameUnitTest) 2.500000 193.000000 box
+ (BacktickOperatorUnitTest) 2.500000 192.000000 box
+ (CharacterBeforePHPOpeningTagUnitTest) 2.500000 191.000000 box
+ (ClosingPHPTagUnitTest) 2.500000 190.000000 box
+ (DeprecatedFunctionsUnitTest) 2.500000 189.000000 box
+ (DisallowAlternativePHPTagsUnitTest) 2.500000 188.000000 box
+ (DisallowRequestSuperglobalUnitTest) 2.500000 187.000000 box
+ (DisallowShortOpenTagUnitTest) 2.500000 186.000000 box
+ (DiscourageGotoUnitTest) 2.500000 185.000000 box
+ (ForbiddenFunctionsUnitTest) 2.500000 184.000000 box
+ (LowerCaseConstantUnitTest) 2.500000 183.000000 box
+ (LowerCaseKeywordUnitTest) 2.500000 182.000000 box
+ (LowerCaseTypeUnitTest) 2.500000 181.000000 box
+ (NoSilencedErrorsUnitTest) 2.500000 180.000000 box
+ (RequireStrictTypesUnitTest) 2.500000 179.000000 box
+ (SAPIUsageUnitTest) 2.500000 178.000000 box
+ (SyntaxUnitTest) 2.500000 177.000000 box
+ (UpperCaseConstantUnitTest) 2.500000 176.000000 box
+ (UnnecessaryStringConcatUnitTest) 2.500000 175.000000 box
+ (GitMergeConflictUnitTest) 2.500000 174.000000 box
+ (SubversionPropertiesUnitTest) 2.500000 173.000000 box
+ (ArbitraryParenthesesSpacingUnitTest) 2.500000 172.000000 box
+ (DisallowSpaceIndentUnitTest) 2.500000 171.000000 box
+ (DisallowTabIndentUnitTest) 2.500000 170.000000 box
+ (IncrementDecrementSpacingUnitTest) 2.500000 169.000000 box
+ (LanguageConstructSpacingUnitTest) 2.500000 168.000000 box
+ (ScopeIndentUnitTest) 2.500000 167.000000 box
+ (SpreadOperatorSpacingAfterUnitTest) 2.500000 166.000000 box
+ (BrowserSpecificStylesUnitTest) 2.500000 165.000000 box
+ (DisallowSelfActionsUnitTest) 2.500000 164.000000 box
+ (IncludeSystemUnitTest) 2.500000 163.000000 box
+ (UnusedSystemUnitTest) 2.500000 162.000000 box
+ (FunctionCommentUnitTest) 2.500000 161.000000 box
+ (DebugCodeUnitTest) 2.500000 160.000000 box
+ (FirebugConsoleUnitTest) 2.500000 159.000000 box
+ (AssignThisUnitTest) 2.500000 158.000000 box
+ (CreateWidgetTypeCallbackUnitTest) 2.500000 157.000000 box
+ (DisallowNewWidgetUnitTest) 2.500000 156.000000 box
+ (AjaxNullComparisonUnitTest) 2.500000 155.000000 box
+ (EvalObjectFactoryUnitTest) 2.500000 154.000000 box
+ (GetRequestDataUnitTest) 2.500000 153.000000 box
+ (ReturnFunctionValueUnitTest) 2.500000 152.000000 box
+ (JoinStringsUnitTest) 2.500000 151.000000 box
+ (ClassDeclarationUnitTest) 2.500000 150.000000 box
+ (ClassCommentUnitTest) 2.500000 149.000000 box
+ (FileCommentUnitTest) 2.500000 148.000000 box
+ (FunctionCommentUnitTest) 2.500000 147.000000 box
+ (InlineCommentUnitTest) 2.500000 146.000000 box
+ (ControlSignatureUnitTest) 2.500000 145.000000 box
+ (MultiLineConditionUnitTest) 2.500000 144.000000 box
+ (IncludingFileUnitTest) 2.500000 143.000000 box
+ (MultiLineAssignmentUnitTest) 2.500000 142.000000 box
+ (FunctionCallSignatureUnitTest) 2.500000 141.000000 box
+ (FunctionDeclarationUnitTest) 2.500000 140.000000 box
+ (ValidDefaultValueUnitTest) 2.500000 139.000000 box
+ (ValidClassNameUnitTest) 2.500000 138.000000 box
+ (ValidFunctionNameUnitTest) 2.500000 137.000000 box
+ (ValidVariableNameUnitTest) 2.500000 136.000000 box
+ (ObjectOperatorIndentUnitTest) 2.500000 135.000000 box
+ (ScopeClosingBraceUnitTest) 2.500000 134.000000 box
+ (ScopeIndentUnitTest) 2.500000 133.000000 box
+ (AnonClassDeclarationUnitTest) 2.500000 132.000000 box
+ (ClassInstantiationUnitTest) 2.500000 131.000000 box
+ (ClosingBraceUnitTest) 2.500000 130.000000 box
+ (OpeningBraceSpaceUnitTest) 2.500000 129.000000 box
+ (BooleanOperatorPlacementUnitTest) 2.500000 128.000000 box
+ (ControlStructureSpacingUnitTest) 2.500000 127.000000 box
+ (DeclareStatementUnitTest) 2.500000 126.000000 box
+ (FileHeaderUnitTest) 2.500000 125.000000 box
+ (ImportStatementUnitTest) 2.500000 124.000000 box
+ (OpenTagUnitTest) 2.500000 123.000000 box
+ (NullableTypeDeclarationUnitTest) 2.500000 122.000000 box
+ (ReturnTypeDeclarationUnitTest) 2.500000 121.000000 box
+ (ShortFormTypeKeywordsUnitTest) 2.500000 120.000000 box
+ (CompoundNamespaceDepthUnitTest) 2.500000 119.000000 box
+ (OperatorSpacingUnitTest) 2.500000 118.000000 box
+ (ConstantVisibilityUnitTest) 2.500000 117.000000 box
+ (UseDeclarationUnitTest) 2.500000 116.000000 box
+ (ClassDeclarationUnitTest) 2.500000 115.000000 box
+ (SideEffectsUnitTest) 2.500000 114.000000 box
+ (CamelCapsMethodNameUnitTest) 2.500000 113.000000 box
+ (ClassDeclarationUnitTest) 2.500000 112.000000 box
+ (PropertyDeclarationUnitTest) 2.500000 111.000000 box
+ (ControlStructureSpacingUnitTest) 2.500000 110.000000 box
+ (ElseIfDeclarationUnitTest) 2.500000 109.000000 box
+ (SwitchDeclarationUnitTest) 2.500000 108.000000 box
+ (ClosingTagUnitTest) 2.500000 107.000000 box
+ (EndFileNewlineUnitTest) 2.500000 106.000000 box
+ (FunctionCallSignatureUnitTest) 2.500000 105.000000 box
+ (FunctionClosingBraceUnitTest) 2.500000 104.000000 box
+ (MethodDeclarationUnitTest) 2.500000 103.000000 box
+ (NamespaceDeclarationUnitTest) 2.500000 102.000000 box
+ (UseDeclarationUnitTest) 2.500000 101.000000 box
+ (ArrayBracketSpacingUnitTest) 2.500000 100.000000 box
+ (ArrayDeclarationUnitTest) 2.500000 99.000000 box
+ (ClassDefinitionClosingBraceSpaceUnitTest) 2.500000 98.000000 box
+ (ClassDefinitionNameSpacingUnitTest) 2.500000 97.000000 box
+ (ClassDefinitionOpeningBraceSpaceUnitTest) 2.500000 96.000000 box
+ (ColonSpacingUnitTest) 2.500000 95.000000 box
+ (ColourDefinitionUnitTest) 2.500000 94.000000 box
+ (DisallowMultipleStyleDefinitionsUnitTest) 2.500000 93.000000 box
+ (DuplicateClassDefinitionUnitTest) 2.500000 92.000000 box
+ (DuplicateStyleDefinitionUnitTest) 2.500000 91.000000 box
+ (EmptyClassDefinitionUnitTest) 2.500000 90.000000 box
+ (EmptyStyleDefinitionUnitTest) 2.500000 89.000000 box
+ (ForbiddenStylesUnitTest) 2.500000 88.000000 box
+ (IndentationUnitTest) 2.500000 87.000000 box
+ (LowercaseStyleDefinitionUnitTest) 2.500000 86.000000 box
+ (MissingColonUnitTest) 2.500000 85.000000 box
+ (NamedColoursUnitTest) 2.500000 84.000000 box
+ (OpacityUnitTest) 2.500000 83.000000 box
+ (SemicolonSpacingUnitTest) 2.500000 82.000000 box
+ (ShorthandSizeUnitTest) 2.500000 81.000000 box
+ (ClassDeclarationUnitTest) 2.500000 80.000000 box
+ (ClassFileNameUnitTest) 2.500000 79.000000 box
+ (DuplicatePropertyUnitTest) 2.500000 78.000000 box
+ (LowercaseClassKeywordsUnitTest) 2.500000 77.000000 box
+ (SelfMemberReferenceUnitTest) 2.500000 76.000000 box
+ (ValidClassNameUnitTest) 2.500000 75.000000 box
+ (BlockCommentUnitTest) 2.500000 74.000000 box
+ (ClassCommentUnitTest) 2.500000 73.000000 box
+ (ClosingDeclarationCommentUnitTest) 2.500000 72.000000 box
+ (DocCommentAlignmentUnitTest) 2.500000 71.000000 box
+ (EmptyCatchCommentUnitTest) 2.500000 70.000000 box
+ (FileCommentUnitTest) 2.500000 69.000000 box
+ (FunctionCommentThrowTagUnitTest) 2.500000 68.000000 box
+ (FunctionCommentUnitTest) 2.500000 67.000000 box
+ (InlineCommentUnitTest) 2.500000 66.000000 box
+ (LongConditionClosingCommentUnitTest) 2.500000 65.000000 box
+ (PostStatementCommentUnitTest) 2.500000 64.000000 box
+ (VariableCommentUnitTest) 2.500000 63.000000 box
+ (ControlSignatureUnitTest) 2.500000 62.000000 box
+ (ElseIfDeclarationUnitTest) 2.500000 61.000000 box
+ (ForEachLoopDeclarationUnitTest) 2.500000 60.000000 box
+ (ForLoopDeclarationUnitTest) 2.500000 59.000000 box
+ (InlineIfDeclarationUnitTest) 2.500000 58.000000 box
+ (LowercaseDeclarationUnitTest) 2.500000 57.000000 box
+ (SwitchDeclarationUnitTest) 2.500000 56.000000 box
+ (JSLintUnitTest) 2.500000 55.000000 box
+ (JavaScriptLintUnitTest) 2.500000 54.000000 box
+ (FileExtensionUnitTest) 2.500000 53.000000 box
+ (OperatorBracketUnitTest) 2.500000 52.000000 box
+ (FunctionDeclarationArgumentSpacingUnitTest) 2.500000 51.000000 box
+ (FunctionDeclarationUnitTest) 2.500000 50.000000 box
+ (FunctionDuplicateArgumentUnitTest) 2.500000 49.000000 box
+ (GlobalFunctionUnitTest) 2.500000 48.000000 box
+ (LowercaseFunctionKeywordsUnitTest) 2.500000 47.000000 box
+ (MultiLineFunctionDeclarationUnitTest) 2.500000 46.000000 box
+ (ValidFunctionNameUnitTest) 2.500000 45.000000 box
+ (ValidVariableNameUnitTest) 2.500000 44.000000 box
+ (DisallowObjectStringIndexUnitTest) 2.500000 43.000000 box
+ (ObjectInstantiationUnitTest) 2.500000 42.000000 box
+ (ObjectMemberCommaUnitTest) 2.500000 41.000000 box
+ (ComparisonOperatorUsageUnitTest) 2.500000 40.000000 box
+ (IncrementDecrementUsageUnitTest) 2.500000 39.000000 box
+ (ValidLogicalOperatorsUnitTest) 2.500000 38.000000 box
+ (CommentedOutCodeUnitTest) 2.500000 37.000000 box
+ (DisallowBooleanStatementUnitTest) 2.500000 36.000000 box
+ (DisallowComparisonAssignmentUnitTest) 2.500000 35.000000 box
+ (DisallowInlineIfUnitTest) 2.500000 34.000000 box
+ (DisallowMultipleAssignmentsUnitTest) 2.500000 33.000000 box
+ (DisallowSizeFunctionsInLoopsUnitTest) 2.500000 32.000000 box
+ (DiscouragedFunctionsUnitTest) 2.500000 31.000000 box
+ (EmbeddedPhpUnitTest) 2.500000 30.000000 box
+ (EvalUnitTest) 2.500000 29.000000 box
+ (GlobalKeywordUnitTest) 2.500000 28.000000 box
+ (HeredocUnitTest) 2.500000 27.000000 box
+ (InnerFunctionsUnitTest) 2.500000 26.000000 box
+ (LowercasePHPFunctionsUnitTest) 2.500000 25.000000 box
+ (NonExecutableCodeUnitTest) 2.500000 24.000000 box
+ (MemberVarScopeUnitTest) 2.500000 23.000000 box
+ (MethodScopeUnitTest) 2.500000 22.000000 box
+ (StaticThisUsageUnitTest) 2.500000 21.000000 box
+ (ConcatenationSpacingUnitTest) 2.500000 20.000000 box
+ (DoubleQuoteUsageUnitTest) 2.500000 19.000000 box
+ (EchoedStringsUnitTest) 2.500000 18.000000 box
+ (CastSpacingUnitTest) 2.500000 17.000000 box
+ (ControlStructureSpacingUnitTest) 2.500000 16.000000 box
+ (FunctionClosingBraceSpaceUnitTest) 2.500000 15.000000 box
+ (FunctionOpeningBraceSpaceUnitTest) 2.500000 14.000000 box
+ (FunctionSpacingUnitTest) 2.500000 13.000000 box
+ (LanguageConstructSpacingUnitTest) 2.500000 12.000000 box
+ (LogicalOperatorSpacingUnitTest) 2.500000 11.000000 box
+ (MemberVarSpacingUnitTest) 2.500000 10.000000 box
+ (ObjectOperatorSpacingUnitTest) 2.500000 9.000000 box
+ (OperatorSpacingUnitTest) 2.500000 8.000000 box
+ (PropertyLabelSpacingUnitTest) 2.500000 7.000000 box
+ (ScopeClosingBraceUnitTest) 2.500000 6.000000 box
+ (ScopeKeywordSpacingUnitTest) 2.500000 5.000000 box
+ (SemicolonSpacingUnitTest) 2.500000 4.000000 box
+ (SuperfluousWhitespaceUnitTest) 2.500000 3.000000 box
+ (CodeAnalyzerUnitTest) 2.500000 2.000000 box
+ (ClosingTagUnitTest) 2.500000 1.000000 box
+ (ValidVariableNameUnitTest) 2.500000 0.000000 box
+
+% ----- relations -----
+
+solid
+0 1.500000 247.000000 out
+solid
+1 1.500000 248.000000 in
+solid
+0 1.500000 248.000000 out
+solid
+0.000000 3.000000 249.000000 conn
+solid
+1 0.000000 249.000000 in
+solid
+1 1.000000 249.000000 in
+solid
+1 2.000000 249.000000 in
+solid
+1 3.000000 249.000000 in
+solid
+0 3.000000 249.000000 out
+solid
+1 3.000000 250.000000 in
+solid
+1 1.500000 246.250000 out
+solid
+0 1.500000 246.500000 hedge
+solid
+0 1.500000 245.500000 hedge
+solid
+0 1.500000 244.500000 hedge
+solid
+0 1.500000 243.500000 hedge
+solid
+0 1.500000 242.500000 hedge
+solid
+0 1.500000 241.500000 hedge
+solid
+0 1.500000 240.500000 hedge
+solid
+0 1.500000 239.500000 hedge
+solid
+0 1.500000 238.500000 hedge
+solid
+0 1.500000 237.500000 hedge
+solid
+0 1.500000 236.500000 hedge
+solid
+0 1.500000 235.500000 hedge
+solid
+0 1.500000 234.500000 hedge
+solid
+0 1.500000 233.500000 hedge
+solid
+0 1.500000 232.500000 hedge
+solid
+0 1.500000 231.500000 hedge
+solid
+0 1.500000 230.500000 hedge
+solid
+0 1.500000 229.500000 hedge
+solid
+0 1.500000 228.500000 hedge
+solid
+0 1.500000 227.500000 hedge
+solid
+0 1.500000 226.500000 hedge
+solid
+0 1.500000 225.500000 hedge
+solid
+0 1.500000 224.500000 hedge
+solid
+0 1.500000 223.500000 hedge
+solid
+0 1.500000 222.500000 hedge
+solid
+0 1.500000 221.500000 hedge
+solid
+0 1.500000 220.500000 hedge
+solid
+0 1.500000 219.500000 hedge
+solid
+0 1.500000 218.500000 hedge
+solid
+0 1.500000 217.500000 hedge
+solid
+0 1.500000 216.500000 hedge
+solid
+0 1.500000 215.500000 hedge
+solid
+0 1.500000 214.500000 hedge
+solid
+0 1.500000 213.500000 hedge
+solid
+0 1.500000 212.500000 hedge
+solid
+0 1.500000 211.500000 hedge
+solid
+0 1.500000 210.500000 hedge
+solid
+0 1.500000 209.500000 hedge
+solid
+0 1.500000 208.500000 hedge
+solid
+0 1.500000 207.500000 hedge
+solid
+0 1.500000 206.500000 hedge
+solid
+0 1.500000 205.500000 hedge
+solid
+0 1.500000 204.500000 hedge
+solid
+0 1.500000 203.500000 hedge
+solid
+0 1.500000 202.500000 hedge
+solid
+0 1.500000 201.500000 hedge
+solid
+0 1.500000 200.500000 hedge
+solid
+0 1.500000 199.500000 hedge
+solid
+0 1.500000 198.500000 hedge
+solid
+0 1.500000 197.500000 hedge
+solid
+0 1.500000 196.500000 hedge
+solid
+0 1.500000 195.500000 hedge
+solid
+0 1.500000 194.500000 hedge
+solid
+0 1.500000 193.500000 hedge
+solid
+0 1.500000 192.500000 hedge
+solid
+0 1.500000 191.500000 hedge
+solid
+0 1.500000 190.500000 hedge
+solid
+0 1.500000 189.500000 hedge
+solid
+0 1.500000 188.500000 hedge
+solid
+0 1.500000 187.500000 hedge
+solid
+0 1.500000 186.500000 hedge
+solid
+0 1.500000 185.500000 hedge
+solid
+0 1.500000 184.500000 hedge
+solid
+0 1.500000 183.500000 hedge
+solid
+0 1.500000 182.500000 hedge
+solid
+0 1.500000 181.500000 hedge
+solid
+0 1.500000 180.500000 hedge
+solid
+0 1.500000 179.500000 hedge
+solid
+0 1.500000 178.500000 hedge
+solid
+0 1.500000 177.500000 hedge
+solid
+0 1.500000 176.500000 hedge
+solid
+0 1.500000 175.500000 hedge
+solid
+0 1.500000 174.500000 hedge
+solid
+0 1.500000 173.500000 hedge
+solid
+0 1.500000 172.500000 hedge
+solid
+0 1.500000 171.500000 hedge
+solid
+0 1.500000 170.500000 hedge
+solid
+0 1.500000 169.500000 hedge
+solid
+0 1.500000 168.500000 hedge
+solid
+0 1.500000 167.500000 hedge
+solid
+0 1.500000 166.500000 hedge
+solid
+0 1.500000 165.500000 hedge
+solid
+0 1.500000 164.500000 hedge
+solid
+0 1.500000 163.500000 hedge
+solid
+0 1.500000 162.500000 hedge
+solid
+0 1.500000 161.500000 hedge
+solid
+0 1.500000 160.500000 hedge
+solid
+0 1.500000 159.500000 hedge
+solid
+0 1.500000 158.500000 hedge
+solid
+0 1.500000 157.500000 hedge
+solid
+0 1.500000 156.500000 hedge
+solid
+0 1.500000 155.500000 hedge
+solid
+0 1.500000 154.500000 hedge
+solid
+0 1.500000 153.500000 hedge
+solid
+0 1.500000 152.500000 hedge
+solid
+0 1.500000 151.500000 hedge
+solid
+0 1.500000 150.500000 hedge
+solid
+0 1.500000 149.500000 hedge
+solid
+0 1.500000 148.500000 hedge
+solid
+0 1.500000 147.500000 hedge
+solid
+0 1.500000 146.500000 hedge
+solid
+0 1.500000 145.500000 hedge
+solid
+0 1.500000 144.500000 hedge
+solid
+0 1.500000 143.500000 hedge
+solid
+0 1.500000 142.500000 hedge
+solid
+0 1.500000 141.500000 hedge
+solid
+0 1.500000 140.500000 hedge
+solid
+0 1.500000 139.500000 hedge
+solid
+0 1.500000 138.500000 hedge
+solid
+0 1.500000 137.500000 hedge
+solid
+0 1.500000 136.500000 hedge
+solid
+0 1.500000 135.500000 hedge
+solid
+0 1.500000 134.500000 hedge
+solid
+0 1.500000 133.500000 hedge
+solid
+0 1.500000 132.500000 hedge
+solid
+0 1.500000 131.500000 hedge
+solid
+0 1.500000 130.500000 hedge
+solid
+0 1.500000 129.500000 hedge
+solid
+0 1.500000 128.500000 hedge
+solid
+0 1.500000 127.500000 hedge
+solid
+0 1.500000 126.500000 hedge
+solid
+0 1.500000 125.500000 hedge
+solid
+0 1.500000 124.500000 hedge
+solid
+0 1.500000 123.500000 hedge
+solid
+0 1.500000 122.500000 hedge
+solid
+0 1.500000 121.500000 hedge
+solid
+0 1.500000 120.500000 hedge
+solid
+0 1.500000 119.500000 hedge
+solid
+0 1.500000 118.500000 hedge
+solid
+0 1.500000 117.500000 hedge
+solid
+0 1.500000 116.500000 hedge
+solid
+0 1.500000 115.500000 hedge
+solid
+0 1.500000 114.500000 hedge
+solid
+0 1.500000 113.500000 hedge
+solid
+0 1.500000 112.500000 hedge
+solid
+0 1.500000 111.500000 hedge
+solid
+0 1.500000 110.500000 hedge
+solid
+0 1.500000 109.500000 hedge
+solid
+0 1.500000 108.500000 hedge
+solid
+0 1.500000 107.500000 hedge
+solid
+0 1.500000 106.500000 hedge
+solid
+0 1.500000 105.500000 hedge
+solid
+0 1.500000 104.500000 hedge
+solid
+0 1.500000 103.500000 hedge
+solid
+0 1.500000 102.500000 hedge
+solid
+0 1.500000 101.500000 hedge
+solid
+0 1.500000 100.500000 hedge
+solid
+0 1.500000 99.500000 hedge
+solid
+0 1.500000 98.500000 hedge
+solid
+0 1.500000 97.500000 hedge
+solid
+0 1.500000 96.500000 hedge
+solid
+0 1.500000 95.500000 hedge
+solid
+0 1.500000 94.500000 hedge
+solid
+0 1.500000 93.500000 hedge
+solid
+0 1.500000 92.500000 hedge
+solid
+0 1.500000 91.500000 hedge
+solid
+0 1.500000 90.500000 hedge
+solid
+0 1.500000 89.500000 hedge
+solid
+0 1.500000 88.500000 hedge
+solid
+0 1.500000 87.500000 hedge
+solid
+0 1.500000 86.500000 hedge
+solid
+0 1.500000 85.500000 hedge
+solid
+0 1.500000 84.500000 hedge
+solid
+0 1.500000 83.500000 hedge
+solid
+0 1.500000 82.500000 hedge
+solid
+0 1.500000 81.500000 hedge
+solid
+0 1.500000 80.500000 hedge
+solid
+0 1.500000 79.500000 hedge
+solid
+0 1.500000 78.500000 hedge
+solid
+0 1.500000 77.500000 hedge
+solid
+0 1.500000 76.500000 hedge
+solid
+0 1.500000 75.500000 hedge
+solid
+0 1.500000 74.500000 hedge
+solid
+0 1.500000 73.500000 hedge
+solid
+0 1.500000 72.500000 hedge
+solid
+0 1.500000 71.500000 hedge
+solid
+0 1.500000 70.500000 hedge
+solid
+0 1.500000 69.500000 hedge
+solid
+0 1.500000 68.500000 hedge
+solid
+0 1.500000 67.500000 hedge
+solid
+0 1.500000 66.500000 hedge
+solid
+0 1.500000 65.500000 hedge
+solid
+0 1.500000 64.500000 hedge
+solid
+0 1.500000 63.500000 hedge
+solid
+0 1.500000 62.500000 hedge
+solid
+0 1.500000 61.500000 hedge
+solid
+0 1.500000 60.500000 hedge
+solid
+0 1.500000 59.500000 hedge
+solid
+0 1.500000 58.500000 hedge
+solid
+0 1.500000 57.500000 hedge
+solid
+0 1.500000 56.500000 hedge
+solid
+0 1.500000 55.500000 hedge
+solid
+0 1.500000 54.500000 hedge
+solid
+0 1.500000 53.500000 hedge
+solid
+0 1.500000 52.500000 hedge
+solid
+0 1.500000 51.500000 hedge
+solid
+0 1.500000 50.500000 hedge
+solid
+0 1.500000 49.500000 hedge
+solid
+0 1.500000 48.500000 hedge
+solid
+0 1.500000 47.500000 hedge
+solid
+0 1.500000 46.500000 hedge
+solid
+0 1.500000 45.500000 hedge
+solid
+0 1.500000 44.500000 hedge
+solid
+0 1.500000 43.500000 hedge
+solid
+0 1.500000 42.500000 hedge
+solid
+0 1.500000 41.500000 hedge
+solid
+0 1.500000 40.500000 hedge
+solid
+0 1.500000 39.500000 hedge
+solid
+0 1.500000 38.500000 hedge
+solid
+0 1.500000 37.500000 hedge
+solid
+0 1.500000 36.500000 hedge
+solid
+0 1.500000 35.500000 hedge
+solid
+0 1.500000 34.500000 hedge
+solid
+0 1.500000 33.500000 hedge
+solid
+0 1.500000 32.500000 hedge
+solid
+0 1.500000 31.500000 hedge
+solid
+0 1.500000 30.500000 hedge
+solid
+0 1.500000 29.500000 hedge
+solid
+0 1.500000 28.500000 hedge
+solid
+0 1.500000 27.500000 hedge
+solid
+0 1.500000 26.500000 hedge
+solid
+0 1.500000 25.500000 hedge
+solid
+0 1.500000 24.500000 hedge
+solid
+0 1.500000 23.500000 hedge
+solid
+0 1.500000 22.500000 hedge
+solid
+0 1.500000 21.500000 hedge
+solid
+0 1.500000 20.500000 hedge
+solid
+0 1.500000 19.500000 hedge
+solid
+0 1.500000 18.500000 hedge
+solid
+0 1.500000 17.500000 hedge
+solid
+0 1.500000 16.500000 hedge
+solid
+0 1.500000 15.500000 hedge
+solid
+0 1.500000 14.500000 hedge
+solid
+0 1.500000 13.500000 hedge
+solid
+0 1.500000 12.500000 hedge
+solid
+0 1.500000 11.500000 hedge
+solid
+0 1.500000 10.500000 hedge
+solid
+0 1.500000 9.500000 hedge
+solid
+0 1.500000 8.500000 hedge
+solid
+0 1.500000 7.500000 hedge
+solid
+0 1.500000 6.500000 hedge
+solid
+0 1.500000 5.500000 hedge
+solid
+0 1.500000 4.500000 hedge
+solid
+0 1.500000 3.500000 hedge
+solid
+0 1.500000 2.500000 hedge
+solid
+0 1.500000 1.500000 hedge
+solid
+0 1.500000 0.500000 hedge
+solid
+1.500000 247.000000 0.500000 vedge

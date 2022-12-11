@@ -1,0 +1,214 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff}{}\doxysection{Abstract\+Pattern\+Sniff Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff}\index{AbstractPatternSniff@{AbstractPatternSniff}}
+Inheritance diagram for Abstract\+Pattern\+Sniff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ab60fdcb68e657d1695a9562c230a64f4}{\+\_\+\+\_\+construct}} (\$ignore\+Comments=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{process}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a9a9c1f012e33d4eb6bacdfadb2e684d9}{\$ignore\+Comments}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a30d3f93a76ba687c90b2042d3e72db87}{process\+Pattern}} (\$pattern\+Info, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ad57a302959874e6136f3cf2226459b06}{prepare\+Error}} (\$found, \$pattern\+Code)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a148a61db3ecd914e55580fcdcab20f92}{get\+Patterns}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_af3baccea853a04c0e4d7b1a436625b6a}{register\+Supplementary}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a7c8d4e918d2a45a97865b6b544ac4833}{process\+Supplementary}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ad4a38dd1b2c6fdd2fba97f089f73013c}{\$curr\+File}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ab60fdcb68e657d1695a9562c230a64f4}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ab60fdcb68e657d1695a9562c230a64f4}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$ignore\+Comments = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Constructs a \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff}{Abstract\+Pattern\+Sniff}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$ignore\+Comments} & If true, comments will be ignored. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a148a61db3ecd914e55580fcdcab20f92}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a148a61db3ecd914e55580fcdcab20f92}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!getPatterns@{getPatterns}}
+\index{getPatterns@{getPatterns}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{getPatterns()}{getPatterns()}}
+{\footnotesize\ttfamily get\+Patterns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the patterns that should be checked.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_p_e_a_r_1_1_sniffs_1_1_control_structures_1_1_control_signature_sniff_a148a61db3ecd914e55580fcdcab20f92}{Control\+Signature\+Sniff}}, and \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_sniff_a148a61db3ecd914e55580fcdcab20f92}{Function\+Declaration\+Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ad57a302959874e6136f3cf2226459b06}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ad57a302959874e6136f3cf2226459b06}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!prepareError@{prepareError}}
+\index{prepareError@{prepareError}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{prepareError()}{prepareError()}}
+{\footnotesize\ttfamily prepare\+Error (\begin{DoxyParamCaption}\item[{}]{\$found,  }\item[{}]{\$pattern\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepares an error for the specified pattern\+Code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$found} & The actual found string in the code. \\
+\hline
+string & {\em \$pattern\+Code} & The expected pattern code.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The error message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a145c97f53fb2c1ddb1c188ceba18865f}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a145c97f53fb2c1ddb1c188ceba18865f}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!process@{process}}
+\index{process@{process}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Processes the test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} file where the token occurred. \\
+\hline
+int & {\em \$stack\+Ptr} & The position in the tokens stack where the listening token type was found.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_acc294a6cc8e69743746820e3d15e3f78}{register()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a30d3f93a76ba687c90b2042d3e72db87}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a30d3f93a76ba687c90b2042d3e72db87}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!processPattern@{processPattern}}
+\index{processPattern@{processPattern}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{processPattern()}{processPattern()}}
+{\footnotesize\ttfamily process\+Pattern (\begin{DoxyParamCaption}\item[{}]{\$pattern\+Info,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Processes the pattern and verifies the code at \$stack\+Ptr.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$pattern\+Info} & Information about the pattern used for checking, which includes are parsed token representation of the pattern. \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} file where the token occurred. \\
+\hline
+int & {\em \$stack\+Ptr} & The position in the tokens stack where the listening token type was found.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a7c8d4e918d2a45a97865b6b544ac4833}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a7c8d4e918d2a45a97865b6b544ac4833}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!processSupplementary@{processSupplementary}}
+\index{processSupplementary@{processSupplementary}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{processSupplementary()}{processSupplementary()}}
+{\footnotesize\ttfamily process\+Supplementary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Processes any tokens registered with \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_af3baccea853a04c0e4d7b1a436625b6a}{register\+Supplementary()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} file where to process the skip. \\
+\hline
+int & {\em \$stack\+Ptr} & The position in the tokens stack to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_af3baccea853a04c0e4d7b1a436625b6a}{register\+Supplementary()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_acc294a6cc8e69743746820e3d15e3f78}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_acc294a6cc8e69743746820e3d15e3f78}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!register@{register}}
+\index{register@{register}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Registers the tokens to listen to.
+
+Classes extending {\itshape Abstract\+Pattern\+Test} should implement the {\itshape \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a148a61db3ecd914e55580fcdcab20f92}{get\+Patterns()}}} method to register the patterns they wish to test.
+
+\begin{DoxyReturn}{Returns}
+int\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{process()}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_acc294a6cc8e69743746820e3d15e3f78}{Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_af3baccea853a04c0e4d7b1a436625b6a}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_af3baccea853a04c0e4d7b1a436625b6a}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!registerSupplementary@{registerSupplementary}}
+\index{registerSupplementary@{registerSupplementary}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{registerSupplementary()}{registerSupplementary()}}
+{\footnotesize\ttfamily register\+Supplementary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Registers any supplementary tokens that this test might wish to process.
+
+\mbox{\hyperlink{class_a}{A}} sniff may wish to register supplementary tests when it wishes to group an arbitrary validation that cannot be performed using a pattern, with other pattern tests.
+
+\begin{DoxyReturn}{Returns}
+int\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a7c8d4e918d2a45a97865b6b544ac4833}{process\+Supplementary()}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ad4a38dd1b2c6fdd2fba97f089f73013c}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_ad4a38dd1b2c6fdd2fba97f089f73013c}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!\$currFile@{\$currFile}}
+\index{\$currFile@{\$currFile}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{\$currFile}{$currFile}}
+{\footnotesize\ttfamily \$curr\+File = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a9a9c1f012e33d4eb6bacdfadb2e684d9}\label{class_p_h_p___code_sniffer_1_1_sniffs_1_1_abstract_pattern_sniff_a9a9c1f012e33d4eb6bacdfadb2e684d9}} 
+\index{AbstractPatternSniff@{AbstractPatternSniff}!\$ignoreComments@{\$ignoreComments}}
+\index{\$ignoreComments@{\$ignoreComments}!AbstractPatternSniff@{AbstractPatternSniff}}
+\doxysubsubsection{\texorpdfstring{\$ignoreComments}{$ignoreComments}}
+{\footnotesize\ttfamily \$ignore\+Comments = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Sniffs/\mbox{\hyperlink{_abstract_pattern_sniff_8php}{Abstract\+Pattern\+Sniff.\+php}}\end{DoxyCompactItemize}

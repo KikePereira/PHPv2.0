@@ -1,0 +1,109 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test}{}\doxysection{Abstract\+Method\+Unit\+Test Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test}\index{AbstractMethodUnitTest@{AbstractMethodUnitTest}}
+Inheritance diagram for Abstract\+Method\+Unit\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_aef0121de93156a8e788c0ad3a5d9999e}{get\+Target\+Token}} (\$comment\+String, \$token\+Type, \$token\+Content=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a80ef9eb20e7443b38276fb4647985fb7}{set\+Up\+Before\+Class}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a6256aa1772f8d1a6b16f1df662d94433}{tear\+Down\+After\+Class}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a345045be388474a13776c59c7aa8aead}{\$file\+Extension}} = \textquotesingle{}inc\textquotesingle{}
+\item 
+static \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a19d60cc361420e36b97de085d0b7870e}{\$phpcs\+File}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_aef0121de93156a8e788c0ad3a5d9999e}\label{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_aef0121de93156a8e788c0ad3a5d9999e}} 
+\index{AbstractMethodUnitTest@{AbstractMethodUnitTest}!getTargetToken@{getTargetToken}}
+\index{getTargetToken@{getTargetToken}!AbstractMethodUnitTest@{AbstractMethodUnitTest}}
+\doxysubsubsection{\texorpdfstring{getTargetToken()}{getTargetToken()}}
+{\footnotesize\ttfamily get\+Target\+Token (\begin{DoxyParamCaption}\item[{}]{\$comment\+String,  }\item[{}]{\$token\+Type,  }\item[{}]{\$token\+Content = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Get the token pointer for a target token based on a specific comment found on the line before.
+
+Note\+: the test delimiter comment MUST start with \char`\"{}/$\ast$ test\char`\"{} to allow this function to distinguish between comments used {\itshape in} a test and test delimiters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$comment\+String} & The delimiter comment to look for. \\
+\hline
+int | string | array & {\em \$token\+Type} & The type of token(s) to look for. \\
+\hline
+string & {\em \$token\+Content} & Optional. The token content for the target token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a80ef9eb20e7443b38276fb4647985fb7}\label{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a80ef9eb20e7443b38276fb4647985fb7}} 
+\index{AbstractMethodUnitTest@{AbstractMethodUnitTest}!setUpBeforeClass@{setUpBeforeClass}}
+\index{setUpBeforeClass@{setUpBeforeClass}!AbstractMethodUnitTest@{AbstractMethodUnitTest}}
+\doxysubsubsection{\texorpdfstring{setUpBeforeClass()}{setUpBeforeClass()}}
+{\footnotesize\ttfamily static set\+Up\+Before\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize \& tokenize \textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File with code from the test case file.
+
+The test case file for a unit test class has to be in the same directory directory and use the same file name as the test class, using the .inc extension.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_case_a80ef9eb20e7443b38276fb4647985fb7}{Test\+Case}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_sniffs_1_1_abstract_array_sniff_test_a80ef9eb20e7443b38276fb4647985fb7}{Abstract\+Array\+Sniff\+Test}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a6256aa1772f8d1a6b16f1df662d94433}\label{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a6256aa1772f8d1a6b16f1df662d94433}} 
+\index{AbstractMethodUnitTest@{AbstractMethodUnitTest}!tearDownAfterClass@{tearDownAfterClass}}
+\index{tearDownAfterClass@{tearDownAfterClass}!AbstractMethodUnitTest@{AbstractMethodUnitTest}}
+\doxysubsubsection{\texorpdfstring{tearDownAfterClass()}{tearDownAfterClass()}}
+{\footnotesize\ttfamily static tear\+Down\+After\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Clean up after finished test.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_test_case_a6256aa1772f8d1a6b16f1df662d94433}{Test\+Case}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a345045be388474a13776c59c7aa8aead}\label{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a345045be388474a13776c59c7aa8aead}} 
+\index{AbstractMethodUnitTest@{AbstractMethodUnitTest}!\$fileExtension@{\$fileExtension}}
+\index{\$fileExtension@{\$fileExtension}!AbstractMethodUnitTest@{AbstractMethodUnitTest}}
+\doxysubsubsection{\texorpdfstring{\$fileExtension}{$fileExtension}}
+{\footnotesize\ttfamily \$file\+Extension = \textquotesingle{}inc\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a19d60cc361420e36b97de085d0b7870e}\label{class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_abstract_method_unit_test_a19d60cc361420e36b97de085d0b7870e}} 
+\index{AbstractMethodUnitTest@{AbstractMethodUnitTest}!\$phpcsFile@{\$phpcsFile}}
+\index{\$phpcsFile@{\$phpcsFile}!AbstractMethodUnitTest@{AbstractMethodUnitTest}}
+\doxysubsubsection{\texorpdfstring{\$phpcsFile}{$phpcsFile}}
+{\footnotesize\ttfamily \$phpcs\+File\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/tests/\+Core/\mbox{\hyperlink{_abstract_method_unit_test_8php}{Abstract\+Method\+Unit\+Test.\+php}}\end{DoxyCompactItemize}

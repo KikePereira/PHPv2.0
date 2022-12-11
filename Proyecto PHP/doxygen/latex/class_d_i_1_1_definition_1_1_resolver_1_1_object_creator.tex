@@ -1,0 +1,121 @@
+\hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator}{}\doxysection{Object\+Creator Class Reference}
+\label{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator}\index{ObjectCreator@{ObjectCreator}}
+Inheritance diagram for Object\+Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8c024a3ffbb5099f7309d7c8edd860f2}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}} \$definition\+Resolver, \mbox{\hyperlink{class_d_i_1_1_proxy_1_1_proxy_factory}{Proxy\+Factory}} \$proxy\+Factory)
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8ad397eb8a9ba863700af9c9261f9bab}{resolve}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a4ebc1dc75e896b8de267eaf1b8f8297d}{is\+Resolvable}} (\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}} \$definition, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_aab586d15ea0745eaa3976724e8c3f919}{set\+Private\+Property\+Value}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$class\+Name=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a34ed4cda060ffc5ababa5e187c10a4aa}{object}}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$property\+Name, \$property\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a495eb71bb37aa34bcfa180e21d178d64}{inject\+Methods\+And\+Properties}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a34ed4cda060ffc5ababa5e187c10a4aa}{object}}, \mbox{\hyperlink{class_d_i_1_1_definition_1_1_object_definition}{Object\+Definition}} \$object\+Definition)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create objects based on an object definition.
+
+\begin{DoxySince}{Since}
+4.\+0 
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Matthieu Napoli \href{mailto:matthieu@mnapoli.fr}{\texttt{ matthieu@mnapoli.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8c024a3ffbb5099f7309d7c8edd860f2}\label{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8c024a3ffbb5099f7309d7c8edd860f2}} 
+\index{ObjectCreator@{ObjectCreator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!ObjectCreator@{ObjectCreator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}}}]{\$definition\+Resolver,  }\item[{\mbox{\hyperlink{class_d_i_1_1_proxy_1_1_proxy_factory}{Proxy\+Factory}}}]{\$proxy\+Factory }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver}{Definition\+Resolver}} & {\em \$definition\+Resolver} & Used to resolve nested definitions. \\
+\hline
+Proxy\+Factory & {\em \$proxy\+Factory} & Used to create proxies for lazy injections. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a495eb71bb37aa34bcfa180e21d178d64}\label{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a495eb71bb37aa34bcfa180e21d178d64}} 
+\index{ObjectCreator@{ObjectCreator}!injectMethodsAndProperties@{injectMethodsAndProperties}}
+\index{injectMethodsAndProperties@{injectMethodsAndProperties}!ObjectCreator@{ObjectCreator}}
+\doxysubsubsection{\texorpdfstring{injectMethodsAndProperties()}{injectMethodsAndProperties()}}
+{\footnotesize\ttfamily inject\+Methods\+And\+Properties (\begin{DoxyParamCaption}\item[{}]{\$object,  }\item[{\mbox{\hyperlink{class_d_i_1_1_definition_1_1_object_definition}{Object\+Definition}}}]{\$object\+Definition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a4ebc1dc75e896b8de267eaf1b8f8297d}\label{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a4ebc1dc75e896b8de267eaf1b8f8297d}} 
+\index{ObjectCreator@{ObjectCreator}!isResolvable@{isResolvable}}
+\index{isResolvable@{isResolvable}!ObjectCreator@{ObjectCreator}}
+\doxysubsubsection{\texorpdfstring{isResolvable()}{isResolvable()}}
+{\footnotesize\ttfamily is\+Resolvable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+The definition is not resolvable if the class is not instantiable (interface or abstract) or if the class doesn\textquotesingle{}t exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_object_definition}{Object\+Definition}} & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a4ebc1dc75e896b8de267eaf1b8f8297d}{Definition\+Resolver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a4ebc1dc75e896b8de267eaf1b8f8297d}{Instance\+Injector}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8ad397eb8a9ba863700af9c9261f9bab}\label{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_a8ad397eb8a9ba863700af9c9261f9bab}} 
+\index{ObjectCreator@{ObjectCreator}!resolve@{resolve}}
+\index{resolve@{resolve}!ObjectCreator@{ObjectCreator}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_d_i_1_1_definition_1_1_definition}{Definition}}}]{\$definition,  }\item[{array}]{\$parameters = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Resolve a class definition to a value.
+
+This will create a new instance of the class using the injections points defined.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_d_i_1_1_definition_1_1_object_definition}{Object\+Definition}} & {\em \$definition} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object$\vert$null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_d_i_1_1_definition_1_1_resolver_1_1_definition_resolver_a8ad397eb8a9ba863700af9c9261f9bab}{Definition\+Resolver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_d_i_1_1_definition_1_1_resolver_1_1_instance_injector_a8ad397eb8a9ba863700af9c9261f9bab}{Instance\+Injector}}.
+
+\mbox{\Hypertarget{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_aab586d15ea0745eaa3976724e8c3f919}\label{class_d_i_1_1_definition_1_1_resolver_1_1_object_creator_aab586d15ea0745eaa3976724e8c3f919}} 
+\index{ObjectCreator@{ObjectCreator}!setPrivatePropertyValue@{setPrivatePropertyValue}}
+\index{setPrivatePropertyValue@{setPrivatePropertyValue}!ObjectCreator@{ObjectCreator}}
+\doxysubsubsection{\texorpdfstring{setPrivatePropertyValue()}{setPrivatePropertyValue()}}
+{\footnotesize\ttfamily static set\+Private\+Property\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$class\+Name = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{}]{\$object,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$property\+Name,  }\item[{}]{\$property\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/php-\/di/php-\/di/src/\+Definition/\+Resolver/\mbox{\hyperlink{_object_creator_8php}{Object\+Creator.\+php}}\end{DoxyCompactItemize}

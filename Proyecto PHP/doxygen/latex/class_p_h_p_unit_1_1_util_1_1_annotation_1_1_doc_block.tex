@@ -1,0 +1,145 @@
+\hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block}{}\doxysection{Doc\+Block Class Reference}
+\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block}\index{DocBlock@{DocBlock}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a7b99bff2faa1884dc599b2e7e39f99b3}{requirements}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_adf2b2e56e6ff447b969361259f8d34b5}{get\+Provided\+Data}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a460d20f8c91c0291d5b14e2d9cc9f022}{get\+Inline\+Annotations}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a6efa40a17bc5c511db93d32c4cacb58b}{symbol\+Annotations}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_aef007a46dada66724c5108f25f3562e5}{is\+Hook\+To\+Be\+Executed\+Before\+Class}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a8b478cbc15ac6965385721affe7075df}{is\+Hook\+To\+Be\+Executed\+After\+Class}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_aa0bae4c18e65389c6d630909713e7cac}{is\+To\+Be\+Executed\+Before\+Test}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a0437905df8aa0ff03c7bbe00ddef4266}{is\+To\+Be\+Executed\+After\+Test}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a6d14dd2bb5da666a183969107055a521}{is\+To\+Be\+Executed\+As\+Pre\+Condition}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_acb5ed8438e9b3adaf259586b5ec675f1}{is\+To\+Be\+Executed\+As\+Post\+Condition}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a3cb9c9e31d5b9ea9da401b5f618c9d4a}{of\+Class}} (Reflection\+Class \$class)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_af119597a5f45cebac1e6a87ff0ed6138}{of\+Method}} (Reflection\+Method \$method, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$class\+Name\+In\+Hierarchy)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a1b3ee24e7c7ec93bf0acc5adbe3aa9b0}{REGEX\+\_\+\+DATA\+\_\+\+PROVIDER}} = \textquotesingle{}/@data\+Provider\textbackslash{}s+(\mbox{[}\mbox{\hyperlink{classa}{a}}-\/zA-\/Z0-\/9.\+\_\+\+:-\/\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}+)/\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is an abstraction around a PHPUnit-\/specific doc\+Block, allowing us to ask meaningful questions about a specific reflection symbol. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a460d20f8c91c0291d5b14e2d9cc9f022}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a460d20f8c91c0291d5b14e2d9cc9f022}} 
+\index{DocBlock@{DocBlock}!getInlineAnnotations@{getInlineAnnotations}}
+\index{getInlineAnnotations@{getInlineAnnotations}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{getInlineAnnotations()}{getInlineAnnotations()}}
+{\footnotesize\ttfamily get\+Inline\+Annotations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@psalm-\/return array\texorpdfstring{$<$}{<}string, array\{line\+: int, value\+: string\}\texorpdfstring{$>$}{>} \mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_adf2b2e56e6ff447b969361259f8d34b5}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_adf2b2e56e6ff447b969361259f8d34b5}} 
+\index{DocBlock@{DocBlock}!getProvidedData@{getProvidedData}}
+\index{getProvidedData@{getProvidedData}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{getProvidedData()}{getProvidedData()}}
+{\footnotesize\ttfamily get\+Provided\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the provided data for a method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_exception}{Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+@noinspection Suspicious\+Binary\+Operation\+Inspection\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a8b478cbc15ac6965385721affe7075df}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a8b478cbc15ac6965385721affe7075df}} 
+\index{DocBlock@{DocBlock}!isHookToBeExecutedAfterClass@{isHookToBeExecutedAfterClass}}
+\index{isHookToBeExecutedAfterClass@{isHookToBeExecutedAfterClass}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{isHookToBeExecutedAfterClass()}{isHookToBeExecutedAfterClass()}}
+{\footnotesize\ttfamily is\+Hook\+To\+Be\+Executed\+After\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_aef007a46dada66724c5108f25f3562e5}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_aef007a46dada66724c5108f25f3562e5}} 
+\index{DocBlock@{DocBlock}!isHookToBeExecutedBeforeClass@{isHookToBeExecutedBeforeClass}}
+\index{isHookToBeExecutedBeforeClass@{isHookToBeExecutedBeforeClass}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{isHookToBeExecutedBeforeClass()}{isHookToBeExecutedBeforeClass()}}
+{\footnotesize\ttfamily is\+Hook\+To\+Be\+Executed\+Before\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a0437905df8aa0ff03c7bbe00ddef4266}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a0437905df8aa0ff03c7bbe00ddef4266}} 
+\index{DocBlock@{DocBlock}!isToBeExecutedAfterTest@{isToBeExecutedAfterTest}}
+\index{isToBeExecutedAfterTest@{isToBeExecutedAfterTest}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{isToBeExecutedAfterTest()}{isToBeExecutedAfterTest()}}
+{\footnotesize\ttfamily is\+To\+Be\+Executed\+After\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_acb5ed8438e9b3adaf259586b5ec675f1}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_acb5ed8438e9b3adaf259586b5ec675f1}} 
+\index{DocBlock@{DocBlock}!isToBeExecutedAsPostCondition@{isToBeExecutedAsPostCondition}}
+\index{isToBeExecutedAsPostCondition@{isToBeExecutedAsPostCondition}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{isToBeExecutedAsPostCondition()}{isToBeExecutedAsPostCondition()}}
+{\footnotesize\ttfamily is\+To\+Be\+Executed\+As\+Post\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a6d14dd2bb5da666a183969107055a521}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a6d14dd2bb5da666a183969107055a521}} 
+\index{DocBlock@{DocBlock}!isToBeExecutedAsPreCondition@{isToBeExecutedAsPreCondition}}
+\index{isToBeExecutedAsPreCondition@{isToBeExecutedAsPreCondition}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{isToBeExecutedAsPreCondition()}{isToBeExecutedAsPreCondition()}}
+{\footnotesize\ttfamily is\+To\+Be\+Executed\+As\+Pre\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_aa0bae4c18e65389c6d630909713e7cac}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_aa0bae4c18e65389c6d630909713e7cac}} 
+\index{DocBlock@{DocBlock}!isToBeExecutedBeforeTest@{isToBeExecutedBeforeTest}}
+\index{isToBeExecutedBeforeTest@{isToBeExecutedBeforeTest}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{isToBeExecutedBeforeTest()}{isToBeExecutedBeforeTest()}}
+{\footnotesize\ttfamily is\+To\+Be\+Executed\+Before\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a3cb9c9e31d5b9ea9da401b5f618c9d4a}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a3cb9c9e31d5b9ea9da401b5f618c9d4a}} 
+\index{DocBlock@{DocBlock}!ofClass@{ofClass}}
+\index{ofClass@{ofClass}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{ofClass()}{ofClass()}}
+{\footnotesize\ttfamily static of\+Class (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$class }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_af119597a5f45cebac1e6a87ff0ed6138}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_af119597a5f45cebac1e6a87ff0ed6138}} 
+\index{DocBlock@{DocBlock}!ofMethod@{ofMethod}}
+\index{ofMethod@{ofMethod}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{ofMethod()}{ofMethod()}}
+{\footnotesize\ttfamily static of\+Method (\begin{DoxyParamCaption}\item[{Reflection\+Method}]{\$method,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$class\+Name\+In\+Hierarchy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/param class-\/string \$class\+Name\+In\+Hierarchy \mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a7b99bff2faa1884dc599b2e7e39f99b3}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a7b99bff2faa1884dc599b2e7e39f99b3}} 
+\index{DocBlock@{DocBlock}!requirements@{requirements}}
+\index{requirements@{requirements}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{requirements()}{requirements()}}
+{\footnotesize\ttfamily requirements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@psalm-\/return array\{ \+\_\+\+\_\+\+OFFSET\+: array$<$string, int$>$\&array\{\+\_\+\+\_\+\+FILE\+: string\}, setting?\+: array$<$string, string$>$, extension\+\_\+versions?\+: array\texorpdfstring{$<$}{<}string, array\{version\+: string, operator\+: string\}\texorpdfstring{$>$}{>} \}\&array\texorpdfstring{$<$}{<} string, string$\vert$array\{version\+: string, operator\+: string\}$\vert$array\{constraint\+: string\}$\vert$array\texorpdfstring{$<$}{<}int$\vert$string, string\texorpdfstring{$>$}{>} \begin{quote}
+ \end{quote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Warning} & if the requirements version constraint is not well-\/formed \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a6efa40a17bc5c511db93d32c4cacb58b}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a6efa40a17bc5c511db93d32c4cacb58b}} 
+\index{DocBlock@{DocBlock}!symbolAnnotations@{symbolAnnotations}}
+\index{symbolAnnotations@{symbolAnnotations}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{symbolAnnotations()}{symbolAnnotations()}}
+{\footnotesize\ttfamily symbol\+Annotations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a1b3ee24e7c7ec93bf0acc5adbe3aa9b0}\label{class_p_h_p_unit_1_1_util_1_1_annotation_1_1_doc_block_a1b3ee24e7c7ec93bf0acc5adbe3aa9b0}} 
+\index{DocBlock@{DocBlock}!REGEX\_DATA\_PROVIDER@{REGEX\_DATA\_PROVIDER}}
+\index{REGEX\_DATA\_PROVIDER@{REGEX\_DATA\_PROVIDER}!DocBlock@{DocBlock}}
+\doxysubsubsection{\texorpdfstring{REGEX\_DATA\_PROVIDER}{REGEX\_DATA\_PROVIDER}}
+{\footnotesize\ttfamily const REGEX\+\_\+\+DATA\+\_\+\+PROVIDER = \textquotesingle{}/@data\+Provider\textbackslash{}s+(\mbox{[}\mbox{\hyperlink{classa}{a}}-\/zA-\/Z0-\/9.\+\_\+\+:-\/\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}+)/\textquotesingle{}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]This constant should be private (it\textquotesingle{}s public because of Test\+Test\+::test\+Get\+Provided\+Data\+Reg\+Ex) \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/phpunit/src/\+Util/\+Annotation/\mbox{\hyperlink{phpunit_2phpunit_2src_2_util_2_annotation_2_doc_block_8php}{Doc\+Block.\+php}}\end{DoxyCompactItemize}

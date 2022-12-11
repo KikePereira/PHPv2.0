@@ -1,0 +1,153 @@
+\hypertarget{class_app_1_1_application_1_1_actions_1_1_action}{}\doxysection{Action Class Reference}
+\label{class_app_1_1_application_1_1_actions_1_1_action}\index{Action@{Action}}
+Inheritance diagram for Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_1_1_application_1_1_actions_1_1_action}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_a2bd426f7ee55a596b1893454a77a006a}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger)
+\item 
+\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_aba9e41eae52a21d2e8c5a2790903b368}{\+\_\+\+\_\+invoke}} (Request \$request, Response \$response, array \$args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_a8e4800975c151b5d7262a31d6fc9bc33}{action}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_a8fb3befda17ddc4317b8d2c344fa7e0e}{get\+Form\+Data}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_a6fd08bf8a01f4f3c2877a8b0c86ac15f}{resolve\+Arg}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_aada8f86e226c17f2ff0290b4765dece8}{respond\+With\+Data}} (\$data=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}} \$status\+Code=200)
+\item 
+\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_aed28a514d14d029d731fed6678bed806}{respond}} (\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_payload}{Action\+Payload}} \$payload)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_ad0d21473a15cfd8c4df0d0eb013c9546}{\$logger}}
+\item 
+Request \mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_a5425eaccbcf038c24d23607b1f7d68b2}{\$request}}
+\item 
+Response \mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_a6bbb1214f68bd57e47206b126c04f104}{\$response}}
+\item 
+array \mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_a4eb471260e90dfc2e5b9e4854d3c8b8f}{\$args}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_a2bd426f7ee55a596b1893454a77a006a}\label{class_app_1_1_application_1_1_actions_1_1_action_a2bd426f7ee55a596b1893454a77a006a}} 
+\index{Action@{Action}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_aba9e41eae52a21d2e8c5a2790903b368}\label{class_app_1_1_application_1_1_actions_1_1_action_aba9e41eae52a21d2e8c5a2790903b368}} 
+\index{Action@{Action}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{Request}]{\$request,  }\item[{Response}]{\$response,  }\item[{array}]{\$args }\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Http\+Not\+Found\+Exception} & \\
+\hline
+{\em Http\+Bad\+Request\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_a8e4800975c151b5d7262a31d6fc9bc33}\label{class_app_1_1_application_1_1_actions_1_1_action_a8e4800975c151b5d7262a31d6fc9bc33}} 
+\index{Action@{Action}!action@{action}}
+\index{action@{action}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Domain\+Record\+Not\+Found\+Exception} & \\
+\hline
+{\em Http\+Bad\+Request\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_user_1_1_list_users_action_a8e4800975c151b5d7262a31d6fc9bc33}{List\+Users\+Action}}, and \mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_user_1_1_view_user_action_a8e4800975c151b5d7262a31d6fc9bc33}{View\+User\+Action}}.
+
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_a8fb3befda17ddc4317b8d2c344fa7e0e}\label{class_app_1_1_application_1_1_actions_1_1_action_a8fb3befda17ddc4317b8d2c344fa7e0e}} 
+\index{Action@{Action}!getFormData@{getFormData}}
+\index{getFormData@{getFormData}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{getFormData()}{getFormData()}}
+{\footnotesize\ttfamily get\+Form\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+array$\vert$object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_a6fd08bf8a01f4f3c2877a8b0c86ac15f}\label{class_app_1_1_application_1_1_actions_1_1_action_a6fd08bf8a01f4f3c2877a8b0c86ac15f}} 
+\index{Action@{Action}!resolveArg@{resolveArg}}
+\index{resolveArg@{resolveArg}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{resolveArg()}{resolveArg()}}
+{\footnotesize\ttfamily resolve\+Arg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Http\+Bad\+Request\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_aed28a514d14d029d731fed6678bed806}\label{class_app_1_1_application_1_1_actions_1_1_action_aed28a514d14d029d731fed6678bed806}} 
+\index{Action@{Action}!respond@{respond}}
+\index{respond@{respond}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{respond()}{respond()}}
+{\footnotesize\ttfamily respond (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_1_1_application_1_1_actions_1_1_action_payload}{Action\+Payload}}}]{\$payload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_aada8f86e226c17f2ff0290b4765dece8}\label{class_app_1_1_application_1_1_actions_1_1_action_aada8f86e226c17f2ff0290b4765dece8}} 
+\index{Action@{Action}!respondWithData@{respondWithData}}
+\index{respondWithData@{respondWithData}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{respondWithData()}{respondWithData()}}
+{\footnotesize\ttfamily respond\+With\+Data (\begin{DoxyParamCaption}\item[{}]{\$data = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_ab9b5b4318a365e70b36fe24b0f0cef10}{int}}}]{\$status\+Code = {\ttfamily 200} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object | null & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_a4eb471260e90dfc2e5b9e4854d3c8b8f}\label{class_app_1_1_application_1_1_actions_1_1_action_a4eb471260e90dfc2e5b9e4854d3c8b8f}} 
+\index{Action@{Action}!\$args@{\$args}}
+\index{\$args@{\$args}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{\$args}{$args}}
+{\footnotesize\ttfamily array \$args\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_ad0d21473a15cfd8c4df0d0eb013c9546}\label{class_app_1_1_application_1_1_actions_1_1_action_ad0d21473a15cfd8c4df0d0eb013c9546}} 
+\index{Action@{Action}!\$logger@{\$logger}}
+\index{\$logger@{\$logger}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{\$logger}{$logger}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_a5425eaccbcf038c24d23607b1f7d68b2}\label{class_app_1_1_application_1_1_actions_1_1_action_a5425eaccbcf038c24d23607b1f7d68b2}} 
+\index{Action@{Action}!\$request@{\$request}}
+\index{\$request@{\$request}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{\$request}{$request}}
+{\footnotesize\ttfamily Request \$request\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_app_1_1_application_1_1_actions_1_1_action_a6bbb1214f68bd57e47206b126c04f104}\label{class_app_1_1_application_1_1_actions_1_1_action_a6bbb1214f68bd57e47206b126c04f104}} 
+\index{Action@{Action}!\$response@{\$response}}
+\index{\$response@{\$response}!Action@{Action}}
+\doxysubsubsection{\texorpdfstring{\$response}{$response}}
+{\footnotesize\ttfamily Response \$response\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/src/\+Application/\+Actions/\mbox{\hyperlink{_action_8php}{Action.\+php}}\end{DoxyCompactItemize}

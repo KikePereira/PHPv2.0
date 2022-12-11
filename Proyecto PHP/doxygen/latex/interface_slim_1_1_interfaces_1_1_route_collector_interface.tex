@@ -1,0 +1,236 @@
+\hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface}{}\doxysection{Route\+Collector\+Interface Interface Reference}
+\label{interface_slim_1_1_interfaces_1_1_route_collector_interface}\index{RouteCollectorInterface@{RouteCollectorInterface}}
+Inheritance diagram for Route\+Collector\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_slim_1_1_interfaces_1_1_route_collector_interface}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_a7fbb8303f5c5c5a79a8aeceb791b1a43}{get\+Route\+Parser}} ()
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_a26c2bb9149ab9a4df69af562e36d773a}{get\+Default\+Invocation\+Strategy}} ()
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_ad6c5786312d36730f823d144eae7cb28}{set\+Default\+Invocation\+Strategy}} (\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_invocation_strategy_interface}{Invocation\+Strategy\+Interface}} \$strategy)
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_a4bbc098eaa005b4d6cd2ff6592e20163}{get\+Cache\+File}} ()
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa9e0007c6222da6ce4795ecdbe6ad0be}{set\+Cache\+File}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$cache\+File)
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_aaf4a9649667a3904fae19e9bd27ebd67}{get\+Base\+Path}} ()
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_a6bde4f41803bb8d66ef94f44122e858c}{set\+Base\+Path}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$base\+Path)
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_a18da86bf318ebe47e501aaad267d59ed}{get\+Routes}} ()
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_a99d50f6a5ac0f1bd42053c4ebca41b8a}{get\+Named\+Route}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_a64c41ee195bc2054179728abfaa48206}{remove\+Named\+Route}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa4e94c5583cb72f2b5626782ce2c8f9c}{lookup\+Route}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$identifier)
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa1001b86a6317115a490c1568f006d41}{group}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$pattern, \$callable)
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface_af89368797645d4413ff3ae075af54d84}{map}} (array \$methods, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$pattern, \$handler)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_aaf4a9649667a3904fae19e9bd27ebd67}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_aaf4a9649667a3904fae19e9bd27ebd67}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!getBasePath@{getBasePath}}
+\index{getBasePath@{getBasePath}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{getBasePath()}{getBasePath()}}
+{\footnotesize\ttfamily get\+Base\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the base path used in path\+For() 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_aaf4a9649667a3904fae19e9bd27ebd67}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_a4bbc098eaa005b4d6cd2ff6592e20163}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_a4bbc098eaa005b4d6cd2ff6592e20163}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!getCacheFile@{getCacheFile}}
+\index{getCacheFile@{getCacheFile}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{getCacheFile()}{getCacheFile()}}
+{\footnotesize\ttfamily get\+Cache\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get path to \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}} cache file 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_a4bbc098eaa005b4d6cd2ff6592e20163}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_a26c2bb9149ab9a4df69af562e36d773a}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_a26c2bb9149ab9a4df69af562e36d773a}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!getDefaultInvocationStrategy@{getDefaultInvocationStrategy}}
+\index{getDefaultInvocationStrategy@{getDefaultInvocationStrategy}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{getDefaultInvocationStrategy()}{getDefaultInvocationStrategy()}}
+{\footnotesize\ttfamily get\+Default\+Invocation\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get default route invocation strategy 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_a26c2bb9149ab9a4df69af562e36d773a}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_a99d50f6a5ac0f1bd42053c4ebca41b8a}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_a99d50f6a5ac0f1bd42053c4ebca41b8a}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!getNamedRoute@{getNamedRoute}}
+\index{getNamedRoute@{getNamedRoute}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{getNamedRoute()}{getNamedRoute()}}
+{\footnotesize\ttfamily get\+Named\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+Get named route object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Route name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If named route does not exist \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_a99d50f6a5ac0f1bd42053c4ebca41b8a}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_a7fbb8303f5c5c5a79a8aeceb791b1a43}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_a7fbb8303f5c5c5a79a8aeceb791b1a43}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!getRouteParser@{getRouteParser}}
+\index{getRouteParser@{getRouteParser}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{getRouteParser()}{getRouteParser()}}
+{\footnotesize\ttfamily get\+Route\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the route parser 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_a7fbb8303f5c5c5a79a8aeceb791b1a43}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_a18da86bf318ebe47e501aaad267d59ed}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_a18da86bf318ebe47e501aaad267d59ed}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!getRoutes@{getRoutes}}
+\index{getRoutes@{getRoutes}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{getRoutes()}{getRoutes()}}
+{\footnotesize\ttfamily get\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get route objects
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_interface}{Route\+Interface}}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_a18da86bf318ebe47e501aaad267d59ed}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa1001b86a6317115a490c1568f006d41}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa1001b86a6317115a490c1568f006d41}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!group@{group}}
+\index{group@{group}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$pattern,  }\item[{}]{\$callable }\end{DoxyParamCaption})}
+
+Add route group 
+\begin{DoxyParams}[1]{Parameters}
+string | callable & {\em \$callable} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_aa1001b86a6317115a490c1568f006d41}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa4e94c5583cb72f2b5626782ce2c8f9c}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa4e94c5583cb72f2b5626782ce2c8f9c}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!lookupRoute@{lookupRoute}}
+\index{lookupRoute@{lookupRoute}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{lookupRoute()}{lookupRoute()}}
+{\footnotesize\ttfamily lookup\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$identifier }\end{DoxyParamCaption})}
+
+Lookup a route via the route\textquotesingle{}s unique identifier
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If route of identifier does not exist \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_aa4e94c5583cb72f2b5626782ce2c8f9c}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_af89368797645d4413ff3ae075af54d84}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_af89368797645d4413ff3ae075af54d84}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!map@{map}}
+\index{map@{map}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily map (\begin{DoxyParamCaption}\item[{array}]{\$methods,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$pattern,  }\item[{}]{\$handler }\end{DoxyParamCaption})}
+
+Add route
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$methods} & Array of HTTP methods \\
+\hline
+string & {\em \$pattern} & The route pattern \\
+\hline
+callable | string & {\em \$handler} & The route callable \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_af89368797645d4413ff3ae075af54d84}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_a64c41ee195bc2054179728abfaa48206}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_a64c41ee195bc2054179728abfaa48206}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!removeNamedRoute@{removeNamedRoute}}
+\index{removeNamedRoute@{removeNamedRoute}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{removeNamedRoute()}{removeNamedRoute()}}
+{\footnotesize\ttfamily remove\+Named\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$name }\end{DoxyParamCaption})}
+
+Remove named route
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Route name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If named route does not exist \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_a64c41ee195bc2054179728abfaa48206}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_a6bde4f41803bb8d66ef94f44122e858c}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_a6bde4f41803bb8d66ef94f44122e858c}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!setBasePath@{setBasePath}}
+\index{setBasePath@{setBasePath}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{setBasePath()}{setBasePath()}}
+{\footnotesize\ttfamily set\+Base\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$base\+Path }\end{DoxyParamCaption})}
+
+Set the base path used in path\+For() 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_a6bde4f41803bb8d66ef94f44122e858c}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa9e0007c6222da6ce4795ecdbe6ad0be}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_aa9e0007c6222da6ce4795ecdbe6ad0be}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!setCacheFile@{setCacheFile}}
+\index{setCacheFile@{setCacheFile}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{setCacheFile()}{setCacheFile()}}
+{\footnotesize\ttfamily set\+Cache\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$cache\+File }\end{DoxyParamCaption})}
+
+Set path to \mbox{\hyperlink{namespace_fast_route}{Fast\+Route}} cache file
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_aa9e0007c6222da6ce4795ecdbe6ad0be}{Route\+Collector}}.
+
+\mbox{\Hypertarget{interface_slim_1_1_interfaces_1_1_route_collector_interface_ad6c5786312d36730f823d144eae7cb28}\label{interface_slim_1_1_interfaces_1_1_route_collector_interface_ad6c5786312d36730f823d144eae7cb28}} 
+\index{RouteCollectorInterface@{RouteCollectorInterface}!setDefaultInvocationStrategy@{setDefaultInvocationStrategy}}
+\index{setDefaultInvocationStrategy@{setDefaultInvocationStrategy}!RouteCollectorInterface@{RouteCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{setDefaultInvocationStrategy()}{setDefaultInvocationStrategy()}}
+{\footnotesize\ttfamily set\+Default\+Invocation\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_invocation_strategy_interface}{Invocation\+Strategy\+Interface}}}]{\$strategy }\end{DoxyParamCaption})}
+
+Set default route invocation strategy 
+
+Implemented in \mbox{\hyperlink{class_slim_1_1_routing_1_1_route_collector_ad6c5786312d36730f823d144eae7cb28}{Route\+Collector}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/slim/\+Slim/\+Interfaces/\mbox{\hyperlink{_route_collector_interface_8php}{Route\+Collector\+Interface.\+php}}\end{DoxyCompactItemize}

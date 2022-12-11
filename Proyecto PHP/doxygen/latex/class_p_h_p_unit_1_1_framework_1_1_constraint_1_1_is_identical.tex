@@ -1,0 +1,109 @@
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical}{}\doxysection{Is\+Identical Class Reference}
+\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical}\index{IsIdentical@{IsIdentical}}
+Inheritance diagram for Is\+Identical\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a7e17a19b592345a03763f050fffe0ce7}{\+\_\+\+\_\+construct}} (\$value)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a69d7daa55bbb0dcfd00df93387d1597b}{evaluate}} (\$other, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$description=\textquotesingle{}\textquotesingle{}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$return\+Result=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_aaabb679273bfb812df4d81c283754a59}{failure\+Description}} (\$other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \mbox{\hyperlink{namespace_p_h_p_unit}{PHPUnit}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a7e17a19b592345a03763f050fffe0ce7}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a7e17a19b592345a03763f050fffe0ce7}} 
+\index{IsIdentical@{IsIdentical}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!IsIdentical@{IsIdentical}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a69d7daa55bbb0dcfd00df93387d1597b}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a69d7daa55bbb0dcfd00df93387d1597b}} 
+\index{IsIdentical@{IsIdentical}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!IsIdentical@{IsIdentical}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily evaluate (\begin{DoxyParamCaption}\item[{}]{\$other,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$description = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$return\+Result = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Evaluates the constraint for parameter \$other.
+
+If \$return\+Result is set to false (the default), an exception is thrown in case of a failure. null is returned otherwise.
+
+If \$return\+Result is true, the result of the evaluation is returned as a boolean value instead\+: true in case of success, false in case of a failure.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}}\textbackslash{}\+Recursion\+Context\textbackslash{}\+Invalid\+Argument\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception}{Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a69d7daa55bbb0dcfd00df93387d1597b}{Constraint}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_aaabb679273bfb812df4d81c283754a59}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_aaabb679273bfb812df4d81c283754a59}} 
+\index{IsIdentical@{IsIdentical}!failureDescription@{failureDescription}}
+\index{failureDescription@{failureDescription}!IsIdentical@{IsIdentical}}
+\doxysubsubsection{\texorpdfstring{failureDescription()}{failureDescription()}}
+{\footnotesize\ttfamily failure\+Description (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the description of the failure.
+
+The beginning of failure messages is \char`\"{}\+Failed asserting that\char`\"{} in most cases. This method should return the second part of that sentence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & evaluated value or object\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}}\textbackslash{}\+Recursion\+Context\textbackslash{}\+Invalid\+Argument\+Exception 
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_aaabb679273bfb812df4d81c283754a59}{Constraint}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{IsIdentical@{IsIdentical}!toString@{toString}}
+\index{toString@{toString}!IsIdentical@{IsIdentical}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the constraint.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}}\textbackslash{}\+Recursion\+Context\textbackslash{}\+Invalid\+Argument\+Exception 
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit_1_1_framework_1_1_self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{Self\+Describing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_is_identical_8php}{Is\+Identical.\+php}}\end{DoxyCompactItemize}

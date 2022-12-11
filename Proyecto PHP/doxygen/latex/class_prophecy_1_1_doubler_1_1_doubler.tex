@@ -1,0 +1,131 @@
+\hypertarget{class_prophecy_1_1_doubler_1_1_doubler}{}\doxysection{Doubler Class Reference}
+\label{class_prophecy_1_1_doubler_1_1_doubler}\index{Doubler@{Doubler}}
+Inheritance diagram for Doubler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_prophecy_1_1_doubler_1_1_doubler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler_a8902ae218ffdbb6700e93941e52f2d31}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_class_mirror}{Class\+Mirror}} \$mirror=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_class_creator}{Class\+Creator}} \$creator=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_name_generator}{Name\+Generator}} \$namer=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler_ab73c2d1c9302d19ac828a0c88e18d42f}{get\+Class\+Patches}} ()
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler_ac205a70b043086bf5e2868032b30289e}{register\+Class\+Patch}} (\mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface}{Class\+Patch\+Interface}} \$patch)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler_afef9c70e781bf45cb707436abbd44465}{double}} (Reflection\+Class \$class=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, array \$interfaces, array \$args=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler_a33ece4af76302e33e81acfc979b8ad1d}{create\+Double\+Class}} (Reflection\+Class \$class=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, array \$interfaces)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cached class doubler. Prevents mirroring/creation of the same structure twice.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_doubler_a8902ae218ffdbb6700e93941e52f2d31}\label{class_prophecy_1_1_doubler_1_1_doubler_a8902ae218ffdbb6700e93941e52f2d31}} 
+\index{Doubler@{Doubler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Doubler@{Doubler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_class_mirror}{Class\+Mirror}}}]{\$mirror = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_generator_1_1_class_creator}{Class\+Creator}}}]{\$creator = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_name_generator}{Name\+Generator}}}]{\$namer = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Initializes doubler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Mirror & {\em \$mirror} & \\
+\hline
+Class\+Creator & {\em \$creator} & \\
+\hline
+\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_name_generator}{Name\+Generator}} & {\em \$namer} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_doubler_a33ece4af76302e33e81acfc979b8ad1d}\label{class_prophecy_1_1_doubler_1_1_doubler_a33ece4af76302e33e81acfc979b8ad1d}} 
+\index{Doubler@{Doubler}!createDoubleClass@{createDoubleClass}}
+\index{createDoubleClass@{createDoubleClass}!Doubler@{Doubler}}
+\doxysubsubsection{\texorpdfstring{createDoubleClass()}{createDoubleClass()}}
+{\footnotesize\ttfamily create\+Double\+Class (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$class = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{array}]{\$interfaces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates double class and returns its FQN.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Class & {\em \$class} & \\
+\hline
+Reflection\+Class\mbox{[}$\,$\mbox{]} & {\em \$interfaces} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_cached_doubler_a33ece4af76302e33e81acfc979b8ad1d}{Cached\+Doubler}}.
+
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_doubler_afef9c70e781bf45cb707436abbd44465}\label{class_prophecy_1_1_doubler_1_1_doubler_afef9c70e781bf45cb707436abbd44465}} 
+\index{Doubler@{Doubler}!double@{double}}
+\index{double@{double}!Doubler@{Doubler}}
+\doxysubsubsection{\texorpdfstring{double()}{double()}}
+{\footnotesize\ttfamily double (\begin{DoxyParamCaption}\item[{Reflection\+Class}]{\$class = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{array}]{\$interfaces,  }\item[{array}]{\$args = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Creates double from specific class or/and list of interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Reflection\+Class & {\em \$class} & \\
+\hline
+Reflection\+Class\mbox{[}$\,$\mbox{]} & {\em \$interfaces} & Array of Reflection\+Class instances \\
+\hline
+array & {\em \$args} & Constructor arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_double_interface}{Double\+Interface}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}\textbackslash{}\+Exception\textbackslash{}\+Invalid\+Argument\+Exception \mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_doubler_ab73c2d1c9302d19ac828a0c88e18d42f}\label{class_prophecy_1_1_doubler_1_1_doubler_ab73c2d1c9302d19ac828a0c88e18d42f}} 
+\index{Doubler@{Doubler}!getClassPatches@{getClassPatches}}
+\index{getClassPatches@{getClassPatches}!Doubler@{Doubler}}
+\doxysubsubsection{\texorpdfstring{getClassPatches()}{getClassPatches()}}
+{\footnotesize\ttfamily get\+Class\+Patches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns list of registered class patches.
+
+\begin{DoxyReturn}{Returns}
+Class\+Patch\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prophecy_1_1_doubler_1_1_doubler_ac205a70b043086bf5e2868032b30289e}\label{class_prophecy_1_1_doubler_1_1_doubler_ac205a70b043086bf5e2868032b30289e}} 
+\index{Doubler@{Doubler}!registerClassPatch@{registerClassPatch}}
+\index{registerClassPatch@{registerClassPatch}!Doubler@{Doubler}}
+\doxysubsubsection{\texorpdfstring{registerClassPatch()}{registerClassPatch()}}
+{\footnotesize\ttfamily register\+Class\+Patch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_prophecy_1_1_doubler_1_1_class_patch_1_1_class_patch_interface}{Class\+Patch\+Interface}}}]{\$patch }\end{DoxyParamCaption})}
+
+Registers new class patch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Class\+Patch\+Interface & {\em \$patch} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\+Doubler/\mbox{\hyperlink{_doubler_8php}{Doubler.\+php}}\end{DoxyCompactItemize}

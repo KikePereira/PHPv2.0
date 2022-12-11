@@ -1,0 +1,267 @@
+\hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}{}\doxysection{Constraint Class Reference}
+\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}\index{Constraint@{Constraint}}
+Inheritance diagram for Constraint\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a69d7daa55bbb0dcfd00df93387d1597b}{evaluate}} (\$other, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$description=\textquotesingle{}\textquotesingle{}, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$return\+Result=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a0ea301938f24da30c2641ed3a2c0e4a6}{exporter}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a9c9c337de483bbdbb9fa249a6c7c9cc5}{matches}} (\$other)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a1b2957e741cd597ba0613c3b5f7558fb}{fail}} (\$other, \$description, \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparison_failure}{Comparison\+Failure}} \$comparison\+Failure=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_ac90d1ef6c5737c595b1a8b1f3d3b230b}{additional\+Failure\+Description}} (\$other)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_aaabb679273bfb812df4d81c283754a59}{failure\+Description}} (\$other)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a9d294bd924b52c8af03e882abe1d0bc4}{to\+String\+In\+Context}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}{Operator}} \$operator, \$role)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a65fd2f89232c3ef66714397526a008e3}{failure\+Description\+In\+Context}} (\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}{Operator}} \$operator, \$role, \$other)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a6cac52a9b5c3ca0a1bb833c95d8147fd}{reduce}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for \mbox{\hyperlink{namespace_p_h_p_unit}{PHPUnit}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_ac90d1ef6c5737c595b1a8b1f3d3b230b}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_ac90d1ef6c5737c595b1a8b1f3d3b230b}} 
+\index{Constraint@{Constraint}!additionalFailureDescription@{additionalFailureDescription}}
+\index{additionalFailureDescription@{additionalFailureDescription}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{additionalFailureDescription()}{additionalFailureDescription()}}
+{\footnotesize\ttfamily additional\+Failure\+Description (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return additional failure description where needed.
+
+The function can be overridden to provide additional failure information like a diff
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & evaluated value or object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_matches_format_description_ac90d1ef6c5737c595b1a8b1f3d3b230b}{String\+Matches\+Format\+Description}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_ac751e87b3d4c4bf2feb03bee8b092755}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_ac751e87b3d4c4bf2feb03bee8b092755}} 
+\index{Constraint@{Constraint}!count@{count}}
+\index{count@{count}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Counts the number of constraint elements. 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_anything_ac751e87b3d4c4bf2feb03bee8b092755}{Is\+Anything}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_ac751e87b3d4c4bf2feb03bee8b092755}{Binary\+Operator}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_unary_operator_ac751e87b3d4c4bf2feb03bee8b092755}{Unary\+Operator}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a69d7daa55bbb0dcfd00df93387d1597b}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a69d7daa55bbb0dcfd00df93387d1597b}} 
+\index{Constraint@{Constraint}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily evaluate (\begin{DoxyParamCaption}\item[{}]{\$other,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$description = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$return\+Result = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Evaluates the constraint for parameter \$other.
+
+If \$return\+Result is set to false (the default), an exception is thrown in case of a failure. null is returned otherwise.
+
+If \$return\+Result is true, the result of the evaluation is returned as a boolean value instead\+: true in case of success, false in case of a failure.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}}\textbackslash{}\+Recursion\+Context\textbackslash{}\+Invalid\+Argument\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception}{Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_equal_a69d7daa55bbb0dcfd00df93387d1597b}{Is\+Equal}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_equal_canonicalizing_a69d7daa55bbb0dcfd00df93387d1597b}{Is\+Equal\+Canonicalizing}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_equal_ignoring_case_a69d7daa55bbb0dcfd00df93387d1597b}{Is\+Equal\+Ignoring\+Case}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_equal_with_delta_a69d7daa55bbb0dcfd00df93387d1597b}{Is\+Equal\+With\+Delta}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_anything_a69d7daa55bbb0dcfd00df93387d1597b}{Is\+Anything}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_a69d7daa55bbb0dcfd00df93387d1597b}{Is\+Identical}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_traversable_contains_only_a69d7daa55bbb0dcfd00df93387d1597b}{Traversable\+Contains\+Only}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a0ea301938f24da30c2641ed3a2c0e4a6}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a0ea301938f24da30c2641ed3a2c0e4a6}} 
+\index{Constraint@{Constraint}!exporter@{exporter}}
+\index{exporter@{exporter}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{exporter()}{exporter()}}
+{\footnotesize\ttfamily exporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a1b2957e741cd597ba0613c3b5f7558fb}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a1b2957e741cd597ba0613c3b5f7558fb}} 
+\index{Constraint@{Constraint}!fail@{fail}}
+\index{fail@{fail}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily fail (\begin{DoxyParamCaption}\item[{}]{\$other,  }\item[{}]{\$description,  }\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparison_failure}{Comparison\+Failure}}}]{\$comparison\+Failure = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Throws an exception for the given compared value and test description.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & evaluated value or object \\
+\hline
+string & {\em \$description} & Additional information about the test \\
+\hline
+Comparison\+Failure & {\em \$comparison\+Failure} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}}\textbackslash{}\+Recursion\+Context\textbackslash{}\+Invalid\+Argument\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_expectation_failed_exception}{Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+@psalm-\/return never-\/return 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_json_matches_a1b2957e741cd597ba0613c3b5f7558fb}{Json\+Matches}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_aaabb679273bfb812df4d81c283754a59}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_aaabb679273bfb812df4d81c283754a59}} 
+\index{Constraint@{Constraint}!failureDescription@{failureDescription}}
+\index{failureDescription@{failureDescription}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{failureDescription()}{failureDescription()}}
+{\footnotesize\ttfamily failure\+Description (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the description of the failure.
+
+The beginning of failure messages is \char`\"{}\+Failed asserting that\char`\"{} in most cases. This method should return the second part of that sentence.
+
+To provide additional failure information additional\+Failure\+Description can be used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & evaluated value or object\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_sebastian_bergmann}{Sebastian\+Bergmann}}\textbackslash{}\+Recursion\+Context\textbackslash{}\+Invalid\+Argument\+Exception 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_count_aaabb679273bfb812df4d81c283754a59}{Count}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_empty_aaabb679273bfb812df4d81c283754a59}{Is\+Empty}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_aaabb679273bfb812df4d81c283754a59}{Exception}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_code_aaabb679273bfb812df4d81c283754a59}{Exception\+Code}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_message_aaabb679273bfb812df4d81c283754a59}{Exception\+Message}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_message_regular_expression_aaabb679273bfb812df4d81c283754a59}{Exception\+Message\+Regular\+Expression}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_directory_exists_aaabb679273bfb812df4d81c283754a59}{Directory\+Exists}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_file_exists_aaabb679273bfb812df4d81c283754a59}{File\+Exists}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_readable_aaabb679273bfb812df4d81c283754a59}{Is\+Readable}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_writable_aaabb679273bfb812df4d81c283754a59}{Is\+Writable}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_identical_aaabb679273bfb812df4d81c283754a59}{Is\+Identical}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_class_has_attribute_aaabb679273bfb812df4d81c283754a59}{Class\+Has\+Attribute}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_object_equals_aaabb679273bfb812df4d81c283754a59}{Object\+Equals}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_unary_operator_aaabb679273bfb812df4d81c283754a59}{Unary\+Operator}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_json_aaabb679273bfb812df4d81c283754a59}{Is\+Json}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_matches_format_description_aaabb679273bfb812df4d81c283754a59}{String\+Matches\+Format\+Description}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_array_has_key_aaabb679273bfb812df4d81c283754a59}{Array\+Has\+Key}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_traversable_contains_aaabb679273bfb812df4d81c283754a59}{Traversable\+Contains}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_instance_of_aaabb679273bfb812df4d81c283754a59}{Is\+Instance\+Of}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a65fd2f89232c3ef66714397526a008e3}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a65fd2f89232c3ef66714397526a008e3}} 
+\index{Constraint@{Constraint}!failureDescriptionInContext@{failureDescriptionInContext}}
+\index{failureDescriptionInContext@{failureDescriptionInContext}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{failureDescriptionInContext()}{failureDescriptionInContext()}}
+{\footnotesize\ttfamily failure\+Description\+In\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}{Operator}}}]{\$operator,  }\item[{}]{\$role,  }\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the description of the failure when this constraint appears in context of an \$operator expression.
+
+The purpose of this method is to provide meaningful failure description in context of operators such as \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not}{Logical\+Not}}. Native \mbox{\hyperlink{namespace_p_h_p_unit}{PHPUnit}} constraints are supported out of the box by \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not}{Logical\+Not}}, but externally developed ones had no way to provide correct messages in this context.
+
+The method shall return empty string, when it does not handle customization by itself.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}{Operator}} & {\em \$operator} & the \$operator of the expression \\
+\hline
+mixed & {\em \$role} & role of \$this constraint in the \$operator expression \\
+\hline
+mixed & {\em \$other} & evaluated value or object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a9c9c337de483bbdbb9fa249a6c7c9cc5}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a9c9c337de483bbdbb9fa249a6c7c9cc5}} 
+\index{Constraint@{Constraint}!matches@{matches}}
+\index{matches@{matches}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily matches (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Evaluates the constraint for parameter \$other. Returns true if the constraint is met, false otherwise.
+
+This method can be overridden to implement the evaluation algorithm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & value or object to evaluate\\
+\hline
+\end{DoxyParams}
+@code\+Coverage\+Ignore 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_false_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+False}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_true_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+True}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_callback_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Callback}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_count_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Count}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_greater_than_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Greater\+Than}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_empty_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Empty}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_less_than_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Less\+Than}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Exception}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_code_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Exception\+Code}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_message_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Exception\+Message}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_exception_message_regular_expression_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Exception\+Message\+Regular\+Expression}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_directory_exists_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Directory\+Exists}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_file_exists_a9c9c337de483bbdbb9fa249a6c7c9cc5}{File\+Exists}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_readable_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Readable}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_writable_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Writable}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_json_matches_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Json\+Matches}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_finite_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Finite}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_infinite_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Infinite}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_nan_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Nan}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_class_has_attribute_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Class\+Has\+Attribute}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_class_has_static_attribute_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Class\+Has\+Static\+Attribute}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_object_equals_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Object\+Equals}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_object_has_attribute_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Object\+Has\+Attribute}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_and_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Logical\+And}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Logical\+Not}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_or_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Logical\+Or}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_xor_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Logical\+Xor}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_json_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Json}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_regular_expression_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Regular\+Expression}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_contains_a9c9c337de483bbdbb9fa249a6c7c9cc5}{String\+Contains}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_ends_with_a9c9c337de483bbdbb9fa249a6c7c9cc5}{String\+Ends\+With}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_matches_format_description_a9c9c337de483bbdbb9fa249a6c7c9cc5}{String\+Matches\+Format\+Description}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_string_starts_with_a9c9c337de483bbdbb9fa249a6c7c9cc5}{String\+Starts\+With}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_array_has_key_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Array\+Has\+Key}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_traversable_contains_equal_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Traversable\+Contains\+Equal}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_traversable_contains_identical_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Traversable\+Contains\+Identical}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_instance_of_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Instance\+Of}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_null_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Null}}, \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_type_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Is\+Type}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_method_name_constraint_a9c9c337de483bbdbb9fa249a6c7c9cc5}{Method\+Name\+Constraint}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a6cac52a9b5c3ca0a1bb833c95d8147fd}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a6cac52a9b5c3ca0a1bb833c95d8147fd}} 
+\index{Constraint@{Constraint}!reduce@{reduce}}
+\index{reduce@{reduce}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily reduce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reduces the sub-\/expression starting at \$this by skipping degenerate sub-\/expression and returns first descendant constraint that starts a non-\/reducible sub-\/expression.
+
+Returns \$this for terminal constraints and for operators that start non-\/reducible sub-\/expression, or the nearest descendant of \$this that starts a non-\/reducible sub-\/expression.
+
+\mbox{\hyperlink{class_a}{A}} constraint expression may be modelled as a tree with non-\/terminal nodes (operators) and terminal nodes. For example\+: \begin{DoxyVerb} LogicalOr           (operator, non-terminal)
+ + LogicalAnd        (operator, non-terminal)
+ | + IsType('int')   (terminal)
+ | + GreaterThan(10) (terminal)
+ + LogicalNot        (operator, non-terminal)
+   + IsType('array') (terminal)
+\end{DoxyVerb}
+ \mbox{\hyperlink{class_a}{A}} degenerate sub-\/expression is a part of the tree, that effectively does not contribute to the evaluation of the expression it appears in. An example of degenerate sub-\/expression is a \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator}{Binary\+Operator}} constructed with single operand or nested Binary\+Operators, each with single operand. An expression involving a degenerate sub-\/expression is equivalent to a reduced expression with the degenerate sub-\/expression removed, for example \begin{DoxyVerb} LogicalAnd          (operator)
+ + LogicalOr         (degenerate operator)
+ | + LogicalAnd      (degenerate operator)
+ |   + IsType('int') (terminal)
+ + GreaterThan(10)   (terminal)
+\end{DoxyVerb}
+ is equivalent to \begin{DoxyVerb} LogicalAnd          (operator)
+ + IsType('int')     (terminal)
+ + GreaterThan(10)   (terminal)
+\end{DoxyVerb}
+ because the subexpression \begin{DoxyVerb} + LogicalOr
+   + LogicalAnd
+     + -
+\end{DoxyVerb}
+ is degenerate. Calling \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a6cac52a9b5c3ca0a1bb833c95d8147fd}{reduce()}} on the \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_or}{Logical\+Or}} object above, as well as on \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_and}{Logical\+And}}, shall return the \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_is_type}{Is\+Type}}(\textquotesingle{}int\textquotesingle{}) instance.
+
+Other specific reductions can be implemented, for example cascade of \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not}{Logical\+Not}} operators \begin{DoxyVerb} + LogicalNot
+   + LogicalNot
+     +LogicalNot
+      + IsTrue
+\end{DoxyVerb}
+ can be reduced to \begin{DoxyVerb} LogicalNot
+ + IsTrue
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_binary_operator_a6cac52a9b5c3ca0a1bb833c95d8147fd}{Binary\+Operator}}, and \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not_a6cac52a9b5c3ca0a1bb833c95d8147fd}{Logical\+Not}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a9d294bd924b52c8af03e882abe1d0bc4}\label{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_constraint_a9d294bd924b52c8af03e882abe1d0bc4}} 
+\index{Constraint@{Constraint}!toStringInContext@{toStringInContext}}
+\index{toStringInContext@{toStringInContext}!Constraint@{Constraint}}
+\doxysubsubsection{\texorpdfstring{toStringInContext()}{toStringInContext()}}
+{\footnotesize\ttfamily to\+String\+In\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}{Operator}}}]{\$operator,  }\item[{}]{\$role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a custom string representation of the constraint object when it appears in context of an \$operator expression.
+
+The purpose of this method is to provide meaningful descriptive string in context of operators such as \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not}{Logical\+Not}}. Native \mbox{\hyperlink{namespace_p_h_p_unit}{PHPUnit}} constraints are supported out of the box by \mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_logical_not}{Logical\+Not}}, but externally developed ones had no way to provide correct strings in this context.
+
+The method shall return empty string, when it does not handle customization by itself.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit_1_1_framework_1_1_constraint_1_1_operator}{Operator}} & {\em \$operator} & the \$operator of the expression \\
+\hline
+mixed & {\em \$role} & role of \$this constraint in the \$operator expression \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_constraint_8php}{Constraint.\+php}}\end{DoxyCompactItemize}

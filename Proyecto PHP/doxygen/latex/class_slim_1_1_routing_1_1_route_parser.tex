@@ -1,0 +1,85 @@
+\hypertarget{class_slim_1_1_routing_1_1_route_parser}{}\doxysection{Route\+Parser Class Reference}
+\label{class_slim_1_1_routing_1_1_route_parser}\index{RouteParser@{RouteParser}}
+Inheritance diagram for Route\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_slim_1_1_routing_1_1_route_parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_routing_1_1_route_parser_a8b70380121aed59bd8a6dc7800de867b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface}{Route\+Collector\+Interface}} \$route\+Collector)
+\item 
+\mbox{\hyperlink{class_slim_1_1_routing_1_1_route_parser_ab24e235684c6e1bf1b19f93477b27c3f}{url\+For}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]}, array \$query\+Params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_slim_1_1_routing_1_1_route_parser_aed2d06468e06fa1099b8d00ad96a524a}{full\+Url\+For}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]}, array \$query\+Params=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_routing_1_1_route_parser_a8b70380121aed59bd8a6dc7800de867b}\label{class_slim_1_1_routing_1_1_route_parser_a8b70380121aed59bd8a6dc7800de867b}} 
+\index{RouteParser@{RouteParser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!RouteParser@{RouteParser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_collector_interface}{Route\+Collector\+Interface}}}]{\$route\+Collector }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_routing_1_1_route_parser_aed2d06468e06fa1099b8d00ad96a524a}\label{class_slim_1_1_routing_1_1_route_parser_aed2d06468e06fa1099b8d00ad96a524a}} 
+\index{RouteParser@{RouteParser}!fullUrlFor@{fullUrlFor}}
+\index{fullUrlFor@{fullUrlFor}!RouteParser@{RouteParser}}
+\doxysubsubsection{\texorpdfstring{fullUrlFor()}{fullUrlFor()}}
+{\footnotesize\ttfamily full\+Url\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}}}]{\$uri,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$query\+Params = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+\{Get fully qualified URL for named route
+
+
+\begin{DoxyParams}[1]{Parameters}
+Uri\+Interface & {\em \$uri} & \\
+\hline
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Named argument replacement data \\
+\hline
+ & {\em array$<$string,string$>$} & \$query\+Params Optional query string parameters\\
+\hline
+\end{DoxyParams}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface_aed2d06468e06fa1099b8d00ad96a524a}{Route\+Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_slim_1_1_routing_1_1_route_parser_ab24e235684c6e1bf1b19f93477b27c3f}\label{class_slim_1_1_routing_1_1_route_parser_ab24e235684c6e1bf1b19f93477b27c3f}} 
+\index{RouteParser@{RouteParser}!urlFor@{urlFor}}
+\index{urlFor@{urlFor}!RouteParser@{RouteParser}}
+\doxysubsubsection{\texorpdfstring{urlFor()}{urlFor()}}
+{\footnotesize\ttfamily url\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$query\+Params = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+\{Build the path for a named route including the base path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Named argument replacement data \\
+\hline
+ & {\em array$<$string,string$>$} & \$query\+Params Optional query string parameters\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & If named route does not exist \\
+\hline
+{\em Invalid\+Argument\+Exception} & If required data not provided\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface_ab24e235684c6e1bf1b19f93477b27c3f}{Route\+Parser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/slim/\+Slim/\+Routing/\mbox{\hyperlink{slim_2slim_2_slim_2_routing_2_route_parser_8php}{Route\+Parser.\+php}}\end{DoxyCompactItemize}

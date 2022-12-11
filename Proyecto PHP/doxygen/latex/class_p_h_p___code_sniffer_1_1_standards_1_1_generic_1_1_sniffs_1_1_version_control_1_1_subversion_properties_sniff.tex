@@ -1,0 +1,110 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff}{}\doxysection{Subversion\+Properties\+Sniff Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff}\index{SubversionPropertiesSniff@{SubversionPropertiesSniff}}
+Inheritance diagram for Subversion\+Properties\+Sniff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_acc294a6cc8e69743746820e3d15e3f78}{register}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{process}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$stack\+Ptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_af91034e0f60327c350d73170c171ad20}{get\+Properties}} (\$path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_a7f675de4b5983d7e84f6573b7d4d453d}{\$properties}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_af91034e0f60327c350d73170c171ad20}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_af91034e0f60327c350d73170c171ad20}} 
+\index{SubversionPropertiesSniff@{SubversionPropertiesSniff}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!SubversionPropertiesSniff@{SubversionPropertiesSniff}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily get\+Properties (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the Subversion properties which are actually set on a path.
+
+Returns NULL if the file is not under version control.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to return Subversion properties on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Runtime\+Exception If Subversion properties file could not be opened. \mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_a145c97f53fb2c1ddb1c188ceba18865f}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_a145c97f53fb2c1ddb1c188ceba18865f}} 
+\index{SubversionPropertiesSniff@{SubversionPropertiesSniff}!process@{process}}
+\index{process@{process}!SubversionPropertiesSniff@{SubversionPropertiesSniff}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})}
+
+Processes this test, when one of its tokens is encountered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Files\textbackslash{}\+File & {\em \$phpcs\+File} & The file being scanned. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the current token in the stack passed in \$tokens.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_a145c97f53fb2c1ddb1c188ceba18865f}{Sniff}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_acc294a6cc8e69743746820e3d15e3f78}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_acc294a6cc8e69743746820e3d15e3f78}} 
+\index{SubversionPropertiesSniff@{SubversionPropertiesSniff}!register@{register}}
+\index{register@{register}!SubversionPropertiesSniff@{SubversionPropertiesSniff}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of tokens this test wants to listen for.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_sniffs_1_1_sniff_acc294a6cc8e69743746820e3d15e3f78}{Sniff}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_a7f675de4b5983d7e84f6573b7d4d453d}\label{class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_version_control_1_1_subversion_properties_sniff_a7f675de4b5983d7e84f6573b7d4d453d}} 
+\index{SubversionPropertiesSniff@{SubversionPropertiesSniff}!\$properties@{\$properties}}
+\index{\$properties@{\$properties}!SubversionPropertiesSniff@{SubversionPropertiesSniff}}
+\doxysubsubsection{\texorpdfstring{\$properties}{$properties}}
+{\footnotesize\ttfamily \$properties\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= [}
+\DoxyCodeLine{        \textcolor{stringliteral}{'svn:keywords'}  => \textcolor{stringliteral}{'Author Id Revision'},}
+\DoxyCodeLine{        \textcolor{stringliteral}{'svn:eol-\/style'} => \textcolor{stringliteral}{'native'},}
+\DoxyCodeLine{    ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Standards/\+Generic/\+Sniffs/\+Version\+Control/\mbox{\hyperlink{_subversion_properties_sniff_8php}{Subversion\+Properties\+Sniff.\+php}}\end{DoxyCompactItemize}

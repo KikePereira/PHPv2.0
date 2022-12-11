@@ -1,0 +1,37 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_comment}{}\doxysection{Comment Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_comment}\index{Comment@{Comment}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_comment_a13fe16a78ec062865a51630ed2b19168}{tokenize\+String}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}, \$eol\+Char, \$stack\+Ptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_comment_a13fe16a78ec062865a51630ed2b19168}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_comment_a13fe16a78ec062865a51630ed2b19168}} 
+\index{Comment@{Comment}!tokenizeString@{tokenizeString}}
+\index{tokenizeString@{tokenizeString}!Comment@{Comment}}
+\doxysubsubsection{\texorpdfstring{tokenizeString()}{tokenizeString()}}
+{\footnotesize\ttfamily tokenize\+String (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$eol\+Char,  }\item[{}]{\$stack\+Ptr }\end{DoxyParamCaption})}
+
+Creates an array of tokens when given some \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p}{PHP}} code.
+
+Starts by using token\+\_\+get\+\_\+all() but does a lot of extra processing to insert information about the context of the token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string to tokenize. \\
+\hline
+string & {\em \$eol\+Char} & The EOL character to use for splitting strings. \\
+\hline
+int & {\em \$stack\+Ptr} & The position of the first token in the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Tokenizers/\mbox{\hyperlink{squizlabs_2php__codesniffer_2src_2_tokenizers_2_comment_8php}{Comment.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,102 @@
+\hypertarget{class_prophecy_1_1_prophet}{}\doxysection{Prophet Class Reference}
+\label{class_prophecy_1_1_prophet}\index{Prophet@{Prophet}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_prophet_a593bea02c73d9db266af7a7d92c30d6c}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler}{Doubler}} \$doubler=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{interface_prophecy_1_1_prophecy_1_1_revealer_interface}{Revealer\+Interface}} \$revealer=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, \mbox{\hyperlink{class_prophecy_1_1_util_1_1_string_util}{String\+Util}} \$util=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_prophet_aee3901b35180731fb3b3bc51de4d894b}{prophesize}} (\$class\+Or\+Interface=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_prophet_a06770379bed34f1d3b9173c9a33f9f4e}{get\+Prophecies}} ()
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_prophet_a37e4dba69fc63fdec7ce094ae5d888ee}{get\+Doubler}} ()
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_prophet_afe8e0b9b20a710e8f93bcc941181a4b1}{check\+Predictions}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_prophecy_1_1_prophet}{Prophet}} creates prophecies.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_prophet_a593bea02c73d9db266af7a7d92c30d6c}\label{class_prophecy_1_1_prophet_a593bea02c73d9db266af7a7d92c30d6c}} 
+\index{Prophet@{Prophet}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Prophet@{Prophet}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_doubler_1_1_doubler}{Doubler}}}]{\$doubler = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{interface_prophecy_1_1_prophecy_1_1_revealer_interface}{Revealer\+Interface}}}]{\$revealer = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{\mbox{\hyperlink{class_prophecy_1_1_util_1_1_string_util}{String\+Util}}}]{\$util = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Initializes \mbox{\hyperlink{class_prophecy_1_1_prophet}{Prophet}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+null | \mbox{\hyperlink{namespace_prophecy_1_1_doubler}{Doubler}} & {\em \$doubler} & \\
+\hline
+null | Revealer\+Interface & {\em \$revealer} & \\
+\hline
+null | String\+Util & {\em \$util} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_prophet_afe8e0b9b20a710e8f93bcc941181a4b1}\label{class_prophecy_1_1_prophet_afe8e0b9b20a710e8f93bcc941181a4b1}} 
+\index{Prophet@{Prophet}!checkPredictions@{checkPredictions}}
+\index{checkPredictions@{checkPredictions}!Prophet@{Prophet}}
+\doxysubsubsection{\texorpdfstring{checkPredictions()}{checkPredictions()}}
+{\footnotesize\ttfamily check\+Predictions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks all predictions defined by prophecies of this \mbox{\hyperlink{class_prophecy_1_1_prophet}{Prophet}}.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{namespace_prophecy_1_1_exception}{Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prediction}{Prediction}}\textbackslash{}\+Aggregate\+Exception If any prediction fails \mbox{\Hypertarget{class_prophecy_1_1_prophet_a37e4dba69fc63fdec7ce094ae5d888ee}\label{class_prophecy_1_1_prophet_a37e4dba69fc63fdec7ce094ae5d888ee}} 
+\index{Prophet@{Prophet}!getDoubler@{getDoubler}}
+\index{getDoubler@{getDoubler}!Prophet@{Prophet}}
+\doxysubsubsection{\texorpdfstring{getDoubler()}{getDoubler()}}
+{\footnotesize\ttfamily get\+Doubler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns \mbox{\hyperlink{namespace_prophecy_1_1_doubler}{Doubler}} instance assigned to this \mbox{\hyperlink{class_prophecy_1_1_prophet}{Prophet}}.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_prophecy_1_1_doubler}{Doubler}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prophecy_1_1_prophet_a06770379bed34f1d3b9173c9a33f9f4e}\label{class_prophecy_1_1_prophet_a06770379bed34f1d3b9173c9a33f9f4e}} 
+\index{Prophet@{Prophet}!getProphecies@{getProphecies}}
+\index{getProphecies@{getProphecies}!Prophet@{Prophet}}
+\doxysubsubsection{\texorpdfstring{getProphecies()}{getProphecies()}}
+{\footnotesize\ttfamily get\+Prophecies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns all created object prophecies.
+
+\begin{DoxyReturn}{Returns}
+Object\+Prophecy\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prophecy_1_1_prophet_aee3901b35180731fb3b3bc51de4d894b}\label{class_prophecy_1_1_prophet_aee3901b35180731fb3b3bc51de4d894b}} 
+\index{Prophet@{Prophet}!prophesize@{prophesize}}
+\index{prophesize@{prophesize}!Prophet@{Prophet}}
+\doxysubsubsection{\texorpdfstring{prophesize()}{prophesize()}}
+{\footnotesize\ttfamily prophesize (\begin{DoxyParamCaption}\item[{}]{\$class\+Or\+Interface = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Creates new object prophecy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+null | string & {\em \$class\+Or\+Interface} & Class or interface name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object\+Prophecy 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\mbox{\hyperlink{_prophet_8php}{Prophet.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var _disallow_object_string_index_unit_test_8php =
+[
+    [ "DisallowObjectStringIndexUnitTest", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_objects_1_1_disallow_object_string_index_unit_test.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_objects_1_1_disallow_object_string_index_unit_test" ]
+];

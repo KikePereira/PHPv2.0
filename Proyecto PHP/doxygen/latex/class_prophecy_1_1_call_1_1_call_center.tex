@@ -1,0 +1,86 @@
+\hypertarget{class_prophecy_1_1_call_1_1_call_center}{}\doxysection{Call\+Center Class Reference}
+\label{class_prophecy_1_1_call_1_1_call_center}\index{CallCenter@{CallCenter}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_call_1_1_call_center_a957995a2f5cd98ebb4093190b136df61}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_prophecy_1_1_util_1_1_string_util}{String\+Util}} \$util=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_call_1_1_call_center_add3225f106c8f774179cbe8e2aa52af5}{make\+Call}} (\mbox{\hyperlink{class_prophecy_1_1_prophecy_1_1_object_prophecy}{Object\+Prophecy}} \$prophecy, \$method\+Name, array \$arguments)
+\item 
+\mbox{\hyperlink{class_prophecy_1_1_call_1_1_call_center_ac5d5cb4ed2e38251ff232f3e5eb8cdfb}{find\+Calls}} (\$method\+Name, \mbox{\hyperlink{class_prophecy_1_1_argument_1_1_arguments_wildcard}{Arguments\+Wildcard}} \$wildcard)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Calls receiver \& manager.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_call_1_1_call_center_a957995a2f5cd98ebb4093190b136df61}\label{class_prophecy_1_1_call_1_1_call_center_a957995a2f5cd98ebb4093190b136df61}} 
+\index{CallCenter@{CallCenter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CallCenter@{CallCenter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_util_1_1_string_util}{String\+Util}}}]{\$util = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Initializes call center.
+
+
+\begin{DoxyParams}[1]{Parameters}
+String\+Util & {\em \$util} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prophecy_1_1_call_1_1_call_center_ac5d5cb4ed2e38251ff232f3e5eb8cdfb}\label{class_prophecy_1_1_call_1_1_call_center_ac5d5cb4ed2e38251ff232f3e5eb8cdfb}} 
+\index{CallCenter@{CallCenter}!findCalls@{findCalls}}
+\index{findCalls@{findCalls}!CallCenter@{CallCenter}}
+\doxysubsubsection{\texorpdfstring{findCalls()}{findCalls()}}
+{\footnotesize\ttfamily find\+Calls (\begin{DoxyParamCaption}\item[{}]{\$method\+Name,  }\item[{\mbox{\hyperlink{class_prophecy_1_1_argument_1_1_arguments_wildcard}{Arguments\+Wildcard}}}]{\$wildcard }\end{DoxyParamCaption})}
+
+Searches for calls by method name \& arguments wildcard.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method\+Name} & \\
+\hline
+Arguments\+Wildcard & {\em \$wildcard} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_prophecy_1_1_call_1_1_call}{Call}}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_prophecy_1_1_call_1_1_call_center_add3225f106c8f774179cbe8e2aa52af5}\label{class_prophecy_1_1_call_1_1_call_center_add3225f106c8f774179cbe8e2aa52af5}} 
+\index{CallCenter@{CallCenter}!makeCall@{makeCall}}
+\index{makeCall@{makeCall}!CallCenter@{CallCenter}}
+\doxysubsubsection{\texorpdfstring{makeCall()}{makeCall()}}
+{\footnotesize\ttfamily make\+Call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_prophecy_1_1_prophecy_1_1_object_prophecy}{Object\+Prophecy}}}]{\$prophecy,  }\item[{}]{\$method\+Name,  }\item[{array}]{\$arguments }\end{DoxyParamCaption})}
+
+Makes and records specific method call for object prophecy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Object\+Prophecy & {\em \$prophecy} & \\
+\hline
+string & {\em \$method\+Name} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Returns null if no promise for prophecy found or promise return value.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_prophecy_1_1_prophecy}{Prophecy}}\textbackslash{}\+Exception\textbackslash{}\+Call\textbackslash{}\+Unexpected\+Call\+Exception If no appropriate method prophecy found 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/phpspec/prophecy/src/\+Prophecy/\+Call/\mbox{\hyperlink{_call_center_8php}{Call\+Center.\+php}}\end{DoxyCompactItemize}

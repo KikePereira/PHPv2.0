@@ -1,0 +1,148 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control}{}\doxysection{Version\+Control Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control}\index{VersionControl@{VersionControl}}
+Inheritance diagram for Version\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a386cf8227c625ab02a03570cdcda298e}{generate\+File\+Report}} (\$report, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$show\+Sources=false, \$width=80)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a7ed4eca46b8c5202ef68582b65bb2d33}{generate}} ( \$cached\+Data, \$total\+Files, \$total\+Errors, \$total\+Warnings, \$total\+Fixable, \$show\+Sources=false, \$width=80, \$interactive=false, \$to\+Screen=\mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a5b1b170fa65e425382e76d371264b5b8}{get\+Author}} (\$line)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a9a37ba9c33a3e058bac88f6955fe7857}{get\+Blame\+Content}} (\$filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a825a7c26a8e273b63e65e671c847f830}{\$report\+Name}} = \textquotesingle{}VERSION CONTROL\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a7ed4eca46b8c5202ef68582b65bb2d33}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a7ed4eca46b8c5202ef68582b65bb2d33}} 
+\index{VersionControl@{VersionControl}!generate@{generate}}
+\index{generate@{generate}!VersionControl@{VersionControl}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily generate (\begin{DoxyParamCaption}\item[{}]{\$cached\+Data,  }\item[{}]{\$total\+Files,  }\item[{}]{\$total\+Errors,  }\item[{}]{\$total\+Warnings,  }\item[{}]{\$total\+Fixable,  }\item[{}]{\$show\+Sources = {\ttfamily false},  }\item[{}]{\$width = {\ttfamily 80},  }\item[{}]{\$interactive = {\ttfamily false},  }\item[{}]{\$to\+Screen = {\ttfamily \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}} }\end{DoxyParamCaption})}
+
+Prints the author of all errors and warnings, as given by \char`\"{}version control blame\char`\"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cached\+Data} & Any partial report data that was returned from generate\+File\+Report during the run. \\
+\hline
+int & {\em \$total\+Files} & Total number of files processed during the run. \\
+\hline
+int & {\em \$total\+Errors} & Total number of errors found during the run. \\
+\hline
+int & {\em \$total\+Warnings} & Total number of warnings found during the run. \\
+\hline
+int & {\em \$total\+Fixable} & Total number of problems that can be fixed. \\
+\hline
+bool & {\em \$show\+Sources} & Show sources? \\
+\hline
+int & {\em \$width} & Maximum allowed line width. \\
+\hline
+bool & {\em \$interactive} & Are we running in interactive mode? \\
+\hline
+bool & {\em \$to\+Screen} & Is the report being printed to screen?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_reports_1_1_report_a7ed4eca46b8c5202ef68582b65bb2d33}{Report}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a386cf8227c625ab02a03570cdcda298e}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a386cf8227c625ab02a03570cdcda298e}} 
+\index{VersionControl@{VersionControl}!generateFileReport@{generateFileReport}}
+\index{generateFileReport@{generateFileReport}!VersionControl@{VersionControl}}
+\doxysubsubsection{\texorpdfstring{generateFileReport()}{generateFileReport()}}
+{\footnotesize\ttfamily generate\+File\+Report (\begin{DoxyParamCaption}\item[{}]{\$report,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$show\+Sources = {\ttfamily false},  }\item[{}]{\$width = {\ttfamily 80} }\end{DoxyParamCaption})}
+
+Generate a partial report for a single processed file.
+
+Function should return TRUE if it printed or stored data about the file and FALSE if it ignored the file. Returning TRUE indicates that the file and its data should be counted in the grand totals.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$report} & Prepared report data. \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+File & {\em \$phpcs\+File} & The file being reported on. \\
+\hline
+bool & {\em \$show\+Sources} & Show sources? \\
+\hline
+int & {\em \$width} & Maximum allowed line width.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_reports_1_1_report_a386cf8227c625ab02a03570cdcda298e}{Report}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a5b1b170fa65e425382e76d371264b5b8}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a5b1b170fa65e425382e76d371264b5b8}} 
+\index{VersionControl@{VersionControl}!getAuthor@{getAuthor}}
+\index{getAuthor@{getAuthor}!VersionControl@{VersionControl}}
+\doxysubsubsection{\texorpdfstring{getAuthor()}{getAuthor()}}
+{\footnotesize\ttfamily get\+Author (\begin{DoxyParamCaption}\item[{}]{\$line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Extract the author from a blame line.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & Line to parse.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed string or false if impossible to recover. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_gitblame_a5b1b170fa65e425382e76d371264b5b8}{Gitblame}}, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_hgblame_a5b1b170fa65e425382e76d371264b5b8}{Hgblame}}, and \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_svnblame_a5b1b170fa65e425382e76d371264b5b8}{Svnblame}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a9a37ba9c33a3e058bac88f6955fe7857}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a9a37ba9c33a3e058bac88f6955fe7857}} 
+\index{VersionControl@{VersionControl}!getBlameContent@{getBlameContent}}
+\index{getBlameContent@{getBlameContent}!VersionControl@{VersionControl}}
+\doxysubsubsection{\texorpdfstring{getBlameContent()}{getBlameContent()}}
+{\footnotesize\ttfamily get\+Blame\+Content (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Gets the blame output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \mbox{\hyperlink{class_file}{File}} to blame.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_gitblame_a9a37ba9c33a3e058bac88f6955fe7857}{Gitblame}}, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_hgblame_a9a37ba9c33a3e058bac88f6955fe7857}{Hgblame}}, and \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_svnblame_a9a37ba9c33a3e058bac88f6955fe7857}{Svnblame}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a825a7c26a8e273b63e65e671c847f830}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_version_control_a825a7c26a8e273b63e65e671c847f830}} 
+\index{VersionControl@{VersionControl}!\$reportName@{\$reportName}}
+\index{\$reportName@{\$reportName}!VersionControl@{VersionControl}}
+\doxysubsubsection{\texorpdfstring{\$reportName}{$reportName}}
+{\footnotesize\ttfamily \$report\+Name = \textquotesingle{}VERSION CONTROL\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Reports/\mbox{\hyperlink{_version_control_8php}{Version\+Control.\+php}}\end{DoxyCompactItemize}

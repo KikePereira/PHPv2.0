@@ -1,0 +1,7 @@
+var class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_functions_1_1_opening_functi50faf9256278ccae50df09ddab6441e5 =
+[
+    [ "process", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_functions_1_1_opening_functi50faf9256278ccae50df09ddab6441e5.html#a145c97f53fb2c1ddb1c188ceba18865f", null ],
+    [ "register", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_functions_1_1_opening_functi50faf9256278ccae50df09ddab6441e5.html#acc294a6cc8e69743746820e3d15e3f78", null ],
+    [ "$checkClosures", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_functions_1_1_opening_functi50faf9256278ccae50df09ddab6441e5.html#a99acc93c0e8b48775925aca1ebf8fab3", null ],
+    [ "$checkFunctions", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_functions_1_1_opening_functi50faf9256278ccae50df09ddab6441e5.html#a86c0d64ddb83654020b164f3de620ec1", null ]
+];

@@ -1,0 +1,105 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_source}{}\doxysection{Source Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_reports_1_1_source}\index{Source@{Source}}
+Inheritance diagram for Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p___code_sniffer_1_1_reports_1_1_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_source_a386cf8227c625ab02a03570cdcda298e}{generate\+File\+Report}} (\$report, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}} \$phpcs\+File, \$show\+Sources=false, \$width=80)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_source_a7ed4eca46b8c5202ef68582b65bb2d33}{generate}} ( \$cached\+Data, \$total\+Files, \$total\+Errors, \$total\+Warnings, \$total\+Fixable, \$show\+Sources=false, \$width=80, \$interactive=false, \$to\+Screen=\mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}})
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_reports_1_1_source_ad701c4f2d3403cff84d2dacd1f83b582}{make\+Friendly\+Name}} (\$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_source_a7ed4eca46b8c5202ef68582b65bb2d33}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_source_a7ed4eca46b8c5202ef68582b65bb2d33}} 
+\index{Source@{Source}!generate@{generate}}
+\index{generate@{generate}!Source@{Source}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily generate (\begin{DoxyParamCaption}\item[{}]{\$cached\+Data,  }\item[{}]{\$total\+Files,  }\item[{}]{\$total\+Errors,  }\item[{}]{\$total\+Warnings,  }\item[{}]{\$total\+Fixable,  }\item[{}]{\$show\+Sources = {\ttfamily false},  }\item[{}]{\$width = {\ttfamily 80},  }\item[{}]{\$interactive = {\ttfamily false},  }\item[{}]{\$to\+Screen = {\ttfamily \mbox{\hyperlink{_squiz_2_tests_2_functions_2_function_declaration_unit_test_8inc_a5d8410c32d4b651d9a1169f7bb4732a6}{true}}} }\end{DoxyParamCaption})}
+
+Prints the source of all errors and warnings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cached\+Data} & Any partial report data that was returned from generate\+File\+Report during the run. \\
+\hline
+int & {\em \$total\+Files} & Total number of files processed during the run. \\
+\hline
+int & {\em \$total\+Errors} & Total number of errors found during the run. \\
+\hline
+int & {\em \$total\+Warnings} & Total number of warnings found during the run. \\
+\hline
+int & {\em \$total\+Fixable} & Total number of problems that can be fixed. \\
+\hline
+bool & {\em \$show\+Sources} & Show sources? \\
+\hline
+int & {\em \$width} & Maximum allowed line width. \\
+\hline
+bool & {\em \$interactive} & Are we running in interactive mode? \\
+\hline
+bool & {\em \$to\+Screen} & Is the report being printed to screen?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_reports_1_1_report_a7ed4eca46b8c5202ef68582b65bb2d33}{Report}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_source_a386cf8227c625ab02a03570cdcda298e}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_source_a386cf8227c625ab02a03570cdcda298e}} 
+\index{Source@{Source}!generateFileReport@{generateFileReport}}
+\index{generateFileReport@{generateFileReport}!Source@{Source}}
+\doxysubsubsection{\texorpdfstring{generateFileReport()}{generateFileReport()}}
+{\footnotesize\ttfamily generate\+File\+Report (\begin{DoxyParamCaption}\item[{}]{\$report,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_files_1_1_file}{File}}}]{\$phpcs\+File,  }\item[{}]{\$show\+Sources = {\ttfamily false},  }\item[{}]{\$width = {\ttfamily 80} }\end{DoxyParamCaption})}
+
+Generate a partial report for a single processed file.
+
+Function should return TRUE if it printed or stored data about the file and FALSE if it ignored the file. Returning TRUE indicates that the file and its data should be counted in the grand totals.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$report} & Prepared report data. \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+File & {\em \$phpcs\+File} & The file being reported on. \\
+\hline
+bool & {\em \$show\+Sources} & Show sources? \\
+\hline
+int & {\em \$width} & Maximum allowed line width.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p___code_sniffer_1_1_reports_1_1_report_a386cf8227c625ab02a03570cdcda298e}{Report}}.
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_reports_1_1_source_ad701c4f2d3403cff84d2dacd1f83b582}\label{class_p_h_p___code_sniffer_1_1_reports_1_1_source_ad701c4f2d3403cff84d2dacd1f83b582}} 
+\index{Source@{Source}!makeFriendlyName@{makeFriendlyName}}
+\index{makeFriendlyName@{makeFriendlyName}!Source@{Source}}
+\doxysubsubsection{\texorpdfstring{makeFriendlyName()}{makeFriendlyName()}}
+{\footnotesize\ttfamily make\+Friendly\+Name (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+Converts a camel caps name into a readable string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The camel caps name to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Reports/\mbox{\hyperlink{squizlabs_2php__codesniffer_2src_2_reports_2_source_8php}{Source.\+php}}\end{DoxyCompactItemize}

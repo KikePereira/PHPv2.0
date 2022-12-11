@@ -1,0 +1,76 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s}{}\doxysection{CSS Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s}\index{CSS@{CSS}}
+Inheritance diagram for CSS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s_a629741680df6b53b86cabefe74f46fcd}{\+\_\+\+\_\+construct}} (\$content, \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}} \$config, \$eol\+Char=\textquotesingle{}\textbackslash{}n\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s_a2605b7284198c41c0551eca215bf65e1}{tokenize}} (\$\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s_a629741680df6b53b86cabefe74f46fcd}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s_a629741680df6b53b86cabefe74f46fcd}} 
+\index{CSS@{CSS}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CSS@{CSS}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$content,  }\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}}}]{\$config,  }\item[{}]{\$eol\+Char = {\ttfamily \textquotesingle{}\textbackslash{}n\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Initialise the tokenizer.
+
+Pre-\/checks the content to see if it looks minified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & The content to tokenize, \\
+\hline
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Config & {\em \$config} & The config data for the run. \\
+\hline
+string & {\em \$eol\+Char} & The EOL char used in the content.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Tokenizer\+Exception If the file appears to be minified. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s_a2605b7284198c41c0551eca215bf65e1}\label{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s_a2605b7284198c41c0551eca215bf65e1}} 
+\index{CSS@{CSS}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!CSS@{CSS}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily tokenize (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Creates an array of tokens when given some \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_c_s_s}{CSS}} code.
+
+Uses the \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p}{PHP}} tokenizer to do all the tricky work
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string to tokenize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_tokenizers_1_1_p_h_p_a2605b7284198c41c0551eca215bf65e1}{PHP}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\+Tokenizers/\mbox{\hyperlink{_c_s_s_8php}{CSS.\+php}}\end{DoxyCompactItemize}

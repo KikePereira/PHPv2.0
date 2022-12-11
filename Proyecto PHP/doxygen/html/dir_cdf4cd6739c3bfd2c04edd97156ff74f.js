@@ -1,0 +1,27 @@
+var dir_cdf4cd6739c3bfd2c04edd97156ff74f =
+[
+    [ "BadMethodCallException.php", "_bad_method_call_exception_8php.html", "_bad_method_call_exception_8php" ],
+    [ "CannotUseAddMethodsException.php", "_cannot_use_add_methods_exception_8php.html", "_cannot_use_add_methods_exception_8php" ],
+    [ "CannotUseOnlyMethodsException.php", "_cannot_use_only_methods_exception_8php.html", "_cannot_use_only_methods_exception_8php" ],
+    [ "ClassAlreadyExistsException.php", "_class_already_exists_exception_8php.html", "_class_already_exists_exception_8php" ],
+    [ "ClassIsFinalException.php", "_class_is_final_exception_8php.html", "_class_is_final_exception_8php" ],
+    [ "ConfigurableMethodsAlreadyInitializedException.php", "_configurable_methods_already_initialized_exception_8php.html", "_configurable_methods_already_initialized_exception_8php" ],
+    [ "DuplicateMethodException.php", "_duplicate_method_exception_8php.html", "_duplicate_method_exception_8php" ],
+    [ "Exception.php", "phpunit_2phpunit_2src_2_framework_2_mock_object_2_exception_2_exception_8php.html", "phpunit_2phpunit_2src_2_framework_2_mock_object_2_exception_2_exception_8php" ],
+    [ "IncompatibleReturnValueException.php", "_incompatible_return_value_exception_8php.html", "_incompatible_return_value_exception_8php" ],
+    [ "InvalidMethodNameException.php", "_invalid_method_name_exception_8php.html", "_invalid_method_name_exception_8php" ],
+    [ "MatchBuilderNotFoundException.php", "_match_builder_not_found_exception_8php.html", "_match_builder_not_found_exception_8php" ],
+    [ "MatcherAlreadyRegisteredException.php", "_matcher_already_registered_exception_8php.html", "_matcher_already_registered_exception_8php" ],
+    [ "MethodCannotBeConfiguredException.php", "_method_cannot_be_configured_exception_8php.html", "_method_cannot_be_configured_exception_8php" ],
+    [ "MethodNameAlreadyConfiguredException.php", "_method_name_already_configured_exception_8php.html", "_method_name_already_configured_exception_8php" ],
+    [ "MethodNameNotConfiguredException.php", "_method_name_not_configured_exception_8php.html", "_method_name_not_configured_exception_8php" ],
+    [ "MethodParametersAlreadyConfiguredException.php", "_method_parameters_already_configured_exception_8php.html", "_method_parameters_already_configured_exception_8php" ],
+    [ "OriginalConstructorInvocationRequiredException.php", "_original_constructor_invocation_required_exception_8php.html", "_original_constructor_invocation_required_exception_8php" ],
+    [ "ReflectionException.php", "phpunit_2phpunit_2src_2_framework_2_mock_object_2_exception_2_reflection_exception_8php.html", "phpunit_2phpunit_2src_2_framework_2_mock_object_2_exception_2_reflection_exception_8php" ],
+    [ "ReturnValueNotConfiguredException.php", "_return_value_not_configured_exception_8php.html", "_return_value_not_configured_exception_8php" ],
+    [ "RuntimeException.php", "phpunit_2phpunit_2src_2_framework_2_mock_object_2_exception_2_runtime_exception_8php.html", "phpunit_2phpunit_2src_2_framework_2_mock_object_2_exception_2_runtime_exception_8php" ],
+    [ "SoapExtensionNotAvailableException.php", "_soap_extension_not_available_exception_8php.html", "_soap_extension_not_available_exception_8php" ],
+    [ "UnknownClassException.php", "_unknown_class_exception_8php.html", "_unknown_class_exception_8php" ],
+    [ "UnknownTraitException.php", "_unknown_trait_exception_8php.html", "_unknown_trait_exception_8php" ],
+    [ "UnknownTypeException.php", "_unknown_type_exception_8php.html", "_unknown_type_exception_8php" ]
+];

@@ -1,0 +1,83 @@
+\hypertarget{class_twig_1_1_token_parser_1_1_if_token_parser}{}\doxysection{If\+Token\+Parser Class Reference}
+\label{class_twig_1_1_token_parser_1_1_if_token_parser}\index{IfTokenParser@{IfTokenParser}}
+Inheritance diagram for If\+Token\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_twig_1_1_token_parser_1_1_if_token_parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_twig_1_1_token_parser_1_1_if_token_parser_a9555bfac01648dc509d1b4026b1363ae}{parse}} (\mbox{\hyperlink{class_twig_1_1_token}{Token}} \$token)
+\item 
+\mbox{\hyperlink{class_twig_1_1_token_parser_1_1_if_token_parser_a6a4e2664519b8d826e07f334774ed05d}{decide\+If\+Fork}} (\mbox{\hyperlink{class_twig_1_1_token}{Token}} \$token)
+\item 
+\mbox{\hyperlink{class_twig_1_1_token_parser_1_1_if_token_parser_abeac19de81285b50a282e8413109a3e1}{decide\+If\+End}} (\mbox{\hyperlink{class_twig_1_1_token}{Token}} \$token)
+\item 
+\mbox{\hyperlink{class_twig_1_1_token_parser_1_1_if_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}{get\+Tag}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_tests}{Tests}} a condition.
+
+\{\% if users \%\} 
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\% for user in users \%\} \{\{ user.\+username$\vert$e \}\} \{\% endfor \%\}  \{\% endif \%\} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_twig_1_1_token_parser_1_1_if_token_parser_abeac19de81285b50a282e8413109a3e1}\label{class_twig_1_1_token_parser_1_1_if_token_parser_abeac19de81285b50a282e8413109a3e1}} 
+\index{IfTokenParser@{IfTokenParser}!decideIfEnd@{decideIfEnd}}
+\index{decideIfEnd@{decideIfEnd}!IfTokenParser@{IfTokenParser}}
+\doxysubsubsection{\texorpdfstring{decideIfEnd()}{decideIfEnd()}}
+{\footnotesize\ttfamily decide\+If\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_token}{Token}}}]{\$token }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_twig_1_1_token_parser_1_1_if_token_parser_a6a4e2664519b8d826e07f334774ed05d}\label{class_twig_1_1_token_parser_1_1_if_token_parser_a6a4e2664519b8d826e07f334774ed05d}} 
+\index{IfTokenParser@{IfTokenParser}!decideIfFork@{decideIfFork}}
+\index{decideIfFork@{decideIfFork}!IfTokenParser@{IfTokenParser}}
+\doxysubsubsection{\texorpdfstring{decideIfFork()}{decideIfFork()}}
+{\footnotesize\ttfamily decide\+If\+Fork (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_token}{Token}}}]{\$token }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_twig_1_1_token_parser_1_1_if_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}\label{class_twig_1_1_token_parser_1_1_if_token_parser_ab86ba36154b20e6bbfa3ba705f12f9d6}} 
+\index{IfTokenParser@{IfTokenParser}!getTag@{getTag}}
+\index{getTag@{getTag}!IfTokenParser@{IfTokenParser}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily get\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the tag name associated with this token parser.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_twig_1_1_token_parser_1_1_token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}{Token\+Parser\+Interface}}.
+
+\mbox{\Hypertarget{class_twig_1_1_token_parser_1_1_if_token_parser_a9555bfac01648dc509d1b4026b1363ae}\label{class_twig_1_1_token_parser_1_1_if_token_parser_a9555bfac01648dc509d1b4026b1363ae}} 
+\index{IfTokenParser@{IfTokenParser}!parse@{parse}}
+\index{parse@{parse}!IfTokenParser@{IfTokenParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_twig_1_1_token}{Token}}}]{\$token }\end{DoxyParamCaption})}
+
+Parses a token and returns a node.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespace_twig_1_1_node}{Node}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_twig_1_1_token_parser_1_1_token_parser_interface_a9555bfac01648dc509d1b4026b1363ae}{Token\+Parser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/twig/twig/src/\+Token\+Parser/\mbox{\hyperlink{_if_token_parser_8php}{If\+Token\+Parser.\+php}}\end{DoxyCompactItemize}

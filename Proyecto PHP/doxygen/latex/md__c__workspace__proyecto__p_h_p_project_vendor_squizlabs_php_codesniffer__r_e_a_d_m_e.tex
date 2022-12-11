@@ -1,0 +1,129 @@
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} is a set of two PHP scripts; the main {\ttfamily phpcs} script that tokenizes PHP, Java\+Script and CSS files to detect violations of a defined coding standard, and a second {\ttfamily phpcbf} script to automatically correct coding standard violations. \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} is an essential development tool that ensures your code remains clean and consistent.
+
+\href{https://github.com/squizlabs/PHP_CodeSniffer/actions}{\texttt{ }} \href{https://github.com/squizlabs/PHP_CodeSniffer/actions}{\texttt{ }} \href{http://squizlabs.github.io/PHP_CodeSniffer/analysis/squizlabs/PHP_CodeSniffer}{\texttt{ }} \href{https://gitter.im/squizlabs/PHP_CodeSniffer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge}{\texttt{ }}\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1234}{}\doxysection{Requirements}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1234}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} requires PHP version 5.\+4.\+0 or greater, although individual sniffs may have additional requirements such as external applications and scripts. See the \href{https://github.com/squizlabs/PHP_CodeSniffer/wiki/Configuration-Options}{\texttt{ Configuration Options manual page}} for a list of these requirements.
+
+If you\textquotesingle{}re using \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} as part of a team, or you\textquotesingle{}re running it on a \href{https://en.wikipedia.org/wiki/Continuous_integration}{\texttt{ CI}} server, you may want to configure your project\textquotesingle{}s settings \href{https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage\#using-a-default-configuration-file}{\texttt{ using a configuration file}}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1235}{}\doxysection{Installation}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1235}
+The easiest way to get started with \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} is to download the Phar files for each of the commands\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Download using curl}
+\DoxyCodeLine{curl -\/OL https://squizlabs.github.io/PHP\_CodeSniffer/phpcs.phar}
+\DoxyCodeLine{curl -\/OL https://squizlabs.github.io/PHP\_CodeSniffer/phpcbf.phar}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Or download using wget}
+\DoxyCodeLine{wget https://squizlabs.github.io/PHP\_CodeSniffer/phpcs.phar}
+\DoxyCodeLine{wget https://squizlabs.github.io/PHP\_CodeSniffer/phpcbf.phar}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Then test the downloaded PHARs}
+\DoxyCodeLine{php phpcs.phar -\/h}
+\DoxyCodeLine{php phpcbf.phar -\/h}
+
+\end{DoxyCode}
+\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1236}{}\doxysubsection{Composer}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1236}
+If you use \mbox{\hyperlink{namespace_composer}{Composer}}, you can install \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} system-\/wide with the following command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{composer global require "{}squizlabs/php\_codesniffer=*"{}}
+
+\end{DoxyCode}
+ Make sure you have the composer bin dir in your PATH. The default value is {\ttfamily $\sim$/.composer/vendor/bin/}, but you can check the value that you need to use by running {\ttfamily composer global config bin-\/dir -\/-\/absolute}.
+
+Or alternatively, include a dependency for {\ttfamily squizlabs/php\+\_\+codesniffer} in your {\ttfamily composer.\+json} file. For example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    "{}require-\/dev"{}: \{}
+\DoxyCodeLine{        "{}squizlabs/php\_codesniffer"{}: "{}3.*"{}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+You will then be able to run \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} from the vendor bin directory\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./vendor/bin/phpcs -\/h}
+\DoxyCodeLine{./vendor/bin/phpcbf -\/h}
+
+\end{DoxyCode}
+ \hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1237}{}\doxysubsection{Phive}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1237}
+If you use Phive, you can install \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} as a project tool using the following commands\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{phive install phpcs}
+\DoxyCodeLine{phive install phpcbf}
+
+\end{DoxyCode}
+ You will then be able to run \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} from the tools directory\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{./tools/phpcs -\/h}
+\DoxyCodeLine{./tools/phpcbf -\/h}
+
+\end{DoxyCode}
+ \hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1238}{}\doxysubsection{PEAR}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1238}
+If you use PEAR, you can install \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} using the PEAR installer. This will make the {\ttfamily phpcs} and {\ttfamily phpcbf} commands immediately available for use. To install \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} using the PEAR installer, first ensure you have \href{http://pear.php.net/manual/en/installation.getting.php}{\texttt{ installed PEAR}} and then run the following command\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pear install PHP\_CodeSniffer}
+
+\end{DoxyCode}
+ \hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1239}{}\doxysubsection{Git Clone}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1239}
+You can also download the \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} source and run the {\ttfamily phpcs} and {\ttfamily phpcbf} commands directly from the Git clone\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone https://github.com/squizlabs/PHP\_CodeSniffer.git}
+\DoxyCodeLine{cd PHP\_CodeSniffer}
+\DoxyCodeLine{php bin/phpcs -\/h}
+\DoxyCodeLine{php bin/phpcbf -\/h}
+
+\end{DoxyCode}
+ \hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1240}{}\doxysection{Getting Started}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1240}
+The default coding standard used by \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} is the PEAR coding standard. To check a file against the PEAR coding standard, simply specify the file\textquotesingle{}s location\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{phpcs /path/to/code/myfile.php}
+
+\end{DoxyCode}
+ Or if you wish to check an entire directory you can specify the directory location instead of a file. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{phpcs /path/to/code-\/directory}
+
+\end{DoxyCode}
+ If you wish to check your code against the PSR-\/12 coding standard, use the {\ttfamily -\/-\/standard} command line argument\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{phpcs -\/-\/standard=PSR12 /path/to/code-\/directory}
+
+\end{DoxyCode}
+
+
+If \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} finds any coding standard errors, a report will be shown after running the command.
+
+Full usage information and example reports are available on the \href{https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage}{\texttt{ usage page}}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1241}{}\doxysection{Documentation}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1241}
+The documentation for \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} is available on the \href{https://github.com/squizlabs/PHP_CodeSniffer/wiki}{\texttt{ Github wiki}}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1242}{}\doxysection{Issues}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1242}
+Bug reports and feature requests can be submitted on the \href{https://github.com/squizlabs/PHP_CodeSniffer/issues}{\texttt{ Github Issue Tracker}}.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1243}{}\doxysection{Contributing}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1243}
+See C\+:/workspace/\+Proyecto \mbox{\hyperlink{vendor_2squizlabs_2php__codesniffer_2_c_o_n_t_r_i_b_u_t_i_n_g_8md}{PHP/project/vendor/squizlabs/php\+\_\+codesniffer/\+CONTRIBUTING.\+md}} \char`\"{}\+CONTRIBUTING.\+md\char`\"{} for information.\hypertarget{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1244}{}\doxysection{Versioning}\label{md__c__workspace__proyecto__p_h_p_project_vendor_squizlabs_php_codesniffer__r_e_a_d_m_e_autotoc_md1244}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} uses a {\ttfamily MAJOR.\+MINOR.\+PATCH} version number format.
+
+The {\ttfamily MAJOR} version is incremented when\+:
+\begin{DoxyItemize}
+\item backwards-\/incompatible changes are made to how the {\ttfamily phpcs} or {\ttfamily phpcbf} commands are used, or
+\item backwards-\/incompatible changes are made to the {\ttfamily ruleset.\+xml} format, or
+\item backwards-\/incompatible changes are made to the API used by sniff developers, or
+\item custom \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} token types are removed, or
+\item existing sniffs are removed from \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} entirely
+\end{DoxyItemize}
+
+The {\ttfamily MINOR} version is incremented when\+:
+\begin{DoxyItemize}
+\item new backwards-\/compatible features are added to the {\ttfamily phpcs} and {\ttfamily phpcbf} commands, or
+\item backwards-\/compatible changes are made to the {\ttfamily ruleset.\+xml} format, or
+\item backwards-\/compatible changes are made to the API used by sniff developers, or
+\item new sniffs are added to an included standard, or
+\item existing sniffs are removed from an included standard
+\end{DoxyItemize}
+
+\begin{quote}
+NOTE\+: Backwards-\/compatible changes to the API used by sniff developers will allow an existing sniff to continue running without producing fatal errors but may not result in the sniff reporting the same errors as it did previously without changes being required. \end{quote}
+The {\ttfamily PATCH} version is incremented when\+:
+\begin{DoxyItemize}
+\item backwards-\/compatible bug fixes are made
+\end{DoxyItemize}
+
+\begin{quote}
+NOTE\+: As \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}} exists to report and fix issues, most bugs are the result of coding standard errors being incorrectly reported or coding standard errors not being reported when they should be. This means that the messages produced by \mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}, and the fixes it makes, are likely to be different between PATCH versions. \end{quote}

@@ -1,0 +1,127 @@
+\hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node}{}\doxysection{Printable\+New\+Anon\+Class\+Node Class Reference}
+\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node}\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+Inheritance diagram for Printable\+New\+Anon\+Class\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_af4a9025bf122539e8debf710fb092439}{\+\_\+\+\_\+construct}} (array \$attr\+Groups, array \$args, Node\textbackslash{}\+Name \$extends=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}, array \$implements, array \$stmts, array \$attributes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a830b5c75df72b32396701bc563fbe3c7}{get\+Type}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a7e06a91cc526dc52826d18313e64798a}{get\+Sub\+Node\+Names}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_af03125d86cd7f19e5584310f1d715421}{from\+New\+Node}} (Expr\textbackslash{}\+New\+\_\+ \$new\+Node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a68b22277a61a41a786be5be18177f514}{\$attr\+Groups}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a67e94494731d99ed23b123e95175bc10}{\$args}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_afc0e87808a6f40ccf687fbbc823b0ebd}{\$extends}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_abb07c992cc14ec5ea1876a4616626b79}{\$implements}}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a2c2c15e99eca72b05beb20ae91729fda}{\$stmts}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This node is used internally by the format-\/preserving pretty printer to print anonymous classes.
+
+The normal anonymous class structure violates assumptions about the order of token offsets. Namely, the constructor arguments are part of the Expr\textbackslash{}\+New\+\_\+ node and follow the class node, even though they are actually interleaved with them. This special node type is used temporarily to restore a sane token offset order. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_af4a9025bf122539e8debf710fb092439}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_af4a9025bf122539e8debf710fb092439}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$attr\+Groups,  }\item[{array}]{\$args,  }\item[{Node\textbackslash{}\+Name}]{\$extends = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}},  }\item[{array}]{\$implements,  }\item[{array}]{\$stmts,  }\item[{array}]{\$attributes }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_af03125d86cd7f19e5584310f1d715421}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_af03125d86cd7f19e5584310f1d715421}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!fromNewNode@{fromNewNode}}
+\index{fromNewNode@{fromNewNode}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{fromNewNode()}{fromNewNode()}}
+{\footnotesize\ttfamily static from\+New\+Node (\begin{DoxyParamCaption}\item[{Expr\textbackslash{}\+New\+\_\+}]{\$new\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a7e06a91cc526dc52826d18313e64798a}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a7e06a91cc526dc52826d18313e64798a}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!getSubNodeNames@{getSubNodeNames}}
+\index{getSubNodeNames@{getSubNodeNames}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{getSubNodeNames()}{getSubNodeNames()}}
+{\footnotesize\ttfamily get\+Sub\+Node\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the names of the sub nodes.
+
+\begin{DoxyReturn}{Returns}
+array Names of sub nodes 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a7e06a91cc526dc52826d18313e64798a}{Node}}.
+
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a830b5c75df72b32396701bc563fbe3c7}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a830b5c75df72b32396701bc563fbe3c7}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!getType@{getType}}
+\index{getType@{getType}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the type of the node.
+
+\begin{DoxyReturn}{Returns}
+string Type of the node 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a830b5c75df72b32396701bc563fbe3c7}{Node}}.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a67e94494731d99ed23b123e95175bc10}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a67e94494731d99ed23b123e95175bc10}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!\$args@{\$args}}
+\index{\$args@{\$args}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{\$args}{$args}}
+{\footnotesize\ttfamily \$args}
+
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a68b22277a61a41a786be5be18177f514}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a68b22277a61a41a786be5be18177f514}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!\$attrGroups@{\$attrGroups}}
+\index{\$attrGroups@{\$attrGroups}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{\$attrGroups}{$attrGroups}}
+{\footnotesize\ttfamily \$attr\+Groups}
+
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_afc0e87808a6f40ccf687fbbc823b0ebd}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_afc0e87808a6f40ccf687fbbc823b0ebd}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!\$extends@{\$extends}}
+\index{\$extends@{\$extends}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{\$extends}{$extends}}
+{\footnotesize\ttfamily \$extends}
+
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_abb07c992cc14ec5ea1876a4616626b79}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_abb07c992cc14ec5ea1876a4616626b79}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!\$implements@{\$implements}}
+\index{\$implements@{\$implements}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{\$implements}{$implements}}
+{\footnotesize\ttfamily \$implements}
+
+\mbox{\Hypertarget{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a2c2c15e99eca72b05beb20ae91729fda}\label{class_php_parser_1_1_internal_1_1_printable_new_anon_class_node_a2c2c15e99eca72b05beb20ae91729fda}} 
+\index{PrintableNewAnonClassNode@{PrintableNewAnonClassNode}!\$stmts@{\$stmts}}
+\index{\$stmts@{\$stmts}!PrintableNewAnonClassNode@{PrintableNewAnonClassNode}}
+\doxysubsubsection{\texorpdfstring{\$stmts}{$stmts}}
+{\footnotesize\ttfamily \$stmts}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Internal/\mbox{\hyperlink{_printable_new_anon_class_node_8php}{Printable\+New\+Anon\+Class\+Node.\+php}}\end{DoxyCompactItemize}

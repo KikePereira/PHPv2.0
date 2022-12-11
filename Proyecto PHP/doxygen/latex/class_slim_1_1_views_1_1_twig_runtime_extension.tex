@@ -1,0 +1,205 @@
+\hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension}{}\doxysection{Twig\+Runtime\+Extension Class Reference}
+\label{class_slim_1_1_views_1_1_twig_runtime_extension}\index{TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_a0bd1ae5a4d9e3f065a1d5656adc2d2ed}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}} \$route\+Parser, \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri, \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$base\+Path=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_ab24e235684c6e1bf1b19f93477b27c3f}{url\+For}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]}, array \$query\+Params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_a43105f5300fc1f07a1e43605c3606f59}{full\+Url\+For}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]}, array \$query\+Params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_ab433fc24362a300b667d1f4ef3522592}{is\+Current\+Url}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$route\+Name, array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_ad0b91f2e6e7e52360a613f2accac33ce}{get\+Current\+Url}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}} \$with\+Query\+String=false)
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_a2ac86cae38fbe15a019d075d485ab702}{get\+Uri}} ()
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_a2317cde918058b9a14b196e2b520a763}{set\+Uri}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri)
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_aaf4a9649667a3904fae19e9bd27ebd67}{get\+Base\+Path}} ()
+\item 
+\mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_a6bde4f41803bb8d66ef94f44122e858c}{set\+Base\+Path}} (\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$base\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}} \mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_ad5b4854b14e7277b31a81307081e5521}{\$route\+Parser}}
+\item 
+\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_ad5d5c0a3615c500a0aea6b65e68ce597}{\$base\+Path}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \mbox{\hyperlink{class_slim_1_1_views_1_1_twig_runtime_extension_a6b70793510eff0065599a41b2f9bb6dd}{\$uri}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_a0bd1ae5a4d9e3f065a1d5656adc2d2ed}\label{class_slim_1_1_views_1_1_twig_runtime_extension_a0bd1ae5a4d9e3f065a1d5656adc2d2ed}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}}}]{\$route\+Parser,  }\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}}}]{\$uri,  }\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$base\+Path = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Route\+Parser\+Interface & {\em \$route\+Parser} & Route parser \\
+\hline
+Uri\+Interface & {\em \$uri} & Uri \\
+\hline
+string & {\em \$base\+Path} & \mbox{\hyperlink{class_base}{Base}} path \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_a43105f5300fc1f07a1e43605c3606f59}\label{class_slim_1_1_views_1_1_twig_runtime_extension_a43105f5300fc1f07a1e43605c3606f59}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!fullUrlFor@{fullUrlFor}}
+\index{fullUrlFor@{fullUrlFor}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{fullUrlFor()}{fullUrlFor()}}
+{\footnotesize\ttfamily full\+Url\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$query\+Params = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Get the full url for a named route
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Route placeholders \\
+\hline
+ & {\em array$<$string,string$>$} & \$query\+Params Query parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_aaf4a9649667a3904fae19e9bd27ebd67}\label{class_slim_1_1_views_1_1_twig_runtime_extension_aaf4a9649667a3904fae19e9bd27ebd67}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!getBasePath@{getBasePath}}
+\index{getBasePath@{getBasePath}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{getBasePath()}{getBasePath()}}
+{\footnotesize\ttfamily get\+Base\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the base path
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_ad0b91f2e6e7e52360a613f2accac33ce}\label{class_slim_1_1_views_1_1_twig_runtime_extension_ad0b91f2e6e7e52360a613f2accac33ce}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!getCurrentUrl@{getCurrentUrl}}
+\index{getCurrentUrl@{getCurrentUrl}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{getCurrentUrl()}{getCurrentUrl()}}
+{\footnotesize\ttfamily get\+Current\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_a03d1b874b6d7ddc485c2ca292fb096e5}{bool}}}]{\$with\+Query\+String = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Get current path on given Uri
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$with\+Query\+String} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_a2ac86cae38fbe15a019d075d485ab702}\label{class_slim_1_1_views_1_1_twig_runtime_extension_a2ac86cae38fbe15a019d075d485ab702}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!getUri@{getUri}}
+\index{getUri@{getUri}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{getUri()}{getUri()}}
+{\footnotesize\ttfamily get\+Uri (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the uri
+
+\begin{DoxyReturn}{Returns}
+Uri\+Interface 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_ab433fc24362a300b667d1f4ef3522592}\label{class_slim_1_1_views_1_1_twig_runtime_extension_ab433fc24362a300b667d1f4ef3522592}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!isCurrentUrl@{isCurrentUrl}}
+\index{isCurrentUrl@{isCurrentUrl}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{isCurrentUrl()}{isCurrentUrl()}}
+{\footnotesize\ttfamily is\+Current\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Route placeholders\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_a6bde4f41803bb8d66ef94f44122e858c}\label{class_slim_1_1_views_1_1_twig_runtime_extension_a6bde4f41803bb8d66ef94f44122e858c}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!setBasePath@{setBasePath}}
+\index{setBasePath@{setBasePath}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{setBasePath()}{setBasePath()}}
+{\footnotesize\ttfamily set\+Base\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$base\+Path }\end{DoxyParamCaption})}
+
+Set the base path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_a2317cde918058b9a14b196e2b520a763}\label{class_slim_1_1_views_1_1_twig_runtime_extension_a2317cde918058b9a14b196e2b520a763}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!setUri@{setUri}}
+\index{setUri@{setUri}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{setUri()}{setUri()}}
+{\footnotesize\ttfamily set\+Uri (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}}}]{\$uri }\end{DoxyParamCaption})}
+
+Set the uri
+
+
+\begin{DoxyParams}[1]{Parameters}
+Uri\+Interface & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_ab24e235684c6e1bf1b19f93477b27c3f}\label{class_slim_1_1_views_1_1_twig_runtime_extension_ab24e235684c6e1bf1b19f93477b27c3f}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!urlFor@{urlFor}}
+\index{urlFor@{urlFor}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{urlFor()}{urlFor()}}
+{\footnotesize\ttfamily url\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}}}]{\$route\+Name,  }\item[{array}]{\$data = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$query\+Params = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+Get the url for a named route
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$route\+Name} & Route name \\
+\hline
+ & {\em array$<$string,string$>$} & \$data Route placeholders \\
+\hline
+ & {\em array$<$string,string$>$} & \$query\+Params Query parameters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_ad5d5c0a3615c500a0aea6b65e68ce597}\label{class_slim_1_1_views_1_1_twig_runtime_extension_ad5d5c0a3615c500a0aea6b65e68ce597}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!\$basePath@{\$basePath}}
+\index{\$basePath@{\$basePath}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{\$basePath}{$basePath}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_array_declaration_unit_test_82_8inc_af67ca679ad2d29ae45cd6af97b927adf}{string}} \$base\+Path = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_ad5b4854b14e7277b31a81307081e5521}\label{class_slim_1_1_views_1_1_twig_runtime_extension_ad5b4854b14e7277b31a81307081e5521}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!\$routeParser@{\$routeParser}}
+\index{\$routeParser@{\$routeParser}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{\$routeParser}{$routeParser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_slim_1_1_interfaces_1_1_route_parser_interface}{Route\+Parser\+Interface}} \$route\+Parser\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_slim_1_1_views_1_1_twig_runtime_extension_a6b70793510eff0065599a41b2f9bb6dd}\label{class_slim_1_1_views_1_1_twig_runtime_extension_a6b70793510eff0065599a41b2f9bb6dd}} 
+\index{TwigRuntimeExtension@{TwigRuntimeExtension}!\$uri@{\$uri}}
+\index{\$uri@{\$uri}!TwigRuntimeExtension@{TwigRuntimeExtension}}
+\doxysubsubsection{\texorpdfstring{\$uri}{$uri}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/slim/twig-\/view/src/\mbox{\hyperlink{_twig_runtime_extension_8php}{Twig\+Runtime\+Extension.\+php}}\end{DoxyCompactItemize}

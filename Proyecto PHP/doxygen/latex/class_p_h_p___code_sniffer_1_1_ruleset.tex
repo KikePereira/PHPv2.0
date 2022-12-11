@@ -1,0 +1,265 @@
+\hypertarget{class_p_h_p___code_sniffer_1_1_ruleset}{}\doxysection{Ruleset Class Reference}
+\label{class_p_h_p___code_sniffer_1_1_ruleset}\index{Ruleset@{Ruleset}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a2c52bdef8f5cb36f7758d6104cde85ee}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}} \$config)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_ad5d0eb4a7673238105f5ed4734523428}{explain}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_ac2aba8b5e2b1683990c90a55f984417e}{process\+Ruleset}} (\$ruleset\+Path, \$depth=0)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a9e114e5b3f116a0d4885b34254cef3f5}{register\+Sniffs}} (\$files, \$restrictions, \$exclusions)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a57b96b2d2af79209c6fa94cb1605d592}{populate\+Token\+Listeners}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a28787cdf17e940320e4c91b591b5f52e}{set\+Sniff\+Property}} (\$sniff\+Class, \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}}, \$value)
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_af336434ab5235f4a97765df881b9ecb2}{get\+Ignore\+Patterns}} (\$listener=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_ae4624f1fed50d7fce62624a0d86ecd16}{get\+Include\+Patterns}} (\$listener=\mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_ab2fc40d43824ea3e1ce5d86dee0d763b}{\$name}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a20dd412769e0754189f5ce036e857a37}{\$paths}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_acac2357cfa8afe33552d1bc987e6f044}{\$ignore\+Patterns}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a1d56435ba55b5b23b2237ee0df8173bc}{\$include\+Patterns}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a785ffe2e458098f791eea1d9d16936fe}{\$sniffs}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_aa73ead744604febf4d694a762068d97a}{\$sniff\+Codes}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_afdb0264ecf866d74d0a09731b387dccd}{\$token\+Listeners}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_aecaddd1bd9c1c6c40a0ef50d66600aab}{\$ruleset}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_ruleset_a6d01b18c1ce6fe244a01b2621389194b}{\$ruleset\+Dirs}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a2c52bdef8f5cb36f7758d6104cde85ee}\label{class_p_h_p___code_sniffer_1_1_ruleset_a2c52bdef8f5cb36f7758d6104cde85ee}} 
+\index{Ruleset@{Ruleset}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p___code_sniffer_1_1_config}{Config}}}]{\$config }\end{DoxyParamCaption})}
+
+Initialise the ruleset that the run will use.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PHP\+\_\+\+Code\+Sniffer\textbackslash{}\+Config & {\em \$config} & The config data for the run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Runtime\+Exception If no sniffs were registered. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_ad5d0eb4a7673238105f5ed4734523428}\label{class_p_h_p___code_sniffer_1_1_ruleset_ad5d0eb4a7673238105f5ed4734523428}} 
+\index{Ruleset@{Ruleset}!explain@{explain}}
+\index{explain@{explain}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{explain()}{explain()}}
+{\footnotesize\ttfamily explain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints a report showing the sniffs contained in a standard.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_af336434ab5235f4a97765df881b9ecb2}\label{class_p_h_p___code_sniffer_1_1_ruleset_af336434ab5235f4a97765df881b9ecb2}} 
+\index{Ruleset@{Ruleset}!getIgnorePatterns@{getIgnorePatterns}}
+\index{getIgnorePatterns@{getIgnorePatterns}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{getIgnorePatterns()}{getIgnorePatterns()}}
+{\footnotesize\ttfamily get\+Ignore\+Patterns (\begin{DoxyParamCaption}\item[{}]{\$listener = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Gets the array of ignore patterns.
+
+Optionally takes a listener to get ignore patterns specified for that sniff only.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$listener} & The listener to get patterns for. If NULL, all patterns are returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_ae4624f1fed50d7fce62624a0d86ecd16}\label{class_p_h_p___code_sniffer_1_1_ruleset_ae4624f1fed50d7fce62624a0d86ecd16}} 
+\index{Ruleset@{Ruleset}!getIncludePatterns@{getIncludePatterns}}
+\index{getIncludePatterns@{getIncludePatterns}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{getIncludePatterns()}{getIncludePatterns()}}
+{\footnotesize\ttfamily get\+Include\+Patterns (\begin{DoxyParamCaption}\item[{}]{\$listener = {\ttfamily \mbox{\hyperlink{_upper_case_constant_unit_test_8inc_a2eb6119331dfbe4aca20bd1107d44fdb}{null}}} }\end{DoxyParamCaption})}
+
+Gets the array of include patterns.
+
+Optionally takes a listener to get include patterns specified for that sniff only.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$listener} & The listener to get patterns for. If NULL, all patterns are returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a57b96b2d2af79209c6fa94cb1605d592}\label{class_p_h_p___code_sniffer_1_1_ruleset_a57b96b2d2af79209c6fa94cb1605d592}} 
+\index{Ruleset@{Ruleset}!populateTokenListeners@{populateTokenListeners}}
+\index{populateTokenListeners@{populateTokenListeners}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{populateTokenListeners()}{populateTokenListeners()}}
+{\footnotesize\ttfamily populate\+Token\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Populates the array of PHP\+\_\+\+Code\+Sniffer\+\_\+\+Sniff objects for this file.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Runtime\+Exception If sniff registration fails. \mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_ac2aba8b5e2b1683990c90a55f984417e}\label{class_p_h_p___code_sniffer_1_1_ruleset_ac2aba8b5e2b1683990c90a55f984417e}} 
+\index{Ruleset@{Ruleset}!processRuleset@{processRuleset}}
+\index{processRuleset@{processRuleset}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{processRuleset()}{processRuleset()}}
+{\footnotesize\ttfamily process\+Ruleset (\begin{DoxyParamCaption}\item[{}]{\$ruleset\+Path,  }\item[{}]{\$depth = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Processes a single ruleset and returns a list of the sniffs it represents.
+
+Rules founds within the ruleset are processed immediately, but sniff classes are not registered by this method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ruleset\+Path} & The path to a ruleset XML file. \\
+\hline
+int & {\em \$depth} & How many nested processing steps we are in. This is only used for debug output.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\hyperlink{namespace_p_h_p___code_sniffer}{PHP\+\_\+\+Code\+Sniffer}}\textbackslash{}\+Exceptions\textbackslash{}\+Runtime\+Exception -\/ If the ruleset path is invalid.
+\begin{DoxyItemize}
+\item If a specified autoload file could not be found. 
+\end{DoxyItemize}\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a9e114e5b3f116a0d4885b34254cef3f5}\label{class_p_h_p___code_sniffer_1_1_ruleset_a9e114e5b3f116a0d4885b34254cef3f5}} 
+\index{Ruleset@{Ruleset}!registerSniffs@{registerSniffs}}
+\index{registerSniffs@{registerSniffs}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{registerSniffs()}{registerSniffs()}}
+{\footnotesize\ttfamily register\+Sniffs (\begin{DoxyParamCaption}\item[{}]{\$files,  }\item[{}]{\$restrictions,  }\item[{}]{\$exclusions }\end{DoxyParamCaption})}
+
+Loads and stores sniffs objects used for sniffing files.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$files} & Paths to the sniff files to register. \\
+\hline
+array & {\em \$restrictions} & The sniff class names to restrict the allowed listeners to. \\
+\hline
+array & {\em \$exclusions} & The sniff class names to exclude from the listeners list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a28787cdf17e940320e4c91b591b5f52e}\label{class_p_h_p___code_sniffer_1_1_ruleset_a28787cdf17e940320e4c91b591b5f52e}} 
+\index{Ruleset@{Ruleset}!setSniffProperty@{setSniffProperty}}
+\index{setSniffProperty@{setSniffProperty}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{setSniffProperty()}{setSniffProperty()}}
+{\footnotesize\ttfamily set\+Sniff\+Property (\begin{DoxyParamCaption}\item[{}]{\$sniff\+Class,  }\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Set a single property for a sniff.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sniff\+Class} & The class name of the sniff. \\
+\hline
+string & {\em \$name} & The name of the property to change. \\
+\hline
+string & {\em \$value} & The new value of the property.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_acac2357cfa8afe33552d1bc987e6f044}\label{class_p_h_p___code_sniffer_1_1_ruleset_acac2357cfa8afe33552d1bc987e6f044}} 
+\index{Ruleset@{Ruleset}!\$ignorePatterns@{\$ignorePatterns}}
+\index{\$ignorePatterns@{\$ignorePatterns}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$ignorePatterns}{$ignorePatterns}}
+{\footnotesize\ttfamily \$ignore\+Patterns = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a1d56435ba55b5b23b2237ee0df8173bc}\label{class_p_h_p___code_sniffer_1_1_ruleset_a1d56435ba55b5b23b2237ee0df8173bc}} 
+\index{Ruleset@{Ruleset}!\$includePatterns@{\$includePatterns}}
+\index{\$includePatterns@{\$includePatterns}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$includePatterns}{$includePatterns}}
+{\footnotesize\ttfamily \$include\+Patterns = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_ab2fc40d43824ea3e1ce5d86dee0d763b}\label{class_p_h_p___code_sniffer_1_1_ruleset_ab2fc40d43824ea3e1ce5d86dee0d763b}} 
+\index{Ruleset@{Ruleset}!\$name@{\$name}}
+\index{\$name@{\$name}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$name}{$name}}
+{\footnotesize\ttfamily \$\mbox{\hyperlink{_p_s_r12_2_tests_2_operators_2_operator_spacing_unit_test_8inc_a938e1e973407bd27b306bcd07bedb80f}{name}} = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a20dd412769e0754189f5ce036e857a37}\label{class_p_h_p___code_sniffer_1_1_ruleset_a20dd412769e0754189f5ce036e857a37}} 
+\index{Ruleset@{Ruleset}!\$paths@{\$paths}}
+\index{\$paths@{\$paths}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$paths}{$paths}}
+{\footnotesize\ttfamily \$paths = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_aecaddd1bd9c1c6c40a0ef50d66600aab}\label{class_p_h_p___code_sniffer_1_1_ruleset_aecaddd1bd9c1c6c40a0ef50d66600aab}} 
+\index{Ruleset@{Ruleset}!\$ruleset@{\$ruleset}}
+\index{\$ruleset@{\$ruleset}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$ruleset}{$ruleset}}
+{\footnotesize\ttfamily \$ruleset = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a6d01b18c1ce6fe244a01b2621389194b}\label{class_p_h_p___code_sniffer_1_1_ruleset_a6d01b18c1ce6fe244a01b2621389194b}} 
+\index{Ruleset@{Ruleset}!\$rulesetDirs@{\$rulesetDirs}}
+\index{\$rulesetDirs@{\$rulesetDirs}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$rulesetDirs}{$rulesetDirs}}
+{\footnotesize\ttfamily \$ruleset\+Dirs = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_aa73ead744604febf4d694a762068d97a}\label{class_p_h_p___code_sniffer_1_1_ruleset_aa73ead744604febf4d694a762068d97a}} 
+\index{Ruleset@{Ruleset}!\$sniffCodes@{\$sniffCodes}}
+\index{\$sniffCodes@{\$sniffCodes}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$sniffCodes}{$sniffCodes}}
+{\footnotesize\ttfamily \$sniff\+Codes = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_a785ffe2e458098f791eea1d9d16936fe}\label{class_p_h_p___code_sniffer_1_1_ruleset_a785ffe2e458098f791eea1d9d16936fe}} 
+\index{Ruleset@{Ruleset}!\$sniffs@{\$sniffs}}
+\index{\$sniffs@{\$sniffs}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$sniffs}{$sniffs}}
+{\footnotesize\ttfamily \$sniffs = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{class_p_h_p___code_sniffer_1_1_ruleset_afdb0264ecf866d74d0a09731b387dccd}\label{class_p_h_p___code_sniffer_1_1_ruleset_afdb0264ecf866d74d0a09731b387dccd}} 
+\index{Ruleset@{Ruleset}!\$tokenListeners@{\$tokenListeners}}
+\index{\$tokenListeners@{\$tokenListeners}!Ruleset@{Ruleset}}
+\doxysubsubsection{\texorpdfstring{\$tokenListeners}{$tokenListeners}}
+{\footnotesize\ttfamily \$token\+Listeners = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/squizlabs/php\+\_\+codesniffer/src/\mbox{\hyperlink{_ruleset_8php}{Ruleset.\+php}}\end{DoxyCompactItemize}

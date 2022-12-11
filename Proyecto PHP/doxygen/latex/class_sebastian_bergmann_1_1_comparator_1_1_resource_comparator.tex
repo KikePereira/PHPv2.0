@@ -1,0 +1,79 @@
+\hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator}{}\doxysection{Resource\+Comparator Class Reference}
+\label{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator}\index{ResourceComparator@{ResourceComparator}}
+Inheritance diagram for Resource\+Comparator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator_ae9bdf0cba02ce3470169280656cdeb84}{accepts}} (\$expected, \$actual)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator_adb3679ea06503114394431cb250ec5a4}{assert\+Equals}} (\$expected, \$actual, \$delta=0.\+0, \$canonicalize=false, \$ignore\+Case=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Compares resources for equality. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator_ae9bdf0cba02ce3470169280656cdeb84}\label{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator_ae9bdf0cba02ce3470169280656cdeb84}} 
+\index{ResourceComparator@{ResourceComparator}!accepts@{accepts}}
+\index{accepts@{accepts}!ResourceComparator@{ResourceComparator}}
+\doxysubsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily accepts (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual }\end{DoxyParamCaption})}
+
+Returns whether the comparator can compare two values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & The first value to compare \\
+\hline
+mixed & {\em \$actual} & The second value to compare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_ae9bdf0cba02ce3470169280656cdeb84}{Comparator}}.
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator_adb3679ea06503114394431cb250ec5a4}\label{class_sebastian_bergmann_1_1_comparator_1_1_resource_comparator_adb3679ea06503114394431cb250ec5a4}} 
+\index{ResourceComparator@{ResourceComparator}!assertEquals@{assertEquals}}
+\index{assertEquals@{assertEquals}!ResourceComparator@{ResourceComparator}}
+\doxysubsubsection{\texorpdfstring{assertEquals()}{assertEquals()}}
+{\footnotesize\ttfamily assert\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that two values are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & First value to compare \\
+\hline
+mixed & {\em \$actual} & Second value to compare \\
+\hline
+float & {\em \$delta} & Allowed numerical distance between two values to consider them equal \\
+\hline
+bool & {\em \$canonicalize} & Arrays are sorted before comparison when set to true \\
+\hline
+bool & {\em \$ignore\+Case} & Case is ignored when set to true\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparison_failure}{Comparison\+Failure}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_adb3679ea06503114394431cb250ec5a4}{Comparator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace/\+Proyecto PHP/project/vendor/sebastian/comparator/src/\mbox{\hyperlink{_resource_comparator_8php}{Resource\+Comparator.\+php}}\end{DoxyCompactItemize}

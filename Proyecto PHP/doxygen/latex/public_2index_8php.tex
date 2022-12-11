@@ -1,0 +1,184 @@
+\hypertarget{public_2index_8php}{}\doxysection{C\+:/workspace/\+Proyecto PHP/project/public/index.php File Reference}
+\label{public_2index_8php}\index{C:/workspace/Proyecto PHP/project/public/index.php@{C:/workspace/Proyecto PHP/project/public/index.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{public_2index_8php_a224f107efe12551afdb773fc9f59b3cb}{\$container\+Builder}} = new \mbox{\hyperlink{class_d_i_1_1_container_builder}{Container\+Builder}}()
+\item 
+\mbox{\hyperlink{autoload_8php_ae4dd496b0f39307b4d12d66e26c51847}{if}}(false) \mbox{\hyperlink{public_2index_8php_a0d5124c247b05907374e2390d1ef0294}{\$settings}} = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/settings.\+php\textquotesingle{}
+\item 
+\mbox{\hyperlink{public_2index_8php_a8ae55c530fb7224b32ec94f1e5906800}{\$dependencies}} = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/dependencies.\+php\textquotesingle{}
+\item 
+\mbox{\hyperlink{public_2index_8php_a8a9f97c250b3f2c61f809ebc9e6a7426}{\$repositories}} = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/repositories.\+php\textquotesingle{}
+\item 
+\mbox{\hyperlink{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}{\$container}} = \$container\+Builder-\/$>$build()
+\item 
+\mbox{\hyperlink{public_2index_8php_adfb117f244076aa9bc269269f7e57403}{\$app}} = App\+Factory\+::create()
+\item 
+\mbox{\hyperlink{public_2index_8php_a3ac7144e4d1c9ef3350b2618f5b27f18}{\$callable\+Resolver}} = \$app-\/$>$get\+Callable\+Resolver()
+\item 
+\mbox{\hyperlink{public_2index_8php_a95b22cf97ae99a402854f5f45a9871bf}{\$twig}} =Twig\+::create(\+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../templates\textquotesingle{})
+\item 
+\mbox{\hyperlink{public_2index_8php_a36a993ea76b635c84749f6e5e6562344}{\$middleware}} = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/middleware.\+php\textquotesingle{}
+\item 
+\mbox{\hyperlink{public_2index_8php_a8f7eb04a54e0f0bfc0cedeb9899ce4a8}{\$routes}} = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/routes.\+php\textquotesingle{}
+\item 
+\mbox{\hyperlink{public_2index_8php_a2828c1f4b52ca79ef352d9b7c1f849e4}{\$display\+Error\+Details}} = \$settings-\/$>$get(\textquotesingle{}display\+Error\+Details\textquotesingle{})
+\item 
+\mbox{\hyperlink{public_2index_8php_a7c8c1f8c35ec66045d29cb1bfea8e829}{\$log\+Error}} = \$settings-\/$>$get(\textquotesingle{}log\+Error\textquotesingle{})
+\item 
+\mbox{\hyperlink{public_2index_8php_a2128ed8e9f3d33fe5640d1a1c6a9720d}{\$log\+Error\+Details}} = \$settings-\/$>$get(\textquotesingle{}log\+Error\+Details\textquotesingle{})
+\item 
+\mbox{\hyperlink{public_2index_8php_a86806d66a2f23bee05848df4f6c14e40}{\$server\+Request\+Creator}} = Server\+Request\+Creator\+Factory\+::create()
+\item 
+\mbox{\hyperlink{public_2index_8php_abb35c8495a232b510389fa6d7b15d38a}{\$request}} = \$server\+Request\+Creator-\/$>$create\+Server\+Request\+From\+Globals()
+\item 
+\mbox{\hyperlink{public_2index_8php_a1af6eb6781e6f6cc43b76dc4471227f3}{\$response\+Factory}} = \$app-\/$>$get\+Response\+Factory()
+\item 
+\mbox{\hyperlink{public_2index_8php_ac17770954233f7d662f4c9d08c7f35cc}{\$error\+Handler}} = new \mbox{\hyperlink{class_app_1_1_application_1_1_handlers_1_1_http_error_handler}{Http\+Error\+Handler}}(\$callable\+Resolver, \$response\+Factory)
+\item 
+\mbox{\hyperlink{public_2index_8php_afae68096d128fd02794d8608fd8a2632}{\$shutdown\+Handler}} = new \mbox{\hyperlink{class_app_1_1_application_1_1_handlers_1_1_shutdown_handler}{Shutdown\+Handler}}(\$request, \$error\+Handler, \$display\+Error\+Details)
+\item 
+\mbox{\hyperlink{public_2index_8php_a6e225e5085ba9698f8f9611d7eb5a7f9}{\$method\+Override\+Middleware}} = new \mbox{\hyperlink{class_slim_1_1_middleware_1_1_method_override_middleware}{Method\+Override\+Middleware}}()
+\item 
+\mbox{\hyperlink{public_2index_8php_ac63c6f3579fa6219a382fdaad6e27962}{\$error\+Middleware}} = \$app-\/$>$add\+Error\+Middleware(\$display\+Error\+Details, \$log\+Error, \$log\+Error\+Details)
+\item 
+\mbox{\hyperlink{public_2index_8php_af4b6fb1bbc77ccc05f10da3b16935b99}{\$response}} = \$app-\/$>$handle(\$request)
+\item 
+\mbox{\hyperlink{public_2index_8php_a4a1a1e3589d171cb734704d004055992}{\$response\+Emitter}} = new \mbox{\hyperlink{class_app_1_1_application_1_1_response_emitter_1_1_response_emitter}{Response\+Emitter}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{public_2index_8php_adfb117f244076aa9bc269269f7e57403}\label{public_2index_8php_adfb117f244076aa9bc269269f7e57403}} 
+\index{index.php@{index.php}!\$app@{\$app}}
+\index{\$app@{\$app}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$app}{$app}}
+{\footnotesize\ttfamily \$app = App\+Factory\+::create()}
+
+\mbox{\Hypertarget{public_2index_8php_a3ac7144e4d1c9ef3350b2618f5b27f18}\label{public_2index_8php_a3ac7144e4d1c9ef3350b2618f5b27f18}} 
+\index{index.php@{index.php}!\$callableResolver@{\$callableResolver}}
+\index{\$callableResolver@{\$callableResolver}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$callableResolver}{$callableResolver}}
+{\footnotesize\ttfamily \$callable\+Resolver = \$app-\/$>$get\+Callable\+Resolver()}
+
+\mbox{\Hypertarget{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}\label{public_2index_8php_ac5e4b54a4d658059f4330a6076a8f2b7}} 
+\index{index.php@{index.php}!\$container@{\$container}}
+\index{\$container@{\$container}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$container}{$container}}
+{\footnotesize\ttfamily Container\+Interface \$container = \$container\+Builder-\/$>$build()}
+
+\mbox{\Hypertarget{public_2index_8php_a224f107efe12551afdb773fc9f59b3cb}\label{public_2index_8php_a224f107efe12551afdb773fc9f59b3cb}} 
+\index{index.php@{index.php}!\$containerBuilder@{\$containerBuilder}}
+\index{\$containerBuilder@{\$containerBuilder}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$containerBuilder}{$containerBuilder}}
+{\footnotesize\ttfamily \$container\+Builder = new \mbox{\hyperlink{class_d_i_1_1_container_builder}{Container\+Builder}}()}
+
+\mbox{\Hypertarget{public_2index_8php_a8ae55c530fb7224b32ec94f1e5906800}\label{public_2index_8php_a8ae55c530fb7224b32ec94f1e5906800}} 
+\index{index.php@{index.php}!\$dependencies@{\$dependencies}}
+\index{\$dependencies@{\$dependencies}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$dependencies}{$dependencies}}
+{\footnotesize\ttfamily \$dependencies = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/dependencies.\+php\textquotesingle{}}
+
+\mbox{\Hypertarget{public_2index_8php_a2828c1f4b52ca79ef352d9b7c1f849e4}\label{public_2index_8php_a2828c1f4b52ca79ef352d9b7c1f849e4}} 
+\index{index.php@{index.php}!\$displayErrorDetails@{\$displayErrorDetails}}
+\index{\$displayErrorDetails@{\$displayErrorDetails}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$displayErrorDetails}{$displayErrorDetails}}
+{\footnotesize\ttfamily \$display\+Error\+Details = \$settings-\/$>$get(\textquotesingle{}display\+Error\+Details\textquotesingle{})}
+
+\mbox{\Hypertarget{public_2index_8php_ac17770954233f7d662f4c9d08c7f35cc}\label{public_2index_8php_ac17770954233f7d662f4c9d08c7f35cc}} 
+\index{index.php@{index.php}!\$errorHandler@{\$errorHandler}}
+\index{\$errorHandler@{\$errorHandler}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$errorHandler}{$errorHandler}}
+{\footnotesize\ttfamily \$error\+Handler = new \mbox{\hyperlink{class_app_1_1_application_1_1_handlers_1_1_http_error_handler}{Http\+Error\+Handler}}(\$callable\+Resolver, \$response\+Factory)}
+
+\mbox{\Hypertarget{public_2index_8php_ac63c6f3579fa6219a382fdaad6e27962}\label{public_2index_8php_ac63c6f3579fa6219a382fdaad6e27962}} 
+\index{index.php@{index.php}!\$errorMiddleware@{\$errorMiddleware}}
+\index{\$errorMiddleware@{\$errorMiddleware}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$errorMiddleware}{$errorMiddleware}}
+{\footnotesize\ttfamily \$error\+Middleware = \$app-\/$>$add\+Error\+Middleware(\$display\+Error\+Details, \$log\+Error, \$log\+Error\+Details)}
+
+\mbox{\Hypertarget{public_2index_8php_a7c8c1f8c35ec66045d29cb1bfea8e829}\label{public_2index_8php_a7c8c1f8c35ec66045d29cb1bfea8e829}} 
+\index{index.php@{index.php}!\$logError@{\$logError}}
+\index{\$logError@{\$logError}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$logError}{$logError}}
+{\footnotesize\ttfamily \$log\+Error = \$settings-\/$>$get(\textquotesingle{}log\+Error\textquotesingle{})}
+
+\mbox{\Hypertarget{public_2index_8php_a2128ed8e9f3d33fe5640d1a1c6a9720d}\label{public_2index_8php_a2128ed8e9f3d33fe5640d1a1c6a9720d}} 
+\index{index.php@{index.php}!\$logErrorDetails@{\$logErrorDetails}}
+\index{\$logErrorDetails@{\$logErrorDetails}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$logErrorDetails}{$logErrorDetails}}
+{\footnotesize\ttfamily \$log\+Error\+Details = \$settings-\/$>$get(\textquotesingle{}log\+Error\+Details\textquotesingle{})}
+
+\mbox{\Hypertarget{public_2index_8php_a6e225e5085ba9698f8f9611d7eb5a7f9}\label{public_2index_8php_a6e225e5085ba9698f8f9611d7eb5a7f9}} 
+\index{index.php@{index.php}!\$methodOverrideMiddleware@{\$methodOverrideMiddleware}}
+\index{\$methodOverrideMiddleware@{\$methodOverrideMiddleware}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$methodOverrideMiddleware}{$methodOverrideMiddleware}}
+{\footnotesize\ttfamily \$method\+Override\+Middleware = new \mbox{\hyperlink{class_slim_1_1_middleware_1_1_method_override_middleware}{Method\+Override\+Middleware}}()}
+
+\mbox{\Hypertarget{public_2index_8php_a36a993ea76b635c84749f6e5e6562344}\label{public_2index_8php_a36a993ea76b635c84749f6e5e6562344}} 
+\index{index.php@{index.php}!\$middleware@{\$middleware}}
+\index{\$middleware@{\$middleware}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$middleware}{$middleware}}
+{\footnotesize\ttfamily \$middleware = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/middleware.\+php\textquotesingle{}}
+
+\mbox{\Hypertarget{public_2index_8php_a8a9f97c250b3f2c61f809ebc9e6a7426}\label{public_2index_8php_a8a9f97c250b3f2c61f809ebc9e6a7426}} 
+\index{index.php@{index.php}!\$repositories@{\$repositories}}
+\index{\$repositories@{\$repositories}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$repositories}{$repositories}}
+{\footnotesize\ttfamily \$repositories = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/repositories.\+php\textquotesingle{}}
+
+\mbox{\Hypertarget{public_2index_8php_abb35c8495a232b510389fa6d7b15d38a}\label{public_2index_8php_abb35c8495a232b510389fa6d7b15d38a}} 
+\index{index.php@{index.php}!\$request@{\$request}}
+\index{\$request@{\$request}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$request}{$request}}
+{\footnotesize\ttfamily \$request = \$server\+Request\+Creator-\/$>$create\+Server\+Request\+From\+Globals()}
+
+\mbox{\Hypertarget{public_2index_8php_af4b6fb1bbc77ccc05f10da3b16935b99}\label{public_2index_8php_af4b6fb1bbc77ccc05f10da3b16935b99}} 
+\index{index.php@{index.php}!\$response@{\$response}}
+\index{\$response@{\$response}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$response}{$response}}
+{\footnotesize\ttfamily \$response = \$app-\/$>$handle(\$request)}
+
+\mbox{\Hypertarget{public_2index_8php_a4a1a1e3589d171cb734704d004055992}\label{public_2index_8php_a4a1a1e3589d171cb734704d004055992}} 
+\index{index.php@{index.php}!\$responseEmitter@{\$responseEmitter}}
+\index{\$responseEmitter@{\$responseEmitter}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$responseEmitter}{$responseEmitter}}
+{\footnotesize\ttfamily \$response\+Emitter = new \mbox{\hyperlink{class_app_1_1_application_1_1_response_emitter_1_1_response_emitter}{Response\+Emitter}}()}
+
+\mbox{\Hypertarget{public_2index_8php_a1af6eb6781e6f6cc43b76dc4471227f3}\label{public_2index_8php_a1af6eb6781e6f6cc43b76dc4471227f3}} 
+\index{index.php@{index.php}!\$responseFactory@{\$responseFactory}}
+\index{\$responseFactory@{\$responseFactory}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$responseFactory}{$responseFactory}}
+{\footnotesize\ttfamily \$response\+Factory = \$app-\/$>$get\+Response\+Factory()}
+
+\mbox{\Hypertarget{public_2index_8php_a8f7eb04a54e0f0bfc0cedeb9899ce4a8}\label{public_2index_8php_a8f7eb04a54e0f0bfc0cedeb9899ce4a8}} 
+\index{index.php@{index.php}!\$routes@{\$routes}}
+\index{\$routes@{\$routes}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$routes}{$routes}}
+{\footnotesize\ttfamily \$routes = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/routes.\+php\textquotesingle{}}
+
+\mbox{\Hypertarget{public_2index_8php_a86806d66a2f23bee05848df4f6c14e40}\label{public_2index_8php_a86806d66a2f23bee05848df4f6c14e40}} 
+\index{index.php@{index.php}!\$serverRequestCreator@{\$serverRequestCreator}}
+\index{\$serverRequestCreator@{\$serverRequestCreator}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$serverRequestCreator}{$serverRequestCreator}}
+{\footnotesize\ttfamily \$server\+Request\+Creator = Server\+Request\+Creator\+Factory\+::create()}
+
+\mbox{\Hypertarget{public_2index_8php_a0d5124c247b05907374e2390d1ef0294}\label{public_2index_8php_a0d5124c247b05907374e2390d1ef0294}} 
+\index{index.php@{index.php}!\$settings@{\$settings}}
+\index{\$settings@{\$settings}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$settings}{$settings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_app_1_1_application_1_1_settings_1_1_settings_interface}{Settings\+Interface}} \$settings = require \+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../app/settings.\+php\textquotesingle{}}
+
+\mbox{\Hypertarget{public_2index_8php_afae68096d128fd02794d8608fd8a2632}\label{public_2index_8php_afae68096d128fd02794d8608fd8a2632}} 
+\index{index.php@{index.php}!\$shutdownHandler@{\$shutdownHandler}}
+\index{\$shutdownHandler@{\$shutdownHandler}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$shutdownHandler}{$shutdownHandler}}
+{\footnotesize\ttfamily \$shutdown\+Handler = new \mbox{\hyperlink{class_app_1_1_application_1_1_handlers_1_1_shutdown_handler}{Shutdown\+Handler}}(\$request, \$error\+Handler, \$display\+Error\+Details)}
+
+\mbox{\Hypertarget{public_2index_8php_a95b22cf97ae99a402854f5f45a9871bf}\label{public_2index_8php_a95b22cf97ae99a402854f5f45a9871bf}} 
+\index{index.php@{index.php}!\$twig@{\$twig}}
+\index{\$twig@{\$twig}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$twig}{$twig}}
+{\footnotesize\ttfamily \$twig =Twig\+::create(\+\_\+\+\_\+\+DIR\+\_\+\+\_\+ . \textquotesingle{}/../templates\textquotesingle{})}
+
