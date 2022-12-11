@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 use App\Controllers\LoginController;
-use App\Controllers\TareaController1;
-use App\Controllers\AddTareaController;
 use App\Controllers\TareaController;
 use App\Application\Actions\User\ListUsersAction;
 use App\Application\Actions\User\ViewUserAction;
@@ -20,10 +18,11 @@ return function (App $app) {
         return $response;
     });
 
-    $app->get('/', function (Request $request, Response $response) {
-        $view=Twig::fromRequest($request);
-        return $view->render($response,'login.php');
-    });
+    $app->get('/', TareaController::class . ':getLogin');
+
+    $app->post('/', TareaController::class . ':login');
+
+    $app->get('/logout', TareaController::class .':logout');
 
     $app->group('/tareas',function(Group $group){
         $group->get('', TareaController::class .':index');

@@ -19,7 +19,7 @@
         height: 50px;
     }
     .credenciales{
-        margin-left: 65%;
+        margin-left: 55%;
     }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -46,8 +46,8 @@
                     <a class="nav-link" href="/tareas/create">Añadir tarea <i class="fa-sharp fa-solid fa-cart-plus"></i></a>
                 </div>
                 <div class="credenciales">
-                <span>Bienvenido Operario1, Operario</span>
-                <a href="/"> <i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
+                <span>Bienvenido {{usuario.nombre}}, {{usuario.tipo}} <span style="color: blue">Ultimo inicio: {{usuario.hora}}</span></span>
+                <a href="/logout"> <i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
                 </div>
             </div>
         </div>
