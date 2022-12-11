@@ -1,4 +1,4 @@
-{% extends 'index.php' %}
+{% extends 'plantilla.php' %}
 
 {% block title %}Tarea Pendientes{% endblock %}
 

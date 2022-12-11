@@ -1,4 +1,4 @@
-{% extends 'index.php' %}
+{% extends 'plantilla.php' %}
 
 {% block title %}Modificar Tarea Nº{{tarea.tarea_id}}{% endblock %}
 

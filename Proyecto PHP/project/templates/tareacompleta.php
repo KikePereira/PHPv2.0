@@ -1,4 +1,4 @@
-{% extends 'index.php' %}
+{% extends 'plantilla.php' %}
 
 {% block title %}Tarea Nº{{tarea.tarea_id}}{% endblock %}
 
