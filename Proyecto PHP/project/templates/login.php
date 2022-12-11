@@ -32,7 +32,7 @@
                     </div>
       
                     <div class="form-outline form-white mb-4">
-                      <input name="password" type="text" class="form-control form-control-lg" placeholder="Contraseña"/>
+                      <input name="password" type="password" class="form-control form-control-lg" placeholder="Contraseña"/>
                     </div>
       
       
@@ -43,7 +43,6 @@
                       <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
                       <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
                     </div>
-      
                   </div>
                 </div>
               </div>

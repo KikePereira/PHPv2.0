@@ -12,6 +12,10 @@ use Slim\Views\Twig;
 use App\Models\Usuario;
 use App\Models\UserSession;
 
+/**
+ * TareaController
+ * Esta es la clase que maneja el controlador de la web
+ */
 class TareaController
 {
     private $container;
@@ -21,7 +25,15 @@ class TareaController
     {
         $this->container = $container;
     }
-
+    
+    /**
+     * index
+     *Funcion que controla la vista de Ver tareas en la web
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public static function index(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $view = Twig::fromRequest($request);
@@ -46,7 +58,15 @@ class TareaController
             exit();
         }
     }
-
+    
+    /**
+     * pendientes
+     *Funcion que controla la vista de Tareas Pendientes
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function pendientes(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
@@ -63,7 +83,15 @@ class TareaController
             header("Location: /");
             exit();
         }
-    }
+    }    
+    /**
+     * show
+     *Funcion que controla ver una Tarea con toda su informacion en la web
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function show(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
 
@@ -82,7 +110,15 @@ class TareaController
             exit();
         }
     }
-
+    
+    /**
+     * delete
+     *Funcion que controla la vista de eliminar una tarea en la web, esta nos manda a la confirmacion de eliminacion
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function delete(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
@@ -99,7 +135,15 @@ class TareaController
             exit();
         }
     }
-
+    
+    /**
+     * destroy
+     *Funcion que elimina la tarea si confirmamos su eliminacion y nos manda a ver las tareas
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function destroy(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $view = Twig::fromRequest($request);
@@ -108,7 +152,15 @@ class TareaController
 
         return self::index($request, $response, $args);
     }
-
+    
+    /**
+     * create
+     *Funcion que nos muestra la vista de crear una nueva tarea en la web
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function create(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
@@ -125,7 +177,15 @@ class TareaController
             exit();
         }
     }
-
+    
+    /**
+     * store
+     *Funcion que nos valida y nos sube la tarea o nos imprime el formulario con los errores devueltos
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function store(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
@@ -170,7 +230,16 @@ class TareaController
             exit();
         }
     }
-
+    
+    /**
+     * edit
+     *Funcion que nos muestra el formulario para modificar una tarea, pasando por parametro todos los datos de la tarea, 
+     *sacado desde la base de datos, a mostrar.
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function edit(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
@@ -191,7 +260,16 @@ class TareaController
             exit();
         }
     }
-
+    
+    /**
+     * update
+     *Funcion que controla el formulario de la modificacion, validandolo y subiendo las modificaciones, o por su contrario nos vuelve a mostrar la tarea
+     *con su formulario para modificarla, en este caso recibe los errores de validacion por parametro 
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function update(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
@@ -239,7 +317,15 @@ class TareaController
             exit();
         }
     }
-
+    
+    /**
+     * complete
+     *Funcion que nos muestra el formulario de completar, solo podiendo modificar el estado, apareciendo este ya en Realizada, y las anotaciones finales
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public function complete(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
@@ -257,7 +343,15 @@ class TareaController
     }
 
     //LOGIN
-
+    
+    /**
+     * login
+     *Funcion que nos controla el login y las sesiones de la web
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public static function login(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
 
@@ -284,7 +378,15 @@ class TareaController
             return $view->render($response, 'login.php', ['error' => $error]);
         }
     }
-
+    
+    /**
+     * logout
+     *Funcion que nos cierra la sesion del usuario
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public static function logout(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $userSession = new UserSession;
@@ -293,7 +395,15 @@ class TareaController
         header("Location: /");
         exit();
     }
-
+    
+    /**
+     * getLogin
+     *Funcion que nos muestra el formulario login si no hay sesion iniciad, si existiera sesion iniciada nos ingresa al inicio de la web con dicha sesion
+     * @param  mixed $request
+     * @param  mixed $response
+     * @param  mixed $args
+     * @return ResponseInterface
+     */
     public static function getLogin(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
