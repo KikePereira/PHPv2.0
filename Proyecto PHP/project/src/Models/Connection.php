@@ -5,6 +5,10 @@ namespace App\Models;
 use PDO;
 use PDOException;
 
+/**
+ * Connection
+ * Clase que conecta a la base de datos
+ */
 class Connection
 {
 
@@ -13,7 +17,13 @@ class Connection
     private function __construct(){
 
     }
-
+        
+    
+    /**
+     * getInstance
+     *Funcion que retorna la conexion si esta ya ha sido instanciada o que la crea en caso contrario
+     * @return self::$instance
+     */
     public static function getInstance(){
 
         if (empty(self::$instance)) {

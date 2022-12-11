@@ -4,6 +4,10 @@ namespace App\Models;
 use App\Models\GestorErrores;
 use App\Models\Validaciones;
 
+/**
+ * Tarea
+ * Clase que Tarea que almacenara los datos de esta misma y tambien nos permitira validar sus campos
+ */
 class Tarea{
 
     public $tarea_id;
@@ -41,7 +45,12 @@ class Tarea{
         $this->anotacion_inicio=$anotacion_inicio;
         $this->anotacion_final=$anotacion_final;
     }
-
+    
+    /**
+     * validar
+     *Funcion que valida los campos de la Tarea y nos duelve los errores
+     * @return $error
+     */
     function validar(){
 
         $error=new GestorErrores('<span style="color: red;">*','*</span>');

@@ -14,7 +14,7 @@ use App\Models\UserSession;
 
 /**
  * TareaController
- * Esta es la clase que maneja el controlador de la web
+ * Clase que maneja el controlador de la web
  */
 class TareaController
 {

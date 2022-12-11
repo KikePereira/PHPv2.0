@@ -2,13 +2,24 @@
 
 namespace App\Models;
 
+/**
+ * Usuario
+ * Clase Usuario que nos sacara y validara un usuario de la base de datos
+ */
 class Usuario{
 
     public $nombre;
     public $password;
     public $tipo;
     public $hora;
-
+    
+    /**
+     * userExists
+     *Funcion que nos validara si el Usuario pasado por parametros al loguearse es correcto
+     * @param  mixed $nombre
+     * @param  mixed $pass
+     * @return bool
+     */
     public function userExists($nombre, $pass){
 
         $connect=Connection::getInstance();
@@ -27,7 +38,13 @@ class Usuario{
         }
 
     }
-
+    
+    /**
+     * setUser
+     *Funcion que nos sacara de la base de datos toda la informacion del usuario pasado por parametro
+     * @param  mixed $nombre
+     * @return void
+     */
     public function setUser($nombre){
         $connect=Connection::getInstance();
         $consulta='SELECT * FROM usuario WHERE nombre= :nombre';
@@ -43,7 +60,14 @@ class Usuario{
             $this->hora = $currentUser['hora'];
         }
     }
-
+    
+    /**
+     * updateLogin
+     *Funcion que nos actualizara la hora de la ultima conexion del usuario pasado por parametro
+     * @param  mixed $nombre
+     * @param  mixed $hora
+     * @return void
+     */
     public static function updateLogin($nombre, $hora){
         $connect=Connection::getInstance();
         $consulta='UPDATE usuario SET hora = :hora WHERE nombre= :nombre';
