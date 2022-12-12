@@ -20,7 +20,7 @@ return function (App $app) {
 
     $app->get('/', TareaController::class . ':getLogin');
 
-    $app->post('/', TareaController::class . ':login');
+    $app->post('/tareas', TareaController::class . ':login');
 
     $app->get('/logout', TareaController::class .':logout');
 

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Domain\User\User;
 use App\Models\TareaRepository;
 use App\Models\Tarea;
 use Psr\Container\ContainerInterface;
@@ -11,6 +12,7 @@ use Slim\Views\Twig;
 
 use App\Models\Usuario;
 use App\Models\UserSession;
+use Exception;
 
 /**
  * TareaController
@@ -37,8 +39,13 @@ class TareaController
     public static function index(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $view = Twig::fromRequest($request);
-
-        if (isset($_SESSION['usuario'])) {
+        
+        session_start();
+        
+        if (!isset($_SESSION['usuario'])) {
+            header("Location: /");
+            exit();
+        }
 
             $usuario = new Usuario;
             $usuario->setUser($_SESSION['usuario']);
@@ -52,12 +59,8 @@ class TareaController
             $tareas = TareaRepository::getTareasPag($cantTareas, $pagina);
             $paginas = TareaRepository::paginas($cantTareas);
             return $view->render($response, 'tareas.php', ['tareas' => $tareas, 'paginas' => $paginas, 'paginaActual' => $pagina, 'usuario' => $usuario]);
-        } else {
-
-            header("Location: /");
-            exit();
         }
-    }
+    
     
     /**
      * pendientes
@@ -361,7 +364,9 @@ class TareaController
         $error = '<span style=color:red;>*Nombre o Contraseña invalido*</span>';
 
         if (isset($_SESSION['usuario'])) {
-            return self::index($request, $response, $args);
+            $usuario = new Usuario;
+            $usuario->setUser($_SESSION['usuario']);
+            return $view->render($response, 'bienvenida.php', ['usuario' => $usuario]);
         } else if (!empty($_POST['nombre']) && !empty($_POST['password'])) {
             if ($user->userExists($_POST['nombre'], $_POST['password'])) {
                 $userSession->setCurrentUser($_POST['nombre']);
@@ -369,10 +374,12 @@ class TareaController
                 $hora = strval($hora);
                 Usuario::updateLogin($_POST['nombre'], $hora);
                 $user->setUser($_POST['nombre']);
-
-                return self::index($request, $response, $args);
+                header("Location: /");
+                return $view->render($response, 'bienvenida.php', ['usuario' => $user]);
             } else {
+                header("Location: /");
                 return $view->render($response, 'login.php', ['error' => $error]);
+
             }
         } else {
             return $view->render($response, 'login.php', ['error' => $error]);
@@ -404,13 +411,14 @@ class TareaController
      * @param  mixed $args
      * @return ResponseInterface
      */
-    public static function getLogin(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
-    {
-        session_start();
+    public static function getLogin(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{       
+         $view = Twig::fromRequest($request);
+         session_start();
+
         if(isset($_SESSION['usuario'])){
-            return self::index($request, $response, $args);
-        }
-        $view = Twig::fromRequest($request);
+            $usuario = new Usuario;
+            $usuario->setUser($_SESSION['usuario']);
+            return $view->render($response, 'bienvenida.php', ['usuario' => $usuario]);        }
         return $view->render($response, 'login.php', []);
     }
 }

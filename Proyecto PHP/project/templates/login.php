@@ -14,7 +14,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="/" method="post">
+    <form action="/tareas" method="post">
     <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">

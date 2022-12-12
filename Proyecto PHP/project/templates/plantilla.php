@@ -41,7 +41,7 @@
             <a href="/tareas"><i class="fa-sharp fa-solid fa-house-user" style="color: black;"></i></a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="/tareas">Ver lista</a> 
+                    <a class="nav-link" href="/tareas?page=1">Ver lista</a> 
                     <a class="nav-link" href="/tareas/pendientes">Tareas Pendientes <i class="fa-sharp fa-solid fa-bell"></i></a>
                     <a class="nav-link" href="/tareas/create">Añadir tarea <i class="fa-sharp fa-solid fa-cart-plus"></i></a>
                 </div>
