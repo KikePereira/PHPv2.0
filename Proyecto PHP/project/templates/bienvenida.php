@@ -1,47 +1,70 @@
-{% extends 'plantilla.php' %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}Tareas{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ffc107;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-{% block head %}
-<style>
-    body{
-        background-color: #F0F0F0;
-    }
+        }
 
-    .list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5%;
-        width: 90%;
-    }
-    .table{
-        border: 2px solid grey;
-        background-color: white;
-    }
-    .titles{
-        background-color: black;
-        color: white;
-    }
-    .buscador{
-        margin-left: 80%;
-    }
-    .paginacion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .paginacion a, .paginacion span{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-</style>
-{% endblock %}
+        .box {
+            margin-top: 10%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            border: 2px solid black;
+            background-color: #F0F0F0;
 
+        }
 
-{% block content %}
-<div class="list">
-<h1>BIENVENIDO {{usuario.nombre}}!</h1>
-</div>
+        h1 {
+            color: blue;
+        }
 
-{% endblock %}
+        footer {
+            position: absolute;
+            width: 100%;
+            top: 94%;
+            height: 50px;
+        }
+    </style>
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="box">
+            <br>
+            <h1>!BIENVENIDO {{usuario.nombre}}¡</h1>
+        
+            <h4>¿Que deseas hacer?</h4>
+            <a href="/tareas"><button class="btn btn-primary">Lista Tareas</button></a> <br> <br>
+            <a href="/tareas/pendientes"><button class="btn btn-secondary">Tareas Pendientes</button></a> <br> <br>
+            <a href="/tareas/create"><button class="btn btn-secondary">Añadir Tarea</button></a> <br> <br>
+            <a href="/logout"><button class="btn btn-danger">Cerrar Sesion</button></a> <br>
+    
+
+            <footer class="text-center text-white static-bottom">
+
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(51, 51, 51, 1);">
+                    <span style="color: white">© 2022 Copyright by</span>
+                    <a class="text-white" href="https://github.com/KikePereira/PHPv2.0">Enrique Pereira Ramos</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+    </div>
+</body>
+
+</html>

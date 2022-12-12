@@ -38,15 +38,15 @@
 
     <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-            <a href="/tareas"><i class="fa-sharp fa-solid fa-house-user" style="color: black;"></i></a>
+            <a href="/" class="nav-link" style="color:black">Inicio <i class="fa-sharp fa-solid fa-house-user" style="color: black;"></i></a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="/tareas?page=1">Ver lista</a> 
+                    <a class="nav-link" href="/tareas?page=1">Ver lista <i class="fa-sharp fa-solid fa-list"></i></a> 
                     <a class="nav-link" href="/tareas/pendientes">Tareas Pendientes <i class="fa-sharp fa-solid fa-bell"></i></a>
                     <a class="nav-link" href="/tareas/create">Añadir tarea <i class="fa-sharp fa-solid fa-cart-plus"></i></a>
                 </div>
                 <div class="credenciales">
-                <span>Bienvenido {{usuario.nombre}}, {{usuario.tipo}} <span style="color: blue">Ultimo inicio: {{usuario.hora}}</span></span>
+                <span>Hola {{usuario.nombre}}, {{usuario.tipo}} <span style="color: blue">Ultimo inicio: {{usuario.hora}}</span></span>
                 <a href="/logout"> <i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
                 </div>
             </div>
