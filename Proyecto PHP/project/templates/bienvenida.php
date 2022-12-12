@@ -21,7 +21,7 @@
             flex-flow: column wrap;
             justify-content: center;
             align-items: center;
-            width: 500px;
+            width: 700px;
             border: 2px solid black;
             background-color: #F0F0F0;
 
@@ -48,8 +48,13 @@
         
             <h4>¿Que deseas hacer?</h4>
             <a href="/tareas"><button class="btn btn-primary">Lista Tareas</button></a> <br> <br>
+            {% if usuario.tipo == 'admin' %}
+            <a href="/usuarios"><button class="btn btn-primary">Lista Usuarios</button></a> <br> <br>
+            {% endif %}
             <a href="/tareas/pendientes"><button class="btn btn-secondary">Tareas Pendientes</button></a> <br> <br>
+            {% if usuario.tipo == 'admin' %}
             <a href="/tareas/create"><button class="btn btn-secondary">Añadir Tarea</button></a> <br> <br>
+            {% endif %}
             <a href="/logout"><button class="btn btn-danger">Cerrar Sesion</button></a> <br>
     
 
