@@ -24,6 +24,11 @@ return function (App $app) {
 
     $app->get('/logout', TareaController::class .':logout');
 
+    $app->post('/filtrado', TareaController::class .':tareaFiltrada');
+
+    $app->get('/usuarios', TareaController::class .':listaUsuarios');
+
+
     $app->group('/tareas',function(Group $group){
         $group->get('', TareaController::class .':index');
         $group->get('/pendientes', TareaController::class .':pendientes');

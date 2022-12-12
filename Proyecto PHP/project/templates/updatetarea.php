@@ -120,7 +120,7 @@
 
                 <div class="col-md-6">
                     <label for="">Fecha Realizacion: {{error.ErrorFormateado('fecharealizacion')|raw}}</label> 
-                    <input name="fecha_realizacion" type="date" class="form-control"value="{{tarea.fecha_realizacion}}">
+                    <input name="fecha_realizacion" type="date" class="form-control"value="{{tarea.fecharealizacion}}">
                 </div>
 
                 <label for="">Anotacion: </label> 
@@ -132,7 +132,8 @@
             </div>
             <input type="hidden" name="_METHOD" value="PUT">
             <input type="submit" class="btn btn-primary">
-            <a href="/tareas"><button class="btn btn-primary">Cancelar</button></a>
+            
     </form>
+    <a href="/tareas"><button class="btn btn-primary">Cancelar</button></a>
 </div>
 {% endblock %}

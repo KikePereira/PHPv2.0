@@ -35,11 +35,20 @@
         margin-right: 10px;
         margin-left: 10px;
     }
+    .filtrado{
+        margin-left:60%;
+    }
 </style>
 {% endblock %}
 
 
 {% block content %}
+<form action="/filtrado" class="filtrado" method="post">
+    <input type="text" placeholder="DNI" name="dni">
+    <input type="text" placeholder="Estado" name="estado">
+    <input type="text" placeholder="Operario" name="operario">
+    <input type="submit" value="Buscar">
+</form> <br>
 <div class="list">
 
 
@@ -71,8 +80,11 @@
                         {% if tarea.estado_tarea != 'Realizada' and tarea.estado_tarea != 'Cancelada'  %}
                         <a href="/tareas/{{tarea.tarea_id}}/complete"><i class="fa-solid fa-check"></i></a>
                         {% endif %}
+                        {% if usuario.tipo == 'admin' %}
                         <a href="/tareas/{{tarea.tarea_id}}/delete"><i class="fa-solid fa-trash-can"></i></a>
                         <a href="/tareas/{{tarea.tarea_id}}/update"><i class="fa-solid fa-pen-to-square"></i></a>
+                        {% endif %}
+
                     </td>
                 </tr>
             {% endfor %}

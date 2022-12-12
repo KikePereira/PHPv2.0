@@ -19,7 +19,7 @@
         height: 50px;
     }
     .credenciales{
-        margin-left: 55%;
+        margin-left: 50%;
     }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -43,7 +43,10 @@
                 <div class="navbar-nav">
                     <a class="nav-link" href="/tareas?page=1">Ver lista <i class="fa-sharp fa-solid fa-list"></i></a> 
                     <a class="nav-link" href="/tareas/pendientes">Tareas Pendientes <i class="fa-sharp fa-solid fa-bell"></i></a>
-                    <a class="nav-link" href="/tareas/create">Añadir tarea <i class="fa-sharp fa-solid fa-cart-plus"></i></a>
+                    {% if usuario.tipo == 'admin' %}
+                        <a class="nav-link" href="/tareas/create">Añadir tarea <i class="fa-sharp fa-solid fa-cart-plus"></i></a>
+                        <a class="nav-link" href="/usuarios">Lista Usuarios<i class="fa-sharp fa-solid fa-user"></i></a>
+                    {% endif %}
                 </div>
                 <div class="credenciales">
                 <span>Hola {{usuario.nombre}}, {{usuario.tipo}} <span style="color: blue">Ultimo inicio: {{usuario.hora}}</span></span>

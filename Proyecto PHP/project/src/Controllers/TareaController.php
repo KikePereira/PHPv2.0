@@ -28,7 +28,46 @@ class TareaController
         $this->container = $container;
     }
     
-    /**
+    public static function listaUsuarios(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+        session_start();
+
+        if (isset($_SESSION['usuario'])) {
+            $usuario = new Usuario;
+            $usuario->setUser($_SESSION['usuario']);
+            if($usuario->tipo=='admin'){
+                $view = Twig::fromRequest($request);
+
+                $usuarios = TareaRepository::getUsuarios();
+                return $view->render($response, 'listaUsuarios.php', ['usuarios' => $usuarios, 'usuario' => $usuario]);
+            }
+            
+        } else {
+            header("Location: /");
+            exit();
+        }
+
+    }
+
+
+    public static function tareaFiltrada(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+        $view = Twig::fromRequest($request);
+        session_start();
+
+        if (!isset($_SESSION['usuario'])) {
+            header("Location: /");
+            exit();
+        }
+
+        $estado= filter_input(INPUT_POST, 'estado');
+        $dni=filter_input(INPUT_POST, 'dni');
+        $operario=filter_input(INPUT_POST, 'operario');
+
+        $tareasFiltradas=TareaRepository::TareasFiltradas($dni,$estado,$operario);
+   
+        return $view->render($response, 'tareasfiltradas.php', ['tareas' => $tareasFiltradas]);
+    }
+
+ /**
      * index
      *Funcion que controla la vista de Ver tareas en la web
      * @param  mixed $request
@@ -129,15 +168,21 @@ class TareaController
         if (isset($_SESSION['usuario'])) {
             $usuario = new Usuario;
             $usuario->setUser($_SESSION['usuario']);
+        if($usuario->tipo=='admin'){
             $view = Twig::fromRequest($request);
 
             $tareas = TareaRepository::TareaCompleta($args['id']);
             return $view->render($response, 'deletetarea.php', ['tarea' => $tareas, 'usuario' => $usuario]);
-        } else {
-            header("Location: /");
+        }else{
+            header("Location: /tareas");
             exit();
         }
+        
+    }else {
+        header("Location: /");
+        exit();
     }
+}
     
     /**
      * destroy
@@ -171,10 +216,16 @@ class TareaController
         if (isset($_SESSION['usuario'])) {
             $usuario = new Usuario;
             $usuario->setUser($_SESSION['usuario']);
-            $view = Twig::fromRequest($request);
-            $provincias = TareaRepository::getProvincias();
-            $operarios = TareaRepository::getOperarios();
-            return $view->render($response, 'addTarea.php', ['provincias' => $provincias, 'operarios' => $operarios, 'usuario' => $usuario]);
+            if($usuario->tipo=='admin'){
+                $view = Twig::fromRequest($request);
+                $provincias = TareaRepository::getProvincias();
+                $operarios = TareaRepository::getOperarios();
+                return $view->render($response, 'addTarea.php', ['provincias' => $provincias, 'operarios' => $operarios, 'usuario' => $usuario]);
+            }else{
+                header("Location: /tareas");
+                exit();
+            }
+            
         } else {
             header("Location: /");
             exit();
@@ -246,10 +297,11 @@ class TareaController
     public function edit(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
-
         if (isset($_SESSION['usuario'])) {
             $usuario = new Usuario;
             $usuario->setUser($_SESSION['usuario']);
+
+            if($usuario->tipo=='admin'){
             $view = Twig::fromRequest($request);
 
             $provincias = TareaRepository::getProvincias();
@@ -258,11 +310,15 @@ class TareaController
             $tareas = TareaRepository::TareaCompleta($args['id']);
 
             return $view->render($response, 'updatetarea.php', ['tarea' => $tareas, 'provincias' => $provincias, 'operarios' => $operarios, 'usuario' => $usuario]);
-        } else {
+        } else{
+            header("Location: /tareas");
+            exit();}
+            
+        }else {
             header("Location: /");
             exit();
-        }
     }
+}
     
     /**
      * update
@@ -311,7 +367,7 @@ class TareaController
                 $tareaoriginal = TareaRepository::TareaCompleta($tarea->tarea_id);
                 $provincias = TareaRepository::getProvincias();
                 $operarios = TareaRepository::getOperarios();
-                return $view->render($response, 'updatetarea.php', ['error' => $error, 'tarea' => $tareaoriginal, 'provincias' => $provincias, 'operarios' => $operarios, 'usuario' => $usuario]);
+                return $view->render($response, 'updatetarea.php', ['error' => $error, 'tarea' => $tarea, 'provincias' => $provincias, 'operarios' => $operarios, 'usuario' => $usuario]);
             }
 
             return self::index($request, $response, $args);

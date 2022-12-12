@@ -167,41 +167,15 @@ class TareaRepository{
         $connect=Connection::getInstance();
 
             $consulta='UPDATE tareas 
-            SET dni=:dni,
-            nombre=:nombre,
-            apellido=:apellido,
-            telefono=:telefono,
-            correo=:correo,
-            direccion=:direccion,
-            poblacion=:poblacion,
-            codigo_postal=:codigo_postal,
-            provincia=:provincia,
+            SET 
             estado_tarea=:estado_tarea,
-            fecha_creacion=:fecha_creacion,
-            operario_encargado=:operario_encargado,
-            fecha_realizacion=:fecha_realizacion,
-            anotacion_inicio=:anotacion_inicio,
             anotacion_final=:anotacion_final
             WHERE tarea_id=:tarea_id';
 
             $datos=[
-                'dni'=>$tarea->dni,
-                'nombre'=>$tarea->nombre,
-                'apellido'=>$tarea->apellido,
-                'telefono'=>$tarea->telefono,
-                'correo'=>$tarea->correo,
-                'direccion'=>$tarea->direccion,
-                'poblacion'=>$tarea->poblacion,
-                'codigo_postal'=>$tarea->codigo_postal,
-                'provincia'=>$tarea->provincia,
                 'estado_tarea'=>$tarea->estado_tarea,
-                'fecha_creacion'=>$tarea->fecha_creacion,
-                'operario_encargado'=>$tarea->operario_encargado,
-                'fecha_realizacion'=>$tarea->fecharealizacion,
-                'anotacion_inicio'=>$tarea->anotacion_inicio,
                 'anotacion_final'=>$tarea->anotacion_final,
                 'tarea_id'=>$tarea->tarea_id,
-
             ];
 
             $connect->prepare($consulta)->execute($datos);
@@ -285,6 +259,44 @@ class TareaRepository{
 
         return $resultado->fetch(PDO::FETCH_ASSOC);
 
+    }
+
+    public static function TareasFiltradas($dni,$estado,$operario){
+        $connect=Connection::getInstance();
+
+        $consulta="SELECT * from tareas  WHERE dni=:dni AND estado_tarea=:estado AND operario_encargado=:operario";
+
+        $datos=['dni'=>$dni, 'estado'=>$estado,'operario'=>$operario];
+
+        $resultado=$connect->prepare($consulta);
+        $resultado->execute($datos);
+    
+        $tareasFiltradas=[];
+
+        while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
+            array_push($tareasFiltradas,$registro);
+        }
+
+        
+        return $tareasFiltradas;
+    }
+
+    public static function getUsuarios(){
+        $connect=Connection::getInstance();
+    
+        $consulta="SELECT * FROM usuario";
+
+        $resultado=$connect->prepare($consulta);
+        $resultado->execute();
+
+        $usuario=[];
+
+        while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
+            array_push($usuario,$registro);
+        }
+
+        
+        return $usuario;
     }
 
 }
