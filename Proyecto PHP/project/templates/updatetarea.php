@@ -26,6 +26,9 @@
         footer {
         position: sticky;
         }
+        .credenciales{
+        margin-left: 40%;
+    }
     </style>
 {% endblock %}
 

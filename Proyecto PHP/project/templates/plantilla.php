@@ -19,12 +19,11 @@
         height: 50px;
     }
     .credenciales{
-        margin-left: 50%;
+        margin-left: 40%;
     }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/526f5e2cea.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="../assets/css/estilo.css">
 <html lang="en">
 
 <head>
@@ -46,11 +45,12 @@
                     {% if usuario.tipo == 'admin' %}
                         <a class="nav-link" href="/tareas/create">Añadir tarea <i class="fa-sharp fa-solid fa-cart-plus"></i></a>
                         <a class="nav-link" href="/usuarios">Lista Usuarios<i class="fa-sharp fa-solid fa-user"></i></a>
+                        <a class="nav-link" href="/usuarios/create">Crear usuario<i class="fa-sharp fa-solid fa-user"></i></a>
                     {% endif %}
                 </div>
                 <div class="credenciales">
                 <span>Hola {{usuario.nombre}}, {{usuario.tipo}} <span style="color: blue">Ultimo inicio: {{usuario.hora}}</span></span>
-                <a href="/logout"> <i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
+                <a href="/logout"> <button class="btn btn-primary">Logout <i class="fa-sharp fa-solid fa-right-from-bracket"></i></button></a>
                 </div>
             </div>
         </div>

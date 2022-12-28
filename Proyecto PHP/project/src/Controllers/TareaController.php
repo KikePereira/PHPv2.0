@@ -29,22 +29,26 @@ class TareaController
     }
     
     public static function listaUsuarios(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+        $view = Twig::fromRequest($request);
+
         session_start();
 
-        if (isset($_SESSION['usuario'])) {
+        if (!isset($_SESSION['usuario'])) {
+            header("Location: /tareas");
+            exit();
+        }
             $usuario = new Usuario;
             $usuario->setUser($_SESSION['usuario']);
             if($usuario->tipo=='admin'){
-                $view = Twig::fromRequest($request);
 
                 $usuarios = TareaRepository::getUsuarios();
                 return $view->render($response, 'listaUsuarios.php', ['usuarios' => $usuarios, 'usuario' => $usuario]);
+            }else{
+                header("Location: /tareas");
+                exit();
             }
             
-        } else {
-            header("Location: /");
-            exit();
-        }
+        
 
     }
 
@@ -94,7 +98,7 @@ class TareaController
                 $pagina = 1;
             }
 
-            $cantTareas = 3;
+            $cantTareas = 10;
             $tareas = TareaRepository::getTareasPag($cantTareas, $pagina);
             $paginas = TareaRepository::paginas($cantTareas);
             return $view->render($response, 'tareas.php', ['tareas' => $tareas, 'paginas' => $paginas, 'paginaActual' => $pagina, 'usuario' => $usuario]);
@@ -183,6 +187,28 @@ class TareaController
         exit();
     }
 }
+
+public function deleteUser(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
+{
+    session_start();
+
+    if (isset($_SESSION['usuario'])) {
+        $usuario = new Usuario;
+        $usuario->setUser($_SESSION['usuario']);
+    if($usuario->tipo=='admin'){
+        $view = Twig::fromRequest($request);
+        $usuarios = TareaRepository::getUser($args['id']);
+        return $view->render($response, 'deleteUsuario.php', ['usuarios' => $usuarios, 'usuario'=>$usuario]);
+    }else{
+        header("Location: /usuarios");
+        exit();
+    }
+    
+}else {
+    header("Location: /");
+    exit();
+}
+}
     
     /**
      * destroy
@@ -199,6 +225,20 @@ class TareaController
         TareaRepository::EliminarTarea($args['id']);
 
         return self::index($request, $response, $args);
+    }
+
+    public function destroyUser(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
+    {
+        session_start();
+        $usuario = new Usuario;
+        $usuario->setUser($_SESSION['usuario']);
+
+        $view = Twig::fromRequest($request);
+
+        TareaRepository::EliminarUsuario($args['id']);
+
+        $usuarios = TareaRepository::getUser($args['id']);
+        return $view->render($response, 'listaUsuarios.php', ['usuarios' => $usuarios, 'usuario'=>$usuario]);    
     }
     
     /**
@@ -221,6 +261,27 @@ class TareaController
                 $provincias = TareaRepository::getProvincias();
                 $operarios = TareaRepository::getOperarios();
                 return $view->render($response, 'addTarea.php', ['provincias' => $provincias, 'operarios' => $operarios, 'usuario' => $usuario]);
+            }else{
+                header("Location: /tareas");
+                exit();
+            }
+            
+        } else {
+            header("Location: /");
+            exit();
+        }
+    }
+
+    public function createUser(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
+    {
+        session_start();
+
+        if (isset($_SESSION['usuario'])) {
+            $usuario = new Usuario;
+            $usuario->setUser($_SESSION['usuario']);
+            if($usuario->tipo=='admin'){
+                $view = Twig::fromRequest($request);
+                return $view->render($response, 'addUsuario.php', ['usuario' => $usuario]);
             }else{
                 header("Location: /tareas");
                 exit();
@@ -284,6 +345,13 @@ class TareaController
             exit();
         }
     }
+
+    public function storeUser(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
+    {
+        TareaRepository::addUsuario(filter_input(INPUT_POST, 'nombre'),filter_input(INPUT_POST, 'password'),filter_input(INPUT_POST, 'tipo'));
+        return self::listaUsuarios($request, $response, $args);
+            
+    }
     
     /**
      * edit
@@ -294,7 +362,32 @@ class TareaController
      * @param  mixed $args
      * @return ResponseInterface
      */
-    public function edit(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
+    public function editUser(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
+    {
+        session_start();
+        if (isset($_SESSION['usuario'])) {
+            $usuario = new Usuario;
+            $usuario->setUser($_SESSION['usuario']);
+            if($usuario->tipo=='admin'){
+
+
+            if($usuario->tipo=='admin'){
+            $view = Twig::fromRequest($request);
+
+            $usuarios = TareaRepository::getUser($args['id']);
+
+            return $view->render($response, 'updateUsuario.php', ['usuarios' => $usuarios,'usuario' => $usuario]);}
+            } else{
+            header("Location: /usuarios");
+            exit();}
+            
+        }else {
+            header("Location: /");
+            exit();
+    }
+}
+
+public function edit(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         session_start();
         if (isset($_SESSION['usuario'])) {
@@ -376,6 +469,19 @@ class TareaController
             exit();
         }
     }
+
+    public function updateUser(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface{
+
+        session_start();
+        $usuario = new Usuario;
+        $usuario->setUser($_SESSION['usuario']);
+
+        $view = Twig::fromRequest($request);
+
+        TareaRepository::updateUsuario(filter_input(INPUT_POST, 'nombre'),filter_input(INPUT_POST, 'password'),filter_input(INPUT_POST, 'tipo'),$args['id']);
+        $usuarios=TareaRepository::getUsuarios();
+
+        return $view->render($response, 'listaUsuarios.php', ['usuarios' => $usuarios, 'usuario'=>$usuario]);        }
     
     /**
      * complete

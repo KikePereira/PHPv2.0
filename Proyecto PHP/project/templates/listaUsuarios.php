@@ -23,6 +23,9 @@
         background-color: black;
         color: white;
     }
+    .credenciales{
+        margin-left: 40%;
+    }
 
 </style>
 {% endblock %}
@@ -51,13 +54,12 @@
                     <td>{{usuarios.tipo}} </td> 
                     <td>{{usuarios.hora}}</td>
                     <td>
-                        
+                    <a href="/usuarios/{{usuarios.usuario_id}}/delete"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="/usuarios/{{usuarios.usuario_id}}/update"><i class="fa-solid fa-pen-to-square"></i></a>
                     </td>
                 </tr>
             {% endfor %}
-            
         </table>
-
         
 </div>
 {% endblock %}

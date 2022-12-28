@@ -26,8 +26,16 @@ return function (App $app) {
 
     $app->post('/filtrado', TareaController::class .':tareaFiltrada');
 
-    $app->get('/usuarios', TareaController::class .':listaUsuarios');
 
+    $app->group('/usuarios',function(Group $group){
+        $group->get('', TareaController::class .':listaUsuarios');
+        $group->get('/{id}/delete', TareaController::class . ':deleteUser');
+        $group->delete('/{id}', TareaController::class . ':destroyUser');
+        $group->get('/create', TareaController::class . ':createUser');
+        $group->post('/create', TareaController::class . ':storeUser');
+        $group->get('/{id}/update', TareaController::class . ':editUser');
+        $group->put('/{id}/update', TareaController::class . ':updateUser');
+    });
 
     $app->group('/tareas',function(Group $group){
         $group->get('', TareaController::class .':index');

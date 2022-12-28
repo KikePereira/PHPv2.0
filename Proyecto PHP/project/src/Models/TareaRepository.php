@@ -138,6 +138,15 @@ class TareaRepository{
             
         $resultado->execute();
     }
+
+    public static function addUsuario($nombre,$password,$tipo){
+        $connect=Connection::getInstance();
+        $consulta="INSERT INTO `usuario`(`usuario_id`, `nombre`, `password`, `tipo`, `hora`) VALUES (NULL,'$nombre','$password','$tipo','')";
+
+        $resultado=$connect ->prepare($consulta);
+            
+        $resultado->execute();
+    }
     
     /**
      * TareaCompleta
@@ -149,6 +158,17 @@ class TareaRepository{
         $connect=Connection::getInstance();
         
         $consulta="SELECT * FROM tareas WHERE tarea_id=$id";
+        $resultado=$connect->prepare($consulta);
+        $resultado->execute();
+
+        return $resultado->fetch(PDO::FETCH_ASSOC);
+       
+    }
+
+    public static function getUser($id){
+        $connect=Connection::getInstance();
+        
+        $consulta="SELECT * FROM usuario WHERE usuario_id=$id";
         $resultado=$connect->prepare($consulta);
         $resultado->execute();
 
@@ -180,6 +200,19 @@ class TareaRepository{
 
             $connect->prepare($consulta)->execute($datos);
     }
+    public static function updateUsuario($nombre,$password,$tipo,$id){
+        
+        $connect=Connection::getInstance();
+
+            $consulta="UPDATE usuario 
+            SET 
+            nombre='$nombre',
+            password='$password',
+            tipo='$tipo'
+            WHERE usuario_id='$id'";
+
+            $connect->prepare($consulta)->execute();
+    }
     
     /**
      * EliminarTarea
@@ -191,6 +224,16 @@ class TareaRepository{
         $connect=Connection::getInstance();
         
         $consulta="DELETE FROM tareas WHERE tarea_id=$id";
+        $resultado=$connect->prepare($consulta);
+        $resultado->execute();
+
+        return $resultado->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public static function EliminarUsuario($id){
+        $connect=Connection::getInstance();
+        
+        $consulta="DELETE FROM usuario WHERE usuario_id=$id";
         $resultado=$connect->prepare($consulta);
         $resultado->execute();
 
@@ -264,7 +307,7 @@ class TareaRepository{
     public static function TareasFiltradas($dni,$estado,$operario){
         $connect=Connection::getInstance();
 
-        $consulta="SELECT * from tareas  WHERE dni=:dni AND estado_tarea=:estado AND operario_encargado=:operario";
+        $consulta="SELECT * from tareas  WHERE dni=:dni OR estado_tarea=:estado OR operario_encargado=:operario";
 
         $datos=['dni'=>$dni, 'estado'=>$estado,'operario'=>$operario];
 
