@@ -1,4 +1,0 @@
-var _methods_class_reflection_extension_8php =
-[
-    [ "MethodsClassReflectionExtension", "class_jan_gregor_1_1_prophecy_1_1_reflection_1_1_object_prophecy_1_1_methods_class_reflection_extension.html", "class_jan_gregor_1_1_prophecy_1_1_reflection_1_1_object_prophecy_1_1_methods_class_reflection_extension" ]
-];

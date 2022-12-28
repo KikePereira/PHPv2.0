@@ -1,4 +1,0 @@
-var _operator_bracket_sniff_8php =
-[
-    [ "OperatorBracketSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_formatting_1_1_operator_bracket_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_formatting_1_1_operator_bracket_sniff" ]
-];

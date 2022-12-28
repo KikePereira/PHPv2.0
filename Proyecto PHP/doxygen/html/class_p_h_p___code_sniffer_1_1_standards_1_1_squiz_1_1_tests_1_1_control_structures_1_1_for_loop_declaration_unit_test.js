@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_for_loop_declaration_unit_test =
-[
-    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_for_loop_declaration_unit_test.html#aa020278f4dd6ff6739a0c1a9db80d68d", null ],
-    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_control_structures_1_1_for_loop_declaration_unit_test.html#a69601e90b6b43c80c130ec47cf80816f", null ]
-];

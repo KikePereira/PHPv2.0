@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_commenting_1_1_long_condition_closing_comment_unit_test =
-[
-    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_commenting_1_1_long_condition_closing_comment_unit_test.html#aacb0ae83610736e77dc2c046d9de5976", null ],
-    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_commenting_1_1_long_condition_closing_comment_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
-];

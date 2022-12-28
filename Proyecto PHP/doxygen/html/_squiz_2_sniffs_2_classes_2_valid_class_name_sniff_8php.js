@@ -1,4 +1,0 @@
-var _squiz_2_sniffs_2_classes_2_valid_class_name_sniff_8php =
-[
-    [ "ValidClassNameSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_classes_1_1_valid_class_name_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_classes_1_1_valid_class_name_sniff" ]
-];

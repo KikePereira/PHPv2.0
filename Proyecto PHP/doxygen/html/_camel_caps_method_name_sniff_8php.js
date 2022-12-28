@@ -1,4 +1,0 @@
-var _camel_caps_method_name_sniff_8php =
-[
-    [ "CamelCapsMethodNameSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r1_1_1_sniffs_1_1_methods_1_1_camel_caps_method_name_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r1_1_1_sniffs_1_1_methods_1_1_camel_caps_method_name_sniff" ]
-];

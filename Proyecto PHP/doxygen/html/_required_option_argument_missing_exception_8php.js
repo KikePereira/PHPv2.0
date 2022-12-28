@@ -1,4 +1,0 @@
-var _required_option_argument_missing_exception_8php =
-[
-    [ "RequiredOptionArgumentMissingException", "class_sebastian_bergmann_1_1_cli_parser_1_1_required_option_argument_missing_exception.html", "class_sebastian_bergmann_1_1_cli_parser_1_1_required_option_argument_missing_exception" ]
-];

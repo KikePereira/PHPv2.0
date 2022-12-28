@@ -1,4 +1,0 @@
-var _php_version_not_supported_exception_8php =
-[
-    [ "PhpVersionNotSupportedException", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_php_version_not_supported_exception.html", "class_laravel_1_1_serializable_closure_1_1_exceptions_1_1_php_version_not_supported_exception" ]
-];

@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_p_h_p_1_1_lower_case_constant_unit_test =
-[
-    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_p_h_p_1_1_lower_case_constant_unit_test.html#afdeceb38738e1a75c6e7f6ea0aecc601", null ],
-    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_p_h_p_1_1_lower_case_constant_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
-];

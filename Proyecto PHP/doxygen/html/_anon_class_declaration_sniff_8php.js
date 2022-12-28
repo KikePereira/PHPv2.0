@@ -1,4 +1,0 @@
-var _anon_class_declaration_sniff_8php =
-[
-    [ "AnonClassDeclarationSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_sniffs_1_1_classes_1_1_anon_class_declaration_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_sniffs_1_1_classes_1_1_anon_class_declaration_sniff" ]
-];

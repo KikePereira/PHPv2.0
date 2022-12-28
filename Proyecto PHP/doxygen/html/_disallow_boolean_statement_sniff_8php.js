@@ -1,4 +1,0 @@
-var _disallow_boolean_statement_sniff_8php =
-[
-    [ "DisallowBooleanStatementSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_p_h_p_1_1_disallow_boolean_statement_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_p_h_p_1_1_disallow_boolean_statement_sniff" ]
-];

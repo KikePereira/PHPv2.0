@@ -1,4 +1,0 @@
-var _p_s_r12_2_tests_2_traits_2_use_declaration_unit_test_8php =
-[
-    [ "UseDeclarationUnitTest", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_tests_1_1_traits_1_1_use_declaration_unit_test.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_tests_1_1_traits_1_1_use_declaration_unit_test" ]
-];

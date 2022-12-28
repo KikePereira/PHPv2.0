@@ -1,4 +1,0 @@
-var _scope_setting_with_namespace_operator_test_8php =
-[
-    [ "ScopeSettingWithNamespaceOperatorTest", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_scope_setting_with_namespace_operator_test.html", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_scope_setting_with_namespace_operator_test" ]
-];

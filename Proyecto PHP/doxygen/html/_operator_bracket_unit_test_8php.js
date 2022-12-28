@@ -1,4 +1,0 @@
-var _operator_bracket_unit_test_8php =
-[
-    [ "OperatorBracketUnitTest", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_formatting_1_1_operator_bracket_unit_test.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_formatting_1_1_operator_bracket_unit_test" ]
-];

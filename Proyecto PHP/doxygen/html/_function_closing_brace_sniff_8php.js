@@ -1,4 +1,0 @@
-var _function_closing_brace_sniff_8php =
-[
-    [ "FunctionClosingBraceSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_methods_1_1_function_closing_brace_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_methods_1_1_function_closing_brace_sniff" ]
-];

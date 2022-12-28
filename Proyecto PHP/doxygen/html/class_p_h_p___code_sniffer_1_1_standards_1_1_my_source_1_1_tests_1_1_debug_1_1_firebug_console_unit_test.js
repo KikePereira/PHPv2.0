@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_tests_1_1_debug_1_1_firebug_console_unit_test =
-[
-    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_tests_1_1_debug_1_1_firebug_console_unit_test.html#abf9dd9e2c0850a1151f75e46b95df55f", null ],
-    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_tests_1_1_debug_1_1_firebug_console_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
-];

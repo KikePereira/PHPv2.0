@@ -1,7 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_control_structures_1_1_control_structure_spacing_sniff =
-[
-    [ "process", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_control_structures_1_1_control_structure_spacing_sniff.html#a145c97f53fb2c1ddb1c188ceba18865f", null ],
-    [ "register", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_control_structures_1_1_control_structure_spacing_sniff.html#acc294a6cc8e69743746820e3d15e3f78", null ],
-    [ "$requiredSpacesAfterOpen", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_control_structures_1_1_control_structure_spacing_sniff.html#ab697764bee231c17888bceb010158bc0", null ],
-    [ "$requiredSpacesBeforeClose", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r2_1_1_sniffs_1_1_control_structures_1_1_control_structure_spacing_sniff.html#a4128f54bda780f5331fe3b80cdb8c670", null ]
-];

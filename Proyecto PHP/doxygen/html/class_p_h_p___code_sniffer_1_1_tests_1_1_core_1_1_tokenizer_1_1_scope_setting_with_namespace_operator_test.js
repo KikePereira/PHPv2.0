@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_scope_setting_with_namespace_operator_test =
-[
-    [ "dataScopeSetting", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_scope_setting_with_namespace_operator_test.html#aeaca135cc718033662af1cf3a04e8847", null ],
-    [ "testScopeSetting", "class_p_h_p___code_sniffer_1_1_tests_1_1_core_1_1_tokenizer_1_1_scope_setting_with_namespace_operator_test.html#af051b53a0b0fa01a17b8e4530cf55762", null ]
-];

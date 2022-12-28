@@ -1,4 +1,0 @@
-var dir_e7059660dfc664380c34b3c784546070 =
-[
-    [ "unidata", "dir_6f132bb19d08c99b4ac632802444d333.html", "dir_6f132bb19d08c99b4ac632802444d333" ]
-];

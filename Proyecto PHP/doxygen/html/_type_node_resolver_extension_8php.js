@@ -1,4 +1,0 @@
-var _type_node_resolver_extension_8php =
-[
-    [ "TypeNodeResolverExtension", "class_jan_gregor_1_1_prophecy_1_1_php_doc_1_1_object_prophecy_1_1_type_node_resolver_extension.html", "class_jan_gregor_1_1_prophecy_1_1_php_doc_1_1_object_prophecy_1_1_type_node_resolver_extension" ]
-];

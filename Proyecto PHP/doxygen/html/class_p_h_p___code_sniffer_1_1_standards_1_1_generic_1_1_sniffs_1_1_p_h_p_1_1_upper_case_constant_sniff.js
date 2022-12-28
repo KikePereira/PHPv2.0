@@ -1,4 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_p_h_p_1_1_upper_case_constant_sniff =
-[
-    [ "processConstant", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_p_h_p_1_1_upper_case_constant_sniff.html#aea54f90bf7515df10bfc6e3da4c4000e", null ]
-];

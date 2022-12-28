@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_objects_1_1_disallow_object_string_index_unit_test =
-[
-    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_objects_1_1_disallow_object_string_index_unit_test.html#a8e1ebed7f7df757710c3411ae77c8bc9", null ],
-    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_objects_1_1_disallow_object_string_index_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
-];

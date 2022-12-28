@@ -1,6 +1,0 @@
-var class_jan_gregor_1_1_prophecy_1_1_type_1_1_object_prophecy_1_1_will_extend_or_implement_dynamic_return_type_extension =
-[
-    [ "getClass", "class_jan_gregor_1_1_prophecy_1_1_type_1_1_object_prophecy_1_1_will_extend_or_implement_dynamic_return_type_extension.html#a23ecbde357f7f6bde5a50f876334a74d", null ],
-    [ "getTypeFromMethodCall", "class_jan_gregor_1_1_prophecy_1_1_type_1_1_object_prophecy_1_1_will_extend_or_implement_dynamic_return_type_extension.html#a279ac26d574a74c0b1a08732061215c2", null ],
-    [ "isMethodSupported", "class_jan_gregor_1_1_prophecy_1_1_type_1_1_object_prophecy_1_1_will_extend_or_implement_dynamic_return_type_extension.html#a92f6620ce387cfd4e58d33f8144b3225", null ]
-];

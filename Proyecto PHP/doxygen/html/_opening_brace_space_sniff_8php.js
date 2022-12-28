@@ -1,4 +1,0 @@
-var _opening_brace_space_sniff_8php =
-[
-    [ "OpeningBraceSpaceSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_sniffs_1_1_classes_1_1_opening_brace_space_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_sniffs_1_1_classes_1_1_opening_brace_space_sniff" ]
-];

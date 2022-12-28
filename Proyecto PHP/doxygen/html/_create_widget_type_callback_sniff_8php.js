@@ -1,4 +1,0 @@
-var _create_widget_type_callback_sniff_8php =
-[
-    [ "CreateWidgetTypeCallbackSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_sniffs_1_1_objects_1_1_create_widget_type_callback_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_sniffs_1_1_objects_1_1_create_widget_type_callback_sniff" ]
-];

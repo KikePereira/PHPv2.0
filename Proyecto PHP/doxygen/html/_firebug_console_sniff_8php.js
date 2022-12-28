@@ -1,4 +1,0 @@
-var _firebug_console_sniff_8php =
-[
-    [ "FirebugConsoleSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_sniffs_1_1_debug_1_1_firebug_console_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_my_source_1_1_sniffs_1_1_debug_1_1_firebug_console_sniff" ]
-];

@@ -1,4 +1,0 @@
-var _function_call_argument_spacing_sniff_8php =
-[
-    [ "FunctionCallArgumentSpacingSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_functions_1_1_function_call_argument_spacing_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_sniffs_1_1_functions_1_1_function_call_argument_spacing_sniff" ]
-];

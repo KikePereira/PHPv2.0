@@ -1,4 +1,0 @@
-var _incompatible_return_value_exception_8php =
-[
-    [ "IncompatibleReturnValueException", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_incompatible_return_value_exception.html", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_incompatible_return_value_exception" ]
-];

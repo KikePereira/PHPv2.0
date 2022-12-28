@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_white_space_1_1_increment_decrement_spacing_unit_test =
-[
-    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_white_space_1_1_increment_decrement_spacing_unit_test.html#a64dc2c8b1545d45d21528c805b47cc9f", null ],
-    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_generic_1_1_tests_1_1_white_space_1_1_increment_decrement_spacing_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
-];

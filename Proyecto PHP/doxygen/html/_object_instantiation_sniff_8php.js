@@ -1,4 +1,0 @@
-var _object_instantiation_sniff_8php =
-[
-    [ "ObjectInstantiationSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_objects_1_1_object_instantiation_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_objects_1_1_object_instantiation_sniff" ]
-];

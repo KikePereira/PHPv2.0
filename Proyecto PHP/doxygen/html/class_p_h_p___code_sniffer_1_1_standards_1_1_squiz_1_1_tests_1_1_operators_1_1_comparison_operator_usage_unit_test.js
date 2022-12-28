@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_operators_1_1_comparison_operator_usage_unit_test =
-[
-    [ "getErrorList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_operators_1_1_comparison_operator_usage_unit_test.html#ab8fdf2f97f7f69e24a99c19b4fe90294", null ],
-    [ "getWarningList", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_tests_1_1_operators_1_1_comparison_operator_usage_unit_test.html#a93da1cd88fe204ed187275910447f212", null ]
-];

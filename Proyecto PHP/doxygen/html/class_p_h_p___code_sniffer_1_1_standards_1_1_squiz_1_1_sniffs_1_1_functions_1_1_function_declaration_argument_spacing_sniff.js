@@ -1,9 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_argument_spacing_sniff =
-[
-    [ "process", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_argument_spacing_sniff.html#a145c97f53fb2c1ddb1c188ceba18865f", null ],
-    [ "processBracket", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_argument_spacing_sniff.html#ae824d9ae4ee0b93c011649d5af06a180", null ],
-    [ "register", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_argument_spacing_sniff.html#acc294a6cc8e69743746820e3d15e3f78", null ],
-    [ "$equalsSpacing", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_argument_spacing_sniff.html#a9fd325ea79664ca551cfbfcc4fedd537", null ],
-    [ "$requiredSpacesAfterOpen", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_argument_spacing_sniff.html#ab697764bee231c17888bceb010158bc0", null ],
-    [ "$requiredSpacesBeforeClose", "class_p_h_p___code_sniffer_1_1_standards_1_1_squiz_1_1_sniffs_1_1_functions_1_1_function_declaration_argument_spacing_sniff.html#a4128f54bda780f5331fe3b80cdb8c670", null ]
-];

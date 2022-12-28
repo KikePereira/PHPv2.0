@@ -1,4 +1,0 @@
-var _compound_namespace_depth_sniff_8php =
-[
-    [ "CompoundNamespaceDepthSniff", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_sniffs_1_1_namespaces_1_1_compound_namespace_depth_sniff.html", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r12_1_1_sniffs_1_1_namespaces_1_1_compound_namespace_depth_sniff" ]
-];

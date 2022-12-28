@@ -1,5 +1,0 @@
-var class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r1_1_1_sniffs_1_1_methods_1_1_camel_caps_method_name_sniff =
-[
-    [ "processTokenOutsideScope", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r1_1_1_sniffs_1_1_methods_1_1_camel_caps_method_name_sniff.html#ab6010be3957acc3a6d2c301caa23a950", null ],
-    [ "processTokenWithinScope", "class_p_h_p___code_sniffer_1_1_standards_1_1_p_s_r1_1_1_sniffs_1_1_methods_1_1_camel_caps_method_name_sniff.html#a5b158f98e455e906f167070520ff2256", null ]
-];
